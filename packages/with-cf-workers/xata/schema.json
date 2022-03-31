@@ -1,0 +1,22 @@
+{
+  "formatVersion": "1.0",
+  "tables": [
+    {
+      "name": "urls",
+      "columns": [
+        {
+          "name": "destination",
+          "type": "string"
+        },
+        {
+          "name": "slug",
+          "type": "string"
+        },
+        {
+          "name": "ownerIp",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}
