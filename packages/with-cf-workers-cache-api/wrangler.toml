@@ -1,0 +1,8 @@
+name = "urlshortner"
+type = "javascript"
+
+account_id = "87c802e172750db0b511ab1ab6c692f8"
+workers_dev = true
+route = ""
+zone_id = ""
+compatibility_date = "2022-04-06"
