@@ -1,14 +1,17 @@
 {
-  "name": "with-nextjs",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@xataio/nextjs-minimal",
+  "description": "the minimal template to a Next.js project connected to a Xata database",
+  "version": "0.0.0",
   "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "Xata",
+    "url": "https://xata.io"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@types/node": "^17.0.21",
     "@types/react": "^17.0.40",
