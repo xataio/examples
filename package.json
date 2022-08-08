@@ -1,15 +1,18 @@
 {
   "name": "examples",
   "version": "0.0.0",
-  "license": "MIT",
-  "scripts": {},
+  "license": "Apache-2.0",
+  "workspaces": [
+    "apps/*",
+    "functions/*",
+    "providers/*",
+    "schemas/*",
+    "packages/*"
+  ],
   "private": true,
+  "scripts": {},
   "dependencies": {},
   "devDependencies": {
-    "@nrwl/cli": "13.8.8",
-    "@nrwl/js": "13.8.8",
-    "@nrwl/tao": "13.8.8",
-    "@nrwl/workspace": "13.8.8",
     "@types/node": "16.11.7",
     "prettier": "^2.5.1",
     "typescript": "~4.5.2"
