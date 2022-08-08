@@ -1,15 +1,18 @@
 {
+  "name": "@xataio/cloudflare-workers-url-shortener",
+  "description": "a URL Shortener template with Cloudflare Worker and Xata",
+  "version": "0.0.0",
   "private": true,
-  "name": "urlshortner",
-  "version": "1.0.0",
-  "description": "A template for kick starting a Cloudflare Workers project",
+  "author": {
+    "name": "Xata",
+    "url": "https://xata.io"
+  },
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write '**/*.{js,css,json,md}'"
   },
-  "author": "Tudor Golubenco <tudor@xata.io>",
-  "license": "MIT",
   "devDependencies": {
     "prettier": "^1.18.2"
   }
