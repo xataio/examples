@@ -1,6 +1,8 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
+/build
+/out
 /dist
 /tmp
 /out-tsc
@@ -39,4 +41,5 @@ testem.log
 Thumbs.db
 
 .next
+.turbo
 node_modules
