@@ -5,14 +5,14 @@ import {
   RestRespositoryFactory,
   XataClientOptions,
   XataRecord,
-} from "@xata.io/client";
+} from '@xata.io/client'
 
-const links = {};
+const links = {}
 
 export class XataClient extends BaseClient<{}> {
   constructor(options: XataClientOptions) {
-    super(options, links);
-    const factory = options.repositoryFactory || new RestRespositoryFactory();
-    this.db = {};
+    super(options, links)
+    const factory = options.repositoryFactory || new RestRespositoryFactory()
+    this.db = {}
   }
 }

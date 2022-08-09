@@ -14,7 +14,11 @@
     "build": "turbo run build",
     "test": "turbo run test",
     "lint": "turbo run lint",
-    "dev": "turbo run dev"
+    "dev": "turbo run dev",
+    "format": "prettier --write \"./**/*.{js,jsx,ts,tsx}\"",
+    "release": "changeset publish",
+    "change": "changeset",
+    "bump": "changeset version"
   },
   "devDependencies": {
     "@changesets/cli": "^2.24.2",
