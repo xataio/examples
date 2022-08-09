@@ -1,0 +1,35 @@
+name: Release
+on:
+  push:
+    branches:
+      - main
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Create Release Pull Request or Publish to Github Packages
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          # This expects you to have a script called release which
+          # does a build for your packages and calls changeset publish
+          publish: npm run release
+        env:
+          # Github acess token so it can create a PR for the release
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # @TODO
+      # setup Slack integration to #bebop channel
+      # - name: Send a Slack notification if a publish happens
+      #   if: steps.changesets.outputs.published == 'true'
+      #   # You can do something when a publish happens.
+      #   run: my-slack-bot send-notification --message "A new version of ${GITHUB_REPOSITORY} was published!"
