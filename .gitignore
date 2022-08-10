@@ -43,3 +43,6 @@ Thumbs.db
 .next
 .turbo
 node_modules
+
+**/.xatarc
+apps/**/xata.codegen.ts

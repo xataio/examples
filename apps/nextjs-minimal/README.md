@@ -2,28 +2,24 @@
 
 This is the least opinionated template for using Next.js with Xata.
 
-## Use this template
-
-Provision on [Stackblitz]()
-
 ### Next.js CLI
+
 Use your package manager of choice:
 
 ```sh
-npx create-next-app --template ...
+npx create-next-app --template https://github.com/xataio/examples/tree/main/apps/nextjs-minimal
 ```
 
-```sh
-yarn create next-app --template ...
-```
+### Create Database from schema
 
-```sh
-pnpm create next-app --template ...
-```
-
-### Clone from this repository
+Make sure all dependencies are installed
 
 ```
-git clone ...
+npm install
 ```
 
+Push the example schema to your database and run the codegen for the first time.
+
+```
+npm run xata:start
+```

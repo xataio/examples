@@ -1,0 +1,22 @@
+{
+  "formatVersion": "",
+  "tables": [
+    {
+      "name": "templateLinks",
+      "columns": [
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "name": "url",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}
