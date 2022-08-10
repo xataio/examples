@@ -15,7 +15,9 @@ Your one-stop-shop to get your project up and running in minutes.
 - `tools/`: the utilities we use to maintain this monorepo
 
 ## Get and Offer Help ❓
-We value all kinds of contributions. Please check our [CONTRIBUTING](/CONTRIBUTING.md). Also, remember you're always invited to join us at [Xata Serverless DB Community on Discord](https://xata.io/discord).
+We value all kinds of contributions. Please check our [CONTRIBUTING](/CONTRIBUTING.md).
+
+Also, remember you're always invited to join us at [Xata Serverless DB Community on Discord](https://xata.io/discord).
 
 ---
 
