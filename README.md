@@ -1,6 +1,5 @@
-<div align="right">
-    <img alt="Xata Examples logo: a test tube and a Xatafly" src="/docs/logo.png" width="300" />
-</div>
+<img align="right" alt="Xata Examples logo: a test tube and a Xatafly" src="/docs/logo.png" width="300" />
+
 
 # Xata Examples
 
