@@ -19,6 +19,14 @@ We value all kinds of contributions. Please check our [CONTRIBUTING](/CONTRIBUTI
 
 Also, remember you're always invited to join us at [Xata Serverless DB Community on Discord](https://xata.io/discord).
 
+## Contributors
+
+<a href="https://github.com/xataio/examples/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=xataio/examples" />
+</a>
+
+Want to see yourself up there? [Contribute](https://github.com/xataio/examples/blob/a73693f6a0e07565a209544498de1da5030dde13/CONTRIBUTING.md).
+
 ---
 
-Made by <img alt="Xatafly, Xata's logo" src="https://raw.githubusercontent.com/xataio/vscode-extension/2e3d0b877cf6aff1e0fc717e05ada714465ca783/doc/xata-icon-128.png" width="24" />
+<img alt="Xatafly, Xata's logo" src="https://raw.githubusercontent.com/xataio/vscode-extension/2e3d0b877cf6aff1e0fc717e05ada714465ca783/doc/xata-icon-128.png" width="24" />
