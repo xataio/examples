@@ -15,7 +15,9 @@ const IndexPage = ({
   <main>
     <header>
       <img src="/flap.gif" />
-      <h1>Next.js with&#8209;xata</h1>
+      <h1>
+        Next.js with<span aria-hidden>&#8209;</span>xata
+      </h1>
     </header>
     <article>
       {links.length > 1 ? (
@@ -33,8 +35,8 @@ const IndexPage = ({
         <section>
           <h2>No records found.</h2>
           <strong>
-            Create a `xata_dummy_table` and push some useful links to see them
-            here.
+            Create a `nextjs_with_xata_example` and push some useful links to
+            see them here.
           </strong>
           <button
             type="button"

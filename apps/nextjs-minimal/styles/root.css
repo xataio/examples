@@ -80,10 +80,12 @@ section {
   max-width: 70vw;
   padding: 5rem;
   grid-gap: 2rem;
-  margin: 0 auto;
+  margin: 5rem auto;
   border-radius: 30px/15px;
   border: dashed 2px var(--xata-green);
   font-size: 1.2rem;
+  text-align: center;
+  line-height: 2;
 }
 
 button {
