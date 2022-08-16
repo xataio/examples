@@ -2,7 +2,7 @@
   "formatVersion": "",
   "tables": [
     {
-      "name": "templateLinks",
+      "name": "nextjs_with_xata_example",
       "columns": [
         {
           "name": "title",
