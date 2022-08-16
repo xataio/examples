@@ -3,13 +3,6 @@
   "version": "0.0.0",
   "license": "Apache-2.0",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "functions/*",
-    "providers/*",
-    "schemas/*",
-    "packages/*"
-  ],
   "scripts": {
     "build": "turbo run build",
     "test": "turbo run test",
