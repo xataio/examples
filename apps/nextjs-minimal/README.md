@@ -16,15 +16,17 @@
 
 Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
 
-````sh
-g```
+```sh
+npx create-next-app --example https://github.com/xataio/examples/tree/main/apps/nextjs-minimal next-xata-app
+
+```
 
 <details>
 <summary> Yarn or PNPM</summary>
 
 ```sh
 yarn create next-app --example https://github.com/xataio/examples/tree/main/apps/nextjs-minimal next-xata-app
-````
+```
 
 ```sh
 pnpm create next-app --example https://github.com/xataio/examples/tree/main/apps/nextjs-minimal next-xata-app
