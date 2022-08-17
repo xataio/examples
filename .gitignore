@@ -47,3 +47,6 @@ node_modules
 **/.xatarc
 apps/**/xata.codegen.ts
 .env
+.env.*
+
+xata.codegen.ts
