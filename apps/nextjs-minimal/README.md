@@ -33,7 +33,7 @@ pnpm create next-app --example https://github.com/xataio/examples/tree/main/apps
 
 </details>
 
-### Link your Xata Workspace and Run Codegen
+### Link Your Xata Workspace and Run Codegen
 
 ```sh
 npm run start:xata
@@ -52,9 +52,9 @@ pnpm run start:xata
 
 </details>
 
-> ⚠️ once linked, you can just run `xata` to perform a re-generate types.
+> ⚠️ once linked, you can just run `xata` to re-generate types.
 
-### Start coding 🚀
+### Start Coding 🚀
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
