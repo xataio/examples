@@ -1,4 +1,4 @@
-<h1> Next.js + Xata Minimal Template <img alt="Xatafly, the logo from Xata" src="/public/flag.gif" width="50" /></h1>
+<h1> Next.js + Xata Minimal Template <img alt="Xatafly, the logo from Xata" src="/public/flap.gif" width="50" /></h1>
 
 [![TypeScript](https://badgen.net/badge/icon/typescript?icon=typescript&label)](https://typescriptlang.org)
 
@@ -8,7 +8,7 @@
 - Type-safe Codegen
 - Accessibility-Ready
   - Dark/Light mode
-  - Prefers reduce motion
+  - Respects `prefers-reduce-motion` for CSS Transitions
 
 ## Setup & Usage 🐣
 
@@ -16,16 +16,15 @@
 
 Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
 
-```sh
-npx create-next-app --example https://github.com/xataio/examples/tree/main/apps/nextjs-minimal next-xata-app
-```
+````sh
+g```
 
 <details>
 <summary> Yarn or PNPM</summary>
 
 ```sh
 yarn create next-app --example https://github.com/xataio/examples/tree/main/apps/nextjs-minimal next-xata-app
-```
+````
 
 ```sh
 pnpm create next-app --example https://github.com/xataio/examples/tree/main/apps/nextjs-minimal next-xata-app
