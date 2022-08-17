@@ -1,25 +1,67 @@
-# Next.js + Xata Minimal Template
+<h1> Next.js + Xata Minimal Template <img alt="Xatafly, the logo from Xata" src="/public/flag.gif" width="50" /></h1>
 
-This is the least opinionated template for using Next.js with Xata.
+[![TypeScript](https://badgen.net/badge/icon/typescript?icon=typescript&label)](https://typescriptlang.org)
 
-### Next.js CLI
+## Features ⚡️
 
-Use your package manager of choice:
+- API Route to connect to your Xata database
+- Type-safe Codegen
+- Accessibility-Ready
+  - Dark/Light mode
+  - Prefers reduce motion
+
+## Setup & Usage 🐣
+
+### Clone the Example
+
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
 
 ```sh
-npx create-next-app --template https://github.com/xataio/examples/tree/main/apps/nextjs-minimal
+npx create-next-app --example https://github.com/xataio/examples/tree/main/apps/nextjs-minimal next-xata-app
 ```
 
-### Create Database from schema
+<details>
+<summary> Yarn or PNPM</summary>
 
-Make sure all dependencies are installed
-
-```
-npm install
+```sh
+yarn create next-app --example https://github.com/xataio/examples/tree/main/apps/nextjs-minimal next-xata-app
 ```
 
-Push the example schema to your database and run the codegen for the first time.
+```sh
+pnpm create next-app --example https://github.com/xataio/examples/tree/main/apps/nextjs-minimal next-xata-app
+```
 
+</details>
+
+### Link your Xata Workspace and Run Codegen
+
+```sh
+npm run start:xata
 ```
-npm run xata:start
+
+<details>
+<summary> Yarn or PNPM</summary>
+
+```sh
+yarn start:xata
 ```
+
+```sh
+pnpm run start:xata
+```
+
+</details>
+
+> ⚠️ once linked, you can just run `xata` to perform a re-generate types.
+
+### Start coding 🚀
+
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+> 💡 the template will prompt you to create a dummy new table (`nextjs_with_xata_example`) with some useful resources.
+
+## Hot Tip 🔥
+
+- The Xata [VS Code Extension](https://marketplace.visualstudio.com/items?itemName=xata.xata) will make managing your data more comfortable
+- Prefer fetching data from `getServerSideProps()` or `getStaticProps()`
+- Create a Serverless Route(s) to handle data mutations
