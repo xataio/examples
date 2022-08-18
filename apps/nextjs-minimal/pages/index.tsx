@@ -9,6 +9,20 @@ const pushDummyData = async () => {
   }
 }
 
+const removeDummyItem = async (id: string) => {
+  const { status } = await fetch('/api/clean-xata', {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ id }),
+  })
+
+  if (status === 200) {
+    window?.location.reload()
+  }
+}
+
 const IndexPage = ({
   links,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => (
@@ -20,14 +34,24 @@ const IndexPage = ({
       </h1>
     </header>
     <article>
-      {links.length > 1 ? (
+      {links.length ? (
         <ul>
-          {links.map(({ title, url, description }) => (
+          {links.map(({ id, title, url, description }) => (
             <li key={url}>
               <a href={url} rel="noopener" target="_blank">
                 {title}
               </a>
               <p>{description}</p>
+
+              <button
+                type="button"
+                style={ { margin: '0 auto' } }
+                onClick={() => {
+                  removeDummyItem(id)
+                }}
+                >
+                Remove item
+              </button>
             </li>
           ))}
         </ul>

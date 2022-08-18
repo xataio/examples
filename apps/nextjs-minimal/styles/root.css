@@ -96,6 +96,8 @@ button {
   font-size: 2rem;
   border-radius: 15px;
   transition: all var(--transition-duration) ease-in-out;
+  display: block;
+  cursor: pointer;
 }
 
 button:hover,
