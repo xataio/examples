@@ -40,6 +40,12 @@ a {
   text-decoration: none;
 }
 
+a:hover,
+a:focus {
+  text-decoration: underline dotted;
+  color: var(--xata-green);
+}
+
 li a[target='_blank']::after {
   content: '↗';
   position: relative;
@@ -107,6 +113,24 @@ button:focus {
   background-color: var(--xata-green);
 }
 
+li button {
+  position: absolute;
+  padding: 1rem 2rem;
+  top: 0;
+  right: 0;
+  font-size: 1.2rem;
+  color: transparent;
+  text-shadow: 0 0 0 var(--text-color);
+  border: none;
+}
+
+li button:hover,
+li button:focus {
+  text-shadow: 0 0 0 var(--xata-green);
+  color: transparent;
+  background-color: transparent;
+}
+
 ul {
   max-width: 120ch;
   margin: 0 auto;
@@ -117,21 +141,10 @@ ul {
 }
 
 li {
+  position: relative;
   padding: 1rem 2rem;
   border: solid 2px var(--text-color);
   border-radius: 10px/5px;
-}
-
-li:hover,
-li:focus-within {
-  border-color: var(--xata-green);
-  box-shadow: 0 5px 7px var(--xata-faded-green);
-}
-
-li:hover a,
-li:focus-within a {
-  text-decoration: underline dotted;
-  color: var(--xata-green);
 }
 
 object {

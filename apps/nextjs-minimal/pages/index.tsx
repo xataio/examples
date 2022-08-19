@@ -11,9 +11,9 @@ const pushDummyData = async () => {
 
 const removeDummyItem = async (id: string) => {
   const { status } = await fetch('/api/clean-xata', {
-    method: "POST",
+    method: 'POST',
     headers: {
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json',
     },
     body: JSON.stringify({ id }),
   })
@@ -45,12 +45,13 @@ const IndexPage = ({
 
               <button
                 type="button"
-                style={ { margin: '0 auto' } }
                 onClick={() => {
                   removeDummyItem(id)
                 }}
-                >
-                Remove item
+              >
+                <span role="img" aria-label="delete item">
+                  🗑
+                </span>
               </button>
             </li>
           ))}
