@@ -1,62 +1,66 @@
-# Welcome to Remix!
+<h1> Remix + Xata Minimal Template <img alt="Xatafly, the logo from Xata" src="/public/flap.gif" width="50" /></h1>
 
-- [Remix Docs](https://remix.run/docs)
-- [Netlify Functions](https://www.netlify.com/products/functions/)
+[![TypeScript](https://badgen.net/badge/icon/typescript?icon=typescript&label)](https://typescriptlang.org)
 
-## Netlify Setup
+## Features ⚡️
 
-1. Install the [Netlify CLI](https://www.netlify.com/products/dev/):
+- API Route to connect to your Xata database
+- Type-safe Codegen
+- Accessibility-Ready
+  - Dark/Light mode
+  - Respects `prefers-reduce-motion` for CSS Transitions
 
-```sh
-npm i -g netlify-cli
-```
+## Setup & Usage 🐣
 
-If you have previously installed the Netlify CLI, you should update it to the latest version:
+### Clone the Example
 
-```sh
-npm i -g netlify-cli@latest
-```
-
-2. Sign up and log in to Netlify:
+Execute [`create-remix-app`](https://github.com/vercel/next.js/tree/canary/packages/create-remix-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
 
 ```sh
-netlify login
+npx create-remix-app --template https://github.com/xataio/examples/tree/main/apps/remix-minimal remix-xata-app
+
 ```
 
-3. Create a new site:
+<details>
+<summary> Yarn or PNPM</summary>
 
 ```sh
-netlify init
+yarn create remix-app --template https://github.com/xataio/examples/tree/main/apps/remix-minimal remix-xata-app
 ```
-
-## Development
-
-The Remix dev server starts your app in development mode, rebuilding assets on file changes. To start the Remix dev server:
 
 ```sh
-npm run dev
+pnpm create remix-app --template https://github.com/xataio/examples/tree/main/apps/remix-minimal remix-xata-app
 ```
 
-Open up [http://localhost:3000](http://localhost:3000), and you should be ready to go!
+</details>
 
-The Netlify CLI builds a production version of your Remix App Server and splits it into Netlify Functions that run locally. This includes any custom Netlify functions you've developed. The Netlify CLI runs all of this in its development mode.
+### Link Your Xata Workspace and Run Codegen
 
 ```sh
-netlify dev
+npm run start:xata
 ```
 
-Open up [http://localhost:3000](http://localhost:3000), and you should be ready to go!
-
-Note: When running the Netlify CLI, file changes will rebuild assets, but you will not see the changes to the page you are on unless you do a browser refresh of the page. Due to how the Netlify CLI builds the Remix App Server, it does not support hot module reloading.
-
-## Deployment
-
-There are two ways to deploy your app to Netlify, you can either link your app to your git repo and have it auto deploy changes to Netlify, or you can deploy your app manually. If you've followed the setup instructions already, all you need to do is run this:
+<details>
+<summary> Yarn or PNPM</summary>
 
 ```sh
-# preview deployment
-netlify deploy --build
-
-# production deployment
-netlify deploy --build --prod
+yarn start:xata
 ```
+
+```sh
+pnpm run start:xata
+```
+
+</details>
+
+> ⚠️ once linked, you can just run `xata` to re-generate types.
+
+### Start Coding 🚀
+
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+> 💡 the template will prompt you to create a dummy new table (`remix_with_xata_example`) with some useful resources.
+
+## Hot Tip 🔥
+
+- The Xata [VS Code Extension](https://marketplace.visualstudio.com/items?itemName=xata.xata) will make managing your data more comfortable
