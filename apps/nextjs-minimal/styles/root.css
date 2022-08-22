@@ -154,7 +154,7 @@ object {
   margin-left: 0.5em;
 }
 
-@media (min-width: 420px) {
+@media (min-width: 700px) {
   ul {
     grid-template-columns: 1fr 1fr;
   }
