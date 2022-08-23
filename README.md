@@ -1,5 +1,4 @@
-<img align="right" alt="Xata Examples logo: a test tube and a Xatafly" src="/docs/logo.png" width="300" />
-
+<img align="right" alt="Xata Examples logo: a test tube and a Xatafly" src="/docs/logo.png" width="200" />
 
 # Xata Examples
 
@@ -7,6 +6,7 @@ Our lab for Proof-of-Concepts, tooling, and example cases.
 Your one-stop-shop to get your project up and running in minutes.
 
 ## Structure 🏗
+
 - `apps/`: POCs (proof-of-concept) and Templates to be installed and built on top of.
 - `packages/` : resources we publish to the NPM Registry to be consumed by other projects.
 - `functions/`: the BFF (Backend For Frontend) example deployments. To serve as a security layer and provide connection to your Xata Database.
@@ -15,6 +15,7 @@ Your one-stop-shop to get your project up and running in minutes.
 - `tools/`: the utilities we use to maintain this monorepo
 
 ## Get and Offer Help ❓
+
 We value all kinds of contributions. Please check our [CONTRIBUTING](/CONTRIBUTING.md).
 
 Also, remember you're always invited to join us at [Xata Serverless DB Community on Discord](https://xata.io/discord).
