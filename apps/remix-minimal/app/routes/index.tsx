@@ -1,34 +1,58 @@
-/**
- * 
- * @returns           
- * <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
- */
-
-import { ActionFunction, LoaderFunction, redirect } from '@remix-run/node'
-import { Form, useLoaderData } from '@remix-run/react'
-import { getXataClient } from '~/lib/xata.codegen.server'
-import type { RemixWithXataExample } from '~/lib/xata.codegen.server'
+import type { FC } from 'react'
+import type { ActionFunction, LoaderFunction } from '@remix-run/node'
+import { Form, useFetcher, useLoaderData } from '@remix-run/react'
+import {
+  getXataClient,
+  type RemixWithXataExampleRecord,
+} from '~/lib/xata.codegen.server'
 import { LINKS } from '~/lib/settings'
 
+type TaskComponent = FC<
+  Pick<RemixWithXataExampleRecord, 'id' | 'title' | 'url' | 'description'>
+>
 export const loader: LoaderFunction = async () => {
-  const xata = await getXataClient()
-  const links = await xata.db.remix_with_xata_example.getAll()
+  const links = await getXataClient().db.remix_with_xata_example.getAll()
 
   return links
 }
 
-export const action: ActionFunction = async () => {
-  const xata = await getXataClient()
+export const action: ActionFunction = async ({ request }) => {
+  const { action, item } = Object.fromEntries(await request.formData())
 
-  await xata.db.remix_with_xata_example.create(LINKS)
+  if (action === 'delete' && typeof item === 'string') {
+    await getXataClient().db.remix_with_xata_example.delete(item)
+    return {}
+  }
 
-  return redirect('/')
+  if (action === 'create') {
+    await getXataClient().db.remix_with_xata_example.create(LINKS)
+    return {}
+  }
+}
+
+const Task: TaskComponent = ({ id, title, url, description }) => {
+  const fetcher = useFetcher()
+
+  return fetcher.submission ? null : (
+    <li key={url}>
+      <a href={url ?? ''} rel="noopener noreferrer" target="_blank">
+        {title}
+      </a>
+      <p>{description}</p>
+      <fetcher.Form method="put">
+        <input type="hidden" name="action" value="delete" />
+        <button type="submit" name="item" value={id}>
+          <span role="img" aria-label="delete item">
+            🗑
+          </span>
+        </button>
+      </fetcher.Form>
+    </li>
+  )
 }
 
 export default function Index() {
-  const links = useLoaderData<RemixWithXataExample[]>()
+  const links = useLoaderData<RemixWithXataExampleRecord[]>()
 
   return (
     <main>
@@ -39,15 +63,10 @@ export default function Index() {
         </h1>
       </header>
       <article>
-        {links.length > 1 ? (
+        {links.length > 0 ? (
           <ul>
-            {links.map(({ title, url, description }) => (
-              <li key={url}>
-                <a href={url ?? ''} rel="noopener noreferrer" target="_blank">
-                  {title}
-                </a>
-                <p>{description}</p>
-              </li>
+            {links.map((link) => (
+              <Task key={link.id} {...link} />
             ))}
           </ul>
         ) : (
@@ -58,6 +77,7 @@ export default function Index() {
               see them here.
             </strong>
             <Form method="post">
+              <input type="hidden" name="action" value="create" />
               <button type="submit">Push records to Xata</button>
             </Form>
           </section>
