@@ -90,19 +90,19 @@ section {
 
 button {
   background-color: transparent;
-  padding: 1rem 2rem;
-  border: solid 2px var(--xata-accent);
-  color: var(--xata-accent);
+  padding: 0.5rem 1rem;
+  border: 0;
+  color: transparent;
   font-size: 2rem;
   border-radius: 15px;
   transition: all var(--transition-duration) ease-in-out;
+  text-shadow: 0 0 var(--text-color);
 }
 
 button:hover,
 button:focus {
+  text-shadow: 0 0 var(--xata-accent);
   border-color: transparent;
-  color: var(--background-color);
-  background-color: var(--xata-accent);
 }
 
 ul {
@@ -115,21 +115,22 @@ ul {
 }
 
 li {
+  position: relative;
   padding: 1rem 2rem;
   border: solid 2px var(--text-color);
   border-radius: 10px/5px;
-}
-
-li:hover,
-li:focus-within {
-  border-color: var(--xata-accent);
-  box-shadow: 0 5px 7px var(--xata-accent-faded);
 }
 
 li:hover a,
 li:focus-within a {
   text-decoration: underline dotted;
   color: var(--xata-accent);
+}
+
+li form {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
 }
 
 object {
