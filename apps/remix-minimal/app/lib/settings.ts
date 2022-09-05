@@ -15,8 +15,12 @@ export const SECURITY_HEADERS: HeadersInit = {
 
 const DEFAULT_META_TAGS = {
   title: 'Remix with Xata',
-  description: '',
-  image: '',
+  description:
+    'the minimal template to a Remix project connected to a Xata database',
+  image:
+    process.env.NODE_ENV === 'development'
+      ? 'http://localhost:3000/og.jpg'
+      : 'https://remix-with-xata.netlify.app/og.jpg',
 }
 
 export const metatags = (params = {}): HtmlMetaDescriptor => {
