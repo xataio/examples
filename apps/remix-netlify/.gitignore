@@ -4,5 +4,3 @@ node_modules
 /public/build
 /.netlify
 .env
-
-app/styles.css
