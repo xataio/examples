@@ -1,10 +1,10 @@
-<h1> Remix + Xata Minimal Template <img alt="Xatafly, the logo from Xata" src="/public/flap.gif" width="50" /></h1>
+<h1> Remix + Xata + Netlify <img alt="Xatafly, the logo from Xata" src="/public/flap.gif" width="50" /></h1>
 
 [![TypeScript](https://badgen.net/badge/icon/typescript?icon=typescript&label)](https://typescriptlang.org)
 
 ## Features ⚡️
 
-- API Route to connect to your Xata database
+- Deployed to Netlify Edge
 - Type-safe Codegen
 - Accessibility-Ready
   - Dark/Light mode
@@ -17,7 +17,7 @@
 Execute [`create-remix-app`](https://github.com/vercel/next.js/tree/canary/packages/create-remix-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
 
 ```sh
-npx create-remix-app --template https://github.com/xataio/examples/tree/main/apps/remix-minimal remix-xata-app
+npx create-remix-app --template https://github.com/xataio/examples/tree/main/apps/remix-netlify remix-xata-app
 
 ```
 

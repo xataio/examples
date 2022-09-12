@@ -1,11 +1,7 @@
 {
-  "name": "remix-minimal",
-  "description": "the minimal template to a Remix project connected to a Xata database",
+  "name": "remix-netlify",
+  "description": "Xata + Remix + Netlify",
   "private": true,
-  "author": {
-    "name": "Xata",
-    "url": "https://xata.io"
-  },
   "scripts": {
     "build": "remix build",
     "dev": "remix dev",
@@ -35,6 +31,6 @@
     "typescript": "^4.7.4"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=16"
   }
 }

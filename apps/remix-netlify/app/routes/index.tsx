@@ -11,21 +11,23 @@ type TaskComponent = FC<
   Pick<RemixWithXataExampleRecord, 'id' | 'title' | 'url' | 'description'>
 >
 export const loader: LoaderFunction = async () => {
-  const links = await getXataClient().db.remix_with_xata_example.getAll()
+  const xata = getXataClient()
+  const links = await xata.db.remix_with_xata_example.getAll()
 
   return links
 }
 
 export const action: ActionFunction = async ({ request }) => {
   const { action, item } = Object.fromEntries(await request.formData())
+  const xata = getXataClient()
 
   if (action === 'delete' && typeof item === 'string') {
-    await getXataClient().db.remix_with_xata_example.delete(item)
+    await xata.db.remix_with_xata_example.delete(item)
     return {}
   }
 
   if (action === 'create') {
-    await getXataClient().db.remix_with_xata_example.create(LINKS)
+    await xata.db.remix_with_xata_example.create(LINKS)
     return {}
   }
 }
@@ -59,7 +61,8 @@ export default function Index() {
       <header>
         <img src="/flap.gif" alt="Xata Logo" />
         <h1>
-          Remix with<span aria-hidden>&#8209;</span>xata
+          Remix<span aria-hidden>&#8209;</span>Xata
+          <span aria-hidden>&#8209;</span>Netlify
         </h1>
       </header>
       <article>
