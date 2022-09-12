@@ -43,7 +43,7 @@ importers:
       eslint-config-next: 12.2.4_qugx7qdu5zevzvxaiqyxfiwquq
       typescript: 4.7.4
 
-  apps/remix-minimal:
+  apps/remix-netlify:
     specifiers:
       '@netlify/functions': ^1.0.0
       '@remix-run/dev': ^1.6.8
@@ -2661,7 +2661,7 @@ packages:
   /@types/estree-jsx/0.0.1:
     resolution: {integrity: sha512-gcLAYiMfQklDCPjQegGn0TBAn9it05ISEsEhlKQUddIk7o2XDokOcTN7HBO8tznM0D9dGezvHEfRZBfZf6me0A==}
     dependencies:
-      '@types/estree': 0.0.51
+      '@types/estree': 1.0.0
     dev: true
 
   /@types/estree-jsx/1.0.0:
