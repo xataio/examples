@@ -1,0 +1,19 @@
+{
+  "name": "vercel-functions",
+  "description": "",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "vc dev",
+    "xata:codegen": "xata codegen"
+  },
+  "devDependencies": {
+    "@vercel/node": "^2.5.14",
+    "@xata.io/cli": "0.8.1",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "@xata.io/client": "^0.16.1"
+  }
+}
