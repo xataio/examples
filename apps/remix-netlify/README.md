@@ -10,6 +10,8 @@
   - Dark/Light mode
   - Respects `prefers-reduce-motion` for CSS Transitions
 
+> ⚠️ Find `@TODO` comments to check places you need to adjust your code.
+
 ## Setup & Usage 🐣
 
 ### Clone the Example
@@ -25,11 +27,11 @@ npx create-remix-app --template https://github.com/xataio/examples/tree/main/app
 <summary> Yarn or PNPM</summary>
 
 ```sh
-yarn create remix-app --template https://github.com/xataio/examples/tree/main/apps/remix-minimal remix-xata-app
+yarn create remix-app --template https://github.com/xataio/examples/tree/main/apps/remix-netlify remix-xata-app
 ```
 
 ```sh
-pnpm create remix-app --template https://github.com/xataio/examples/tree/main/apps/remix-minimal remix-xata-app
+pnpm create remix-app --template https://github.com/xataio/examples/tree/main/apps/remix-netlify remix-xata-app
 ```
 
 </details>
