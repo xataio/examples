@@ -18,6 +18,10 @@ const DEFAULT_META_TAGS = {
   description:
     'the minimal template to a Remix project connected to a Xata database',
   image:
+    /**
+     * @TODO
+     * add your own og-image here
+     */
     process.env.NODE_ENV === 'development'
       ? 'http://localhost:3000/og.jpg'
       : 'https://remix-with-xata.netlify.app/og.jpg',
