@@ -8,6 +8,110 @@
 - [Serverless Functions](https://vercel.com/docs/concepts/functions/serverless-functions) & [Edge Functions](https://vercel.com/features/edge-functions)
 - Dynamic Routes for each table name
 
+## Routes 📍
+
+| Description         | Path                | Allowed Verbs | Response                |
+| ------------------- | ------------------- | ------------- | ----------------------- |
+| Get record by `id`  | `/get/[table]/[id]` | `GET`         | record object           |
+| Query items         | `query/[table]`     | `POST`        | array of record objects |
+| Delete item by `id` | `delete/[table]`    | `DELETE`      | success message         |
+| Update item by `id` | `update/[table]`    | `PATCH`       | the updated item        |
+
+### Get Request
+
+<details>
+    <summary>JavaScript Example</summary>
+
+```js
+fetch(
+  'https://xata-functions.vercel.app/get/movies/rec_cci5p8miqtgok3idj8b0'
+).then((resp) => resp.json())
+```
+
+</details>
+
+### Query Request
+
+```json
+{
+  "sort": {
+    "column": "COLUMN NAME",
+    "direction": "asc | desc"
+  },
+  "filter": {
+    "COLUMN NAME": "VALUE"
+  }
+}
+```
+
+> 💡 Check **Xata SDK Docs** for all [sorting](https://xata.io/docs/sdk/reference#sorting) and [filtering](https://xata.io/docs/sdk/reference#filtering) options
+
+<details>
+    <summary>JavaScript Example</summary>
+
+```js
+fetch('https://xata-functions.vercel.app/query/movies', {
+  method: 'POST',
+  body: JSON.stringify({
+    sort: {
+      column: 'release',
+      direction: 'asc',
+    },
+    filter: {
+      title: 'Iron Man',
+    },
+  }),
+}).then((resp) => resp.json())
+```
+
+</details>
+
+### Delete Request
+
+```json
+{
+  "id": "RECORD ID"
+}
+```
+
+<details>
+    <summary>JavaScript Example</summary>
+
+```js
+fetch('https://xata-functions.vercel.app/delete/movies', {
+  method: 'DELETE',
+  body: JSON.stringify({
+    id: 'rec_cci5p8miqtgok3idj8b0',
+  }),
+}).then((resp) => resp.json())
+```
+
+</details>
+
+### Update Request
+
+```json
+{
+  "id": "RECORD ID",
+  "data": {}
+}
+```
+
+<details>
+    <summary>JavaScript Example</summary>
+
+```js
+fetch('https://xata-functions.vercel.app/delete/movies', {
+  method: 'PATCH',
+  body: JSON.stringify({
+    id: 'rec_cci5p8miqtgok3idj8b0',
+    data: {}, // what to update
+  }),
+}).then((resp) => resp.json())
+```
+
+</details>
+
 ## Setup & Usage 🐣
 
 ### Link Your Xata Workspace and Run Codegen
