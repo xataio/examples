@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1.0",
+  "tables": [
+    {
+      "name": "urls",
+      "columns": [
+        {
+          "name": "url",
+          "type": "string"
+        },
+        {
+          "name": "shortUrl",
+          "type": "string"
+        },
+        {
+          "name": "user",
+          "type": "link",
+          "link": {
+            "table": "users"
+          }
+        }
+      ]
+    },
+    {
+      "name": "users",
+      "columns": [
+        {
+          "name": "name",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}
