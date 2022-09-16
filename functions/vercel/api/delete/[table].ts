@@ -1,11 +1,3 @@
-/**
- *
- * @method POST
- * @query table
- * @return JSON
- *
- * @endpoint /query/[table]
- */
 import 'isomorphic-fetch'
 import type { VercelRequest, VercelResponse } from '@vercel/node'
 import type { TableNames } from '../../_lib/types'

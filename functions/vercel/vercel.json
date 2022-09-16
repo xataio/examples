@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/",
+      "destination": "/api/index.ts"
+    },
+    {
       "source": "/:path*",
       "destination": "/api/:path*"
     }
