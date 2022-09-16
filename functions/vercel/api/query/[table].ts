@@ -1,5 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
 import type { TableNames } from '../../_lib/types'
+import 'isomorphic-fetch'
 import { getXataClient } from '../../_lib/xata.codegen'
 
 export default async function handler(

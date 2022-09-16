@@ -6,9 +6,10 @@
  *
  * @endpoint /query/[table]
  */
+import 'isomorphic-fetch'
 import type { VercelRequest, VercelResponse } from '@vercel/node'
 import type { TableNames } from '../../_lib/types'
-import { getXataClient } from '../../_lib/xata.codegen'
+// import { getXataClient } from '../../_lib/xata.codegen'
 
 export default async function handler(
   request: VercelRequest,

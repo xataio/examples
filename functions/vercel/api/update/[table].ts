@@ -8,6 +8,8 @@
  */
 import type { VercelRequest, VercelResponse } from '@vercel/node'
 import type { DatabaseSchema } from '../../_lib/xata.codegen'
+import 'isomorphic-fetch'
+
 // import { getXataClient } from '../../_lib/xata.codegen'
 
 type TableNames = keyof DatabaseSchema
