@@ -27,6 +27,11 @@ export default async function handler(
     if (hasFilter && hasSort) {
       response.json(
         await xata.db[table]
+          /**
+           * The error is expected because the 2 tables in this database
+           * do not have the same set of columns, so because the overloads
+           * are not an exact match, TypeScript raises errors.
+           */
           // @ts-expect-error
           .filter(filter)
           .sort(sort.column, sort.direction)
@@ -35,11 +40,21 @@ export default async function handler(
     } else if (hasSort) {
       response.json(
         await xata.db[table]
+          /**
+           * The error is expected because the 2 tables in this database
+           * do not have the same set of columns, so because the overloads
+           * are not an exact match, TypeScript raises errors.
+           */
           // @ts-expect-error
           .sort(sort.column, sort.direction)
           .getAll()
       )
     } else if (hasFilter) {
+      /**
+       * The error is expected because the 2 tables in this database
+       * do not have the same set of columns, so because the overloads
+       * are not an exact match, TypeScript raises errors.
+       */
       // @ts-expect-error
       response.json(await xata.db[table].filter(filter).getAll())
     } else {
