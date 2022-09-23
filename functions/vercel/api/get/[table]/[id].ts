@@ -17,7 +17,7 @@ export default async function handler(
   response: VercelResponse
 ) {
   const table = request.query.table as TableNames
-  const id = request.query.id as string
+  const id = String(request.query.id ?? '')
   // const id = 'rec_cci5p8miqtgok3idj8b0'
 
   if (request.method !== 'GET') {
