@@ -10,12 +10,14 @@
 
 ## Routes 📍
 
-| Description         | Path                | Allowed Verbs | Response                |
-| ------------------- | ------------------- | ------------- | ----------------------- |
-| Get record by `id`  | `/get/[table]/[id]` | `GET`         | record object           |
-| Query items         | `query/[table]`     | `POST`        | array of record objects |
-| Delete item by `id` | `delete/[table]`    | `DELETE`      | success message         |
-| Update item by `id` | `update/[table]`    | `PATCH`       | the updated item        |
+> 💡 there are 2 tables in this database: `series` or `movies`.
+
+| Description         | Path                        | Allowed Verbs | Response                |
+| ------------------- | --------------------------- | ------------- | ----------------------- |
+| Get record by `id`  | `/get/{{ tableName }}/[id]` | `GET`         | record object           |
+| Query items         | `query/{{ tableName }}`     | `POST`        | array of record objects |
+| Delete item by `id` | `delete/{{ tableName }}`    | `DELETE`      | success message         |
+| Update item by `id` | `update/{{ tableName }}`    | `PATCH`       | the updated item        |
 
 ### Get Request
 
