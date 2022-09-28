@@ -11,24 +11,24 @@
     "xata": "xata codegen"
   },
   "dependencies": {
-    "@netlify/functions": "^1.0.0",
-    "@remix-run/netlify": "^1.6.8",
-    "@remix-run/node": "^1.6.8",
-    "@remix-run/react": "^1.6.8",
-    "@xata.io/client": "^0.16.1",
-    "cross-env": "^7.0.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@netlify/functions": "1.2.0",
+    "@remix-run/netlify": "1.7.2",
+    "@remix-run/node": "1.7.2",
+    "@remix-run/react": "1.7.2",
+    "@xata.io/client": "0.16.2",
+    "cross-env": "7.0.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@remix-run/dev": "^1.6.8",
-    "@remix-run/eslint-config": "^1.6.8",
-    "@remix-run/serve": "^1.6.8",
-    "@types/react": "^18.0.15",
-    "@types/react-dom": "^18.0.6",
+    "@remix-run/dev": "1.7.2",
+    "@remix-run/eslint-config": "1.7.2",
+    "@remix-run/serve": "1.7.2",
+    "@types/react": "18.0.21",
+    "@types/react-dom": "18.0.6",
     "@xata.io/cli": "0.8.1",
-    "eslint": "^8.20.0",
-    "typescript": "^4.7.4"
+    "eslint": "8.24.0",
+    "typescript": "4.8.4"
   },
   "engines": {
     "node": ">=16"
