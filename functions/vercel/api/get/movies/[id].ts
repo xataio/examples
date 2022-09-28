@@ -13,7 +13,7 @@ async function handler(request: VercelRequest, res: VercelResponse) {
 
   const xata = getXataClient()
 
-  res.json((await xata.db.movies.filter({ id }).getFirst()) ?? {})
+  res.send(await xata.db.movies.filter({ id }).getFirst())
 }
 
 export default withErrorHandler(handler)

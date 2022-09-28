@@ -1,11 +1,18 @@
-import type { VercelApiHandler } from '@vercel/node'
+import type {
+  VercelApiHandler,
+  VercelRequest,
+  VercelResponse,
+} from '@vercel/node'
 
-export function withErrorHandler(handler: VercelApiHandler): VercelApiHandler {
+type AsyncApiHandler = (
+  req: VercelRequest,
+  res: VercelResponse
+) => Promise<void>
+
+export function withErrorHandler(handler: AsyncApiHandler): VercelApiHandler {
   return async (req, res) => {
     try {
-      handler(req, res)
-
-      return
+      await handler(req, res)
     } catch (err) {
       if ('status' in err) {
         res.status(err.status).json({ message: err.message })
