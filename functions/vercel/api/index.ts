@@ -17,4 +17,6 @@ export default async function handler(
     </div>
     </body>`
   )
+
+  return
 }
