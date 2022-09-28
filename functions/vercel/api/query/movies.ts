@@ -34,11 +34,7 @@ export default async function handler(
     return
   } else if (hasFilter) {
     response.json(await xata.db.movies.filter(filter).getAll())
-
-    return
   } else {
     response.json(await xata.db.movies.getAll())
-
-    return
   }
 }

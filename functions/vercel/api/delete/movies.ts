@@ -23,8 +23,6 @@ async function handler(req: VercelRequest, res: VercelResponse) {
   res.json({
     message: '🎉 Great success! Record deleted',
   })
-
-  return
 }
 
 export default withErrorHandler(handler)

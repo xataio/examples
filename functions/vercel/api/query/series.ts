@@ -33,15 +33,9 @@ export default async function handler(
     response.json(
       await xata.db.series.sort(sort.column, sort.direction).getAll()
     )
-
-    return
   } else if (hasFilter) {
     response.json(await xata.db.series.filter(filter).getAll())
-
-    return
   } else {
     response.json(await xata.db.series.getAll())
-
-    return
   }
 }
