@@ -10,19 +10,12 @@ export default async function handler(
   const id = String(request.query.id ?? '') // example: 'rec_cci5p8miqtgok3idj8b0'
 
   if (request.method !== 'GET') {
-    response.status(405).end('Only `GET` requests')
-
-    return
+    throw {
+      status: 405,
+      message: 'Only `GET` requests',
+    }
   }
 
   const xata = getXataClient()
-  try {
-    response.json(await xata.db.series.filter({ id }).getFirst())
-
-    return
-  } catch (error) {
-    response.status(400).json(error)
-
-    return
-  }
+  response.json(await xata.db.series.filter({ id }).getFirst())
 }

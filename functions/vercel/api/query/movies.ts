@@ -13,34 +13,31 @@ export default async function handler(
   const hasSort = !!sort
 
   if (request.method !== 'POST') {
-    response.status(405).end('Only `POST` requests')
+    throw {
+      status: 405,
+      message: 'Only `POST` requests',
+    }
   }
 
-  try {
-    if (hasFilter && hasSort) {
-      response.json(
-        await xata.db.movies
-          .filter(filter)
-          .sort(sort.column, sort.direction)
-          .getAll()
-      )
-    } else if (hasSort) {
-      response.json(
-        await xata.db.movies.sort(sort.column, sort.direction).getAll()
-      )
+  if (hasFilter && hasSort) {
+    response.json(
+      await xata.db.movies
+        .filter(filter)
+        .sort(sort.column, sort.direction)
+        .getAll()
+    )
+  } else if (hasSort) {
+    response.json(
+      await xata.db.movies.sort(sort.column, sort.direction).getAll()
+    )
 
-      return
-    } else if (hasFilter) {
-      response.json(await xata.db.movies.filter(filter).getAll())
+    return
+  } else if (hasFilter) {
+    response.json(await xata.db.movies.filter(filter).getAll())
 
-      return
-    } else {
-      response.json(await xata.db.movies.getAll())
-
-      return
-    }
-  } catch (error) {
-    response.status(400).json(error)
+    return
+  } else {
+    response.json(await xata.db.movies.getAll())
 
     return
   }

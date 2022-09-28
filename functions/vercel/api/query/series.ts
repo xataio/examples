@@ -14,36 +14,33 @@ export default async function handler(
   const hasSort = !!sort
 
   if (request.method !== 'POST') {
-    response.status(405).end('Only `POST` requests')
+    throw {
+      status: 405,
+      message: 'Only `POST` requests',
+    }
   }
 
-  try {
-    if (hasFilter && hasSort) {
-      response.json(
-        await xata.db.series
-          .filter(filter)
-          .sort(sort.column, sort.direction)
-          .getAll()
-      )
+  if (hasFilter && hasSort) {
+    response.json(
+      await xata.db.series
+        .filter(filter)
+        .sort(sort.column, sort.direction)
+        .getAll()
+    )
 
-      return
-    } else if (hasSort) {
-      response.json(
-        await xata.db.series.sort(sort.column, sort.direction).getAll()
-      )
+    return
+  } else if (hasSort) {
+    response.json(
+      await xata.db.series.sort(sort.column, sort.direction).getAll()
+    )
 
-      return
-    } else if (hasFilter) {
-      response.json(await xata.db.series.filter(filter).getAll())
+    return
+  } else if (hasFilter) {
+    response.json(await xata.db.series.filter(filter).getAll())
 
-      return
-    } else {
-      response.json(await xata.db.series.getAll())
-
-      return
-    }
-  } catch (error) {
-    response.status(400).json(error)
+    return
+  } else {
+    response.json(await xata.db.series.getAll())
 
     return
   }
