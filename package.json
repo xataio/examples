@@ -14,7 +14,7 @@
     "bump": "changeset version"
   },
   "devDependencies": {
-    "@changesets/cli": "2.24.4",
+    "@changesets/cli": "2.25.0",
     "@types/node": "16.11.62",
     "prettier": "2.7.1",
     "turbo": "1.5.4",
