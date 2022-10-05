@@ -11,7 +11,7 @@
     "xata": "xata codegen"
   },
   "dependencies": {
-    "@netlify/functions": "1.2.0",
+    "@netlify/functions": "1.3.0",
     "@remix-run/netlify": "1.7.2",
     "@remix-run/node": "1.7.2",
     "@remix-run/react": "1.7.2",
