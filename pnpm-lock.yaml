@@ -82,16 +82,16 @@ importers:
 
   functions/vercel:
     specifiers:
-      '@vercel/node': ^2.5.14
+      '@vercel/node': 2.5.22
       '@xata.io/cli': 0.8.1
-      '@xata.io/client': ^0.16.1
-      isomorphic-fetch: ^3.0.0
-      typescript: ^4.8.3
+      '@xata.io/client': 0.16.2
+      isomorphic-fetch: 3.0.0
+      typescript: 4.8.4
     dependencies:
-      '@xata.io/client': 0.16.1_typescript@4.8.4
+      '@xata.io/client': 0.16.2_typescript@4.8.4
       isomorphic-fetch: 3.0.0
     devDependencies:
-      '@vercel/node': 2.5.20
+      '@vercel/node': 2.5.22
       '@xata.io/cli': 0.8.1_typescript@4.8.4
       typescript: 4.8.4
 
@@ -1875,14 +1875,14 @@ packages:
     resolution: {integrity: sha512-t34oTdZOqYSiguCGnt9GYzh9mrnhCHNRPGDvxt5PB5T3LZpSVk+vfSXRqpvTxy51sxQpxvTZry8QLC+E+Fm67w==}
     dev: true
 
-  /@edge-runtime/primitives/1.1.0-beta.34:
-    resolution: {integrity: sha512-gFubu4qIqg1k6sOM2Ho/txFUE/vZCn057wGiY0NIQ8h6tySiUO5FULCaebPrp+Yfxb3ZCWqDLeWanQGFB3TYQQ==}
+  /@edge-runtime/primitives/1.1.0-beta.36:
+    resolution: {integrity: sha512-Tji7SGWmn1+JGSnzFtWUoS7+kODIFprTyIAw0EBOVWEQKWfs7r0aTEm1XkJR0+d1jP9f0GB5LBKG/Z7KFyhx7g==}
     dev: true
 
-  /@edge-runtime/vm/1.1.0-beta.32:
-    resolution: {integrity: sha512-G0SH80am2XjlK6oFI3RoKlg1SBS5ZAeqakYasfNhJEXqM7g7tsoh5jURMQcNxpLvo48XBTgHgAVEMzhAGgDPZg==}
+  /@edge-runtime/vm/1.1.0-beta.36:
+    resolution: {integrity: sha512-uPZmL7X+lKBFJsTg8nC0qPDBx4JGgpRqlgJi2s77g2NOtqitQOI90BfIKHZSSoMQEwTqfvAkpu2ui8nazOwHxA==}
     dependencies:
-      '@edge-runtime/primitives': 1.1.0-beta.34
+      '@edge-runtime/primitives': 1.1.0-beta.36
     dev: true
 
   /@esbuild-plugins/node-modules-polyfill/0.1.4_esbuild@0.14.51:
@@ -2861,23 +2861,23 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vercel/build-utils/5.5.2:
-    resolution: {integrity: sha512-v78d348AhyZRMc3i4mOuILLnRCWaE1joAiYBlZMbVVkpALob7tvTdiaDHPmq5o+Ka6g14QdlKaoiaMqPF7oESQ==}
+  /@vercel/build-utils/5.5.4:
+    resolution: {integrity: sha512-urAVFyrH6NTznN8bG1S4KHMpMwEaRXMRMeUXuMZXdGiznB83pACZ/5xpSzaLTIKrOrdYWVUrGcFjhLDMVRqCWQ==}
     dev: true
 
   /@vercel/node-bridge/3.0.0:
     resolution: {integrity: sha512-TNQK6cufwrhd8ASDk5YHHenH8Xhp9sY8xUjOTKnQQI37KLk+Sw2HlHhT5rzUFN23ahosUlkY8InwtYUmSNb9kw==}
     dev: true
 
-  /@vercel/node/2.5.20:
-    resolution: {integrity: sha512-sK6VUPZyA+EJxDmhw0rq39NHGHs0Vx5Ob/4azK9StCZYeQgGyUi4d/7eRXGQs4nIL94oji9MVj1pMj3dlVDbsQ==}
+  /@vercel/node/2.5.22:
+    resolution: {integrity: sha512-phlgW4qHGEt/yQ/nbGCd3vrFM0n48/MBbvmAKgTeVE/mjzdWxPnuSHNQlaipJkzfT3tv8kiiJu9ZoicuDoACTw==}
     dependencies:
-      '@edge-runtime/vm': 1.1.0-beta.32
+      '@edge-runtime/vm': 1.1.0-beta.36
       '@types/node': 18.7.5
-      '@vercel/build-utils': 5.5.2
+      '@vercel/build-utils': 5.5.4
       '@vercel/node-bridge': 3.0.0
       '@vercel/static-config': 2.0.3
-      edge-runtime: 1.1.0-beta.32
+      edge-runtime: 1.1.0-beta.37
       esbuild: 0.14.47
       exit-hook: 2.2.1
       node-fetch: 2.6.7
@@ -2937,14 +2937,6 @@ packages:
       - supports-color
       - typescript
     dev: true
-
-  /@xata.io/client/0.16.1_typescript@4.8.4:
-    resolution: {integrity: sha512-AvGDK/SZXSXlguUu/Ac/OWkQQpsaWikGDh7qJgs+Y0c6jaf0vmiBVrAC8BbvfdXZ3ZifyU1Z3cAaqD88Sd/nGA==}
-    peerDependencies:
-      typescript: '>=4.5'
-    dependencies:
-      typescript: 4.8.4
-    dev: false
 
   /@xata.io/client/0.16.2_typescript@4.8.4:
     resolution: {integrity: sha512-jVbm0Y7sgrtq3WYENrMe5A3Jw+GIKWrpY6uYFBgFGdGWFyI/OOJq6jApZPr13T37N2QhmcBx4Mm1AQE0pKwaTQ==}
@@ -4175,14 +4167,14 @@ packages:
       stream-shift: 1.0.1
     dev: true
 
-  /edge-runtime/1.1.0-beta.32:
-    resolution: {integrity: sha512-fbqqUF3OKynqtWgExhjyxXX2SwbkWuwmjUYhml3Sv8Y/vkrTxyTKrxS0MoxUy5sGPB3BBEtpopn36cQgwlOpAg==}
+  /edge-runtime/1.1.0-beta.37:
+    resolution: {integrity: sha512-IP0xYNmp0XXoXVnrAf/e67224ZkMUUBMyUUohVxWWI5XdyetIGRNWp3GifDy3LpbuE02yv42rgtoE+tm+whcLA==}
     hasBin: true
     dependencies:
       '@edge-runtime/format': 1.1.0-beta.33
-      '@edge-runtime/vm': 1.1.0-beta.32
+      '@edge-runtime/vm': 1.1.0-beta.36
       exit-hook: 2.2.1
-      http-status: 1.5.2
+      http-status: 1.5.3
       mri: 1.2.0
       picocolors: 1.0.0
       pretty-bytes: 5.6.0
@@ -5956,8 +5948,8 @@ packages:
       toidentifier: 1.0.1
     dev: true
 
-  /http-status/1.5.2:
-    resolution: {integrity: sha512-HzxX+/hV/8US1Gq4V6R6PgUmJ5Pt/DGATs4QhdEOpG8LrdS9/3UG2nnOvkqUpRks04yjVtV5p/NODjO+wvf6vg==}
+  /http-status/1.5.3:
+    resolution: {integrity: sha512-jCClqdnnwigYslmtfb28vPplOgoiZ0siP2Z8C5Ua+3UKbx410v+c+jT+jh1bbI4TvcEySuX0vd/CfFZFbDkJeQ==}
     engines: {node: '>= 0.4.0'}
     dev: true
 
