@@ -22,7 +22,7 @@ importers:
       '@types/react': 18.0.21
       '@types/react-dom': 18.0.6
       '@xata.io/cli': 0.8.1
-      '@xata.io/client': 0.16.2
+      '@xata.io/client': 0.18.6
       eslint: 8.24.0
       eslint-config-next: 12.3.1
       next: 12.3.1
@@ -30,7 +30,7 @@ importers:
       react-dom: 18.2.0
       typescript: 4.8.4
     dependencies:
-      '@xata.io/client': 0.16.2_typescript@4.8.4
+      '@xata.io/client': 0.18.6_typescript@4.8.4
       next: 12.3.1_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -55,7 +55,7 @@ importers:
       '@types/react': 18.0.21
       '@types/react-dom': 18.0.6
       '@xata.io/cli': 0.8.1
-      '@xata.io/client': 0.16.2
+      '@xata.io/client': 0.18.6
       cross-env: 7.0.3
       eslint: 8.24.0
       react: 18.2.0
@@ -66,7 +66,7 @@ importers:
       '@remix-run/netlify': 1.7.2_k3dgfduz27oyogwsxz2kkfhzwa
       '@remix-run/node': 1.7.2_biqbaboplfbrettd7655fr4n2y
       '@remix-run/react': 1.7.2_biqbaboplfbrettd7655fr4n2y
-      '@xata.io/client': 0.16.2_typescript@4.8.4
+      '@xata.io/client': 0.18.6_typescript@4.8.4
       cross-env: 7.0.3
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -84,11 +84,11 @@ importers:
     specifiers:
       '@vercel/node': 2.5.22
       '@xata.io/cli': 0.8.1
-      '@xata.io/client': 0.16.2
+      '@xata.io/client': 0.18.6
       isomorphic-fetch: 3.0.0
       typescript: 4.8.4
     dependencies:
-      '@xata.io/client': 0.16.2_typescript@4.8.4
+      '@xata.io/client': 0.18.6_typescript@4.8.4
       isomorphic-fetch: 3.0.0
     devDependencies:
       '@vercel/node': 2.5.22
@@ -2944,6 +2944,15 @@ packages:
       typescript: '>=4.5'
     dependencies:
       typescript: 4.8.4
+    dev: true
+
+  /@xata.io/client/0.18.6_typescript@4.8.4:
+    resolution: {integrity: sha512-y5vZMsbOeNPw8QK4E05bLVW9XTXDA1mefBS+AwA/9I+dQB3FerHIHIecLcO11+5QDfVe2bOKGNZeyVVwl0MhiA==}
+    peerDependencies:
+      typescript: '>=4.5'
+    dependencies:
+      typescript: 4.8.4
+    dev: false
 
   /@xata.io/codegen/0.15.0:
     resolution: {integrity: sha512-lqbQ8IMQCYRWOc2i7U1hFi+aASp2wmf5Th1WuJGNe/dAb56NVo3i3iTz4uDaGR4SqTsat9ky29Q6A8dVafvIbA==}
