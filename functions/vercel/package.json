@@ -10,7 +10,7 @@
     "postinstall": "npx @xata.io/cli codegen --db=\"https://xata_examples-hf8grf.xata.sh/db/marvel\" -b=\"main\" -o=\"_lib/xata.codegen.ts\""
   },
   "devDependencies": {
-    "@vercel/node": "2.5.24",
+    "@vercel/node": "2.5.25",
     "@xata.io/cli": "0.9.6",
     "typescript": "4.8.4"
   },
