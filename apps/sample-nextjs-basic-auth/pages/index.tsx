@@ -1,15 +1,15 @@
-import {
-  type InferGetServerSidePropsType,
-  GetServerSidePropsContext,
-} from 'next'
+import { type GetServerSidePropsContext } from 'next'
+import { type FC } from 'react'
 import Head from 'next/head'
 import { AddTodoForm } from '../components/add-todo-form'
 import { authorize } from '../util/authorize'
 import { getXataClient } from '../util/xata'
 
-const Index = ({
-  todos,
-}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
+type Props = NonNullable<
+  Awaited<ReturnType<typeof getServerSideProps>>['props']
+>
+
+const Index: FC<Props> = ({ todos }) => {
   return (
     <main>
       <Head>
@@ -18,9 +18,9 @@ const Index = ({
       <h1>My Todo List</h1>
       <AddTodoForm />
       <ul>
-        {todos.map((t) => (
+        {todos.map(({ label, id, is_done }) => (
           <li
-            key={t.id}
+            key={id}
             style={{ display: 'flex', gap: 8, alignItems: 'center' }}
           >
             <>
@@ -33,15 +33,15 @@ const Index = ({
                         'Content-Type': 'application/json',
                       },
                       body: JSON.stringify({
-                        id: t.id,
-                        is_done: !t.is_done,
+                        id: id,
+                        is_done: !is_done,
                       }),
                     }).then(() => window.location.reload())
                   }}
-                  checked={t.is_done}
+                  checked={Boolean(is_done)}
                   type="checkbox"
                 />
-                {t.label}
+                {label}
               </label>
               <button
                 onClick={() => {
@@ -51,7 +51,7 @@ const Index = ({
                       'Content-Type': 'application/json',
                     },
                     body: JSON.stringify({
-                      id: t.id,
+                      id: id,
                     }),
                   }).then(() => window.location.reload())
                 }}
@@ -76,8 +76,8 @@ export const getServerSideProps = async ({
 
   if (isAuthenticated && username) {
     const xata = getXataClient()
+
     const todos = await xata.db.items
-      // to-do items are now filtered to the current authenticated user
       .filter('user.username', username)
       .getMany()
 

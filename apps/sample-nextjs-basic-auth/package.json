@@ -1,6 +1,6 @@
 {
-  "name": "starter-nextjs-basic-auth",
-  "version": "0.1.0",
+  "name": "sample-nextjs-basic-auth",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -21,8 +21,6 @@
     "@types/node": "16.11.66",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
-    "@xata.io/cli": "0.9.6",
-    "esbuild": "^0.15.11",
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",
     "typescript": "4.8.4"

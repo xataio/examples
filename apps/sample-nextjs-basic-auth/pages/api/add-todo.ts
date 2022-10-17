@@ -9,9 +9,20 @@ const handler: NextApiHandler = async (req, res) => {
     return
   }
 
-  const { id } = req.body
-  await getXataClient().db.items.delete(id)
+  const { label } = req.body
+  const xata = getXataClient()
+  const user = await xata.db.users.filter({ username }).getFirst()
+
+  if (!user) {
+    res.status(400).json({ message: 'Could not find user' })
+    return
+  }
+
+  await xata.db.items.create({ label, user: { id: user.id } })
+
   res.end()
+
+  return
 }
 
 export default handler

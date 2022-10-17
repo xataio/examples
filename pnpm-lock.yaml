@@ -39,16 +39,14 @@ importers:
       eslint-config-next: 12.3.1_z4bbprzjrhnsfa24uvmcbu7f5q
       typescript: 4.8.4
 
-  apps/starter-nextjs-basic-auth:
+  apps/sample-nextjs-basic-auth:
     specifiers:
       '@types/bcrypt': ^5.0.0
       '@types/node': 16.11.66
       '@types/react': 18.0.21
       '@types/react-dom': 18.0.6
-      '@xata.io/cli': 0.9.6
       '@xata.io/client': 0.18.6
       bcrypt: ^5.1.0
-      esbuild: ^0.15.11
       eslint: 8.25.0
       eslint-config-next: 12.3.1
       next: 12.3.1
@@ -66,8 +64,6 @@ importers:
       '@types/node': 16.11.66
       '@types/react': 18.0.21
       '@types/react-dom': 18.0.6
-      '@xata.io/cli': 0.9.6_nnbpzklnvzasauoobdec73b3wi
-      esbuild: 0.15.11
       eslint: 8.25.0
       eslint-config-next: 12.3.1_z4bbprzjrhnsfa24uvmcbu7f5q
       typescript: 4.8.4

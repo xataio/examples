@@ -35,7 +35,7 @@ export const authorize = async (
   }
 
   // user exists, we have the password
-  const passwordsMatch = compare(password, user.password)
+  const passwordsMatch = compare(password, user.password as string)
 
   if (!passwordsMatch) {
     return { isAuthenticated: false, username }
