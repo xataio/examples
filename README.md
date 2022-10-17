@@ -2,17 +2,22 @@
 
 # Xata Examples
 
-Our lab for Proof-of-Concepts, tooling, and example cases.
-Your one-stop-shop to get your project up and running in minutes.
+Our lab for Proof-of-Concepts, tooling, samples, and starters.
 
-## Structure 🏗
+## Apps 🏗
 
-- `apps/`: POCs (proof-of-concept) and Templates to be installed and built on top of.
-- `packages/` : resources we publish to the NPM Registry to be consumed by other projects.
-- `functions/`: the BFF (Backend For Frontend) example deployments. To serve as a security layer and provide connection to your Xata Database.
-- `providers/`: vanilla example deployments every serverless provider
-- `schemas/` : "headless schemas" for the most common data-structures to be copied and pushed from anywhere.
-- `tools/`: the utilities we use to maintain this monorepo
+- **starter**
+
+  - Prefix: `starter-`
+  - Framework / Architecture Integrations
+  - Minimal Dependencies
+  - Ready to Use
+
+- **samples**
+  - Prefix: `starter-`
+  - Real-World Integrations
+  - Production-Grade Solutions
+  - Reverse Engineering / Strategy Insights
 
 ## Get and Offer Help ❓
 
