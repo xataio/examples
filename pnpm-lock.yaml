@@ -5,13 +5,13 @@ importers:
   .:
     specifiers:
       '@changesets/cli': 2.25.0
-      '@types/node': 16.11.66
+      '@types/node': 16.11.68
       prettier: 2.7.1
       turbo: 1.5.6
       typescript: 4.8.4
     devDependencies:
       '@changesets/cli': 2.25.0
-      '@types/node': 16.11.66
+      '@types/node': 16.11.68
       prettier: 2.7.1
       turbo: 1.5.6
       typescript: 4.8.4
@@ -2506,8 +2506,8 @@ packages:
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
     dev: true
 
-  /@types/node/16.11.66:
-    resolution: {integrity: sha512-+xvMrGl3eAygKcf5jm+4zA4tbfEgmKM9o6/glTmN0RFVdu2VuFXMYYtRmuv3zTGCgAYMnEZLde3B7BTp+Yxcig==}
+  /@types/node/16.11.68:
+    resolution: {integrity: sha512-JkRpuVz3xCNCWaeQ5EHLR/6woMbHZz/jZ7Kmc63AkU+1HxnoUugzSWMck7dsR4DvNYX8jp9wTi9K7WvnxOIQZQ==}
     dev: true
 
   /@types/node/18.7.5:
