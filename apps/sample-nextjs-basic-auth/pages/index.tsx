@@ -1,6 +1,5 @@
 import { type GetServerSidePropsContext } from 'next'
 import { type FC } from 'react'
-import Head from 'next/head'
 import { AddTodoForm } from '../components/add-todo-form'
 import { authorize } from '../util/authorize'
 import { getXataClient } from '../util/xata'
@@ -12,9 +11,6 @@ type Props = NonNullable<
 const Index: FC<Props> = ({ todos }) => {
   return (
     <main>
-      <Head>
-        <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
-      </Head>
       <h1>My Todo List</h1>
       <AddTodoForm />
       <ul>
@@ -90,6 +86,8 @@ export const getServerSideProps = async ({
     res.writeHead(401, {
       'WWW-Authenticate': "Basic realm='This is a private to-do list'",
     })
-    return { redirect: { destination: '/', permanent: false } }
+
+    res.end()
+    return {}
   }
 }
