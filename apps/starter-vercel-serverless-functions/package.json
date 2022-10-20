@@ -1,5 +1,5 @@
 {
-  "name": "vercel-functions",
+  "name": "starter-vercel-serverless-functions",
   "description": "Xata + Vercel Serverless Functions and Edge Functions example",
   "version": "0.0.0",
   "license": "MIT",

@@ -1,0 +1,38 @@
+{
+  "formatVersion": "",
+  "tables": [
+    {
+      "name": "users",
+      "columns": [
+        {
+          "name": "username",
+          "type": "string"
+        },
+        {
+          "name": "password",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "items",
+      "columns": [
+        {
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "name": "is_done",
+          "type": "bool"
+        },
+        {
+          "name": "user",
+          "type": "link",
+          "link": {
+            "table": "users"
+          }
+        }
+      ]
+    }
+  ]
+}
