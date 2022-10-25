@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@xata.io/client": "^0.19.1",
     "next": "13.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -19,6 +20,7 @@
     "@types/react-dom": "18.0.6",
     "eslint": "8.25.0",
     "eslint-config-next": "13.0.0",
+    "prettier": "2.7.1",
     "typescript": "4.8.4"
   }
 }

@@ -1,0 +1,17 @@
+.footer {
+  padding: 1rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #eaeaea;
+}
+
+.logo {
+  height: 1em;
+  margin: 0.5rem;
+}

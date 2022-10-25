@@ -21,13 +21,16 @@ importers:
       '@types/node': 18.11.5
       '@types/react': 18.0.21
       '@types/react-dom': 18.0.6
+      '@xata.io/client': ^0.19.1
       eslint: 8.25.0
       eslint-config-next: 13.0.0
       next: 13.0.0
+      prettier: 2.7.1
       react: 18.2.0
       react-dom: 18.2.0
       typescript: 4.8.4
     dependencies:
+      '@xata.io/client': 0.19.1_typescript@4.8.4
       next: 13.0.0_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -37,6 +40,7 @@ importers:
       '@types/react-dom': 18.0.6
       eslint: 8.25.0
       eslint-config-next: 13.0.0_z4bbprzjrhnsfa24uvmcbu7f5q
+      prettier: 2.7.1
       typescript: 4.8.4
 
   apps/nextjs-basic-auth:
@@ -3252,6 +3256,14 @@ packages:
       typescript: '>=4.5'
     dependencies:
       typescript: 4.8.4
+
+  /@xata.io/client/0.19.1_typescript@4.8.4:
+    resolution: {integrity: sha512-p+MTMk+ZMpS3C8BMxpNUz0YB2/fVrLk8V1ZwJ1JfQ41SVCmxDw0wVGyO8YZ2hDq0cTjnR1gZuBExhTGdOh4OWA==}
+    peerDependencies:
+      typescript: '>=4.5'
+    dependencies:
+      typescript: 4.8.4
+    dev: false
 
   /@xata.io/codegen/0.18.0:
     resolution: {integrity: sha512-QD+ptQ1dDTBncdM9RIATLJZ1HPF0/lamKXka0BEx2EufHdUh88Vf/rEVjgxM+oq0Ug1jUcL9hvPQ5TbWt/9EcA==}
