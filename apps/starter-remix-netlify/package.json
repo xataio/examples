@@ -24,7 +24,7 @@
     "@remix-run/dev": "1.7.3",
     "@remix-run/eslint-config": "1.7.3",
     "@remix-run/serve": "1.7.3",
-    "@types/react": "18.0.21",
+    "@types/react": "18.0.23",
     "@types/react-dom": "18.0.6",
     "@xata.io/cli": "0.9.6",
     "esbuild": "^0.15.11",
