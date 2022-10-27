@@ -20,7 +20,7 @@ importers:
     specifiers:
       '@types/node': 16.18.2
       '@types/react': 18.0.24
-      '@types/react-dom': 18.0.7
+      '@types/react-dom': 18.0.8
       eslint: 8.26.0
       eslint-config-next: 13.0.0
       next: 13.0.0
@@ -34,7 +34,7 @@ importers:
     devDependencies:
       '@types/node': 16.18.2
       '@types/react': 18.0.24
-      '@types/react-dom': 18.0.7
+      '@types/react-dom': 18.0.8
       eslint: 8.26.0
       eslint-config-next: 13.0.0_wyqvi574yv7oiwfeinomdzmc3m
       typescript: 4.8.4
@@ -44,7 +44,7 @@ importers:
       '@types/bcrypt': ^5.0.0
       '@types/node': 16.18.2
       '@types/react': 18.0.24
-      '@types/react-dom': 18.0.7
+      '@types/react-dom': 18.0.8
       '@xata.io/client': 0.19.1
       bcrypt: ^5.1.0
       eslint: 8.26.0
@@ -63,7 +63,7 @@ importers:
       '@types/bcrypt': 5.0.0
       '@types/node': 16.18.2
       '@types/react': 18.0.24
-      '@types/react-dom': 18.0.7
+      '@types/react-dom': 18.0.8
       eslint: 8.26.0
       eslint-config-next: 13.0.0_wyqvi574yv7oiwfeinomdzmc3m
       typescript: 4.8.4
@@ -78,7 +78,7 @@ importers:
       '@remix-run/react': 1.7.3
       '@remix-run/serve': 1.7.3
       '@types/react': 18.0.24
-      '@types/react-dom': 18.0.7
+      '@types/react-dom': 18.0.8
       '@xata.io/cli': 0.10.0
       '@xata.io/client': 0.19.1
       cross-env: 7.0.3
@@ -101,7 +101,7 @@ importers:
       '@remix-run/eslint-config': 1.7.3_lepdvhpfl4ktcue7v6mt34wuv4
       '@remix-run/serve': 1.7.3_biqbaboplfbrettd7655fr4n2y
       '@types/react': 18.0.24
-      '@types/react-dom': 18.0.7
+      '@types/react-dom': 18.0.8
       '@xata.io/cli': 0.10.0_nnbpzklnvzasauoobdec73b3wi
       esbuild: 0.15.11
       eslint: 8.26.0
@@ -2754,8 +2754,8 @@ packages:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
     dev: true
 
-  /@types/react-dom/18.0.7:
-    resolution: {integrity: sha512-HaXc+BbqAZE1RdsK3tC8SbkFy6UL2xF76lT9rQs5JkPrJg3rWA3Ou/Lhw3YJQzEDkBpmJ79nBsfnd05WrBd2QQ==}
+  /@types/react-dom/18.0.8:
+    resolution: {integrity: sha512-C3GYO0HLaOkk9dDAz3Dl4sbe4AKUGTCfFIZsz3n/82dPNN8Du533HzKatDxeUYWu24wJgMP1xICqkWk1YOLOIw==}
     dependencies:
       '@types/react': 18.0.24
     dev: true
