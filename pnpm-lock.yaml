@@ -79,7 +79,7 @@ importers:
       '@remix-run/serve': 1.7.3
       '@types/react': 18.0.23
       '@types/react-dom': 18.0.6
-      '@xata.io/cli': 0.9.6
+      '@xata.io/cli': 0.10.0
       '@xata.io/client': 0.18.6
       cross-env: 7.0.3
       esbuild: ^0.15.11
@@ -102,7 +102,7 @@ importers:
       '@remix-run/serve': 1.7.3_biqbaboplfbrettd7655fr4n2y
       '@types/react': 18.0.23
       '@types/react-dom': 18.0.6
-      '@xata.io/cli': 0.9.6_nnbpzklnvzasauoobdec73b3wi
+      '@xata.io/cli': 0.10.0_nnbpzklnvzasauoobdec73b3wi
       esbuild: 0.15.11
       eslint: 8.25.0
       typescript: 4.8.4
@@ -110,7 +110,7 @@ importers:
   apps/starter-vercel-serverless-functions:
     specifiers:
       '@vercel/node': 2.5.26
-      '@xata.io/cli': 0.9.6
+      '@xata.io/cli': 0.10.0
       '@xata.io/client': 0.18.6
       isomorphic-fetch: 3.0.0
       typescript: 4.8.4
@@ -119,7 +119,7 @@ importers:
       isomorphic-fetch: 3.0.0
     devDependencies:
       '@vercel/node': 2.5.26
-      '@xata.io/cli': 0.9.6_typescript@4.8.4
+      '@xata.io/cli': 0.10.0_typescript@4.8.4
       typescript: 4.8.4
 
 packages:
@@ -1630,26 +1630,12 @@ packages:
       prettier: 2.7.1
     dev: true
 
-  /@edge-runtime/format/1.1.0-beta.33:
-    resolution: {integrity: sha512-t34oTdZOqYSiguCGnt9GYzh9mrnhCHNRPGDvxt5PB5T3LZpSVk+vfSXRqpvTxy51sxQpxvTZry8QLC+E+Fm67w==}
-    dev: true
-
   /@edge-runtime/format/1.1.0-beta.34:
     resolution: {integrity: sha512-AdV7FlpBDDiwdPxmrCmq2ICMxzJr3Zoq/bUuIMC09jEmx8fpIAepAABVTEqr+X/6vhIiD2ermIog8qvAG4RZMg==}
     dev: true
 
-  /@edge-runtime/primitives/1.1.0-beta.36:
-    resolution: {integrity: sha512-Tji7SGWmn1+JGSnzFtWUoS7+kODIFprTyIAw0EBOVWEQKWfs7r0aTEm1XkJR0+d1jP9f0GB5LBKG/Z7KFyhx7g==}
-    dev: true
-
   /@edge-runtime/primitives/1.1.0-beta.37:
     resolution: {integrity: sha512-S3aN8X6wXhM7CJI3FRF480CMNkw4mH6grMV/enQz8VWGrvD1U5njQNRh/Zymoe0RHzEI/aIDjSk3V49h+ULt9g==}
-    dev: true
-
-  /@edge-runtime/vm/1.1.0-beta.36:
-    resolution: {integrity: sha512-uPZmL7X+lKBFJsTg8nC0qPDBx4JGgpRqlgJi2s77g2NOtqitQOI90BfIKHZSSoMQEwTqfvAkpu2ui8nazOwHxA==}
-    dependencies:
-      '@edge-runtime/primitives': 1.1.0-beta.36
     dev: true
 
   /@edge-runtime/vm/1.1.0-beta.37:
@@ -2977,8 +2963,8 @@ packages:
   /@web3-storage/multipart-parser/1.0.0:
     resolution: {integrity: sha512-BEO6al7BYqcnfX15W2cnGR+Q566ACXAT9UQykORCWW80lmkpWsnEob6zJS1ZVBKsSJC8+7vJkHwlp+lXG1UCdw==}
 
-  /@xata.io/cli/0.9.6_nnbpzklnvzasauoobdec73b3wi:
-    resolution: {integrity: sha512-K6MvekKLScB8YgoQEumSb/UoZLwaWI616VjxPYdN0x7bIC0yB+JVUX2jeYeEf8B0ANtYuxFF+g7bz35ZjAce9g==}
+  /@xata.io/cli/0.10.0_nnbpzklnvzasauoobdec73b3wi:
+    resolution: {integrity: sha512-odgYnBjRdC6fBeYRfyfD6TXc+Q3k9T80k2dD5lZDvw1YRGDrAFqBmtbYGhuccvw2F5/Do/zDN5hX83YuACo5yA==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
@@ -2996,9 +2982,9 @@ packages:
       '@rollup/plugin-virtual': 2.1.0_rollup@2.79.1
       '@types/ini': 1.3.31
       '@types/prompts': 2.4.1
-      '@xata.io/client': 0.18.6_typescript@4.8.4
+      '@xata.io/client': 0.19.0_typescript@4.8.4
       '@xata.io/codegen': 0.18.0
-      '@xata.io/importer': 0.2.9_typescript@4.8.4
+      '@xata.io/importer': 0.3.0_typescript@4.8.4
       ansi-regex: 6.0.1
       babel-plugin-module-extension-resolver: 1.0.0-rc.2
       chalk: 5.1.2
@@ -3007,7 +2993,7 @@ packages:
       deepmerge: 4.2.2
       dotenv: 16.0.3
       dotenv-expand: 9.0.0
-      edge-runtime: 1.1.0-beta.38
+      edge-runtime: 1.1.0-beta.40
       enquirer: 2.3.6
       env-editor: 1.1.0
       ini: 3.0.1
@@ -3038,8 +3024,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@xata.io/cli/0.9.6_typescript@4.8.4:
-    resolution: {integrity: sha512-K6MvekKLScB8YgoQEumSb/UoZLwaWI616VjxPYdN0x7bIC0yB+JVUX2jeYeEf8B0ANtYuxFF+g7bz35ZjAce9g==}
+  /@xata.io/cli/0.10.0_typescript@4.8.4:
+    resolution: {integrity: sha512-odgYnBjRdC6fBeYRfyfD6TXc+Q3k9T80k2dD5lZDvw1YRGDrAFqBmtbYGhuccvw2F5/Do/zDN5hX83YuACo5yA==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
@@ -3057,9 +3043,9 @@ packages:
       '@rollup/plugin-virtual': 2.1.0_rollup@2.79.1
       '@types/ini': 1.3.31
       '@types/prompts': 2.4.1
-      '@xata.io/client': 0.18.6_typescript@4.8.4
+      '@xata.io/client': 0.19.0_typescript@4.8.4
       '@xata.io/codegen': 0.18.0
-      '@xata.io/importer': 0.2.9_typescript@4.8.4
+      '@xata.io/importer': 0.3.0_typescript@4.8.4
       ansi-regex: 6.0.1
       babel-plugin-module-extension-resolver: 1.0.0-rc.2
       chalk: 5.1.2
@@ -3068,7 +3054,7 @@ packages:
       deepmerge: 4.2.2
       dotenv: 16.0.3
       dotenv-expand: 9.0.0
-      edge-runtime: 1.1.0-beta.38
+      edge-runtime: 1.1.0-beta.40
       enquirer: 2.3.6
       env-editor: 1.1.0
       ini: 3.0.1
@@ -3105,6 +3091,15 @@ packages:
       typescript: '>=4.5'
     dependencies:
       typescript: 4.8.4
+    dev: false
+
+  /@xata.io/client/0.19.0_typescript@4.8.4:
+    resolution: {integrity: sha512-llYDSKtM7rp8qJiFI/ppUiCVdpcGeRDeB+mlx1X46sRCfWg1DzZiF9DGbbPSExH9MeiTV57U1BMseBNozIGt3Q==}
+    peerDependencies:
+      typescript: '>=4.5'
+    dependencies:
+      typescript: 4.8.4
+    dev: true
 
   /@xata.io/codegen/0.18.0:
     resolution: {integrity: sha512-QD+ptQ1dDTBncdM9RIATLJZ1HPF0/lamKXka0BEx2EufHdUh88Vf/rEVjgxM+oq0Ug1jUcL9hvPQ5TbWt/9EcA==}
@@ -3115,10 +3110,10 @@ packages:
       zod: 3.19.1
     dev: true
 
-  /@xata.io/importer/0.2.9_typescript@4.8.4:
-    resolution: {integrity: sha512-qVzw/sxqqbobyJmKbuGphk4GEQPbhLtwaMoKPoNnpOiTJmdyiIV1LgUvhY6+C3YJUI3xnMt6pBY1pwIsGduQYw==}
+  /@xata.io/importer/0.3.0_typescript@4.8.4:
+    resolution: {integrity: sha512-ugr4nFxwiiAlJjAcPHEW6JPmxrUynj6WEBO6sB+X0eYdlrmkMfltf21+T5zLgpUeKbsCNb70jVMB5Zcb07EBkg==}
     dependencies:
-      '@xata.io/client': 0.18.6_typescript@4.8.4
+      '@xata.io/client': 0.19.0_typescript@4.8.4
       camelcase: 7.0.0
       csvtojson: 2.0.10
       transliteration: 2.3.5
@@ -4433,21 +4428,6 @@ packages:
       inherits: 2.0.4
       readable-stream: 2.3.7
       stream-shift: 1.0.1
-    dev: true
-
-  /edge-runtime/1.1.0-beta.38:
-    resolution: {integrity: sha512-MY6/XcnGGuvLmwAR6PQizjhW/ABjVnmpJQmhJRacmo7K7LhuevszrPFVf0GmwVrr9PUahrvgmZYydQLSTpS5AA==}
-    hasBin: true
-    dependencies:
-      '@edge-runtime/format': 1.1.0-beta.33
-      '@edge-runtime/vm': 1.1.0-beta.36
-      exit-hook: 2.2.1
-      http-status: 1.5.3
-      mri: 1.2.0
-      picocolors: 1.0.0
-      pretty-bytes: 5.6.0
-      pretty-ms: 7.0.1
-      time-span: 4.0.0
     dev: true
 
   /edge-runtime/1.1.0-beta.40:
