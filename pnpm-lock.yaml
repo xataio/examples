@@ -45,7 +45,7 @@ importers:
       '@types/node': 16.18.2
       '@types/react': 18.0.23
       '@types/react-dom': 18.0.7
-      '@xata.io/client': 0.18.6
+      '@xata.io/client': 0.19.1
       bcrypt: ^5.1.0
       eslint: 8.26.0
       eslint-config-next: 12.3.1
@@ -54,7 +54,7 @@ importers:
       react-dom: 18.2.0
       typescript: 4.8.4
     dependencies:
-      '@xata.io/client': 0.18.6_typescript@4.8.4
+      '@xata.io/client': 0.19.1_typescript@4.8.4
       bcrypt: 5.1.0
       next: 12.3.1_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
@@ -80,7 +80,7 @@ importers:
       '@types/react': 18.0.23
       '@types/react-dom': 18.0.7
       '@xata.io/cli': 0.10.0
-      '@xata.io/client': 0.18.6
+      '@xata.io/client': 0.19.1
       cross-env: 7.0.3
       esbuild: ^0.15.11
       eslint: 8.26.0
@@ -92,7 +92,7 @@ importers:
       '@remix-run/netlify': 1.7.3_k3dgfduz27oyogwsxz2kkfhzwa
       '@remix-run/node': 1.7.3_biqbaboplfbrettd7655fr4n2y
       '@remix-run/react': 1.7.3_biqbaboplfbrettd7655fr4n2y
-      '@xata.io/client': 0.18.6_typescript@4.8.4
+      '@xata.io/client': 0.19.1_typescript@4.8.4
       cross-env: 7.0.3
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -111,11 +111,11 @@ importers:
     specifiers:
       '@vercel/node': 2.5.26
       '@xata.io/cli': 0.10.0
-      '@xata.io/client': 0.18.6
+      '@xata.io/client': 0.19.1
       isomorphic-fetch: 3.0.0
       typescript: 4.8.4
     dependencies:
-      '@xata.io/client': 0.18.6_typescript@4.8.4
+      '@xata.io/client': 0.19.1_typescript@4.8.4
       isomorphic-fetch: 3.0.0
     devDependencies:
       '@vercel/node': 2.5.26
@@ -2978,7 +2978,7 @@ packages:
       '@rollup/plugin-virtual': 2.1.0_rollup@2.79.1
       '@types/ini': 1.3.31
       '@types/prompts': 2.4.1
-      '@xata.io/client': 0.19.0_typescript@4.8.4
+      '@xata.io/client': 0.19.1_typescript@4.8.4
       '@xata.io/codegen': 0.18.0
       '@xata.io/importer': 0.3.0_typescript@4.8.4
       ansi-regex: 6.0.1
@@ -3039,7 +3039,7 @@ packages:
       '@rollup/plugin-virtual': 2.1.0_rollup@2.79.1
       '@types/ini': 1.3.31
       '@types/prompts': 2.4.1
-      '@xata.io/client': 0.19.0_typescript@4.8.4
+      '@xata.io/client': 0.19.1_typescript@4.8.4
       '@xata.io/codegen': 0.18.0
       '@xata.io/importer': 0.3.0_typescript@4.8.4
       ansi-regex: 6.0.1
@@ -3081,21 +3081,12 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@xata.io/client/0.18.6_typescript@4.8.4:
-    resolution: {integrity: sha512-y5vZMsbOeNPw8QK4E05bLVW9XTXDA1mefBS+AwA/9I+dQB3FerHIHIecLcO11+5QDfVe2bOKGNZeyVVwl0MhiA==}
+  /@xata.io/client/0.19.1_typescript@4.8.4:
+    resolution: {integrity: sha512-p+MTMk+ZMpS3C8BMxpNUz0YB2/fVrLk8V1ZwJ1JfQ41SVCmxDw0wVGyO8YZ2hDq0cTjnR1gZuBExhTGdOh4OWA==}
     peerDependencies:
       typescript: '>=4.5'
     dependencies:
       typescript: 4.8.4
-    dev: false
-
-  /@xata.io/client/0.19.0_typescript@4.8.4:
-    resolution: {integrity: sha512-llYDSKtM7rp8qJiFI/ppUiCVdpcGeRDeB+mlx1X46sRCfWg1DzZiF9DGbbPSExH9MeiTV57U1BMseBNozIGt3Q==}
-    peerDependencies:
-      typescript: '>=4.5'
-    dependencies:
-      typescript: 4.8.4
-    dev: true
 
   /@xata.io/codegen/0.18.0:
     resolution: {integrity: sha512-QD+ptQ1dDTBncdM9RIATLJZ1HPF0/lamKXka0BEx2EufHdUh88Vf/rEVjgxM+oq0Ug1jUcL9hvPQ5TbWt/9EcA==}
@@ -3109,7 +3100,7 @@ packages:
   /@xata.io/importer/0.3.0_typescript@4.8.4:
     resolution: {integrity: sha512-ugr4nFxwiiAlJjAcPHEW6JPmxrUynj6WEBO6sB+X0eYdlrmkMfltf21+T5zLgpUeKbsCNb70jVMB5Zcb07EBkg==}
     dependencies:
-      '@xata.io/client': 0.19.0_typescript@4.8.4
+      '@xata.io/client': 0.19.1_typescript@4.8.4
       camelcase: 7.0.0
       csvtojson: 2.0.10
       transliteration: 2.3.5
