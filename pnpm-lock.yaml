@@ -19,7 +19,7 @@ importers:
   apps/nextjs-basic-auth:
     specifiers:
       '@types/node': 16.11.66
-      '@types/react': 18.0.21
+      '@types/react': 18.0.23
       '@types/react-dom': 18.0.6
       eslint: 8.25.0
       eslint-config-next: 12.3.1
@@ -33,7 +33,7 @@ importers:
       react-dom: 18.2.0_react@18.2.0
     devDependencies:
       '@types/node': 16.11.66
-      '@types/react': 18.0.21
+      '@types/react': 18.0.23
       '@types/react-dom': 18.0.6
       eslint: 8.25.0
       eslint-config-next: 12.3.1_z4bbprzjrhnsfa24uvmcbu7f5q
@@ -43,7 +43,7 @@ importers:
     specifiers:
       '@types/bcrypt': ^5.0.0
       '@types/node': 16.11.66
-      '@types/react': 18.0.21
+      '@types/react': 18.0.23
       '@types/react-dom': 18.0.6
       '@xata.io/client': 0.18.6
       bcrypt: ^5.1.0
@@ -62,7 +62,7 @@ importers:
     devDependencies:
       '@types/bcrypt': 5.0.0
       '@types/node': 16.11.66
-      '@types/react': 18.0.21
+      '@types/react': 18.0.23
       '@types/react-dom': 18.0.6
       eslint: 8.25.0
       eslint-config-next: 12.3.1_z4bbprzjrhnsfa24uvmcbu7f5q
@@ -77,7 +77,7 @@ importers:
       '@remix-run/node': 1.7.3
       '@remix-run/react': 1.7.3
       '@remix-run/serve': 1.7.3
-      '@types/react': 18.0.21
+      '@types/react': 18.0.23
       '@types/react-dom': 18.0.6
       '@xata.io/cli': 0.9.6
       '@xata.io/client': 0.18.6
@@ -100,7 +100,7 @@ importers:
       '@remix-run/dev': 1.7.3_sezze4ptun2xkjucuotrbicmpe
       '@remix-run/eslint-config': 1.7.3_ceius3krcep667lesqygbylwku
       '@remix-run/serve': 1.7.3_biqbaboplfbrettd7655fr4n2y
-      '@types/react': 18.0.21
+      '@types/react': 18.0.23
       '@types/react-dom': 18.0.6
       '@xata.io/cli': 0.9.6_nnbpzklnvzasauoobdec73b3wi
       esbuild: 0.15.11
@@ -2775,11 +2775,11 @@ packages:
   /@types/react-dom/18.0.6:
     resolution: {integrity: sha512-/5OFZgfIPSwy+YuIBP/FgJnQnsxhZhjjrnxudMddeblOouIodEQ75X14Rr4wGSG/bknL+Omy9iWlLo1u/9GzAA==}
     dependencies:
-      '@types/react': 18.0.21
+      '@types/react': 18.0.23
     dev: true
 
-  /@types/react/18.0.21:
-    resolution: {integrity: sha512-7QUCOxvFgnD5Jk8ZKlUAhVcRj7GuJRjnjjiY/IUBWKgOlnvDvTMLD4RTF7NPyVmbRhNrbomZiOepg7M/2Kj1mA==}
+  /@types/react/18.0.23:
+    resolution: {integrity: sha512-R1wTULtCiJkudAN2DJGoYYySbGtOdzZyUWAACYinKdiQC8auxso4kLDUhQ7AJ2kh3F6A6z4v69U6tNY39hihVQ==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
