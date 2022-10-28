@@ -26,7 +26,7 @@
     "@remix-run/serve": "1.7.4",
     "@types/react": "18.0.24",
     "@types/react-dom": "18.0.8",
-    "@xata.io/cli": "0.10.0",
+    "@xata.io/cli": "0.10.1",
     "esbuild": "^0.15.11",
     "eslint": "8.26.0",
     "typescript": "4.8.4"
