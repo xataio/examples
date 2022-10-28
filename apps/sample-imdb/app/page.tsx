@@ -1,13 +1,33 @@
-import type { InferGetServerSidePropsType } from 'next'
 import Head from 'next/head'
 import { getXataClient } from '~/lib/xata.codegen.server'
-// import { lte } from '@xata.io/client'
 import { HeaderNav } from '~/components/header-nav'
 
-const Home = ({
-  titles,
-}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
-  console.log(titles)
+const fetchTitles = async () => {
+  const xata = getXataClient()
+  const { records: titleRecords } = await xata.db.titles
+    .filter({
+      $exists: 'startYear',
+      titleType: 'movie',
+      isAdult: false,
+    })
+    .filter({
+      startYear: new Date().getFullYear(),
+    })
+    .sort('startYear', 'desc')
+    .getPaginated({
+      pagination: {
+        size: 20,
+      },
+    })
+
+  return {
+    titles: titleRecords,
+  }
+}
+
+const Home = async () => {
+  const { titles = [] } = await fetchTitles()
+
   return (
     <>
       <Head>
@@ -53,32 +73,6 @@ const Home = ({
       </main>
     </>
   )
-}
-
-export const getServerSideProps = async () => {
-  const xata = getXataClient()
-
-  const { records: titleRecords } = await xata.db.titles
-    .filter({
-      $exists: 'startYear',
-      titleType: 'movie',
-      isAdult: false,
-    })
-    .filter({
-      startYear: new Date().getFullYear(),
-    })
-    .sort('startYear', 'desc')
-    .getPaginated({
-      pagination: {
-        size: 20,
-      },
-    })
-
-  return {
-    props: {
-      titles: titleRecords,
-    },
-  }
 }
 
 export default Home
