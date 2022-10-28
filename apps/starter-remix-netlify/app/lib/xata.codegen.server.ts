@@ -25,7 +25,7 @@ export type RemixWithXataExampleRecord = RemixWithXataExample & XataRecord
 const DatabaseClient = buildClient()
 
 const defaultOptions = {
-  databaseURL: 'https://xata_examples-hf8grf.xata.sh/db/remix_minimal',
+  databaseURL: 'https://xata_examples-hf8grf.eu-west-1.xata.sh/db/remix_minimal',
 }
 
 export class XataClient extends DatabaseClient<SchemaTables> {

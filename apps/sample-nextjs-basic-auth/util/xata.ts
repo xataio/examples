@@ -41,7 +41,7 @@ export type DatabaseSchema = {
 const DatabaseClient = buildClient();
 
 const defaultOptions = {
-  databaseURL: "https://xata_examples-hf8grf.xata.sh/db/nextjs_basic_auth",
+  databaseURL: "https://xata_examples-hf8grf.eu-west-1.xata.sh/db/nextjs_basic_auth",
 };
 
 export class XataClient extends DatabaseClient<DatabaseSchema> {
