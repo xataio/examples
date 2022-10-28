@@ -45,7 +45,7 @@ importers:
       '@types/node': 16.18.2
       '@types/react': 18.0.24
       '@types/react-dom': 18.0.8
-      '@xata.io/client': 0.19.1
+      '@xata.io/client': 0.20.0
       bcrypt: ^5.1.0
       eslint: 8.26.0
       eslint-config-next: 13.0.0
@@ -54,7 +54,7 @@ importers:
       react-dom: 18.2.0
       typescript: 4.8.4
     dependencies:
-      '@xata.io/client': 0.19.1_typescript@4.8.4
+      '@xata.io/client': 0.20.0_typescript@4.8.4
       bcrypt: 5.1.0
       next: 13.0.0_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
@@ -80,7 +80,7 @@ importers:
       '@types/react': 18.0.24
       '@types/react-dom': 18.0.8
       '@xata.io/cli': 0.10.1
-      '@xata.io/client': 0.19.1
+      '@xata.io/client': 0.20.0
       cross-env: 7.0.3
       esbuild: ^0.15.11
       eslint: 8.26.0
@@ -92,7 +92,7 @@ importers:
       '@remix-run/netlify': 1.7.4_k3dgfduz27oyogwsxz2kkfhzwa
       '@remix-run/node': 1.7.4_biqbaboplfbrettd7655fr4n2y
       '@remix-run/react': 1.7.4_biqbaboplfbrettd7655fr4n2y
-      '@xata.io/client': 0.19.1_typescript@4.8.4
+      '@xata.io/client': 0.20.0_typescript@4.8.4
       cross-env: 7.0.3
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -111,11 +111,11 @@ importers:
     specifiers:
       '@vercel/node': 2.5.26
       '@xata.io/cli': 0.10.1
-      '@xata.io/client': 0.19.1
+      '@xata.io/client': 0.20.0
       isomorphic-fetch: 3.0.0
       typescript: 4.8.4
     dependencies:
-      '@xata.io/client': 0.19.1_typescript@4.8.4
+      '@xata.io/client': 0.20.0_typescript@4.8.4
       isomorphic-fetch: 3.0.0
     devDependencies:
       '@vercel/node': 2.5.26
@@ -3317,21 +3317,12 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@xata.io/client/0.19.1_typescript@4.8.4:
-    resolution: {integrity: sha512-p+MTMk+ZMpS3C8BMxpNUz0YB2/fVrLk8V1ZwJ1JfQ41SVCmxDw0wVGyO8YZ2hDq0cTjnR1gZuBExhTGdOh4OWA==}
-    peerDependencies:
-      typescript: '>=4.5'
-    dependencies:
-      typescript: 4.8.4
-    dev: false
-
   /@xata.io/client/0.20.0_typescript@4.8.4:
     resolution: {integrity: sha512-yzpsPh0EjLpuRqvsUcGl1ZB7G7tjrGg3j5G9ffTCKKplWxy1E/iFjagWbMpa+1j9T8CT/epBHoS9Q2ZyymkTkw==}
     peerDependencies:
       typescript: '>=4.5'
     dependencies:
       typescript: 4.8.4
-    dev: true
 
   /@xata.io/codegen/0.18.0:
     resolution: {integrity: sha512-QD+ptQ1dDTBncdM9RIATLJZ1HPF0/lamKXka0BEx2EufHdUh88Vf/rEVjgxM+oq0Ug1jUcL9hvPQ5TbWt/9EcA==}
