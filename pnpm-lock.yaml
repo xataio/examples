@@ -5,20 +5,20 @@ importers:
   .:
     specifiers:
       '@changesets/cli': 2.25.1
-      '@types/node': 16.18.2
+      '@types/node': 16.18.3
       prettier: 2.7.1
       turbo: 1.6.2
       typescript: 4.8.4
     devDependencies:
       '@changesets/cli': 2.25.1
-      '@types/node': 16.18.2
+      '@types/node': 16.18.3
       prettier: 2.7.1
       turbo: 1.6.2
       typescript: 4.8.4
 
   apps/nextjs-basic-auth:
     specifiers:
-      '@types/node': 16.18.2
+      '@types/node': 16.18.3
       '@types/react': 18.0.24
       '@types/react-dom': 18.0.8
       eslint: 8.26.0
@@ -32,7 +32,7 @@ importers:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     devDependencies:
-      '@types/node': 16.18.2
+      '@types/node': 16.18.3
       '@types/react': 18.0.24
       '@types/react-dom': 18.0.8
       eslint: 8.26.0
@@ -42,7 +42,7 @@ importers:
   apps/sample-nextjs-basic-auth:
     specifiers:
       '@types/bcrypt': ^5.0.0
-      '@types/node': 16.18.2
+      '@types/node': 16.18.3
       '@types/react': 18.0.24
       '@types/react-dom': 18.0.8
       '@xata.io/client': 0.20.0
@@ -61,7 +61,7 @@ importers:
       react-dom: 18.2.0_react@18.2.0
     devDependencies:
       '@types/bcrypt': 5.0.0
-      '@types/node': 16.18.2
+      '@types/node': 16.18.3
       '@types/react': 18.0.24
       '@types/react-dom': 18.0.8
       eslint: 8.26.0
@@ -2964,8 +2964,8 @@ packages:
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
     dev: true
 
-  /@types/node/16.18.2:
-    resolution: {integrity: sha512-KIGQJyya+opDCFvDSZMNNS899ov5jlNdtN7PypgHWeb8e+5vWISdwTRo/ClsNVlmDihzOGqFyNBDamUs7TQQCA==}
+  /@types/node/16.18.3:
+    resolution: {integrity: sha512-jh6m0QUhIRcZpNv7Z/rpN+ZWXOicUUQbSoWks7Htkbb9IjFQj4kzcX/xFCkjstCj5flMsN8FiSvt+q+Tcs4Llg==}
     dev: true
 
   /@types/node/18.7.5:
