@@ -25,7 +25,7 @@ importers:
       '@xata.io/client': 0.20.0
       bcrypt: ^5.1.0
       eslint: 8.26.0
-      eslint-config-next: 13.0.0
+      eslint-config-next: 13.0.1
       next: 13.0.1
       react: 18.2.0
       react-dom: 18.2.0
@@ -42,7 +42,7 @@ importers:
       '@types/react': 18.0.24
       '@types/react-dom': 18.0.8
       eslint: 8.26.0
-      eslint-config-next: 13.0.0_wyqvi574yv7oiwfeinomdzmc3m
+      eslint-config-next: 13.0.1_wyqvi574yv7oiwfeinomdzmc3m
       typescript: 4.8.4
 
   apps/starter-remix-netlify:
@@ -2202,8 +2202,8 @@ packages:
     resolution: {integrity: sha512-gK60YoFae3s8qi5UgIzbvxOhsh5gKyEaiKH5+kLBUYXLlrPyWJR2xKBj2WqvHkO7wDX7/Hed3DAqjSpU4ijIvQ==}
     dev: false
 
-  /@next/eslint-plugin-next/13.0.0:
-    resolution: {integrity: sha512-z+gnX4Zizatqatc6f4CQrcC9oN8Us3Vrq/OLyc98h7K/eWctrnV91zFZodmJHUjx0cITY8uYM7LXD7IdYkg3kg==}
+  /@next/eslint-plugin-next/13.0.1:
+    resolution: {integrity: sha512-t3bggJhKE/oB4pvMM7hMNnmIpIqsMGJ+OLklk8llOkSeXtfCV+MBQbhImWxf5QODkxNAmMK3IJGAAecQhBTc/Q==}
     dependencies:
       glob: 7.1.7
     dev: true
@@ -5433,8 +5433,8 @@ packages:
       source-map: 0.6.1
     dev: true
 
-  /eslint-config-next/13.0.0_wyqvi574yv7oiwfeinomdzmc3m:
-    resolution: {integrity: sha512-y2nqWS2tycWySdVhb+rhp6CuDmDazGySqkzzQZf3UTyfHyC7og1m5m/AtMFwCo5mtvDqvw1BENin52kV9733lg==}
+  /eslint-config-next/13.0.1_wyqvi574yv7oiwfeinomdzmc3m:
+    resolution: {integrity: sha512-/N9UpSwkbEMj5pIiB235p7QHaSW08ta/iKVaIHF44wufxr+PuJVLwg5LzlAaQbmCZCBpYvVttl3ZxTusP1g2sg==}
     peerDependencies:
       eslint: ^7.23.0 || ^8.0.0
       typescript: '>=3.3.1'
@@ -5442,7 +5442,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@next/eslint-plugin-next': 13.0.0
+      '@next/eslint-plugin-next': 13.0.1
       '@rushstack/eslint-patch': 1.2.0
       '@typescript-eslint/parser': 5.38.1_wyqvi574yv7oiwfeinomdzmc3m
       eslint: 8.26.0
