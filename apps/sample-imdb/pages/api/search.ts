@@ -8,7 +8,7 @@ export default async function handler(
   const { term } = req.query
 
   if (Array.isArray(term) || !term) {
-    res.status(402).json({ message: 'term must be of type string' })
+    res.status(422).json({ message: 'term must be of type string' })
     return
   }
 
