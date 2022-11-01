@@ -7,22 +7,35 @@ import {
   useContext,
   useState,
 } from 'react'
+import { TitleEpisodesRecord } from '~/lib/xata.codegen.server'
 
-const SearchContext = createContext<
+type SearchResults = Array<undefined | TitleEpisodesRecord>
+
+type SearchResultsContext =
   | {
-      term?: string
+      results: SearchResults
+      setResults: (results: SearchResults) => void
     }
   | undefined
->(undefined)
 
-// const SearchResultsContext = createContext<Array<undefined>>([])
+type SearchContext =
+  | {
+      term?: string
+      setTerm: (term: string) => void
+    }
+  | undefined
+
+const SearchContext = createContext<SearchContext>(undefined)
+const SearchResultsContext = createContext<SearchResultsContext>(undefined)
 
 export const SearchProvider: FC<{ children: ReactNode }> = ({ children }) => {
   const [term, setTerm] = useState<string | undefined>()
+
   return (
     <SearchContext.Provider
       value={{
-        term: term,
+        term,
+        setTerm,
       }}
     >
       {children}
@@ -39,12 +52,3 @@ export const useSearch = () => {
 
   return searchContext
 }
-// export const useSearchResults = () => {
-//   const searchContext = useContext(SearchResultsContext)
-
-//   if (!searchContext) {
-//     throw new Error('useSearchResults must be used inside a `SearchProvider`')
-//   }
-
-//   return searchContext
-// }
