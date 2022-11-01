@@ -1,12 +1,19 @@
 <h1> XMDB <img alt="Xatafly, the logo from Xata" src="/public/flap.gif" width="50" /></h1>
 
-Xata Movie Database.
+Xata Movie Database (XMDB) was built with Xata using Next.js, TypeScript to showcase Xata can be use by large databases (over **9million records**).
 
 > 🚧 Under **Heavy** Development
 
 [![TypeScript](https://badgen.net/badge/icon/typescript?icon=typescript&label)](https://typescriptlang.org)
 
 ## Features ⚡️
+
+- Typo-Tolerant Search
+- Aggregations
+- Type-Safe SDK/ORM (schema-based types generation)
+- Edge-Ready
+
+## Under the Hood ⚙️
 
 - Next.js 13 with Server-Components
 - Experimental `appDir` feature
