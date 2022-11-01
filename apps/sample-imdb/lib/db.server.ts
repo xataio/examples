@@ -8,6 +8,47 @@ type OMDBdata = {
 
 const xata = getXataClient()
 
+export const getFunFacts = async () => {
+  const { aggs } = await xata.db.titles.aggregate({
+    totalCount: {
+      count: '*',
+    },
+    sumVotes: {
+      sum: {
+        column: 'numVotes',
+      },
+    },
+    ratingsAbove6: {
+      count: {
+        filter: {
+          averageRating: { $gt: 6 },
+        },
+      },
+    },
+    rate6: {
+      count: {
+        filter: {
+          averageRating: 6,
+        },
+      },
+    },
+    ratingsBelow6: {
+      count: {
+        filter: {
+          averageRating: { $lt: 6 },
+        },
+      },
+    },
+  })
+
+  return {
+    totalTitles: aggs.totalCount.toLocaleString('en-US'),
+    totalVotes: (aggs.sumVotes ?? 0).toLocaleString('en-US'),
+    high: aggs.ratingsAbove6.toLocaleString('en-US'),
+    low: aggs.ratingsBelow6.toLocaleString('en-US'),
+    mid: aggs.rate6.toLocaleString('en-US'),
+  }
+}
 export const getTotalTitles = async () => {
   const { aggs } = await xata.db.titles.aggregate({
     totalCount: {
