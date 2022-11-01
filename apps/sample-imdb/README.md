@@ -1,31 +1,39 @@
 <h1> XMDB <img alt="Xatafly, the logo from Xata" src="/public/flap.gif" width="50" /></h1>
 
-Xata Movie Database (XMDB) was built with Xata using Next.js, TypeScript to showcase Xata can be use by large databases (over **9million records**).
+Xata Movie Database (XMDB) was built with Xata using Next.js and TypeScript to showcase Xata can be used by large databases (over **9 million records**).
 
 > 🚧 Under **Heavy** Development
 
-[![TypeScript](https://badgen.net/badge/icon/typescript?icon=typescript&label)](https://typescriptlang.org)
-
 ## Features ⚡️
 
-- Typo-Tolerant Search
-- Aggregations
-- Type-Safe SDK/ORM (schema-based types generation)
-- Edge-Ready
+- [Typo-Tolerant Full-Text Search](https://xata.io/docs/api-guide/search).
+- [Aggregations](https://xata.io/docs/api-guide/aggregate).
+- [Type-Safe SDK/ORM](https://github.com/xataio/client-ts/blob/main/packages/client/README.md) (schema-based types generation).
 
 ## Under the Hood ⚙️
 
-- Next.js 13 with Server-Components
-- Experimental `appDir` feature
-- Turbopack compatible
-- Tailwind
+- [Next.js 13](https://beta.nextjs.org/docs) with Server-Components.
+- Experimental [App Directory](https://beta.nextjs.org/docs/app-directory-roadmap) feature.
+- [Turbopack](https://turbo.build/pack) Compatible.
+- [Tailwind CSS](https://tailwindcss.com/).
 
-### Run Locally
+### Setup 🧱
 
-- Run the `dev` task to compile and serve it using Webpack
-- Run `turbo:dev` to compile and serve it using Turbopack
+To have your own local instance of this app, you will need 2 API keys, with 3rd as optional.
 
-> ⚠️ Turbopack does not support PostCSS, so it is important to replace `globals.css` import with `dist.css`
+- [`XATA_API_TOKEN`](https://xata.io/docs/concepts/api-keys): to connect your own Xata workspace.
+- [`OMDB_API_TOKEN`](https://www.omdbapi.com/apikey.aspx): used as fallback to complement whenever there's missing data in our tables.
+
+Once you have those keys, you can create your own `.env` or `.env.local` as shown in `.env.template`.
+
+> ⚠️ Remember to **never** share this tokens in unsecured connections.
+
+### Run Locally 🧑‍✈️
+
+- Run the `dev` task to compile and serve it using Webpack.
+- Run `turbo:dev` to compile and serve it using Turbopack.
+
+> ⚠️ Turbopack does not support PostCSS, so it is important to replace `globals.css` import with `dist.css`.
 
 ---
 
