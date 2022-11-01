@@ -5,6 +5,7 @@ const url = process.env.VERCEL_URL
 const search = async (term?: string): Promise<Titles[]> => {
   const response = await fetch(`${url}/api/search?term=${term}`)
   const { titles } = await response.json()
+
   return titles
 }
 

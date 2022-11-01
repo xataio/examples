@@ -1,6 +1,5 @@
 import { type ReactNode } from 'react'
 import '~/styles/globals.css'
-import { SearchProvider } from './search-provider'
 
 function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -11,7 +10,7 @@ function RootLayout({ children }: { children: ReactNode }) {
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body>
-        <SearchProvider>{children}</SearchProvider>
+        {children}
         <footer className="flex justify-center items-center gap-2 py-3">
           <span>Powered by</span>
 
