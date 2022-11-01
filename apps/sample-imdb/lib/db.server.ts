@@ -157,8 +157,6 @@ export const searchMovies = async (term: string) => {
     })
   )
 
-  console.log(records, 'records')
-
   return {
     titles: records.filter(({ summary }) => summary !== 'N/A'),
   }

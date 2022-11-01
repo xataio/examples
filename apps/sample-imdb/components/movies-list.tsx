@@ -1,22 +1,29 @@
-'use client'
-
-import { type FC } from 'react'
 import { Titles } from '~/lib/xata.codegen.server'
 
-const search = async (term?: string) => {
-  const response = await fetch(`/api/search?term=${term}`)
+const url = process.env.VERCEL_URL
 
-  return response.json()
+const search = async (term?: string): Promise<Titles[]> => {
+  const response = await fetch(`${url}/api/search?term=${term}`)
+  const { titles } = await response.json()
+  return titles
 }
 
-export const MoviesList: FC<{ titles: Titles[] }> = ({ titles }) => {
+export const MoviesList = async ({
+  titles,
+  term,
+}: {
+  titles: Titles[]
+  term: string | null
+}) => {
+  const list = Boolean(term) && term !== null ? await search(term) : titles
+
   return (
     <ul className="grid grid-cols-2 gap-5 p-10">
-      {titles.map(
+      {list.map(
         ({ primaryTitle, genres, coverUrl, summary, averageRating }) => (
           <li
-            key={primaryTitle}
-            className="border-2 border-neutral-800 rounded-sm py-2 px-5 max-h-[26rem]"
+            key={JSON.stringify(genres) + primaryTitle}
+            className="border-2 border-neutral-800 rounded-sm py-2 px-5 max-h-[26rem] overflow-hidden"
           >
             <div className="grid grid-cols-[1fr,auto] h-full">
               <h2 className="text-3xl mb-2 col-span-2">
@@ -43,11 +50,14 @@ export const MoviesList: FC<{ titles: Titles[] }> = ({ titles }) => {
               </div>
               <div className=" place-items-center grid">
                 {coverUrl && (
-                  <img
-                    src={coverUrl}
-                    alt={`Poster for "${primaryTitle}"`}
-                    className="rounded-lg w-[200px] "
-                  />
+                  <picture>
+                    <source srcSet={coverUrl} type="image/webp" />
+                    <img
+                      src={coverUrl}
+                      alt={`Poster for "${primaryTitle}"`}
+                      className="rounded-lg w-[200px] "
+                    />
+                  </picture>
                 )}
               </div>
             </div>
