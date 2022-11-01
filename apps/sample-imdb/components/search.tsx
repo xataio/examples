@@ -1,18 +1,8 @@
 'use client'
-// import { useRouter } from 'next/navigation'
 import { useState } from 'react'
-// import { useSearch } from '~/app/search-provider'
 
 export const Search = () => {
-  /**
-   * @TODO finish search logic
-   */
   const [term, setTerm] = useState<string | undefined>()
-  // const router = useRouter()
-
-  // useEffect(() => {
-  //   if (typeof term === 'string' && term.length > 3) router.replace(`/${term}`)
-  // }, [term])
 
   return (
     <input
