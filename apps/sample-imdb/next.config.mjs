@@ -4,7 +4,6 @@ const nextConfig = {
   swcMinify: true,
   experimental: {
     appDir: true,
-    serverComponentsExternalPackages: ['@xataio/client'],
   },
 }
 
