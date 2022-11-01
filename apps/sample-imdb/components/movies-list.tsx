@@ -1,6 +1,6 @@
 'use client'
 
-import { FC, use, useMemo } from 'react'
+import { type FC } from 'react'
 import { Titles } from '~/lib/xata.codegen.server'
 
 const search = async (term?: string) => {
