@@ -2,7 +2,7 @@
 
 # Xata Examples
 
-Our lab for Proof-of-Concepts, tooling, samples, and starters.
+Our lab for samples, and starters.
 
 ## Apps 🏗
 
@@ -14,7 +14,7 @@ Our lab for Proof-of-Concepts, tooling, samples, and starters.
   - Ready to Use
 
 - **samples**
-  - Prefix: `starter-`
+  - Prefix: `sample-`
   - Real-World Integrations
   - Production-Grade Solutions
   - Reverse Engineering / Strategy Insights
