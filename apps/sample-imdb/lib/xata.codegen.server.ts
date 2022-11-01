@@ -30,6 +30,8 @@ const tables = [
       { name: "genres", type: "multiple" },
       { name: "numVotes", type: "int" },
       { name: "averageRating", type: "float" },
+      { name: "coverUrl", type: "string" },
+      { name: "summary", type: "text" },
     ],
   },
   {
