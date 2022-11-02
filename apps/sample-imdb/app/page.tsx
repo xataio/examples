@@ -17,7 +17,7 @@ const Home = async ({
   const { totalTitles = '0' } = await aggregateTitles
 
   return (
-    <main className="grid grid-rows-[auto,1fr,auto] h-screen">
+    <main>
       <HeaderNav>
         <Search term={searchTerm} />
         <strong className="col-span-2 text-center">
@@ -36,18 +36,6 @@ const Home = async ({
           </Suspense>
         </article>
       )}
-      <footer className="flex justify-center items-center gap-2 py-3">
-        <span>Powered by</span>
-
-        <a
-          className="inline-block"
-          href="https://xata.io"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <object data="/xatafly.svg" aria-label="Xata Logo" className="w-8" />
-        </a>
-      </footer>
     </main>
   )
 }
