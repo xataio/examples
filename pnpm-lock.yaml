@@ -123,7 +123,7 @@ importers:
 
   apps/starter-vercel-serverless-functions:
     specifiers:
-      '@vercel/node': 2.5.26
+      '@vercel/node': 2.6.1
       '@xata.io/cli': 0.10.1
       '@xata.io/client': 0.20.0
       isomorphic-fetch: 3.0.0
@@ -132,7 +132,7 @@ importers:
       '@xata.io/client': 0.20.0_typescript@4.8.4
       isomorphic-fetch: 3.0.0
     devDependencies:
-      '@vercel/node': 2.5.26
+      '@vercel/node': 2.6.1
       '@xata.io/cli': 0.10.1_typescript@4.8.4
       typescript: 4.8.4
 
@@ -1898,6 +1898,10 @@ packages:
     resolution: {integrity: sha512-S3aN8X6wXhM7CJI3FRF480CMNkw4mH6grMV/enQz8VWGrvD1U5njQNRh/Zymoe0RHzEI/aIDjSk3V49h+ULt9g==}
     dev: true
 
+  /@edge-runtime/primitives/2.0.0:
+    resolution: {integrity: sha512-AXqUq1zruTJAICrllUvZcgciIcEGHdF6KJ3r6FM0n4k8LpFxZ62tPWVIJ9HKm+xt+ncTBUZxwgUaQ73QMUQEKw==}
+    dev: true
+
   /@edge-runtime/vm/1.1.0:
     resolution: {integrity: sha512-a3PSCdznoop5+ifkNDaSINB9V+Anwh+wpoaASIWhq9PLQuBF9D6Yxe/mLRZkuZRkOJ2ZmaTzMGDI5ROUChTL7g==}
     dependencies:
@@ -1908,6 +1912,12 @@ packages:
     resolution: {integrity: sha512-1OrFifIxDFpwb1VyrFD8kwWVppc6D1uN7xh5jQzW7jHaVJ0Dw4C2nSAbLe6YKPYj67o09vW72WLzfUcryeD0Pg==}
     dependencies:
       '@edge-runtime/primitives': 1.1.0-beta.37
+    dev: true
+
+  /@edge-runtime/vm/2.0.0:
+    resolution: {integrity: sha512-BOLrAX8IWHRXu1siZocwLguKJPEUv7cr+rG8tI4hvHgMdIsBWHJlLeB8EjuUVnIURFrUiM49lVKn8DRrECmngw==}
+    dependencies:
+      '@edge-runtime/primitives': 2.0.0
     dev: true
 
   /@esbuild-plugins/node-modules-polyfill/0.1.4_esbuild@0.14.51:
@@ -3291,23 +3301,23 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vercel/build-utils/5.5.5:
-    resolution: {integrity: sha512-ZBJpqnqm2OqYyWEqfRn0CYvlmSdOf/igtFy58x0bvSbJdN6Dx2rEw9sNg8SU7O/+zWpKP5rRfWcT6iql/p0sCg==}
+  /@vercel/build-utils/5.5.7:
+    resolution: {integrity: sha512-F8brek8VcR3CLgcuKyXbb8k8y/KRwqO/yEV5dTUW6OZ0fGxxa+0RnaaY1UbHlCVF1Cnu+/IsMDsmsj9o1RCP5A==}
     dev: true
 
-  /@vercel/node-bridge/3.0.0:
-    resolution: {integrity: sha512-TNQK6cufwrhd8ASDk5YHHenH8Xhp9sY8xUjOTKnQQI37KLk+Sw2HlHhT5rzUFN23ahosUlkY8InwtYUmSNb9kw==}
+  /@vercel/node-bridge/3.1.1:
+    resolution: {integrity: sha512-sWg2okUTj8IbeWnAaY3IKbDp3Vinj4zdt3Q11S+cRMXO+pAUbqJxmiPD5+MS0RyIVvufoNotooiitRGlgQjA5w==}
     dev: true
 
-  /@vercel/node/2.5.26:
-    resolution: {integrity: sha512-Kj3dXBwpttUB7XG5joXKIBDtkow71678NHhfpp1a7S/50U9n5R2ztsJKMPpQ1m7HgEkMezQt2YO5E+39c2jkug==}
+  /@vercel/node/2.6.1:
+    resolution: {integrity: sha512-8AXrXxx1XKMT5OpSjQ5ghzjw0HYp4Cuv6GUWJ48jPcvzmU9VC5mZvjmhzmbIT4pPHdKjKZLPy8/rHqDjqztuJg==}
     dependencies:
-      '@edge-runtime/vm': 1.1.0-beta.37
+      '@edge-runtime/vm': 2.0.0
       '@types/node': 18.11.2
-      '@vercel/build-utils': 5.5.5
-      '@vercel/node-bridge': 3.0.0
-      '@vercel/static-config': 2.0.3
-      edge-runtime: 1.1.0-beta.40
+      '@vercel/build-utils': 5.5.7
+      '@vercel/node-bridge': 3.1.1
+      '@vercel/static-config': 2.0.5
+      edge-runtime: 2.0.0
       esbuild: 0.14.47
       exit-hook: 2.2.1
       node-fetch: 2.6.7
@@ -3317,8 +3327,8 @@ packages:
       - encoding
     dev: true
 
-  /@vercel/static-config/2.0.3:
-    resolution: {integrity: sha512-XfP0z81SigmxvUzzhN6pbURJns86HKYjrLYgetLbBp1d8NUv4O8dqhNkRGpNGYdljTkjBQOfqG0HVT6dSnqvOw==}
+  /@vercel/static-config/2.0.5:
+    resolution: {integrity: sha512-f3wt+vQ3ARRR7hXHteMbrRNjH8iMETmP8f/t2HC8TpOjitjsjUKZg+3YS54AtLDEw/ZZ1s/7EG9nMK2BbU/t6g==}
     dependencies:
       ajv: 8.6.3
       json-schema-to-ts: 1.6.4
@@ -4979,6 +4989,21 @@ packages:
     dependencies:
       '@edge-runtime/format': 1.1.0-beta.34
       '@edge-runtime/vm': 1.1.0-beta.37
+      exit-hook: 2.2.1
+      http-status: 1.5.3
+      mri: 1.2.0
+      picocolors: 1.0.0
+      pretty-bytes: 5.6.0
+      pretty-ms: 7.0.1
+      time-span: 4.0.0
+    dev: true
+
+  /edge-runtime/2.0.0:
+    resolution: {integrity: sha512-TmRJhKi4mlM1e+zgF4CSzVU5gJ1sWj7ia+XhVgZ8PYyYUxk4PPjJU8qScpSLsAbdSxoBghLxdMuwuCzdYLd1sQ==}
+    hasBin: true
+    dependencies:
+      '@edge-runtime/format': 1.1.0
+      '@edge-runtime/vm': 2.0.0
       exit-hook: 2.2.1
       http-status: 1.5.3
       mri: 1.2.0
