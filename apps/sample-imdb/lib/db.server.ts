@@ -85,11 +85,12 @@ const fetchTitles = async () => {
         const omdbResponse = await fetch(
           `http://omdbapi.com/?apikey=${process.env.OMDB_API_KEY}&i=${title.id}`
         )
+
         const omdbData: OMDBdata = await omdbResponse.json()
 
         xata.db.titles.createOrUpdate({
           id: title.id,
-          coverUrl: omdbData.Poster,
+          coverUrl: omdbData.Poster !== 'N/A' ? omdbData.Poster : undefined,
           summary: omdbData.Plot,
         })
 
@@ -110,12 +111,6 @@ const fetchTitles = async () => {
 }
 
 export const searchMovies = async (term: string) => {
-  // const result = await xata.db.titles.search(term, {
-  //   fuzziness: 1,
-  // })
-
-  // console.log(result)
-
   const results = await xata.db.titles.search(term, {
     fuzziness: 2,
     filter: {
@@ -132,36 +127,44 @@ export const searchMovies = async (term: string) => {
     ],
   })
 
-  const records = await Promise.all(
-    results.map(async (record) => {
-      if (!record.coverUrl || !record.summary) {
-        const omdbResponse = await fetch(
-          `http://omdbapi.com/?apikey=${process.env.OMDB_API_KEY}&i=${record.id}`
-        )
-        const omdbData: OMDBdata = await omdbResponse.json()
+  // const records = await Promise.all(
+  //   results.map(async (record) => {
+  //     if (!record.coverUrl || !record.summary) {
+  //       const omdbResponse = await fetch(
+  //         `http://omdbapi.com/?apikey=${process.env.OMDB_API_KEY}&i=${record.id}`
+  //       )
 
-        xata.db.titles.createOrUpdate({
-          id: record.id,
-          coverUrl: omdbData.Poster,
-          summary: omdbData.Plot,
-        })
+  //       if (!omdbResponse.ok) {
+  //         console.log('blow up')
+  //         return record
+  //       }
 
-        return {
-          ...record,
-          coverUrl: omdbData.Poster,
-          summary: omdbData.Plot,
-        }
-      }
+  //       const omdbData: OMDBdata = omdbResponse.ok
+  //         ? await omdbResponse.json()
+  //         : {}
 
-      return record
-    })
-  )
+  //       xata.db.titles.createOrUpdate({
+  //         id: record.id,
+  //         coverUrl: omdbData.Poster,
+  //         summary: omdbData.Plot,
+  //       })
+
+  //       return {
+  //         ...record,
+  //         coverUrl: omdbData.Poster,
+  //         summary: omdbData.Plot,
+  //       }
+  //     }
+
+  //     return record
+  //   })
+  // )
 
   return {
-    titles: records.filter(({ summary }) => summary !== 'N/A'),
+    titles: results.filter(({ summary }) => summary !== 'N/A'),
   }
 }
 
-export const getMovies = (term?: string) => {
-  return term ? searchMovies(term) : fetchTitles()
+export const getMovies = async (term: string) => {
+  return term.length > 0 ? await searchMovies(term) : await fetchTitles()
 }

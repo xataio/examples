@@ -22,7 +22,7 @@ export const Search = ({ term }: { term: string }) => {
       <input
         type="search"
         name="searchField"
-        value={term}
+        defaultValue={term}
         onChange={debounce((evt: ChangeEvent<HTMLInputElement>) => {
           if (evt.target.value) {
             router.push(`/?searchTerm=${evt.target.value}`)
