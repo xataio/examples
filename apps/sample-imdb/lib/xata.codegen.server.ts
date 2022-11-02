@@ -15,6 +15,8 @@ const tables = [
       { name: "deathYear", type: "int" },
       { name: "primaryProfession", type: "multiple" },
       { name: "knownForTitles", type: "multiple" },
+      { name: "pictureUrl", type: "string" },
+      { name: "biography", type: "text" },
     ],
   },
   {
@@ -66,7 +68,7 @@ export type DatabaseSchema = {
 const DatabaseClient = buildClient();
 
 const defaultOptions = {
-  databaseURL: "https://sample-databases-v0sn1n.xata.sh/db/imdb",
+  databaseURL: "https://sample-databases-v0sn1n.eu-west-1.xata.sh/db/imdb",
 };
 
 export class XataClient extends DatabaseClient<DatabaseSchema> {

@@ -12,8 +12,9 @@ export default async function handler(
     return
   }
 
+  console.log('going in')
   const records = await searchMovies(term)
-
+  console.log('success')
   res.status(200).json(records)
   return
 }

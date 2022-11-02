@@ -2,15 +2,19 @@ import { HeaderNav } from '~/components/header-nav'
 import { Search } from '~/components/search'
 import { MoviesList } from '~/components/movies-list'
 import { getMovies, getTotalTitles } from '~/lib/db.server'
+import { Suspense } from 'react'
 
 const Home = async ({
   searchParams,
 }: {
   searchParams: Record<'searchTerm', string>
 }) => {
-  const { titles = [] } = await getMovies()
-  const { totalTitles = '0' } = await getTotalTitles()
-  const { searchTerm } = searchParams
+  const { searchTerm = '' } = searchParams
+  const allMovies = getMovies(searchTerm)
+  const aggregateTitles = getTotalTitles()
+
+  const { titles = [] } = await allMovies
+  const { totalTitles = '0' } = await aggregateTitles
 
   return (
     <main className="grid grid-rows-[auto,1fr,auto] h-screen">
@@ -26,8 +30,10 @@ const Home = async ({
         </article>
       ) : (
         <article>
-          {/** @ts-expect-error */}
-          <MoviesList titles={titles} term={searchTerm} />
+          <Suspense fallback={<p>Loading movies ....</p>}>
+            {/** @ts-expect-error */}
+            <MoviesList titles={titles} />
+          </Suspense>
         </article>
       )}
       <footer className="flex justify-center items-center gap-2 py-3">
