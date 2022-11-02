@@ -9,9 +9,9 @@ function RootLayout({ children }: { children: ReactNode }) {
         <meta name="description" content="Xata Movie Database" />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body>
+      <body className="grid grid-rows-[1fr,auto] min-h-screen">
         {children}
-        <footer className="flex justify-center items-center gap-2 py-3">
+        <footer className="flex justify-center items-center gap-2 py-12">
           <span>Powered by</span>
 
           <a

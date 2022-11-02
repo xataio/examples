@@ -1,4 +1,4 @@
-import { getXataClient } from '~/lib/xata.codegen.server'
+import { getXataClient, TitlesRecord } from '~/lib/xata.codegen.server'
 import { gte, le } from '@xata.io/client'
 
 type OMDBdata = {
@@ -7,6 +7,12 @@ type OMDBdata = {
 }
 
 const xata = getXataClient()
+
+export const getMovie = async (id: TitlesRecord['id']) => {
+  const title = await xata.db.titles.read(id)
+
+  return title
+}
 
 export const getFunFacts = async () => {
   const { aggs } = await xata.db.titles.aggregate({
@@ -61,7 +67,7 @@ export const getTotalTitles = async () => {
   }
 }
 
-const fetchTitles = async () => {
+export const fetchDefaultTitles = async () => {
   const { records: titleRecords } = await xata.db.titles
     .filter({
       $exists: 'startYear',
@@ -166,5 +172,5 @@ export const searchMovies = async (term: string) => {
 }
 
 export const getMovies = async (term: string) => {
-  return term.length > 0 ? await searchMovies(term) : await fetchTitles()
+  return term.length > 0 ? await searchMovies(term) : await fetchDefaultTitles()
 }
