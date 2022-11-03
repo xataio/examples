@@ -1,11 +1,20 @@
 import { type FC, type ReactNode } from 'react'
 import { Xmdb } from './logo'
+import { Search } from './search'
 
-export const HeaderNav: FC<{ children: ReactNode }> = ({ children }) => (
+export const HeaderNav: FC<{ searchTerm: string; totalTitles?: string }> = ({
+  searchTerm,
+  totalTitles,
+}) => (
   <header className="grid grid-cols-[auto,1fr] gap-2 mx-auto max-w-prose pt-24 pb-12">
     <h1 className="self-center">
       <Xmdb />
     </h1>
-    {children}
+    <Search term={searchTerm} />
+    {totalTitles ? (
+      <strong className="col-span-2 text-center">
+        Search on: {totalTitles} titles
+      </strong>
+    ) : null}
   </header>
 )
