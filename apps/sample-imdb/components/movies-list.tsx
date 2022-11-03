@@ -31,7 +31,8 @@ export const MoviesList = async ({
               <div className="grid grid-cols-[1fr,auto] h-full">
                 <h2 className="text-3xl mb-2 col-span-2">
                   <Link href={`/movie/${id}/`}>
-                    {primaryTitle} - {averageRating}
+                    {primaryTitle}
+                    {averageRating ? ` - ${averageRating}` : ''}
                   </Link>
                 </h2>
                 <div className="grid grid-rows-[1fr,auto] h-full ">
