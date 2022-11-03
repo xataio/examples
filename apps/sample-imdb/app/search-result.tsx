@@ -9,7 +9,6 @@ export const SearchResult = async ({
 }: {
   searchTerm?: string
 }) => {
-  //   const { searchTerm = '' } = searchParams
   const allMovies = getMovies(searchTerm)
   const aggregateTitles = getTotalTitles()
 

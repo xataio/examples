@@ -126,48 +126,53 @@ export const searchMovies = async (term: string) => {
       {
         valueBooster: { column: 'primaryTitle', factor: 1, value: term },
       },
-
+      {
+        numericBooster: { column: 'numVotes', factor: 1 },
+      },
       {
         numericBooster: { column: 'averageRating', factor: 2 },
       },
     ],
   })
 
-  // const records = await Promise.all(
-  //   results.map(async (record) => {
-  //     if (!record.coverUrl || !record.summary) {
-  //       const omdbResponse = await fetch(
-  //         `http://omdbapi.com/?apikey=${process.env.OMDB_API_KEY}&i=${record.id}`
-  //       )
+  const records = await Promise.all(
+    results.map(async (record) => {
+      if (!record.coverUrl || !record.summary) {
+        const omdbResponse = await fetch(
+          `http://omdbapi.com/?apikey=${process.env.OMDB_API_KEY}&i=${record.id}`
+        )
 
-  //       if (!omdbResponse.ok) {
-  //         console.log('blow up')
-  //         return record
-  //       }
+        if (!omdbResponse.ok) {
+          return record
+        }
 
-  //       const omdbData: OMDBdata = omdbResponse.ok
-  //         ? await omdbResponse.json()
-  //         : {}
+        const omdbData: OMDBdata = omdbResponse.ok
+          ? await omdbResponse.json()
+          : {}
 
-  //       xata.db.titles.createOrUpdate({
-  //         id: record.id,
-  //         coverUrl: omdbData.Poster,
-  //         summary: omdbData.Plot,
-  //       })
+        if (
+          typeof omdbData.Poster === 'string' &&
+          typeof omdbData.Plot === 'string'
+        ) {
+          record.update({
+            coverUrl: omdbData.Poster,
+            summary: omdbData.Plot,
+          })
 
-  //       return {
-  //         ...record,
-  //         coverUrl: omdbData.Poster,
-  //         summary: omdbData.Plot,
-  //       }
-  //     }
+          return {
+            ...record,
+            coverUrl: omdbData.Poster,
+            summary: omdbData.Plot,
+          }
+        }
+      }
 
-  //     return record
-  //   })
-  // )
+      return record
+    })
+  )
 
   return {
-    titles: results.filter(({ summary }) => summary !== 'N/A'),
+    titles: records.filter(({ summary }) => summary && summary !== 'N/A'),
   }
 }
 
