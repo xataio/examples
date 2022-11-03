@@ -7,4 +7,18 @@
     color: theme(colors.white);
     background: theme(colors.black);
   }
+
+  .grid-order-1 {
+    grid-column: 1;
+  }
+  .grid-order-2 {
+    grid-column: 2;
+  }
+}
+
+@layer components {
+  .rating-star {
+    text-shadow: 0 0 theme(colors.pink.200);
+    @apply text-transparent;
+  }
 }

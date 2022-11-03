@@ -17,12 +17,7 @@ export const SearchResult = async ({
 
   return (
     <main>
-      <HeaderNav>
-        <Search term={searchTerm} />
-        <strong className="col-span-2 text-center">
-          Search on: {totalTitles} titles
-        </strong>
-      </HeaderNav>
+      <HeaderNav searchTerm={searchTerm} totalTitles={totalTitles} />
       {titles.length < 1 ? (
         <article className="grid place-items-center">
           <p>The Case of Missing Data</p>
