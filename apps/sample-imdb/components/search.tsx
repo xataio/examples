@@ -1,7 +1,6 @@
 'use client'
-import debounce from 'lodash.debounce'
 import { useRouter } from 'next/navigation'
-import { ChangeEvent, FormEvent } from 'react'
+import { FormEvent } from 'react'
 
 export const Search = ({ term }: { term?: string }) => {
   const router = useRouter()
