@@ -2,7 +2,7 @@ import { type FC, type ReactNode } from 'react'
 import { Xmdb } from './logo'
 import { Search } from './search'
 
-export const HeaderNav: FC<{ searchTerm: string; totalTitles?: string }> = ({
+export const HeaderNav: FC<{ searchTerm?: string; totalTitles?: string }> = ({
   searchTerm,
   totalTitles,
 }) => (
