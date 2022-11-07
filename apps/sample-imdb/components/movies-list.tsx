@@ -2,14 +2,14 @@ import Link from 'next/link'
 import { Titles } from '~/lib/xata.codegen.server'
 import { Rating } from './ratings'
 
-const url = process.env.VERCEL_URL
+// const url = process.env.VERCEL_URL
 
-const search = async (term?: string): Promise<Titles[]> => {
-  const response = await fetch(`${url}/api/search?term=${term}`)
-  const { titles } = await response.json()
+// const search = async (term?: string): Promise<Titles[]> => {
+//   const response = await fetch(`${url}/api/search?term=${term}`)
+//   const { titles } = await response.json()
 
-  return titles
-}
+//   return titles
+// }
 
 const MovieCard = ({ data }: { data: Titles }) => {
   const { primaryTitle, genres, coverUrl, summary, averageRating, id } = data
@@ -60,18 +60,10 @@ const MovieCard = ({ data }: { data: Titles }) => {
   )
 }
 
-export const MoviesList = async ({
-  titles,
-  term,
-}: {
-  titles: Titles[]
-  term: string | null
-}) => {
-  const list = term !== null && Boolean(term) ? await search(term) : titles
-
+export const MoviesList = async ({ titles }: { titles: Titles[] }) => {
   return (
     <ul className="grid grid-cols-2 gap-5 px-10">
-      {list.map((movie) => (
+      {titles.map((movie) => (
         <MovieCard key={movie.id} data={movie} />
       ))}
     </ul>
