@@ -118,19 +118,21 @@ export const fetchDefaultTitles = async () => {
 
 export const searchMovies = async (term: string) => {
   const results = await xata.db.titles.search(term, {
-    fuzziness: 2,
+    fuzziness: term.length > 8 ? 2 : 0,
+    prefix: 'phrase',
+
     filter: {
       titleType: 'movie',
     },
     boosters: [
       {
-        valueBooster: { column: 'primaryTitle', factor: 1, value: term },
+        valueBooster: { column: 'primaryTitle', factor: 5, value: term },
       },
       {
-        numericBooster: { column: 'numVotes', factor: 1 },
+        numericBooster: { column: 'numVotes', factor: 0.00001 },
       },
       {
-        numericBooster: { column: 'averageRating', factor: 2 },
+        numericBooster: { column: 'averageRating', factor: 10 },
       },
     ],
   })
