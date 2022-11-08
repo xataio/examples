@@ -1,4 +1,3 @@
-import { NOTFOUND } from 'dns'
 import { HeaderNav } from '~/components/header-nav'
 import { Rating } from '~/components/ratings'
 import { fetchDefaultTitles, getMovie } from '~/lib/db.server'

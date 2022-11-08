@@ -123,6 +123,7 @@ export const searchMovies = async (term: string) => {
 
     filter: {
       titleType: 'movie',
+      startYear: le(new Date().getFullYear()),
     },
     boosters: [
       {
@@ -133,6 +134,9 @@ export const searchMovies = async (term: string) => {
       },
       {
         numericBooster: { column: 'averageRating', factor: 10 },
+      },
+      {
+        numericBooster: { column: 'startYear', factor: 1 },
       },
     ],
   })
