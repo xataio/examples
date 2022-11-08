@@ -1,4 +1,4 @@
-import { type FC, type ReactNode } from 'react'
+import { type FC } from 'react'
 import { Xmdb } from './logo'
 import { Search } from './search'
 

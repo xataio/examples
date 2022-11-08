@@ -12,6 +12,11 @@ const Home = async () => {
     <main>
       <HeaderNav totalTitles={totalTitles} />
       <Suspense fallback={<Loading />}>
+        {/**
+         * there is no TypeScript support for
+         * async Server Components in JSX
+         *
+         */}
         {/** @ts-expect-error */}
         <SearchResult />
       </Suspense>
