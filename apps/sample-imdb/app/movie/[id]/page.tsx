@@ -1,10 +1,15 @@
+import { NOTFOUND } from 'dns'
 import { HeaderNav } from '~/components/header-nav'
 import { Rating } from '~/components/ratings'
 import { fetchDefaultTitles, getMovie } from '~/lib/db.server'
 import { TitlesRecord } from '~/lib/xata.codegen.server'
-
+import { notFound } from 'next/navigation'
 export default async function Movie({ params }: { params: { id: string } }) {
   const { id } = params
+  const movie = await getMovie(id)
+
+  if (movie === null) return notFound()
+
   const {
     coverUrl = '',
     primaryTitle,
@@ -14,7 +19,7 @@ export default async function Movie({ params }: { params: { id: string } }) {
     runtimeMinutes,
     averageRating,
     numVotes,
-  } = (await getMovie(id)) as TitlesRecord
+  } = movie
   return (
     <main>
       <HeaderNav searchTerm={''} />
