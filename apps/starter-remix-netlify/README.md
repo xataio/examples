@@ -16,22 +16,21 @@
 
 ### Clone the Example
 
-Execute [`create-remix-app`](https://github.com/vercel/next.js/tree/canary/packages/create-remix-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+Execute [`create-remix`](https://github.com/remix-run/remix/tree/main/packages/create-remix) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
 
 ```sh
-npx create-remix-app --template https://github.com/xataio/examples/tree/main/apps/remix-netlify remix-xata-app
-
+npx create-remix --template https://github.com/xataio/examples/tree/main/apps/starter-remix-netlify remix-xata-app
 ```
 
 <details>
 <summary> Yarn or PNPM</summary>
 
 ```sh
-yarn create remix-app --template https://github.com/xataio/examples/tree/main/apps/remix-netlify remix-xata-app
+yarn create remix --template https://github.com/xataio/examples/tree/main/apps/starter-remix-netlify remix-xata-app
 ```
 
 ```sh
-pnpm create remix-app --template https://github.com/xataio/examples/tree/main/apps/remix-netlify remix-xata-app
+pnpm create remix --template https://github.com/xataio/examples/tree/main/apps/starter-remix-netlify remix-xata-app
 ```
 
 </details>

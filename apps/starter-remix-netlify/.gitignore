@@ -4,3 +4,4 @@ node_modules
 /public/build
 /.netlify
 .env
+!schema.template.json

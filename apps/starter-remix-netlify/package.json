@@ -1,6 +1,4 @@
 {
-  "name": "starter-remix-netlify",
-  "description": "Xata + Remix + Netlify",
   "private": true,
   "scripts": {
     "build": "remix build",
