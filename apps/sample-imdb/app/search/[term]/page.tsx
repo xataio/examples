@@ -12,6 +12,11 @@ export default async function Movie({ params }: { params: { term: string } }) {
     <main>
       <HeaderNav searchTerm={term} totalTitles={totalTitles} />
       <Suspense fallback={<Loading />}>
+        {/**
+         * there is no TypeScript support for
+         * async Server Components in JSX
+         *
+         */}
         {/** @ts-expect-error */}
         <SearchResult searchTerm={term} />
       </Suspense>

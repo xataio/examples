@@ -1,6 +1,7 @@
 import { MoviesList } from '~/components/movies-list'
 import { getMovies } from '~/lib/db.server'
 import { Suspense } from 'react'
+import Loading from './loading'
 
 export const SearchResult = async ({
   searchTerm = '',
@@ -18,7 +19,12 @@ export const SearchResult = async ({
         </article>
       ) : (
         <article>
-          <Suspense fallback={<p>Loading movies ....</p>}>
+          <Suspense fallback={<Loading />}>
+            {/**
+             * there is no TypeScript support for
+             * async Server Components in JSX
+             *
+             */}
             {/** @ts-expect-error */}
             <MoviesList titles={titles} />
           </Suspense>
