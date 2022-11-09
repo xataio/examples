@@ -24,32 +24,43 @@ export default async function Movie({ params }: { params: { id: string } }) {
   return (
     <main>
       <Head>
-        <title>XMDB: {primaryTitle}</title>
+        <title key="title">XMDB: {primaryTitle}</title>
         <meta
           property="description"
           content={`XMDB detail pages: ${primaryTitle}`}
+          key="description"
         />
         <meta
           property="og:image"
           content={`${process.env.VERCEL_URL}/api/og?title=${primaryTitle}&image=${coverUrl}`}
+          key="og:image"
         />
-        <meta property="og:title" content={`XMDB: ${primaryTitle}`} />
+        <meta
+          property="og:title"
+          content={`XMDB: ${primaryTitle}`}
+          key="og:title"
+        />
         <meta
           property="og:description"
           content={`XMDB detail pages: ${primaryTitle}`}
+          key="og:description"
         />
-        <meta property="og:type" content="website" />
 
         <meta
           property="twitter:image"
           content={`${process.env.VERCEL_URL}/api/og?title=${primaryTitle}&image=${coverUrl}`}
+          key="twitter:image"
         />
-        <meta property="twitter:title" content={`XMDB: ${primaryTitle}`} />
+        <meta
+          property="twitter:title"
+          content={`XMDB: ${primaryTitle}`}
+          key="twitter:title"
+        />
         <meta
           property="twitter:description"
           content={`XMDB detail pages: ${primaryTitle}`}
+          key="twitter:title"
         />
-        <meta property="twitter:card" content="summary_large_image" />
       </Head>
       <HeaderNav searchTerm={''} />
       <div className=" place-items-center grid">
