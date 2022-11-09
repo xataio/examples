@@ -2,6 +2,7 @@ import { HeaderNav } from '~/components/header-nav'
 import { Rating } from '~/components/ratings'
 import { fetchDefaultTitles, getMovie } from '~/lib/db.server'
 import { notFound } from 'next/navigation'
+import Head from 'next/head'
 
 export default async function Movie({ params }: { params: { id: string } }) {
   const { id } = params
@@ -19,8 +20,37 @@ export default async function Movie({ params }: { params: { id: string } }) {
     averageRating,
     numVotes,
   } = movie
+
   return (
     <main>
+      <Head>
+        <title>XMDB: {primaryTitle}</title>
+        <meta
+          property="description"
+          content={`XMDB detail pages: ${primaryTitle}`}
+        />
+        <meta
+          property="og:image"
+          content={`${process.env.VERCEL_URL}/api/og?title=${primaryTitle}&image=${coverUrl}`}
+        />
+        <meta property="og:title" content={`XMDB: ${primaryTitle}`} />
+        <meta
+          property="og:description"
+          content={`XMDB detail pages: ${primaryTitle}`}
+        />
+        <meta property="og:type" content="website" />
+
+        <meta
+          property="twitter:image"
+          content={`${process.env.VERCEL_URL}/api/og?title=${primaryTitle}&image=${coverUrl}`}
+        />
+        <meta property="twitter:title" content={`XMDB: ${primaryTitle}`} />
+        <meta
+          property="twitter:description"
+          content={`XMDB detail pages: ${primaryTitle}`}
+        />
+        <meta property="twitter:card" content="summary_large_image" />
+      </Head>
       <HeaderNav searchTerm={''} />
       <div className=" place-items-center grid">
         <header className="mb-10">
