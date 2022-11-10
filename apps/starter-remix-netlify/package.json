@@ -13,7 +13,7 @@
     "@remix-run/netlify": "1.7.5",
     "@remix-run/node": "1.7.5",
     "@remix-run/react": "1.7.5",
-    "@xata.io/client": "0.20.1",
+    "@xata.io/client": "0.20.2",
     "cross-env": "7.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0"
