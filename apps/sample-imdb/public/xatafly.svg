@@ -1,15 +1,8 @@
 <svg viewBox="0 0 461 467" fill="none" xmlns="http://www.w3.org/2000/svg">
 <style>
-@media (prefers-color-scheme: dark) {
-    path {
-        fill: white;
-    } 
-}
-@media (prefers-color-scheme: light) {
-    path {
-        fill: black;
-    } 
-}
+path {
+    fill: white;
+} 
 svg {
     transition: fill 250ms linear;
     cursor: pointer;
