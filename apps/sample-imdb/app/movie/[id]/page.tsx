@@ -37,8 +37,8 @@ export default async function Movie({ params }: { params: { id: string } }) {
             </>
           ) : null}
         </header>
-        <article className="grid grid-cols-2 max-w-5xl mx-auto gap-5 p-5 ">
-          <section>
+        <article className="grid lg:grid lg:grid-cols-2 max-w-5xl mx-auto gap-5 p-5 ">
+          <section className="grid place-items-center">
             {coverUrl?.startsWith('http') && !coverUrl?.endsWith('null') && (
               <picture>
                 <source srcSet={coverUrl} type="image/webp" />
@@ -62,8 +62,8 @@ export default async function Movie({ params }: { params: { id: string } }) {
                 ))}
             </ul>
           </section>
-          <section className=" leading-8 self-center ">
-            <p>{summary}</p>
+          <section className="leading-8 self-center ">
+            <p className="max-w-prose mx-auto">{summary}</p>
             <p className="text-right text-neutral-400">
               Duration: {runtimeMinutes} minutes.
             </p>
