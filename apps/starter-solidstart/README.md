@@ -5,16 +5,21 @@ Everything you need to build a Solid project, powered by [`solid-start`](https:/
 ## Creating a project
 
 ```bash
-# create a new project in the current directory
-npm init solid
+# create a new project in my-awesome-app
+npx degit xataio/examples/apps/starter-solidstart my-awesome-app
+```
 
-# create a new project in my-app
-npm init solid my-app
+## Initialize your database
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), you need to initialize your database:
+
+```bash
+npm run xata:init
 ```
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+You can now start a development server:
 
 ```bash
 npm run dev
