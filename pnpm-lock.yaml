@@ -123,7 +123,7 @@ importers:
 
   apps/starter-vercel-serverless-functions:
     specifiers:
-      '@vercel/node': 2.6.2
+      '@vercel/node': 2.6.3
       '@xata.io/cli': 0.10.1
       '@xata.io/client': 0.20.2
       isomorphic-fetch: 3.0.0
@@ -132,7 +132,7 @@ importers:
       '@xata.io/client': 0.20.2_typescript@4.9.3
       isomorphic-fetch: 3.0.0
     devDependencies:
-      '@vercel/node': 2.6.2
+      '@vercel/node': 2.6.3
       '@xata.io/cli': 0.10.1_typescript@4.9.3
       typescript: 4.9.3
 
@@ -3290,20 +3290,20 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vercel/build-utils/5.5.7:
-    resolution: {integrity: sha512-F8brek8VcR3CLgcuKyXbb8k8y/KRwqO/yEV5dTUW6OZ0fGxxa+0RnaaY1UbHlCVF1Cnu+/IsMDsmsj9o1RCP5A==}
+  /@vercel/build-utils/5.5.8:
+    resolution: {integrity: sha512-DDgud8URl951OKbH9pwGs1MgR47UXSvNW1s+ftOjMKlw/qwDdCbIUclVKMcJc3MhLdnvRoo/a12f01b7dpwZDw==}
     dev: true
 
   /@vercel/node-bridge/3.1.2:
     resolution: {integrity: sha512-dgcLXug0IqUeRsywf0G8IrhUFcgw+GYj+EZB4JneglKSofFBh3Xy/t7KfBUxLlKnoq6kyGYJvTmAVB1YBt11qw==}
     dev: true
 
-  /@vercel/node/2.6.2:
-    resolution: {integrity: sha512-uhJrrb41ywM8aFGQ1lIX9jZXdHAXgFT/zhtkg7AkMnHtziKJtyWQ4xZkeaOsIR2c6nOkBisr+zWN8tmtLKexnQ==}
+  /@vercel/node/2.6.3:
+    resolution: {integrity: sha512-zLwv+V9VnMi3Hxrg098sGU0v92+eocwFtD5ZIqVoCiIVEmv9s3TzK+nkF0dYIsy+IW/AV8rcG8qPbgtSHvapIA==}
     dependencies:
       '@edge-runtime/vm': 2.0.0
       '@types/node': 14.18.33
-      '@vercel/build-utils': 5.5.7
+      '@vercel/build-utils': 5.5.8
       '@vercel/node-bridge': 3.1.2
       '@vercel/static-config': 2.0.6
       edge-runtime: 2.0.0
