@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@vercel/node": "2.6.3",
-    "@xata.io/cli": "0.10.1",
+    "@xata.io/cli": "0.11.0",
     "typescript": "4.9.3"
   },
   "dependencies": {
