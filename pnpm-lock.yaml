@@ -151,7 +151,7 @@ importers:
 
   apps/starter-vercel-serverless-functions:
     specifiers:
-      '@vercel/node': 2.6.3
+      '@vercel/node': 2.6.4
       '@xata.io/cli': 0.11.0
       '@xata.io/client': 0.21.0
       isomorphic-fetch: 3.0.0
@@ -160,7 +160,7 @@ importers:
       '@xata.io/client': 0.21.0_typescript@4.9.3
       isomorphic-fetch: 3.0.0
     devDependencies:
-      '@vercel/node': 2.6.3
+      '@vercel/node': 2.6.4
       '@xata.io/cli': 0.11.0_typescript@4.9.3
       typescript: 4.9.3
 
@@ -4058,20 +4058,20 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vercel/build-utils/5.5.8:
-    resolution: {integrity: sha512-DDgud8URl951OKbH9pwGs1MgR47UXSvNW1s+ftOjMKlw/qwDdCbIUclVKMcJc3MhLdnvRoo/a12f01b7dpwZDw==}
+  /@vercel/build-utils/5.5.9:
+    resolution: {integrity: sha512-mEbr7m/hDdIjw3thALn0hgsK3eRLLmHxnfwJgFERRCUdvuoPMFSeZsr6vIqKHlqCk0XzQmDzyQ+Dqs7sCg9tgw==}
     dev: true
 
   /@vercel/node-bridge/3.1.2:
     resolution: {integrity: sha512-dgcLXug0IqUeRsywf0G8IrhUFcgw+GYj+EZB4JneglKSofFBh3Xy/t7KfBUxLlKnoq6kyGYJvTmAVB1YBt11qw==}
     dev: true
 
-  /@vercel/node/2.6.3:
-    resolution: {integrity: sha512-zLwv+V9VnMi3Hxrg098sGU0v92+eocwFtD5ZIqVoCiIVEmv9s3TzK+nkF0dYIsy+IW/AV8rcG8qPbgtSHvapIA==}
+  /@vercel/node/2.6.4:
+    resolution: {integrity: sha512-q3TgvvoRxNlh2NctJkE7LilE6DKcoAkiEMMwDZ24WebQxvi+nkhX2kyC+8ZkD6RVwzgl2oGcVrcBXnuAOHwNlw==}
     dependencies:
       '@edge-runtime/vm': 2.0.0
       '@types/node': 14.18.33
-      '@vercel/build-utils': 5.5.8
+      '@vercel/build-utils': 5.5.9
       '@vercel/node-bridge': 3.1.2
       '@vercel/static-config': 2.0.6
       edge-runtime: 2.0.0
@@ -4130,6 +4130,7 @@ packages:
     resolution: {integrity: sha512-smF3XWxVYQ+YqY2P5VM2ct/rAV8+HA0OdJikMBIXAiNFWEFQXHdaQQ7frU/+x2dHgHRU2K07dqM4May0/XjqNA==}
     engines: {node: '>=12.0.0'}
     hasBin: true
+    requiresBuild: true
     dependencies:
       '@babel/core': 7.20.2
       '@babel/preset-react': 7.18.6_@babel+core@7.20.2
@@ -4247,13 +4248,13 @@ packages:
       - supports-color
       - typescript
       - utf-8-validate
-    dev: false
     optional: true
 
   /@xata.io/cli/0.11.0_typescript@4.9.3:
     resolution: {integrity: sha512-smF3XWxVYQ+YqY2P5VM2ct/rAV8+HA0OdJikMBIXAiNFWEFQXHdaQQ7frU/+x2dHgHRU2K07dqM4May0/XjqNA==}
     engines: {node: '>=12.0.0'}
     hasBin: true
+    requiresBuild: true
     dependencies:
       '@babel/core': 7.20.2
       '@babel/preset-react': 7.18.6_@babel+core@7.20.2
