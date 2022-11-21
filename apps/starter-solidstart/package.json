@@ -1,16 +1,18 @@
 {
-  "name": "solid-start-starter",
+  "name": "starter-solidstart",
   "scripts": {
     "dev": "solid-start dev",
     "build": "solid-start build",
     "start": "solid-start start",
-    "xata": "xata codegen",
+    "xata": "xata codegen --output src/lib/xata.codegen.server.ts",
     "xata:init": "xata init --schema=schema.template.json --codegen src/lib/xata.codegen.server.ts",
     "postxata:init": "node scripts/prefix-env-key.cjs"
   },
   "type": "module",
+  "optionalDependencies": {
+    "@xata.io/cli": "^0.11.0"
+  },
   "devDependencies": {
-    "@xata.io/cli": "^0.10.1",
     "solid-start-node": "^0.2.0",
     "typescript": "^4.8.4",
     "vite": "^3.1.8"
