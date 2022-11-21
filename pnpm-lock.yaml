@@ -126,7 +126,7 @@ importers:
       '@solidjs/meta': ^0.28.0
       '@solidjs/router': ^0.5.0
       '@xata.io/cli': ^0.11.0
-      '@xata.io/client': ^0.20.2
+      '@xata.io/client': ^0.21.0
       solid-js: ^1.6.0
       solid-start: ^0.2.0
       solid-start-node: ^0.2.0
@@ -136,7 +136,7 @@ importers:
     dependencies:
       '@solidjs/meta': 0.28.2_solid-js@1.6.2
       '@solidjs/router': 0.5.0_solid-js@1.6.2
-      '@xata.io/client': 0.20.2_typescript@4.8.4
+      '@xata.io/client': 0.21.0_typescript@4.8.4
       solid-js: 1.6.2
       solid-start: 0.2.5_qx3wzgkguxvthvssnutneqxbxi
       undici: 5.12.0
@@ -4307,14 +4307,6 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@xata.io/client/0.20.2_typescript@4.8.4:
-    resolution: {integrity: sha512-GT88eGcuS/6iNI9LXrQvhj7zL0SCcGu7X5cgPAxSqX9X2YeAwTcBY+BH+KcibhCphKS/eJOxlo/jaYGRvDgTQg==}
-    peerDependencies:
-      typescript: '>=4.5'
-    dependencies:
-      typescript: 4.8.4
-    dev: false
-
   /@xata.io/client/0.21.0_typescript@4.8.4:
     resolution: {integrity: sha512-0fMF66nECWg6MTstEsP9aE3GQxNYJu7gloAbwUAY58gWcCZnWjxHhueoAc+eUZxLsb7kvG3VM3M8LGnXsK+Wag==}
     peerDependencies:
@@ -4322,7 +4314,6 @@ packages:
     dependencies:
       typescript: 4.8.4
     dev: false
-    optional: true
 
   /@xata.io/client/0.21.0_typescript@4.9.3:
     resolution: {integrity: sha512-0fMF66nECWg6MTstEsP9aE3GQxNYJu7gloAbwUAY58gWcCZnWjxHhueoAc+eUZxLsb7kvG3VM3M8LGnXsK+Wag==}
