@@ -8,17 +8,17 @@ function RootLayout({ children }: { children: ReactNode }) {
         {children}
         <footer className="flex justify-center items-center gap-2 py-12">
           <span>Powered by</span>
-
           <a
-            className="inline-block"
             href="https://xata.io"
             rel="noopener noreferrer"
             target="_blank"
+            className="block border-2 "
           >
             <object
+              type="image/svg+xml"
               data="/xatafly.svg"
               aria-label="Xata Logo"
-              className="w-8"
+              className="w-8 -z-10"
             />
           </a>
         </footer>
