@@ -17,7 +17,7 @@
     "@astrojs/node": "^3.0.0",
     "@astrojs/react": "^1.2.2",
     "@types/react": "^18.0.25",
-    "@xata.io/cli": "^0.10.1",
+    "@xata.io/cli": "^0.11.0",
     "@xata.io/client": "^0.20.2",
     "astro": "^1.6.9",
     "react": "^18.2.0"
