@@ -1,10 +1,10 @@
 ---
-import { PushRecordButton } from "../components/PushRecordButton";
-import Task from "../components/Task.astro";
-import Layout from "../layouts/Layout.astro";
-import { xata } from "../lib/xata";
+import { PushRecordButton } from '../components/PushRecordButton'
+import Task from '../components/Task.astro'
+import Layout from '../layouts/Layout.astro'
+import { xata } from '../lib/xata'
 
-const data = await xata.db.astro_with_xata_example.getAll();
+const data = await xata.db.astro_with_xata_example.getAll()
 ---
 
 <Layout title="Welcome to Astro.">
@@ -28,20 +28,22 @@ const data = await xata.db.astro_with_xata_example.getAll();
             <PushRecordButton client:visible />
           </section>
         ) : (
-          data.map((task) => (
-            <Task
-              id={task.id}
-              description={task.description || "No description"}
-              title={task.title || "No title"}
-              url={task.url || ""}
-            />
-          ))
+          <ul>
+            {data.map((task) => (
+              <Task
+                id={task.id}
+                description={task.description || 'No description'}
+                title={task.title || 'No title'}
+                url={task.url || ''}
+              />
+            ))}
+          </ul>
         )
       }
     </article>
     <footer>
       <span>
-        Made by{" "}
+        Made by{' '}
         <a href="https://xata.io" rel="noopener noreferrer" target="_blank">
           <object data="/xatafly.svg" aria-label="Xata Logo"></object>
         </a>
@@ -49,48 +51,3 @@ const data = await xata.db.astro_with_xata_example.getAll();
     </footer>
   </main>
 </Layout>
-
-<style>
-  main {
-    margin: auto;
-    padding: 1.5rem;
-    max-width: 60ch;
-  }
-  h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    margin: 0;
-  }
-  .text-gradient {
-    background-image: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 400%;
-    background-position: 0%;
-  }
-  .instructions {
-    line-height: 1.6;
-    margin: 1rem 0;
-    border: 1px solid rgba(var(--accent), 25%);
-    background-color: white;
-    padding: 1rem;
-    border-radius: 0.4rem;
-  }
-  .instructions code {
-    font-size: 0.875em;
-    font-weight: bold;
-    background: rgba(var(--accent), 12%);
-    color: rgb(var(--accent));
-    border-radius: 4px;
-    padding: 0.3em 0.45em;
-  }
-  .instructions strong {
-    color: rgb(var(--accent));
-  }
-  .link-card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-    gap: 1rem;
-    padding: 0;
-  }
-</style>

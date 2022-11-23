@@ -5,9 +5,7 @@ export default function DeleteButton(props: { id: string }) {
     }).then(() => window.location.reload())
   }
 
-  return <button name="item" onClick={onClick}>
-    <span role="img" aria-label="delete item">
-      🗑
-    </span>
+  return <button onClick={onClick}>
+    <span role="img" aria-label="delete item">🗑</span>
   </button>
 }
