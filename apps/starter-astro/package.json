@@ -1,0 +1,25 @@
+{
+  "name": "@example/basics",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "xata": "xata",
+    "xata:init": "xata init --schema=schema.template.json --codegen src/lib/xata.codegen.server.ts",
+    "xata:codegen": "xata codegen"
+  },
+  "dependencies": {
+    "@astrojs/node": "^3.0.0",
+    "@astrojs/react": "^1.2.2",
+    "@types/react": "^18.0.25",
+    "@xata.io/cli": "^0.10.1",
+    "@xata.io/client": "^0.20.2",
+    "astro": "^1.6.9",
+    "react": "^18.2.0"
+  }
+}
