@@ -14,8 +14,8 @@
     "xata:codegen": "xata codegen"
   },
   "dependencies": {
-    "@astrojs/node": "^3.0.0",
     "@astrojs/react": "^1.2.2",
+    "@astrojs/vercel": "^2.3.4",
     "@types/react": "^18.0.25",
     "@xata.io/cli": "^0.11.0",
     "@xata.io/client": "^0.20.2",
