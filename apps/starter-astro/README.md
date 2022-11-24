@@ -4,7 +4,7 @@
 
 ```bash
 # create a new project in my-awesome-app
-npx degit xataio/examples/apps/astro-solidstart my-awesome-app
+npx degit xataio/examples/apps/starter-astro my-awesome-app
 ```
 
 ## 🦋 Initialize your database
