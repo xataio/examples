@@ -1,6 +1,7 @@
 {
   "name": "starter-solidstart",
   "scripts": {
+    "deploy-your-own": "XATA_API_KEY=VITE_XATA_API_KEY xata init --schema=schema.template.json --codegen src/lib/xata.codegen.server.ts --yes && npm run build",
     "dev": "solid-start dev",
     "build": "solid-start build",
     "start": "solid-start start",
