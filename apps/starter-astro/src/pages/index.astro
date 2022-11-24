@@ -1,0 +1,53 @@
+---
+import { PushRecordButton } from '../components/PushRecordButton'
+import Task from '../components/Task.astro'
+import Layout from '../layouts/Layout.astro'
+import { xata } from '../lib/xata'
+
+const data = await xata.db.astro_with_xata_example.getAll()
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <header>
+      <img src="/flap.gif" alt="Xata Logo" />
+      <h1>
+        Astro<span aria-hidden>&#8209;</span>Xata<span aria-hidden>&#8209;</span
+        >Starter
+      </h1>
+    </header>
+    <article>
+      {
+        data.length === 0 ? (
+          <section>
+            <h2>No records found.</h2>
+            <strong>
+              Create a `astro_with_xata_example` and push some useful links to
+              see them here.
+            </strong>
+            <PushRecordButton client:visible />
+          </section>
+        ) : (
+          <ul>
+            {data.map((task) => (
+              <Task
+                id={task.id}
+                description={task.description || 'No description'}
+                title={task.title || 'No title'}
+                url={task.url || ''}
+              />
+            ))}
+          </ul>
+        )
+      }
+    </article>
+    <footer>
+      <span>
+        Made by{' '}
+        <a href="https://xata.io" rel="noopener noreferrer" target="_blank">
+          <object data="/xatafly.svg" aria-label="Xata Logo"></object>
+        </a>
+      </span>
+    </footer>
+  </main>
+</Layout>
