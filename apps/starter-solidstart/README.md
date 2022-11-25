@@ -11,7 +11,9 @@ npx degit xataio/examples/apps/starter-solidstart my-awesome-app
 
 ## Deploy Your Own
 
-You will need a valid add the value to the `VITE_XATA_API_KEY` manually.
+You will need to add the value to the `VITE_XATA_API_KEY` manually.
+
+See in our [how to generate an API key](https://xata.io/docs/concepts/api-keys#generating-api-keys) in our documentation.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fxataio%2Fexamples%2Ftree%2Fmain%2Fapps%2Fstarter-solidstart&env=VITE_XATA_API_KEY&build-command=npm%20run%20deploy-your-own&envDescription=The%20API%20access%20token%20to%20your%20Xata%20Workspace&envLink=https%3A%2F%2Fapp.xata.io%2Fsettings&project-name=my-solid-xata-app&repository-name=my-solid-xata-app)
 
