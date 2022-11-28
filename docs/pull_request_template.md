@@ -7,7 +7,7 @@ Fixes #{issue_number}
 <!-- Part of  #{issue_number} -->
 
 <!--
-If this is a new Sample, double-check if you used the readme_template.md
+If this is a new Sample, double-check if you used the ./docs/readme_template.md
 -->
 
 <!--
