@@ -18,7 +18,7 @@
     "@astrojs/vercel": "^2.3.4",
     "@types/react": "^18.0.25",
     "@xata.io/cli": "^0.11.0",
-    "@xata.io/client": "^0.20.2",
+    "@xata.io/client": "^0.21.0",
     "astro": "^1.6.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
