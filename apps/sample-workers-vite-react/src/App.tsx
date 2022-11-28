@@ -36,6 +36,7 @@ function App() {
       <div className="pagination">
         <button
           onClick={() => {
+            if (page === 0) return
             setPage((page) => page - 1)
           }}
           disabled={page === 0}
@@ -44,6 +45,7 @@ function App() {
         </button>
         <button
           onClick={() => {
+            if (posts.length < 3) return
             setPage((page) => page + 1)
           }}
           disabled={posts.length < 3}
