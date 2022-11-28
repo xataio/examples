@@ -4,25 +4,30 @@ It’s great that you are here. It means you have thought about contributing to 
 
 Here are a few guidelines to help you get started in the best way possible and avoid wasting your time with trivialities. That being said, if you feel something doesn’t apply to you, we won’t be mad (we just may take longer to reply) - more importantly: let us know. Our [discord server](https://xata.io/discord) is the best place to reach us quickly.
 
-## Open an Issue
+## Bug or Enhancement
 
-> TBD
+If you intend to do the work yourself: **thank you**. But please, open an issue nonetheless, this will help us all prevent multiple people from working on the same issue _and_ avoid any unnecessary discussions during Code Reviews. Let’s align on the appropriate strategy and help each other in an efficient way.
 
-## Create an Example on `/providers` or `/apps`
+At the moment there are no templates for issues, so please follow this loose guidelines when appropriate:
 
-1. If there isn’t yet an issue, please open one. (this is important so 2 people don’t work on the same thing).
+### Bug
+
+1. Explicitly say the system and environment (Node.js version, browser, CLI and SDK versions, and other relevant details).
+2. Create steps to reproduce it, or povide a code sample where the issue occurs consistently.
+3. Please use the **bug** label to help triage.
+4. If you intend to work on this, make it explicit in your issue description and assign yourself to it.
+
+### Enhancement
+
+1. Elaborate what is the use-case you intend to address with this new feature.
+2. Please use the **enhancement** label to help triage.
+3. If you intend to work on this, make it explicit in your issue description and assign yourself to it.
+
+## Contribute to our `/apps`
+
+1. If there isn’t yet an issue, please open one and assign yourself. (this is important so multiple people don’t work on the same thing).
 2. Please join the [Xata Discord Community](https://xata.io/discord) if you haven't so we can collaborate with a shorter feedback loop.
 3. You’ll get a greenlight from a maintainer on your issue.
 4. Now [fork the repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo), roll up your sleeves, and get busy!
-
-## Contribute to `/packages` or `/schemas`
-
-1. If there isn’t yet an issue, please open one. (this is important so 2 people don’t work on the same thing).
-2. Please join the [Xata Discord Community](https://xata.io/discord) if you haven't so we can collaborate with a shorter feedback loop
-3. You’ll get a greenlight from a maintainer on your issue.
-4. Now [fork the repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo), roll up your sleeves, and get busy!
-5. Check our guidelines to add a proper **changeset** to your PR when you are done.
-
-## Mark changes to your Pull Request
-
-> TBD
+5. You can create the PR as a **draft** while you're working on it so the development is transparent and we can see you active (totally optional, though!)
+6. When done, mark your PR as **Ready to Review** and make sure to follow the PR Description Template: pointing out how to test it, what issue does it solve, and if there are pending decisions to be made still.
