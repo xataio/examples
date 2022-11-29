@@ -2,6 +2,10 @@
 
 This is a sample app that uses [Xata Workers](https://xata.io/beta/workers) and [Vite](https://vitejs.dev) to build a React app.
 
+**Note:** "Xata Workers" is a private beta feature and subject to changes until it reaches general availability.  
+In order to access Xata Workers, you first need to request [Beta access](https://xata.io/beta/workers), which follows a waitlist.  
+In case you would like to request expedited early access please [contact Support](https://support.xata.io/hc/en-us/requests/new).
+
 ## Getting Started
 
 1. Install dependencies
