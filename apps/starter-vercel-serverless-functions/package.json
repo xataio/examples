@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vc dev",
     "xata:codegen": "xata codegen",
-    "postinstall": "npx @xata.io/cli codegen --db=\"https://xata_examples-hf8grf.eu-west-1.xata.sh/db/marvel\" -b=\"main\" -o=\"_lib/xata.codegen.ts\""
+    "prebuild": "npx @xata.io/cli codegen --db=\"https://xata_examples-hf8grf.eu-west-1.xata.sh/db/marvel\" -b=\"main\" -o=\"_lib/xata.codegen.ts\""
   },
   "devDependencies": {
     "@vercel/node": "2.7.1",
