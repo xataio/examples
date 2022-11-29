@@ -8,9 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "xata:codegen": "xata codegen",
-    "postinstall": "pnpm tailwind",
     "tailwind": "tailwindcss -i styles/globals.css -o styles/dist.css",
-    "turbo:dev": "concurrently 'next dev --turbo' 'pnpm tailwind --watch'"
+    "turbo:dev": "pnpm tailwind && concurrently 'next dev --turbo' 'pnpm tailwind --watch'"
   },
   "dependencies": {
     "@xata.io/client": "0.21.3",
