@@ -88,6 +88,7 @@ importers:
       '@types/react-dom': ^18.0.8
       '@vitejs/plugin-react': ^2.2.0
       '@xata.io/client': 0.21.3
+      concurrently: ^7.5.0
       react: ^18.2.0
       react-dom: ^18.2.0
       typescript: ^4.6.4
@@ -100,6 +101,7 @@ importers:
       '@types/react': 18.0.25
       '@types/react-dom': 18.0.9
       '@vitejs/plugin-react': 2.2.0_vite@3.2.4
+      concurrently: 7.5.0
       typescript: 4.9.3
       vite: 3.2.4
 
@@ -4530,6 +4532,7 @@ packages:
       - supports-color
       - typescript
       - utf-8-validate
+    dev: false
     optional: true
 
   /@xata.io/cli/0.11.2_typescript@4.9.3:
