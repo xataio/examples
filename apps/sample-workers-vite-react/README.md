@@ -61,7 +61,7 @@ To deploy the Xata worker you need to run:
 xata workers upload
 ```
 
-Finnaly, build your app and serve from your provider of choice.
+Finally, build your app and serve from your provider of choice.
 
 ## Xata Workers feedback
 
