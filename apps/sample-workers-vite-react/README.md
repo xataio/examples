@@ -33,7 +33,7 @@ This project uses the "demo db" from your project initialization.
     <img alt="Xata dashboard for starting with sample data" src="/sample-db.png" />
 </details>
 
-> 💡 We recommend installing `@xataio/cli` globally in your system. But if you don't wish to do so, it is possible to add to your project dependencies and run it through the package manager.
+> 💡 You will need the latest version of the Xata CLI in order to use Xata Workers. We recommend installing `@xataio/cli` globally in your system with `npm -g install @xata.io/cli@latest`. But if you don't wish to do so, it is possible to add to your project dependencies and run it through the package manager.
 
 **Connect this project to a Xata workspace and database**
 
