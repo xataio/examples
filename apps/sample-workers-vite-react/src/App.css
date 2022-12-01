@@ -8,7 +8,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 2rem;
-  color: black;
 }
 
 .card {
@@ -27,4 +26,11 @@
   justify-content: center;
   margin: 2rem 0;
   gap: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .card {
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
 }
