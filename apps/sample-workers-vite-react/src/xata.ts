@@ -66,5 +66,5 @@ export const getXataClient = () => {
 
 export const xataWorker = buildWorkerRunner<XataClient>({
   workspace: "sample-databases-v0sn1n",
-  worker: "ce2dg2u6t0pjkjaqllp0",
+  worker: "",
 });
