@@ -11,7 +11,7 @@ npx degit xataio/examples/apps/starter-solidstart my-awesome-app
 
 ## Deploy Your Own
 
-You will need to add the value to the `VITE_XATA_API_KEY` manually.
+You will need to add the value to the `XATA_API_KEY` manually.
 
 See in our [how to generate an API key](https://xata.io/docs/concepts/api-keys#generating-api-keys) in our documentation.
 

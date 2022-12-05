@@ -1,5 +1,5 @@
-import { XataClient } from "./xata.codegen.server";
+import { XataClient } from './xata.codegen.server'
 
 export const xata = new XataClient({
-  apiKey: import.meta.env.VITE_XATA_API_KEY,
-});
+  apiKey: import.meta.env.XATA_API_KEY,
+})

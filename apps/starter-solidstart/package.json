@@ -1,12 +1,13 @@
 {
   "name": "starter-solidstart",
   "scripts": {
-    "deploy-your-own": "XATA_API_KEY=VITE_XATA_API_KEY xata init --schema=schema.template.json --codegen src/lib/xata.codegen.server.ts --yes && npm run build",
+    "deploy-your-own": "XATA_API_KEY=XATA_API_KEY xata init --schema=schema.template.json --codegen src/lib/xata.codegen.server.ts --yes && npm run build",
     "dev": "solid-start dev",
     "build": "solid-start build",
     "start": "solid-start start",
+    "xata": "xata",
     "xata:codegen": "xata codegen --output src/lib/xata.codegen.server.ts",
-    "xata:init": "xata init --schema=schema.template.json --codegen src/lib/xata.codegen.server.ts && node scripts/prefix-env-key.cjs"
+    "xata:init": "xata init --schema=schema.template.json --codegen src/lib/xata.codegen.server.ts"
   },
   "type": "module",
   "optionalDependencies": {
@@ -22,6 +23,7 @@
     "@solidjs/meta": "^0.28.0",
     "@solidjs/router": "^0.5.0",
     "@xata.io/client": "^0.21.0",
+    "dotenv": "^16.0.3",
     "solid-js": "^1.6.0",
     "solid-start": "^0.2.0",
     "undici": "^5.11.0"
