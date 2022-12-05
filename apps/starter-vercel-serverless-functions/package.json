@@ -5,7 +5,6 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "pnpm run xata:init && vercel build",
     "dev": "vc dev",
     "xata:init": "npx @xata.io/cli codegen --db=\"https://xata_examples-hf8grf.eu-west-1.xata.sh/db/marvel\" -b=\"main\" -o=\"_lib/xata.codegen.ts\"",
     "xata:codegen": "xata codegen"
