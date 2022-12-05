@@ -43,7 +43,7 @@ Explain how to push schema, link project, generate types.
 -->
 
 ```sh
-npm run start:xata
+npm run xata:init
 ```
 
 > ⚠️ once linked, you can just run `xata:codegen` to re-generate types.
