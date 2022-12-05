@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "vc dev",
-    "xata:init": "npx @xata.io/cli codegen --db=\"https://xata_examples-hf8grf.eu-west-1.xata.sh/db/marvel\" -b=\"main\" -o=\"_lib/xata.codegen.ts\"",
+    "xata:init": "xata codegen --db=\"https://xata_examples-hf8grf.eu-west-1.xata.sh/db/marvel\" -b=\"main\" -o=\"_lib/xata.codegen.ts\"",
     "xata:codegen": "xata codegen -o=\"_lib/xata.codegen.ts\""
   },
   "devDependencies": {
