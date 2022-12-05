@@ -5,20 +5,20 @@ importers:
   .:
     specifiers:
       '@changesets/cli': 2.25.2
-      '@types/node': 18.11.10
+      '@types/node': 18.11.11
       prettier: 2.8.0
       turbo: 1.6.3
       typescript: 4.9.3
     devDependencies:
       '@changesets/cli': 2.25.2
-      '@types/node': 18.11.10
+      '@types/node': 18.11.11
       prettier: 2.8.0
       turbo: 1.6.3
       typescript: 4.9.3
 
   apps/sample-imdb:
     specifiers:
-      '@types/node': 18.11.10
+      '@types/node': 18.11.11
       '@types/react': 18.0.26
       '@types/react-dom': 18.0.9
       '@xata.io/cli': 0.11.4
@@ -40,7 +40,7 @@ importers:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     devDependencies:
-      '@types/node': 18.11.10
+      '@types/node': 18.11.11
       '@types/react': 18.0.26
       '@types/react-dom': 18.0.9
       '@xata.io/cli': 0.11.4_ihpjuptnmznynlhgkzg5vbrtj4
@@ -56,7 +56,7 @@ importers:
   apps/sample-nextjs-basic-auth:
     specifiers:
       '@types/bcrypt': ^5.0.0
-      '@types/node': 18.11.10
+      '@types/node': 18.11.11
       '@types/react': 18.0.26
       '@types/react-dom': 18.0.9
       '@xata.io/client': 0.21.3
@@ -75,7 +75,7 @@ importers:
       react-dom: 18.2.0_react@18.2.0
     devDependencies:
       '@types/bcrypt': 5.0.0
-      '@types/node': 18.11.10
+      '@types/node': 18.11.11
       '@types/react': 18.0.26
       '@types/react-dom': 18.0.9
       eslint: 8.29.0
@@ -2831,13 +2831,13 @@ packages:
   /@types/bcrypt/5.0.0:
     resolution: {integrity: sha512-agtcFKaruL8TmcvqbndlqHPSJgsolhf/qPWchFlgnW1gECTN/nKbFcoFnvKAQRFfKbh+BO6A3SWdJu9t+xF3Lw==}
     dependencies:
-      '@types/node': 18.11.10
+      '@types/node': 18.11.11
     dev: true
 
   /@types/better-sqlite3/7.6.2:
     resolution: {integrity: sha512-RgmaapusqTq6IMAr4McMyAsC6RshYTCjXCnzwVV59WctUxC8bNPyUfT9t5F81lKcU41lLurhjqjoMHfauzfqGg==}
     dependencies:
-      '@types/node': 18.11.10
+      '@types/node': 18.11.11
 
   /@types/cookie/0.5.1:
     resolution: {integrity: sha512-COUnqfB2+ckwXXSFInsFdOAWQzCCx+a5hq2ruyj+Vjund94RJQd4LG2u9hnvJrTgunKAaax7ancBYlDrNYxA0g==}
@@ -2901,7 +2901,7 @@ packages:
   /@types/keyv/3.1.4:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
-      '@types/node': 18.11.10
+      '@types/node': 18.11.11
     dev: true
 
   /@types/mdast/3.0.10:
@@ -2932,8 +2932,8 @@ packages:
     resolution: {integrity: sha512-qelS/Ra6sacc4loe/3MSjXNL1dNQ/GjxNHVzuChwMfmk7HuycRLVQN2qNY3XahK+fZc5E2szqQSKUyAF0E+2bg==}
     dev: true
 
-  /@types/node/18.11.10:
-    resolution: {integrity: sha512-juG3RWMBOqcOuXC643OAdSA525V44cVgGV6dUDuiFtss+8Fk5x1hI93Rsld43VeJVIeqlP9I7Fn9/qaVqoEAuQ==}
+  /@types/node/18.11.11:
+    resolution: {integrity: sha512-KJ021B1nlQUBLopzZmPBVuGU9un7WJd/W4ya7Ih02B4Uwky5Nja0yGYav2EfYIk0RR2Q9oVhf60S2XR1BCWJ2g==}
 
   /@types/normalize-package-data/2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
@@ -2949,7 +2949,7 @@ packages:
   /@types/prompts/2.4.1:
     resolution: {integrity: sha512-1Mqzhzi9W5KlooNE4o0JwSXGUDeQXKldbGn9NO4tpxwZbHXYd+WcKpCksG2lbhH7U9I9LigfsdVsP2QAY0lNPA==}
     dependencies:
-      '@types/node': 18.11.10
+      '@types/node': 18.11.11
 
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
@@ -2982,7 +2982,7 @@ packages:
   /@types/resolve/1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
     dependencies:
-      '@types/node': 18.11.10
+      '@types/node': 18.11.11
     dev: true
 
   /@types/resolve/1.20.2:
@@ -2991,13 +2991,13 @@ packages:
   /@types/responselike/1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 18.11.10
+      '@types/node': 18.11.11
     dev: true
 
   /@types/sass/1.43.1:
     resolution: {integrity: sha512-BPdoIt1lfJ6B7rw35ncdwBZrAssjcwzI5LByIrYs+tpXlj/CAkuVdRsgZDdP4lq5EjyWzwxZCqAoFyHKFwp32g==}
     dependencies:
-      '@types/node': 18.11.10
+      '@types/node': 18.11.11
     dev: true
 
   /@types/scheduler/0.16.2:
@@ -3625,7 +3625,6 @@ packages:
       - supports-color
       - typescript
       - utf-8-validate
-    dev: false
     optional: true
 
   /@xata.io/cli/0.11.4_uqxppmeui26zxqxscku33lb3hy:
