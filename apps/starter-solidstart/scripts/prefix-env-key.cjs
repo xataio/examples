@@ -8,8 +8,13 @@ const fs = require('fs')
 const path = require('path')
 
 const envPath = path.join(__dirname, '../.env')
-const envData = fs.readFileSync(envPath, 'utf-8')
-fs.writeFileSync(
-  envPath,
-  envData.replace(/^XATA_API_KEY=/gm, 'VITE_XATA_API_KEY=')
-)
+
+try {
+  const envData = fs.readFileSync(envPath, 'utf-8')
+  fs.writeFileSync(
+    envPath,
+    envData.replace(/^XATA_API_KEY=/gm, 'VITE_XATA_API_KEY=')
+  )
+} catch {
+  console.error(`No .env file found at ${envPath}`)
+}

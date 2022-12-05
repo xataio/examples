@@ -12,7 +12,7 @@ export default async function handler(
     <div>
         <h1 style="font-size: 3rem">${XATAFLY}</h1>
         <div style="font-size: 2rem;">
-        <strong>check the</strong> <a style="color: #ff0075" rel="noopener noreferrer" href="https://github.com/xataio/examples/tree/main/functions/vercel-functions">documentation</a>
+        <strong>check the</strong> <a style="color: #ff0075" rel="noopener noreferrer" href="https://github.com/xataio/examples/tree/main/apps/starter-vercel-serverless-functions">documentation</a>
         </div>
     </div>
     </body>`

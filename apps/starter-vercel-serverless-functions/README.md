@@ -130,7 +130,7 @@ yarn start:xata
 ```
 
 ```sh
-pnpm run start:xata
+pnpm run xata:init
 ```
 
 </details>
