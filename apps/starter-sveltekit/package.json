@@ -1,6 +1,5 @@
 {
-	"name": "svelte-starter",
-	"version": "0.0.1",
+	"name": "starter-sveltekit",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
