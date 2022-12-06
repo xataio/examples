@@ -4,6 +4,18 @@ It’s great that you are here. It means you have thought about contributing to 
 
 Here are a few guidelines to help you get started in the best way possible and avoid wasting your time with trivialities. That being said, if you feel something doesn’t apply to you, we won’t be mad (we just may take longer to reply) - more importantly: let us know. Our [discord server](https://xata.io/discord) is the best place to reach us quickly.
 
+To make things simpler and more ergonomic for **you**, you also have the option to start a new PR by opening this repository via the button:
+
+<div>
+  
+  [![Open in Codeflow](https://developer.stackblitz.com/img/open_in_codeflow.svg)](https:///pr.new/xataio/examples)
+
+</div>
+
+This will open the repository and install all dependencies in a web container. You will have a remote instance of VSCode ready to work and from there it's possible to address issues, fork the monorepo, create branches, and open PRs without consuming your disk space or bandwitdh.
+
+If that’s not your cup of tea, of course there's no objections about cloning it locally.
+
 ## Bug or Enhancement
 
 If you intend to do the work yourself: **thank you**. But please, open an issue nonetheless, this will help us all prevent multiple people from working on the same issue _and_ avoid any unnecessary discussions during Code Reviews. Let’s align on the appropriate strategy and help each other in an efficient way.
