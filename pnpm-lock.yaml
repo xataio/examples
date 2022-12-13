@@ -158,7 +158,7 @@ importers:
   apps/starter-sveltekit:
     specifiers:
       '@sveltejs/adapter-auto': next
-      '@sveltejs/adapter-vercel': 1.0.0-next.86
+      '@sveltejs/adapter-vercel': 1.0.0-next.87
       '@sveltejs/kit': next
       '@typescript-eslint/eslint-plugin': ^5.27.0
       '@typescript-eslint/parser': ^5.27.0
@@ -176,11 +176,11 @@ importers:
       typescript: ^4.7.4
       vite: ^3.1.0
     dependencies:
-      '@sveltejs/adapter-vercel': 1.0.0-next.86
+      '@sveltejs/adapter-vercel': 1.0.0-next.87
       '@xata.io/client': 0.21.3_typescript@4.9.3
     devDependencies:
       '@sveltejs/adapter-auto': 1.0.0-next.90
-      '@sveltejs/kit': 1.0.0-next.584_svelte@3.53.1+vite@3.2.4
+      '@sveltejs/kit': 1.0.0-next.586_svelte@3.53.1+vite@3.2.4
       '@typescript-eslint/eslint-plugin': 5.38.1_5gcjj6prpyivqnqxif45a6no3m
       '@typescript-eslint/parser': 5.42.1_s5ps7njkmjlaqajutnox5ntcla
       '@xata.io/cli': 0.11.2_typescript@4.9.3
@@ -3080,8 +3080,8 @@ packages:
       import-meta-resolve: 2.2.0
     dev: true
 
-  /@sveltejs/adapter-vercel/1.0.0-next.86:
-    resolution: {integrity: sha512-7aSUogFmmoMKEaJbOaxiN3Te/Nx/nv5K+i6mgfqwOEbIGXzlEcFTao/465tB6Je7Lkqub9AyZj+gHw901u0wgA==}
+  /@sveltejs/adapter-vercel/1.0.0-next.87:
+    resolution: {integrity: sha512-JRmDa7UDpL8Ir2v+8Glq7OMz8Ufn2VLSCJcNDWygNzQehTf9SeK7sAyDjnEUds0WXNH9TMzxqzPd+xj2eZ0W0Q==}
     dependencies:
       '@vercel/nft': 0.22.1
       esbuild: 0.16.3
@@ -3090,8 +3090,8 @@ packages:
       - supports-color
     dev: false
 
-  /@sveltejs/kit/1.0.0-next.584_svelte@3.53.1+vite@3.2.4:
-    resolution: {integrity: sha512-iBfrrwkza1szR1GVMorTjj1Yw3SXhDVB5MMdDzCMKqKcCwxCehQ3K6QnlmyXHtHg2qX5rfvz0cpkp0uGGmcxQw==}
+  /@sveltejs/kit/1.0.0-next.586_svelte@3.53.1+vite@3.2.4:
+    resolution: {integrity: sha512-lTYWy4voh/r4jz8qnurIATyrH2ZgHPUswYQ9KauyASSjQGYeB1TPDgwcafM/LtgMxpcvFgWsx2KeflykSHXKxg==}
     engines: {node: '>=16.14'}
     hasBin: true
     requiresBuild: true
