@@ -158,7 +158,7 @@ importers:
   apps/starter-sveltekit:
     specifiers:
       '@sveltejs/adapter-auto': next
-      '@sveltejs/adapter-vercel': 1.0.0-next.88
+      '@sveltejs/adapter-vercel': 1.0.0
       '@sveltejs/kit': next
       '@typescript-eslint/eslint-plugin': ^5.27.0
       '@typescript-eslint/parser': ^5.27.0
@@ -176,11 +176,11 @@ importers:
       typescript: ^4.7.4
       vite: ^3.1.0
     dependencies:
-      '@sveltejs/adapter-vercel': 1.0.0-next.88_oogoraclbppcquiitsbqrelvd4
+      '@sveltejs/adapter-vercel': 1.0.0_l5ueyfihz3gpzzvvyo2ean5u3e
       '@xata.io/client': 0.21.3_typescript@4.9.3
     devDependencies:
-      '@sveltejs/adapter-auto': 1.0.0-next.91_oogoraclbppcquiitsbqrelvd4
-      '@sveltejs/kit': 1.0.0-next.587_svelte@3.53.1+vite@3.2.4
+      '@sveltejs/adapter-auto': 1.0.0-next.91_l5ueyfihz3gpzzvvyo2ean5u3e
+      '@sveltejs/kit': 1.0.0-next.589_svelte@3.53.1+vite@3.2.4
       '@typescript-eslint/eslint-plugin': 5.38.1_5gcjj6prpyivqnqxif45a6no3m
       '@typescript-eslint/parser': 5.42.1_s5ps7njkmjlaqajutnox5ntcla
       '@xata.io/cli': 0.11.2_typescript@4.9.3
@@ -3325,21 +3325,21 @@ packages:
     dependencies:
       solid-js: 1.6.2
 
-  /@sveltejs/adapter-auto/1.0.0-next.91_oogoraclbppcquiitsbqrelvd4:
+  /@sveltejs/adapter-auto/1.0.0-next.91_l5ueyfihz3gpzzvvyo2ean5u3e:
     resolution: {integrity: sha512-U57tQdzTfFINim8tzZSARC9ztWPzwOoHwNOpGdb2o6XrD0mEQwU9DsII7dBblvzg+xCnmd0pw7PDtXz5c5t96w==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0-next.587
     dependencies:
-      '@sveltejs/kit': 1.0.0-next.587_svelte@3.53.1+vite@3.2.4
+      '@sveltejs/kit': 1.0.0-next.589_svelte@3.53.1+vite@3.2.4
       import-meta-resolve: 2.2.0
     dev: true
 
-  /@sveltejs/adapter-vercel/1.0.0-next.88_oogoraclbppcquiitsbqrelvd4:
-    resolution: {integrity: sha512-X2DewfrqALRORli1WsMszFt04Rdh5CBJbNYH+lZ5Kn7Yq6cFa6XDE5kBIbi/Z43ib0qLlWvuys03DJGbjfokDg==}
+  /@sveltejs/adapter-vercel/1.0.0_l5ueyfihz3gpzzvvyo2ean5u3e:
+    resolution: {integrity: sha512-3zM/7BJbtxBo02J4/2mpZyiHZtH6HAggND/xRaBiKjSsKSMYvKC4ipqVfHoESuW5NQNAnJVf1zMAQY2PPxv91w==}
     peerDependencies:
-      '@sveltejs/kit': ^1.0.0-next.587
+      '@sveltejs/kit': ^1.0.0
     dependencies:
-      '@sveltejs/kit': 1.0.0-next.587_svelte@3.53.1+vite@3.2.4
+      '@sveltejs/kit': 1.0.0-next.589_svelte@3.53.1+vite@3.2.4
       '@vercel/nft': 0.22.1
       esbuild: 0.16.3
     transitivePeerDependencies:
@@ -3347,8 +3347,8 @@ packages:
       - supports-color
     dev: false
 
-  /@sveltejs/kit/1.0.0-next.587_svelte@3.53.1+vite@3.2.4:
-    resolution: {integrity: sha512-F8zYXd7URcq57sGfrBRWTLtfj6JKkhNhwM4M8w4hNnJsJlZawPUvpybOSlIP87Z8URO8iCmyigQHxAYYzedrOg==}
+  /@sveltejs/kit/1.0.0-next.589_svelte@3.53.1+vite@3.2.4:
+    resolution: {integrity: sha512-5ABRw46z9B+cCe/YWhcx+I/azNZg1NCDEkVJifZn8ToFoJ3a1eP0OexNIrvMEWpllMbNMPcJm2TC9tnz9oPfWQ==}
     engines: {node: '>=16.14'}
     hasBin: true
     requiresBuild: true
