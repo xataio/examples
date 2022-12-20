@@ -1,6 +1,6 @@
 import { Suspense } from 'react'
 import { SearchResult } from '~/app/search-result'
-import Loading from '~/app/loading'
+import Loading from '~/app/loader'
 import { getTotalTitles } from '~/lib/db.server'
 import { HeaderNav } from '~/components/header-nav'
 

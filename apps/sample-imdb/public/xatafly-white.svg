@@ -4,10 +4,6 @@ path {
     fill: white;
 } 
 
-.green {fill: #06D6A0 }
-.yellow { fill: #FFBB00 }
-.magenta { fill: #FF0075 }
-svg:hover .blue { fill: #0076FF }
 </style>
 
 <path class="green" d="M389.431 465.611C421.673 433.443 443.246 393.222 449.403 353.796C455.56 314.369 445.797 278.966 422.262 255.376L300.691 376.663L389.431 465.611Z"/>

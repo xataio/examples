@@ -1,4 +1,4 @@
-export default function Head() {
+export default function Head(props: unknown) {
   return (
     <>
       <link rel="icon" href="/favicon.ico" />

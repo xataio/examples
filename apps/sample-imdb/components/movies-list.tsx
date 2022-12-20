@@ -6,7 +6,7 @@ const MovieCard = ({ data }: { data: Titles }) => {
   const { primaryTitle, genres, coverUrl, summary, averageRating, id } = data
 
   return (
-    <li className="border-2 border-neutral-800 hover:border-pink-500 transition-colors rounded-sm py-2 px-5 lg:max-h-[26rem] overflow-hidden">
+    <li className="border-2 bg-black border-neutral-800 hover:border-pink-500 transition rounded-sm py-2 px-5 lg:max-h-[26rem] overflow-hidden focus-within:scale-105 hover:scale-105">
       <div className="grid grid-cols-[1fr,auto] h-full">
         <h2 className="lg:text-3xl text-5xl mb-2 col-span-2">
           <Link
@@ -41,7 +41,7 @@ const MovieCard = ({ data }: { data: Titles }) => {
               <img
                 src={coverUrl}
                 alt={`Poster for "${primaryTitle}"`}
-                className="rounded-lg w-[200px] "
+                className="rounded-lg w-[150px] "
               />
             </picture>
           )}

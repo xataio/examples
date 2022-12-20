@@ -49,10 +49,11 @@ export default async function Movie({ params }: { params: { id: string } }) {
                 />
               </picture>
             )}
-            <ul className="flex justify-center gap-2 mt-2">
-              {genres &&
-                genres.length > 0 &&
-                genres?.map((genre) => (
+          </section>
+          <section className="leading-8 ">
+            {genres && genres.length > 0 && (
+              <ul className="flex gap-2 mb-8">
+                {genres?.map((genre) => (
                   <li
                     key={id + genre}
                     className="border-2 border-neutral-800 rounded-lg py-1 px-2"
@@ -60,9 +61,8 @@ export default async function Movie({ params }: { params: { id: string } }) {
                     {genre}
                   </li>
                 ))}
-            </ul>
-          </section>
-          <section className="leading-8 self-center ">
+              </ul>
+            )}
             <p className="max-w-prose mx-auto">{summary}</p>
             <p className="text-right text-neutral-400">
               Duration: {runtimeMinutes} minutes.
