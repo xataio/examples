@@ -1,4 +1,4 @@
-export default function Loading() {
+export default function Loader() {
   return (
     <aside className="pt-40">
       <div className="border-neutral-800 p-10 border-2 max-w-prose mx-auto rounded-lg animate-pulse grid grid-cols-[auto,1fr] place-items-center">

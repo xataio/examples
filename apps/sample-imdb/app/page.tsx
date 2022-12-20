@@ -1,5 +1,5 @@
 import { Suspense } from 'react'
-import Loading from './loading'
+import Loader from './loader'
 import { getTotalTitles } from '~/lib/db.server'
 import { SearchResult } from './search-result'
 import { HeaderNav } from '~/components/header-nav'
@@ -11,7 +11,7 @@ const Home = async () => {
   return (
     <main>
       <HeaderNav totalTitles={totalTitles} />
-      <Suspense fallback={<Loading />}>
+      <Suspense fallback={<Loader />}>
         {/**
          * there is no TypeScript support for
          * async Server Components in JSX

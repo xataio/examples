@@ -1,7 +1,7 @@
 import { MoviesList } from '~/components/movies-list'
 import { getMovies } from '~/lib/db.server'
 import { Suspense } from 'react'
-import Loading from './loading'
+import Loading from './loader'
 
 export const SearchResult = async ({
   searchTerm = '',
