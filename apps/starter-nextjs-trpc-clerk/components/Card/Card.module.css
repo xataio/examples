@@ -1,0 +1,52 @@
+.card {
+  margin-top: 16px;
+  width: 550px;
+  background-color: #ffffff;
+  box-shadow: inset 0 -2px 1px rgb(0 0 0 / 3%);
+  border-radius: 8px;
+}
+
+.card h1 {
+  color: #5a486d;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 54px;
+}
+
+.card header {
+  background-color: #fafafa;
+  padding: 16px 0;
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+}
+
+.card section:first-of-type {
+  padding: 16px 0;
+  height: 60vh;
+  overflow-y: auto;
+  border-top: 2px solid #d8d8d8;
+}
+
+.card section ul {
+  position: relative;
+  list-style: none;
+}
+
+.card footer {
+  border-top: 2px solid #d8d8d8;
+  padding: 0 16px 4px;
+  color: rgb(86, 80, 80);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card footer button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #5a486d;
+  color: white;
+}

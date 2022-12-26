@@ -1,0 +1,33 @@
+{
+  "tables": [
+    {
+      "name": "items",
+      "columns": [
+        {
+          "name": "isCompleted",
+          "type": "bool",
+          "notNull": true,
+          "defaultValue": "false"
+        },
+        {
+          "name": "createdAt",
+          "type": "datetime",
+          "notNull": true,
+          "defaultValue": "now"
+        },
+        {
+          "name": "userId",
+          "type": "string",
+          "notNull": true,
+          "defaultValue": ""
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "notNull": true,
+          "defaultValue": ""
+        }
+      ]
+    }
+  ]
+}

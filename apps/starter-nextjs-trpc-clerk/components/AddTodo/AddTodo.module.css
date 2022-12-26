@@ -1,0 +1,22 @@
+.addTodo {
+  margin: 16px 32px;
+  color: rgb(67, 59, 67);
+  width: 350px;
+  font-size: 20px;
+  padding: 8px 16px;
+  border: none;
+  border: 2px #5a486d solid;
+  border-radius: 4px;
+  box-shadow: 0 0px 10px rgb(0 0 0 / 30%);
+}
+
+.addTodo:focus-within {
+  outline: none;
+  border-color: transparent;
+  border-image-source: linear-gradient(
+    107deg,
+    rgba(249, 195, 191, 1) 0%,
+    rgba(153, 111, 200, 1) 100%
+  );
+  border-image-slice: 1;
+}
