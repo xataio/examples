@@ -19,7 +19,7 @@ export default function Home() {
     onMutate: async (newTodo) => {
       await utils.todo.list.cancel();
 
-      const previousTodos = await utils.todo.list.getData();
+      const previousTodos = utils.todo.list.getData();
 
       const optimisticTodo: RouterOutputs["todo"]["list"][-1] = {
         title: newTodo.title,
@@ -46,7 +46,7 @@ export default function Home() {
     onMutate: async (deletedTodo) => {
       await utils.todo.list.cancel();
 
-      const previousTodos = await utils.todo.list.getData();
+      const previousTodos = utils.todo.list.getData();
 
       utils.todo.list.setData(undefined, (old) =>
         old ? old.filter((i) => i.id !== deletedTodo.id) : []
