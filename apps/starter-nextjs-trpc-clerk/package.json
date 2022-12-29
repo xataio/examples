@@ -8,8 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "xata": "xata",
-    "xata:init": "xata init --schema=schema.template.json --codegen utils/xata.ts",
-    "deploy-your-own": "XATA_API_KEY=XATA_API_KEY npm run xata:init -- --yes && npm run build"
+    "xata:init": "xata init --schema=schema.template.json --codegen utils/xata.ts"
   },
   "dependencies": {
     "@clerk/nextjs": "^4.6.13",

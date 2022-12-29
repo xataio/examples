@@ -27,20 +27,9 @@ npm run xata:init
 
 You need to create a new project on [Clerk dashboard](https://dashboard.clerk.dev/) and copy/paste the credentials variables into your `.env` file.
 
-
-The easiest way to find those credentials is to go to [Next.js + Clerk env setup documentation](https://clerk.dev/docs/nextjs/set-environment-keys) while logged in, and click the copy button 
+The easiest way to find those credentials is to go to [Next.js + Clerk env setup documentation](https://clerk.dev/docs/nextjs/set-environment-keys) while logged in, and click the copy button
 
 You can now run `npm run dev`, create an account and start a new todo!
-
-## Deploy Your Own
-
-You will need to add the value to the `XATA_API_KEY` manually.
-
-See in our [how to generate an API key](https://xata.io/docs/concepts/api-keys#generating-api-keys) in our documentation.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fxataio%2Fexamples%2Ftree%2Fmain%2Fapps%2Fstarter-nextjs-trpc-clerk&env=XATA_API_KEY&build-command=npm%20run%20deploy-your-own&envDescription=The%20API%20access%20token%20to%20your%20Xata%20Workspace&envLink=https%3A%2F%2Fapp.xata.io%2Fsettings&project-name=my-clerk-xata-app&repository-name=my-clerk-xata-app)
-
-> ⚠️ once your app is deployed for the first time, otherwise `xata:init` will fail. You should then revert the Build command to the default.
 
 ## Learn More
 
