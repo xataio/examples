@@ -40,10 +40,7 @@ export type DatabaseSchema = {
 
 const DatabaseClient = buildClient();
 
-const defaultOptions = {
-  databaseURL:
-    "https://xata_examples-hf8grf.us-east-1.xata.sh/db/clerk_starter",
-};
+const defaultOptions = {};
 
 export class XataClient extends DatabaseClient<DatabaseSchema> {
   constructor(options?: BaseClientOptions) {
