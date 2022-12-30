@@ -23,7 +23,7 @@ Once you've created a project and installed dependencies with `npm install` (or 
 npm run xata:init
 ```
 
-## Setup Clerk
+## Setup Clerk
 
 You need to create a new project on [Clerk dashboard](https://dashboard.clerk.dev/) and copy/paste the credentials variables into your `.env` file.
 
