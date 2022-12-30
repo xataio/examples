@@ -5,5 +5,5 @@ import { Home } from '~/shared/home'
 export default async function Index() {
   const session = await unstable_getServerSession(authConfig)
 
-  return <Home session={session} />
+  return <Home session={session} callbackUrl={'/in'} />
 }

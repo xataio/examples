@@ -1,0 +1,12 @@
+.greeting {
+  padding-bottom: 1em;
+}
+
+.greeting span {
+  color: hotpink;
+  text-decoration: underline;
+}
+
+.avatar {
+  border-radius: var(--border-radius);
+}

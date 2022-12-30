@@ -1,16 +1,22 @@
 import type { Session } from 'next-auth'
 import Link from 'next/link'
 import Image from 'next/image'
-import xataLogo from '~/public/xatafly-colored.svg'
-import styles from '~/styles/page.module.css'
+import xataColored from '~/public/xatafly-colored.svg'
 import { Login } from '~/shared/login'
+import styles from './home.module.css'
 
-export function Home({ session }: { session: Session | null }) {
+export function Home({
+  session,
+  callbackUrl,
+}: {
+  session: Session | null
+  callbackUrl: string
+}) {
   return (
     <main className={styles.main}>
       <header className={styles.header}>
-        <Image src={xataLogo} alt="Xata logo" className={styles.logo} />
-        <h1 className={styles.title}>Xata + Next-Auth</h1>
+        <Image src={xataColored} alt="Xata logo" className={styles.logo} />
+        <h1 className={styles.title}>Xata + Auth.js</h1>
 
         <pre className={styles.code}>
           {`npx degit \\
@@ -26,7 +32,7 @@ https://github.com/xataio/examples/apps/sample-next-auth \\
           <p>Goes to profile page</p>
         </Link>
       ) : (
-        <Login />
+        <Login callbackUrl={callbackUrl} />
       )}
       <ul className={styles.linksGrid}>
         <li>

@@ -1,0 +1,25 @@
+.cta {
+  font-family: var(--mono);
+  font-size: 2rem;
+  padding: 0.5em 1em;
+  border-radius: var(--border-radius);
+  border: solid 1px hotpink;
+  background-color: transparent;
+  transition: all 350ms ease-in-out;
+}
+
+.cta span {
+  display: inline-block;
+  transition: transform 200ms;
+}
+
+.cta[disabled] {
+  opacity: 0.5;
+  border-color: #555;
+}
+
+.cta:hover,
+.cta:focus {
+  background-color: hotpink;
+  color: black;
+}
