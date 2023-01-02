@@ -22,7 +22,7 @@ export const Search = ({ term }: { term?: string }) => {
       <input
         type="search"
         name="searchField"
-        defaultValue={term}
+        defaultValue={term ? decodeURI(term) : ''}
         autoComplete="off"
         className="bg-transparent text-white outline-none"
       />
