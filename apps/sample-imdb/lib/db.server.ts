@@ -1,3 +1,4 @@
+import 'server-only'
 import { getXataClient, TitlesRecord } from '~/lib/xata.codegen.server'
 import { gte, le } from '@xata.io/client'
 
