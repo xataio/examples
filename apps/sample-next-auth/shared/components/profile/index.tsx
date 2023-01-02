@@ -16,8 +16,8 @@ export const Profile = ({ user }: ProfileProps) => {
         className={styles.avatar}
         src={user?.image ?? '/xatafly-colored.svg'}
         alt={`photo of ${user?.name}`}
-        width="460"
-        height="460"
+        width="360"
+        height="360"
         priority
       />
     </>

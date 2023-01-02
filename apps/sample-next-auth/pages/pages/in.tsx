@@ -1,8 +1,9 @@
 import { unstable_getServerSession } from 'next-auth'
 import { authConfig } from '~/pages/api/auth/[...nextauth]'
 import { InferGetServerSidePropsType, GetServerSidePropsContext } from 'next'
-import { Logout } from '~/shared/logout'
-import { Profile } from '~/shared/profile'
+import { Logout } from '~/shared/components/logout'
+import { Profile } from '~/shared/components/profile'
+import { Footer } from '~/shared/components/footer'
 
 export default function In({
   user,
@@ -15,6 +16,7 @@ export default function In({
         </aside>
       )}
       <Profile user={user} />
+      <Footer />
     </>
   )
 }

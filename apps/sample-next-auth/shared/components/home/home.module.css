@@ -1,12 +1,13 @@
 .main {
+  min-height: 100vh;
+  max-width: 60rem;
+  margin: 0 auto;
   display: grid;
-  place-items: center;
-  max-height: 90vh;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: auto 1fr auto;
 }
 
 .header {
-  padding: 5rem 0;
+  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -26,7 +27,7 @@
 
 .code {
   position: relative;
-  margin: 0;
+  margin-top: 3rem;
   padding: 1rem;
   background-color: transparent;
   border: 2px solid rgba(50, 50, 50);
@@ -35,13 +36,30 @@
   font-family: var(--font-mono);
   font-size: 1.5rem;
   line-height: 2;
+  overflow-x: auto;
+  max-width: 100vw;
+}
+
+.ctaWrap {
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  display: flex;
+  justify-content: center;
 }
 
 .linksGrid {
-  margin-top: 5rem;
+  max-width: 100vw;
+  margin-top: 3rem;
+  padding: 0 1rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+}
+
+@media (min-width: 600px) {
+  .linksGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .card[href^='/in'] {

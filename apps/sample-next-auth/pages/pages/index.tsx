@@ -1,5 +1,5 @@
 import { useSession } from 'next-auth/react'
-import { Home } from '~/shared/home'
+import { Home } from '~/shared/components/home'
 
 export default function Index() {
   const { data: session } = useSession()

@@ -1,13 +1,11 @@
-import '~/styles/globals.css'
+import '~/shared/globals.css'
 import { type ReactNode } from 'react'
 import { Inter } from '@next/font/google'
 import { unstable_getServerSession } from 'next-auth'
 import { authConfig } from '~/pages/api/auth/[...nextauth]'
-import { Logout } from '~/shared/logout'
-import Image from 'next/image'
-import xataWhite from '~/public/xatafly-white.svg'
+import { Logout } from '~/shared/components/logout'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'], display: 'swap' })
 
 export default async function RootLayout({
   children,
@@ -19,17 +17,14 @@ export default async function RootLayout({
   return (
     <html lang="en" className={inter.className}>
       <body>
-        {Boolean(session) && (
-          <aside>
-            <Logout />
-          </aside>
-        )}
-        {children}
-        <footer>
-          <a href="https://xata.io">
-            by <Image src={xataWhite} alt="Xata white logo" />
-          </a>
-        </footer>
+        <main>
+          {Boolean(session) && (
+            <aside>
+              <Logout />
+            </aside>
+          )}
+          {children}
+        </main>
       </body>
     </html>
   )
