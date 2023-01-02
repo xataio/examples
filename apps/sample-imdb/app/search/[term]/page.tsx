@@ -18,7 +18,7 @@ export default async function Movie({ params }: { params: { term: string } }) {
          *
          */}
         {/** @ts-expect-error */}
-        <SearchResult searchTerm={term} />
+        <SearchResult searchTerm={decodeURI(term)} />
       </Suspense>
     </main>
   )

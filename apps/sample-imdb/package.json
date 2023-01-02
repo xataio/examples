@@ -9,7 +9,7 @@
     "lint": "next lint",
     "xata:codegen": "xata codegen",
     "tailwind": "tailwindcss -i styles/globals.css -o styles/dist.css",
-    "turbo:dev": "pnpm tailwind && concurrently 'next dev --turbo' 'pnpm tailwind --watch'"
+    "dev:turbo": "next dev --turbo"
   },
   "dependencies": {
     "@vercel/og": "^0.0.21",

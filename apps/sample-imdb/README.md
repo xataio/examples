@@ -2,8 +2,6 @@
 
 Xata Movie Database (XMDB) was built with Xata using Next.js and TypeScript to showcase Xata can be used by large databases (over **9 million records**).
 
-> 🚧 Under **Heavy** Development
-
 ## Features ⚡️
 
 - [Typo-Tolerant Full-Text Search](https://xata.io/docs/api-guide/search).
@@ -32,9 +30,10 @@ Once you have those keys, you can create your own `.env` or `.env.local` as show
 ### Run Locally 🧑‍✈️
 
 - Run the `dev` task to compile and serve it using Webpack.
-- Run `turbo:dev` to compile and serve it using Turbopack.
 
-> ⚠️ Turbopack does not support PostCSS, so it is important to replace `globals.css` import with `dist.css`.
+By default, server will run on [localhost:3000](http://localhost:3000).
+
+> ⚠️ To try running with Turbopack, remove the `experimental.runtime` config from `next.config.mjs`.
 
 ---
 
