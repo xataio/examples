@@ -16,13 +16,6 @@
 
 <!--🧙‍♂️ If Sample: which features are being showcased. -->
 
-## Setup & Usage 🐣
-
-<!--
-🚀 Starters: how to use it as a template.
-🧙‍♂️ Samples: how to run it locally.
--->
-
 ### Clone the Example 🐑
 
 <!--
@@ -34,19 +27,34 @@
 npx degit xataio/examples/apps/<name-of-app> my-xata-app
 ```
 
-### Link Your Xata Workspace and Run Codegen
+## Initialize your Database 🐣
 
-<!--
-Explain how to push schema, link project, generate types.
+In order to connect to a workspace, a `XATA_API_TOKEN` and a database URL. One of way of setting it up is running the [Xata CLI](https://xata.io/docs/cli/getting-started).
 
-💡 Remember about `.env` and `.xatarc` files!
--->
+> 💡 Having it globally will speed-up linking your project via `xata init`, just make sure you have it up-to-date so it generates the SDK with compatible types.
 
-```sh
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), you need to initialize your database:
+
+```bash
 npm run xata:init
 ```
 
-> ⚠️ once linked, you can just run `xata:codegen` to re-generate types.
+> ⚠️ By default this command runs with `npx`, adjust your `package.json` accordingly, specially if you have the CLI globally available in your system.
+
+### Regenerating Types
+
+Once the project is already linked, re-generate your types every time the schema changes via
+
+```
+npm run xata:codegen
+```
+
+> ⚠️ By default this command runs with `npx`, adjust your `package.json` accordingly, specially if you have the CLI globally available in your system.
+
+<!--
+🚀 Starters: how to use it as a template.
+🧙‍♂️ Samples: how to run it locally.
+-->
 
 ## Notes 💡
 
