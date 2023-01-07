@@ -21,7 +21,7 @@ importers:
       '@types/node': 18.11.18
       '@types/react': 18.0.26
       '@types/react-dom': 18.0.10
-      '@vercel/og': ^0.0.21
+      '@vercel/og': ^0.0.22
       '@xata.io/cli': 0.11.5
       '@xata.io/client': 0.21.6
       autoprefixer: ^10.4.12
@@ -38,7 +38,7 @@ importers:
       tailwindcss: ^3.1.8
       typescript: 4.9.4
     dependencies:
-      '@vercel/og': 0.0.21
+      '@vercel/og': 0.0.22
       '@xata.io/client': 0.21.6_typescript@4.9.4
       next: 13.1.1_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
@@ -4372,12 +4372,12 @@ packages:
       - encoding
     dev: true
 
-  /@vercel/og/0.0.21:
-    resolution: {integrity: sha512-WgMahG5c8UM7xtn/mT+ljUpDMSDnSlu8AXL52JtTwxb1odrd0GWqZg2N1X38wulPj+sCccNpDdFmmAuw0GLc+Q==}
+  /@vercel/og/0.0.22:
+    resolution: {integrity: sha512-HJjYfjpuNVnxwH7GnEv5QxzdIV4xytjY2RkVmhaOAKlms4X071WSPR9Jp6vjZ3Zmjz0tKSiRnrT5uN/PkW/q9Q==}
     engines: {node: '>=16'}
     dependencies:
       '@resvg/resvg-wasm': 2.0.0-alpha.4
-      satori: 0.0.44
+      satori: 0.0.45
       yoga-wasm-web: 0.1.2
     dev: false
 
@@ -11191,8 +11191,8 @@ packages:
       suf-log: 2.5.3
     dev: false
 
-  /satori/0.0.44:
-    resolution: {integrity: sha512-WKUxXC2qeyno6J3ucwwLozPL6j1HXOZiN5wIUf7iqAhlx1RUC/6ePIKHi7iPc3Cy6DYuZcJriZXxXkSdo2FQHg==}
+  /satori/0.0.45:
+    resolution: {integrity: sha512-jF7AAK5ddZQVE6r6gTG07YxOvhldev0wBrFqBXRNbPH/mEy15gfIqA4xjGfVHczcGYZvY/VWmKri6DzRJF8cgQ==}
     engines: {node: '>=16'}
     dependencies:
       '@shuding/opentype.js': 1.4.0-beta.0
