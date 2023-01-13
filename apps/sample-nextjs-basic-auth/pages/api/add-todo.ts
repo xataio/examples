@@ -18,7 +18,7 @@ const handler: NextApiHandler = async (req, res) => {
     return
   }
 
-  await xata.db.items.create({ label, user: { id: user.id } })
+  await xata.db.items.create({ label, user: { id: user.id }, created_at: new Date() })
 
   res.end()
 

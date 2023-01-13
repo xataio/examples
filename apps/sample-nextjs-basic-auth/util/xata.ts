@@ -20,6 +20,7 @@ const tables = [
       { name: "label", type: "string" },
       { name: "is_done", type: "bool" },
       { name: "user", type: "link", link: { table: "users" } },
+      { name: "created_at", type: "datetime" },
     ],
   },
 ] as const;
