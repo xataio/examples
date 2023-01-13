@@ -14,7 +14,7 @@ const Index: FC<Props> = ({ todos }) => {
       <h1>My Todo List</h1>
       <AddTodoForm />
       <ul>
-        {todos.map(({ label, id, is_done }) => (
+        {todos.map(({ label, id, is_done, created_at }) => (
           <li
             key={id}
             style={{ display: 'flex', gap: 8, alignItems: 'center' }}
@@ -37,7 +37,7 @@ const Index: FC<Props> = ({ todos }) => {
                   checked={Boolean(is_done)}
                   type="checkbox"
                 />
-                {label}
+                {label} {created_at ? `(Created ${new Date(created_at).toLocaleString()})` : ''}
               </label>
               <button
                 onClick={() => {
