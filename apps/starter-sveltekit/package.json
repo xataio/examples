@@ -33,7 +33,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/adapter-vercel": "1.0.3",
+		"@sveltejs/adapter-vercel": "1.0.4",
 		"@xata.io/client": "^0.21.3"
 	}
 }
