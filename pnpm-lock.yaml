@@ -283,7 +283,7 @@ importers:
 
   apps/starter-vercel-serverless-functions:
     specifiers:
-      '@vercel/node': 2.8.13
+      '@vercel/node': 2.8.14
       '@xata.io/cli': 0.11.5
       '@xata.io/client': 0.21.6
       esbuild: ^0.17.0
@@ -295,7 +295,7 @@ importers:
       '@xata.io/client': 0.21.6_typescript@4.9.4
       isomorphic-fetch: 3.0.0
     devDependencies:
-      '@vercel/node': 2.8.13
+      '@vercel/node': 2.8.14
       '@xata.io/cli': 0.11.5_nsm4umd6f6kw3p4kqscajhot6i
       esbuild: 0.17.0
       rollup: 3.6.0
@@ -4392,12 +4392,12 @@ packages:
       - encoding
       - supports-color
 
-  /@vercel/node-bridge/3.1.2:
-    resolution: {integrity: sha512-dgcLXug0IqUeRsywf0G8IrhUFcgw+GYj+EZB4JneglKSofFBh3Xy/t7KfBUxLlKnoq6kyGYJvTmAVB1YBt11qw==}
+  /@vercel/node-bridge/3.1.10:
+    resolution: {integrity: sha512-0DQzF5pdyP+xd5f1Ss2fAO+9xIvzUhngRAPazwg4XHZE9iLkv2L+A1u3L8NYi4hoUlAAZQ5GF3txlm/oBn4tNw==}
     dev: true
 
-  /@vercel/node-bridge/3.1.9:
-    resolution: {integrity: sha512-07Bgb6jm8OMTlxGRC4kOY0ewi4xLtMcK3z45T+GKRO7oKeA4vhRGFbT5BsJKF3V5/nj6TYAsWsErBf4RGVSBcw==}
+  /@vercel/node-bridge/3.1.2:
+    resolution: {integrity: sha512-dgcLXug0IqUeRsywf0G8IrhUFcgw+GYj+EZB4JneglKSofFBh3Xy/t7KfBUxLlKnoq6kyGYJvTmAVB1YBt11qw==}
     dev: true
 
   /@vercel/node/2.6.4:
@@ -4418,13 +4418,13 @@ packages:
       - encoding
     dev: true
 
-  /@vercel/node/2.8.13:
-    resolution: {integrity: sha512-RI0Ig2v7MK4N3EVPHKNEj3IK+D0/GtIbMFZB0WcUgE77UvdD++tf5JWTlqrwxPOYOxO/J0/0L8WZXTAzpPgdGA==}
+  /@vercel/node/2.8.14:
+    resolution: {integrity: sha512-ty4/FUgEpfQlqNm3j5HEaMhAHPJipRBzm6WVOs7Lvf5INx6OqLxbLBw3p/xcA18EWL0D8e5V41B7F8iQ3tBkqA==}
     dependencies:
       '@edge-runtime/vm': 2.0.0
       '@types/node': 14.18.33
       '@vercel/build-utils': 5.9.0
-      '@vercel/node-bridge': 3.1.9
+      '@vercel/node-bridge': 3.1.10
       '@vercel/static-config': 2.0.11
       edge-runtime: 2.0.0
       esbuild: 0.14.47
@@ -5086,11 +5086,6 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: true
-
-  /acorn/8.8.0:
-    resolution: {integrity: sha512-QOxyigPVrpZ2GXT+PFyZTl6TtOFc5egxHIP9IlQ+RbupQuX4RkT/Bee4/kQuC02Xkzg84JcT7oLYtDIQxp+v7w==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
 
   /acorn/8.8.1:
     resolution: {integrity: sha512-7zFpHzhnqYKrkYdUjF1HI1bzd0VygEGX8lFk4k5zVMqHEoES+P+7TKI+EvLO9WVMJ8eekdO0aDEK044xTXwPPA==}
@@ -11844,7 +11839,7 @@ packages:
     hasBin: true
     dependencies:
       '@jridgewell/source-map': 0.3.2
-      acorn: 8.8.0
+      acorn: 8.8.1
       commander: 2.20.3
       source-map-support: 0.5.21
 
