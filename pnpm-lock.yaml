@@ -243,7 +243,7 @@ importers:
   apps/starter-sveltekit:
     specifiers:
       '@sveltejs/adapter-auto': next
-      '@sveltejs/adapter-vercel': 1.0.4
+      '@sveltejs/adapter-vercel': 1.0.5
       '@sveltejs/kit': next
       '@typescript-eslint/eslint-plugin': ^5.27.0
       '@typescript-eslint/parser': ^5.27.0
@@ -261,7 +261,7 @@ importers:
       typescript: ^4.7.4
       vite: ^4.0.0
     dependencies:
-      '@sveltejs/adapter-vercel': 1.0.4_l5ueyfihz3gpzzvvyo2ean5u3e
+      '@sveltejs/adapter-vercel': 1.0.5_l5ueyfihz3gpzzvvyo2ean5u3e
       '@xata.io/client': 0.21.3_typescript@4.9.3
     devDependencies:
       '@sveltejs/adapter-auto': 1.0.0-next.91_l5ueyfihz3gpzzvvyo2ean5u3e
@@ -3619,8 +3619,8 @@ packages:
       import-meta-resolve: 2.2.0
     dev: true
 
-  /@sveltejs/adapter-vercel/1.0.4_l5ueyfihz3gpzzvvyo2ean5u3e:
-    resolution: {integrity: sha512-kBh60gq+nB4258Vbu1G7vwofVz4HqTUbWf11N5PSOOqb5hoCalr5PXEhnn0wQwSE9eyFhehi/GCNQE7FC0dUhQ==}
+  /@sveltejs/adapter-vercel/1.0.5_l5ueyfihz3gpzzvvyo2ean5u3e:
+    resolution: {integrity: sha512-TnFw+2ZwUuzguIeh013h0eiFmHylBuL1aV3jcUWbJmBLRo6YA0Ti8X8VXgFP4izP7XGuLKdpUIMg7HaZe21LbA==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
     dependencies:
