@@ -283,7 +283,7 @@ importers:
 
   apps/starter-vercel-serverless-functions:
     specifiers:
-      '@vercel/node': 2.8.14
+      '@vercel/node': 2.8.15
       '@xata.io/cli': 0.11.5
       '@xata.io/client': 0.21.6
       esbuild: ^0.17.0
@@ -295,7 +295,7 @@ importers:
       '@xata.io/client': 0.21.6_typescript@4.9.4
       isomorphic-fetch: 3.0.0
     devDependencies:
-      '@vercel/node': 2.8.14
+      '@vercel/node': 2.8.15
       '@xata.io/cli': 0.11.5_nsm4umd6f6kw3p4kqscajhot6i
       esbuild: 0.17.0
       rollup: 3.6.0
@@ -4418,8 +4418,8 @@ packages:
       - encoding
     dev: true
 
-  /@vercel/node/2.8.14:
-    resolution: {integrity: sha512-ty4/FUgEpfQlqNm3j5HEaMhAHPJipRBzm6WVOs7Lvf5INx6OqLxbLBw3p/xcA18EWL0D8e5V41B7F8iQ3tBkqA==}
+  /@vercel/node/2.8.15:
+    resolution: {integrity: sha512-pS445kGQGi4xN2vd/95mp5E86WrVEV7VH/u7f2G0Q5jCbcw590czJv1U+FLlW5OrznuuGT0LbNRKA0TBAUrbfA==}
     dependencies:
       '@edge-runtime/vm': 2.0.0
       '@types/node': 14.18.33
