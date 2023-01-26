@@ -75,7 +75,7 @@ importers:
       react-dom: 18.2.0
       typescript: 4.9.4
     dependencies:
-      '@next-auth/xata-adapter': 0.2.0_4urhk62pewftu4pqzwrqhvevii
+      '@next-auth/xata-adapter': 0.2.2_4urhk62pewftu4pqzwrqhvevii
       '@next/font': 13.1.5
       '@types/node': 18.11.18
       '@types/react': 18.0.27
@@ -283,7 +283,7 @@ importers:
 
   apps/starter-vercel-serverless-functions:
     specifiers:
-      '@vercel/node': 2.8.15
+      '@vercel/node': 2.8.16
       '@xata.io/cli': 0.11.5
       '@xata.io/client': 0.21.6
       esbuild: ^0.17.0
@@ -295,7 +295,7 @@ importers:
       '@xata.io/client': 0.21.6_typescript@4.9.4
       isomorphic-fetch: 3.0.0
     devDependencies:
-      '@vercel/node': 2.8.15
+      '@vercel/node': 2.8.16
       '@xata.io/cli': 0.11.5_nsm4umd6f6kw3p4kqscajhot6i
       esbuild: 0.17.0
       rollup: 3.6.0
@@ -2872,8 +2872,8 @@ packages:
       - bufferutil
       - utf-8-validate
 
-  /@next-auth/xata-adapter/0.2.0_4urhk62pewftu4pqzwrqhvevii:
-    resolution: {integrity: sha512-EtB+utpOljCShqIP8OjF1HpBicdXJqxX5NB6Yh1Jo1tdhuM+splzw3f/QFiZ5xfHM+hY97ecgQiAELdUi9Mrcg==}
+  /@next-auth/xata-adapter/0.2.2_4urhk62pewftu4pqzwrqhvevii:
+    resolution: {integrity: sha512-sEGGYMMdgEjS0djL50u1po03Xo4VSOXxHR1ytPClxYQ5zgd1LOEvdfzCDlRwfofz0eR0QrCuko03TMaUCie90A==}
     peerDependencies:
       '@xata.io/client': '>=0.13.0'
       next-auth: ^4
@@ -4357,8 +4357,8 @@ packages:
     resolution: {integrity: sha512-mEbr7m/hDdIjw3thALn0hgsK3eRLLmHxnfwJgFERRCUdvuoPMFSeZsr6vIqKHlqCk0XzQmDzyQ+Dqs7sCg9tgw==}
     dev: true
 
-  /@vercel/build-utils/5.9.0:
-    resolution: {integrity: sha512-LJRhd/ritLGHH+YvZ+DC7AW3Jr87UZHFHz2h2ENULDZ8qAo5LJH+y+Cg11uxfXkhQKK2f/AZQJXyKVyu1BBwdQ==}
+  /@vercel/build-utils/6.0.0:
+    resolution: {integrity: sha512-2AoVcDUyQCj516KrRNH92NeKI+KZGnVGjHkcb+VcXxGspYpKL/gC+AdFtC05qbgxX1e8U95Yd8ROucTftHErWw==}
     dev: true
 
   /@vercel/go/2.2.17:
@@ -4418,12 +4418,12 @@ packages:
       - encoding
     dev: true
 
-  /@vercel/node/2.8.15:
-    resolution: {integrity: sha512-pS445kGQGi4xN2vd/95mp5E86WrVEV7VH/u7f2G0Q5jCbcw590czJv1U+FLlW5OrznuuGT0LbNRKA0TBAUrbfA==}
+  /@vercel/node/2.8.16:
+    resolution: {integrity: sha512-aLuPHOm29cYjCK649/5j/zbYFXxRtNYcnNFdBd2gVg2II54SfByYIx/Tw3A6PeQmR23piBwPZMI5uEuYC0TGmA==}
     dependencies:
       '@edge-runtime/vm': 2.0.0
       '@types/node': 14.18.33
-      '@vercel/build-utils': 5.9.0
+      '@vercel/build-utils': 6.0.0
       '@vercel/node-bridge': 3.1.10
       '@vercel/static-config': 2.0.11
       edge-runtime: 2.0.0
