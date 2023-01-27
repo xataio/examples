@@ -22,7 +22,7 @@
   "dependencies": {
     "@solidjs/meta": "^0.28.0",
     "@solidjs/router": "^0.7.0",
-    "@xata.io/client": "^0.21.0",
+    "@xata.io/client": "^0.22.0",
     "solid-js": "^1.6.6",
     "solid-start": "^0.2.9",
     "undici": "^5.11.0"

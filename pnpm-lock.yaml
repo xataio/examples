@@ -23,7 +23,7 @@ importers:
       '@types/react-dom': 18.0.10
       '@vercel/og': ^0.0.27
       '@xata.io/cli': 0.11.6
-      '@xata.io/client': 0.21.6
+      '@xata.io/client': 0.22.0
       autoprefixer: ^10.4.12
       concurrently: ^7.5.0
       esbuild: ^0.17.0
@@ -39,7 +39,7 @@ importers:
       typescript: 4.9.4
     dependencies:
       '@vercel/og': 0.0.27
-      '@xata.io/client': 0.21.6_typescript@4.9.4
+      '@xata.io/client': 0.22.0_typescript@4.9.4
       next: 13.1.5_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -95,7 +95,7 @@ importers:
       '@types/node': 18.11.18
       '@types/react': 18.0.27
       '@types/react-dom': 18.0.10
-      '@xata.io/client': 0.21.6
+      '@xata.io/client': 0.22.0
       bcrypt: ^5.1.0
       eslint: 8.32.0
       eslint-config-next: 13.1.5
@@ -104,7 +104,7 @@ importers:
       react-dom: 18.2.0
       typescript: 4.9.4
     dependencies:
-      '@xata.io/client': 0.21.6_typescript@4.9.4
+      '@xata.io/client': 0.22.0_typescript@4.9.4
       bcrypt: 5.1.0
       next: 13.1.5_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
@@ -123,14 +123,14 @@ importers:
       '@types/react': ^18.0.24
       '@types/react-dom': ^18.0.8
       '@vitejs/plugin-react': ^3.0.0
-      '@xata.io/client': 0.21.6
+      '@xata.io/client': 0.22.0
       concurrently: ^7.5.0
       react: ^18.2.0
       react-dom: ^18.2.0
       typescript: ^4.6.4
       vite: ^4.0.0
     dependencies:
-      '@xata.io/client': 0.21.6_typescript@4.9.3
+      '@xata.io/client': 0.22.0_typescript@4.9.3
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     devDependencies:
@@ -147,7 +147,7 @@ importers:
       '@astrojs/vercel': ^2.3.4
       '@types/react': ^18.0.25
       '@xata.io/cli': ^0.11.0
-      '@xata.io/client': ^0.21.0
+      '@xata.io/client': ^0.22.0
       astro: ^1.6.9
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -156,7 +156,7 @@ importers:
       '@astrojs/vercel': 2.3.4
       '@types/react': 18.0.25
       '@xata.io/cli': 0.11.0
-      '@xata.io/client': 0.21.3
+      '@xata.io/client': 0.22.0
       astro: 1.6.10
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -175,7 +175,7 @@ importers:
       '@types/react': 18.0.27
       '@types/react-dom': 18.0.10
       '@xata.io/cli': ^0.11.5
-      '@xata.io/client': ^0.21.5
+      '@xata.io/client': ^0.22.0
       eslint: 8.32.0
       eslint-config-next: 13.1.5
       eslint-config-prettier: ^8.5.0
@@ -198,7 +198,7 @@ importers:
       '@types/node': 18.11.18
       '@types/react': 18.0.27
       '@types/react-dom': 18.0.10
-      '@xata.io/client': 0.21.6_typescript@4.9.4
+      '@xata.io/client': 0.22.0_typescript@4.9.4
       eslint: 8.32.0
       eslint-config-next: 13.1.5_7uibuqfxkfaozanbtbziikiqje
       next: 13.1.5_biqbaboplfbrettd7655fr4n2y
@@ -217,7 +217,7 @@ importers:
       '@solidjs/meta': ^0.28.0
       '@solidjs/router': ^0.7.0
       '@xata.io/cli': ^0.11.0
-      '@xata.io/client': ^0.21.0
+      '@xata.io/client': ^0.22.0
       solid-js: ^1.6.6
       solid-start: ^0.2.9
       solid-start-node: ^0.2.0
@@ -228,12 +228,12 @@ importers:
     dependencies:
       '@solidjs/meta': 0.28.2_solid-js@1.6.6
       '@solidjs/router': 0.7.0_solid-js@1.6.6
-      '@xata.io/client': 0.21.0_typescript@4.8.4
+      '@xata.io/client': 0.22.0_typescript@4.8.4
       solid-js: 1.6.6
       solid-start: 0.2.9_m5bcqx2tluzydesbr25vqe2z7m
       undici: 5.12.0
     optionalDependencies:
-      '@xata.io/cli': 0.11.5_typescript@4.8.4
+      '@xata.io/cli': 0.11.6_typescript@4.8.4
     devDependencies:
       solid-start-node: 0.2.5_pkyu7q3imt7ymzeankauc6jizi
       solid-start-vercel: 0.2.5_c4jszhx5pex7d4ob4c4rfufj2m
@@ -248,7 +248,7 @@ importers:
       '@typescript-eslint/eslint-plugin': ^5.27.0
       '@typescript-eslint/parser': ^5.27.0
       '@xata.io/cli': ^0.11.1
-      '@xata.io/client': ^0.21.3
+      '@xata.io/client': ^0.22.0
       eslint: ^8.16.0
       eslint-config-prettier: ^8.3.0
       eslint-plugin-svelte3: ^4.0.0
@@ -262,7 +262,7 @@ importers:
       vite: ^4.0.0
     dependencies:
       '@sveltejs/adapter-vercel': 1.0.5_l5ueyfihz3gpzzvvyo2ean5u3e
-      '@xata.io/client': 0.21.3_typescript@4.9.3
+      '@xata.io/client': 0.22.0_typescript@4.9.3
     devDependencies:
       '@sveltejs/adapter-auto': 1.0.0-next.91_l5ueyfihz3gpzzvvyo2ean5u3e
       '@sveltejs/kit': 1.0.0-next.589_svelte@3.53.1+vite@4.0.3
@@ -285,14 +285,14 @@ importers:
     specifiers:
       '@vercel/node': 2.8.16
       '@xata.io/cli': 0.11.6
-      '@xata.io/client': 0.21.6
+      '@xata.io/client': 0.22.0
       esbuild: ^0.17.0
       isomorphic-fetch: 3.0.0
       rollup: ^3.6.0
       typescript: 4.9.4
       vercel: ^28.5.6
     dependencies:
-      '@xata.io/client': 0.21.6_typescript@4.9.4
+      '@xata.io/client': 0.22.0_typescript@4.9.4
       isomorphic-fetch: 3.0.0
     devDependencies:
       '@vercel/node': 2.8.16
@@ -1502,7 +1502,6 @@ packages:
     dependencies:
       '@babel/core': 7.20.12
       '@babel/helper-plugin-utils': 7.20.2
-    dev: true
 
   /@babel/plugin-transform-react-display-name/7.18.6_@babel+core@7.20.2:
     resolution: {integrity: sha512-TV4sQ+T013n61uMoygyMRm+xf04Bd5oqFpv2jAEQwSZ8NwQA7zeRPg1LMVg2PWi3zWBz+CLKD+v5bcpZ/BS0aA==}
@@ -1521,6 +1520,7 @@ packages:
     dependencies:
       '@babel/core': 7.20.5
       '@babel/helper-plugin-utils': 7.20.2
+    dev: true
 
   /@babel/plugin-transform-react-jsx-development/7.18.6_@babel+core@7.20.12:
     resolution: {integrity: sha512-SA6HEjwYFKF7WDjWcMcMGUimmw/nhNRDWxr+KaLSCrkD/LMDBvWRmHAYgE1HDeF8KUuI8OAu+RT6EOtKxSW2qA==}
@@ -1530,7 +1530,6 @@ packages:
     dependencies:
       '@babel/core': 7.20.12
       '@babel/plugin-transform-react-jsx': 7.19.0_@babel+core@7.20.12
-    dev: true
 
   /@babel/plugin-transform-react-jsx-development/7.18.6_@babel+core@7.20.2:
     resolution: {integrity: sha512-SA6HEjwYFKF7WDjWcMcMGUimmw/nhNRDWxr+KaLSCrkD/LMDBvWRmHAYgE1HDeF8KUuI8OAu+RT6EOtKxSW2qA==}
@@ -1549,6 +1548,7 @@ packages:
     dependencies:
       '@babel/core': 7.20.5
       '@babel/plugin-transform-react-jsx': 7.19.0_@babel+core@7.20.5
+    dev: true
 
   /@babel/plugin-transform-react-jsx-self/7.18.6_@babel+core@7.20.5:
     resolution: {integrity: sha512-A0LQGx4+4Jv7u/tWzoJF7alZwnBDQd6cGLh9P+Ttk4dpiL+J5p7NSNv/9tlEFFJDq3kjxOavWmbm6t0Gk+A3Ig==}
@@ -1596,7 +1596,6 @@ packages:
       '@babel/helper-plugin-utils': 7.20.2
       '@babel/plugin-syntax-jsx': 7.18.6_@babel+core@7.20.12
       '@babel/types': 7.20.7
-    dev: true
 
   /@babel/plugin-transform-react-jsx/7.19.0_@babel+core@7.20.2:
     resolution: {integrity: sha512-UVEvX3tXie3Szm3emi1+G63jyw1w5IcMY0FSKM+CRnKRI5Mr1YbCNgsSTwoTwKphQEG9P+QqmuRFneJPZuHNhg==}
@@ -1623,6 +1622,7 @@ packages:
       '@babel/helper-plugin-utils': 7.20.2
       '@babel/plugin-syntax-jsx': 7.18.6_@babel+core@7.20.5
       '@babel/types': 7.20.7
+    dev: true
 
   /@babel/plugin-transform-react-pure-annotations/7.18.6_@babel+core@7.20.12:
     resolution: {integrity: sha512-I8VfEPg9r2TRDdvnHgPepTKvuRomzA8+u+nhY7qSI1fR2hRNebasZEETLyM5mAUr0Ku56OkXJ0I7NHJnO6cJiQ==}
@@ -1633,7 +1633,6 @@ packages:
       '@babel/core': 7.20.12
       '@babel/helper-annotate-as-pure': 7.18.6
       '@babel/helper-plugin-utils': 7.20.2
-    dev: true
 
   /@babel/plugin-transform-react-pure-annotations/7.18.6_@babel+core@7.20.2:
     resolution: {integrity: sha512-I8VfEPg9r2TRDdvnHgPepTKvuRomzA8+u+nhY7qSI1fR2hRNebasZEETLyM5mAUr0Ku56OkXJ0I7NHJnO6cJiQ==}
@@ -1654,6 +1653,7 @@ packages:
       '@babel/core': 7.20.5
       '@babel/helper-annotate-as-pure': 7.18.6
       '@babel/helper-plugin-utils': 7.20.2
+    dev: true
 
   /@babel/plugin-transform-regenerator/7.18.6_@babel+core@7.20.5:
     resolution: {integrity: sha512-poqRI2+qiSdeldcz4wTSTXBRryoq3Gc70ye7m7UD5Ww0nE29IXqMl6r7Nd15WBgRd74vloEMlShtH6CKxVzfmQ==}
@@ -1888,7 +1888,6 @@ packages:
       '@babel/plugin-transform-react-jsx': 7.19.0_@babel+core@7.20.12
       '@babel/plugin-transform-react-jsx-development': 7.18.6_@babel+core@7.20.12
       '@babel/plugin-transform-react-pure-annotations': 7.18.6_@babel+core@7.20.12
-    dev: true
 
   /@babel/preset-react/7.18.6_@babel+core@7.20.2:
     resolution: {integrity: sha512-zXr6atUmyYdiWRVLOZahakYmOBHtWc2WGCkP8PYTgZi0iJXDY2CN180TdrIW4OGOAdLc7TifzDIvtx6izaRIzg==}
@@ -1917,6 +1916,7 @@ packages:
       '@babel/plugin-transform-react-jsx': 7.19.0_@babel+core@7.20.5
       '@babel/plugin-transform-react-jsx-development': 7.18.6_@babel+core@7.20.5
       '@babel/plugin-transform-react-pure-annotations': 7.18.6_@babel+core@7.20.5
+    dev: true
 
   /@babel/preset-typescript/7.18.6_@babel+core@7.20.12:
     resolution: {integrity: sha512-s9ik86kXBAnD760aybBucdpnLsAt0jK1xqJn2juOn9lkOvSHV60os5hxoVJsPzMQxvnUJFAlkont2DvvaYEBtQ==}
@@ -2368,7 +2368,6 @@ packages:
   /@edge-runtime/format/2.0.0:
     resolution: {integrity: sha512-y0KPyCwbIiuRDc8qZ9JHJZp+SFqeHOTEpbAFwmXtEhK1sJsKhF3j+R8zn2TtpW3TKMb7d62RWbiqo3gZWwWkMQ==}
     engines: {node: '>=14'}
-    dev: true
 
   /@edge-runtime/primitives/2.0.0:
     resolution: {integrity: sha512-AXqUq1zruTJAICrllUvZcgciIcEGHdF6KJ3r6FM0n4k8LpFxZ62tPWVIJ9HKm+xt+ncTBUZxwgUaQ73QMUQEKw==}
@@ -2380,7 +2379,6 @@ packages:
   /@edge-runtime/primitives/2.0.3:
     resolution: {integrity: sha512-+y39BANcePTGKAE+0R8xX3UFzwTqWQOVUaC+UXsKjA45jGNfZCkGnJgGjJPXZftmxiLcl9R2lYyDvHN+55dUlw==}
     engines: {node: '>=14'}
-    dev: true
 
   /@edge-runtime/vm/2.0.0:
     resolution: {integrity: sha512-BOLrAX8IWHRXu1siZocwLguKJPEUv7cr+rG8tI4hvHgMdIsBWHJlLeB8EjuUVnIURFrUiM49lVKn8DRrECmngw==}
@@ -2398,7 +2396,6 @@ packages:
     engines: {node: '>=14'}
     dependencies:
       '@edge-runtime/primitives': 2.0.3
-    dev: true
 
   /@emmetio/abbreviation/2.2.3:
     resolution: {integrity: sha512-87pltuCPt99aL+y9xS6GPZ+Wmmyhll2WXH73gG/xpGcQ84DRnptBsI2r0BeIQ0EB/SQTOe2ANPqFqj3Rj5FOGA==}
@@ -3485,6 +3482,7 @@ packages:
       tslib: 2.4.1
       widest-line: 3.1.0
       wrap-ansi: 7.0.0
+    dev: true
 
   /@oclif/core/1.26.1:
     resolution: {integrity: sha512-g+OWJcM7JOVI53caTEtq0BB1nPotWctRLUyFODPgvDqXhVR7QED+Qz3LwFAMD8dt7/Ar2ZNq15U3bnpnOv453A==}
@@ -3551,7 +3549,6 @@ packages:
       widest-line: 3.1.0
       wordwrap: 1.0.0
       wrap-ansi: 7.0.0
-    dev: true
 
   /@oclif/linewrap/1.0.0:
     resolution: {integrity: sha512-Ups2dShK52xXa8w6iBWLgcjPJWjais6KPJQq3gQ/88AY6BXoTX+MIGFPrWQO1KLMiQfoTpcLnUwloN4brrVUHw==}
@@ -3570,7 +3567,6 @@ packages:
       '@oclif/core': 2.0.7
       fast-levenshtein: 3.0.0
       lodash: 4.17.21
-    dev: true
 
   /@oclif/plugin-not-found/2.3.9:
     resolution: {integrity: sha512-FJXIa5KmNbCgO8kDVJ23C/SkRRuwMYaRTNs5jejwrwKAm5fPp+TnR1+4pBp64ik7FA806nioqMGlotiyEWfMJA==}
@@ -3616,6 +3612,7 @@ packages:
       yarn: 1.22.19
     transitivePeerDependencies:
       - supports-color
+    dev: true
 
   /@oclif/plugin-plugins/2.2.4:
     resolution: {integrity: sha512-asHRa9VfM1coEYUyI5RJ429cBk/LdKBUSo7VhkkxFiicCaI5OgGJGtF+Mc8gwpJGsajyjGPLKQijNknOJ740Yw==}
@@ -3634,7 +3631,6 @@ packages:
       yarn: 1.22.19
     transitivePeerDependencies:
       - supports-color
-    dev: true
 
   /@oclif/screen/3.0.4:
     resolution: {integrity: sha512-IMsTN1dXEXaOSre27j/ywGbBjrzx0FNd1XmuhCWCB9NTPrhWI1Ifbz+YLSEcstfQfocYsrbrIessxXb2oon4lA==}
@@ -3727,7 +3723,6 @@ packages:
     peerDependenciesMeta:
       rollup:
         optional: true
-    dev: true
 
   /@rollup/plugin-auto-install/3.0.3_rollup@3.6.0:
     resolution: {integrity: sha512-1+PJojFCicfQqwXLN14a/B1YJJ+aR34B09kHl+2sXD7IQ+v/SpF+75iQ6UivX2yb16KjAqN3kdhMRQiJMnMHtQ==}
@@ -3788,6 +3783,7 @@ packages:
       glob: 8.0.3
       is-reference: 1.2.1
       magic-string: 0.26.7
+    dev: true
 
   /@rollup/plugin-commonjs/24.0.1:
     resolution: {integrity: sha512-15LsiWRZk4eOGqvrJyu3z3DaBu5BhXIMeWnijSRvd8irrrg9SHpQ1pH+BUK4H6Z9wL9yOxZJMTLU+Au86XHxow==}
@@ -3804,7 +3800,6 @@ packages:
       glob: 8.0.3
       is-reference: 1.2.1
       magic-string: 0.27.0
-    dev: true
 
   /@rollup/plugin-commonjs/24.0.1_rollup@3.6.0:
     resolution: {integrity: sha512-15LsiWRZk4eOGqvrJyu3z3DaBu5BhXIMeWnijSRvd8irrrg9SHpQ1pH+BUK4H6Z9wL9yOxZJMTLU+Au86XHxow==}
@@ -4255,7 +4250,6 @@ packages:
     resolution: {integrity: sha512-XhXhBv1R/q2ahF3BM7qT5HLzJNlIL0wbcGyZVjqOTqAybAnsLisd7gy1UCyIqpL+5Iv6XhlSyzjLCnI2sIdbCg==}
     dependencies:
       '@types/node': 18.11.18
-    dev: true
 
   /@types/connect/3.4.35:
     resolution: {integrity: sha512-cdeYyv4KWoEgpBISTxWvqYsVy444DOqehiF3fM3ne10AmJ62RSyNkUnxMJXHQWRQQX2eR94m5y1IZyDwBjV9FQ==}
@@ -5077,69 +5071,6 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@xata.io/cli/0.11.5_typescript@4.8.4:
-    resolution: {integrity: sha512-UkPDS36UfdoGrhwBIz/iuhOVu+zghQxoBEGiRIWHY2rg3SDkid/DKlIA/M2XTofE235t8xo0ksWrzmmWlWi4MQ==}
-    engines: {node: '>=12.0.0'}
-    hasBin: true
-    requiresBuild: true
-    dependencies:
-      '@babel/core': 7.20.5
-      '@babel/preset-react': 7.18.6_@babel+core@7.20.5
-      '@babel/preset-typescript': 7.18.6_@babel+core@7.20.5
-      '@faker-js/faker': 7.6.0
-      '@oclif/core': 1.21.0
-      '@oclif/plugin-help': 5.1.12
-      '@oclif/plugin-not-found': 2.3.9
-      '@oclif/plugin-plugins': 2.1.8
-      '@rollup/plugin-auto-install': 3.0.2
-      '@rollup/plugin-commonjs': 23.0.4
-      '@rollup/plugin-node-resolve': 15.0.1
-      '@rollup/plugin-virtual': 3.0.1
-      '@types/ini': 1.3.31
-      '@types/prompts': 2.4.2
-      '@xata.io/client': 0.21.6_typescript@4.8.4
-      '@xata.io/codegen': 0.21.0
-      '@xata.io/importer': 0.3.2_typescript@4.8.4
-      ansi-regex: 6.0.1
-      babel-plugin-module-extension-resolver: 1.0.0-rc.2
-      chalk: 5.2.0
-      chokidar: 3.5.3
-      cosmiconfig: 8.0.0
-      deepmerge: 4.2.2
-      dotenv: 16.0.3
-      dotenv-expand: 9.0.0
-      edge-runtime: 2.0.2
-      enquirer: 2.3.6
-      env-editor: 1.1.0
-      ini: 3.0.1
-      lodash.compact: 3.0.1
-      lodash.get: 4.4.2
-      lodash.set: 4.3.2
-      miniflare: 2.11.0
-      node-fetch: 3.3.0
-      open: 8.4.0
-      prompts: 2.4.2
-      relaxed-json: 1.0.3
-      rollup-plugin-esbuild: 5.0.0
-      rollup-plugin-hypothetical: 2.1.1
-      rollup-plugin-import-cdn: 0.2.2
-      rollup-plugin-virtual-fs: 4.0.1-alpha.0
-      text-table: 0.2.0
-      tmp: 0.2.1
-      which: 3.0.0
-      zod: 3.20.2
-    transitivePeerDependencies:
-      - '@miniflare/storage-redis'
-      - bufferutil
-      - cron-schedule
-      - esbuild
-      - ioredis
-      - rollup
-      - supports-color
-      - typescript
-      - utf-8-validate
-    optional: true
-
   /@xata.io/cli/0.11.5_typescript@4.9.4:
     resolution: {integrity: sha512-UkPDS36UfdoGrhwBIz/iuhOVu+zghQxoBEGiRIWHY2rg3SDkid/DKlIA/M2XTofE235t8xo0ksWrzmmWlWi4MQ==}
     engines: {node: '>=12.0.0'}
@@ -5207,6 +5138,7 @@ packages:
     resolution: {integrity: sha512-gQr60Y4lShRTTVGxTBjFllKHyCeIhgGyrY1BaMCf4ikd/aE8f3XFCrhAnhpWKuoki3uQ4sME8MND34Xbc7rxow==}
     engines: {node: '>=12.0.0'}
     hasBin: true
+    requiresBuild: true
     dependencies:
       '@babel/core': 7.20.12
       '@babel/preset-react': 7.18.6_@babel+core@7.20.12
@@ -5265,10 +5197,74 @@ packages:
       - utf-8-validate
     dev: true
 
+  /@xata.io/cli/0.11.6_typescript@4.8.4:
+    resolution: {integrity: sha512-gQr60Y4lShRTTVGxTBjFllKHyCeIhgGyrY1BaMCf4ikd/aE8f3XFCrhAnhpWKuoki3uQ4sME8MND34Xbc7rxow==}
+    engines: {node: '>=12.0.0'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      '@babel/core': 7.20.12
+      '@babel/preset-react': 7.18.6_@babel+core@7.20.12
+      '@babel/preset-typescript': 7.18.6_@babel+core@7.20.12
+      '@faker-js/faker': 7.6.0
+      '@oclif/core': 1.26.1
+      '@oclif/plugin-help': 5.1.12
+      '@oclif/plugin-not-found': 2.3.17
+      '@oclif/plugin-plugins': 2.2.4
+      '@rollup/plugin-auto-install': 3.0.3
+      '@rollup/plugin-commonjs': 24.0.1
+      '@rollup/plugin-node-resolve': 15.0.1
+      '@rollup/plugin-virtual': 3.0.1
+      '@types/ini': 1.3.31
+      '@types/prompts': 2.4.2
+      '@xata.io/client': 0.22.0_typescript@4.8.4
+      '@xata.io/codegen': 0.21.0
+      '@xata.io/importer': 0.3.3_typescript@4.8.4
+      ansi-regex: 6.0.1
+      babel-plugin-module-extension-resolver: 1.0.0
+      chalk: 5.2.0
+      chokidar: 3.5.3
+      cosmiconfig: 8.0.0
+      deepmerge: 4.2.2
+      dotenv: 16.0.3
+      dotenv-expand: 10.0.0
+      edge-runtime: 2.0.3
+      enquirer: 2.3.6
+      env-editor: 1.1.0
+      ini: 3.0.1
+      lodash.compact: 3.0.1
+      lodash.get: 4.4.2
+      lodash.set: 4.3.2
+      miniflare: 2.11.0
+      node-fetch: 3.3.0
+      open: 8.4.0
+      prompts: 2.4.2
+      relaxed-json: 1.0.3
+      rollup-plugin-esbuild: 5.0.0
+      rollup-plugin-hypothetical: 2.1.1
+      rollup-plugin-import-cdn: 0.2.2
+      rollup-plugin-virtual-fs: 4.0.1-alpha.0
+      text-table: 0.2.0
+      tmp: 0.2.1
+      which: 3.0.0
+      zod: 3.20.2
+    transitivePeerDependencies:
+      - '@miniflare/storage-redis'
+      - bufferutil
+      - cron-schedule
+      - esbuild
+      - ioredis
+      - rollup
+      - supports-color
+      - typescript
+      - utf-8-validate
+    optional: true
+
   /@xata.io/cli/0.11.6_u7qcgmz6z3q5y55rujsjwz2hiu:
     resolution: {integrity: sha512-gQr60Y4lShRTTVGxTBjFllKHyCeIhgGyrY1BaMCf4ikd/aE8f3XFCrhAnhpWKuoki3uQ4sME8MND34Xbc7rxow==}
     engines: {node: '>=12.0.0'}
     hasBin: true
+    requiresBuild: true
     dependencies:
       '@babel/core': 7.20.12
       '@babel/preset-react': 7.18.6_@babel+core@7.20.12
@@ -5327,42 +5323,11 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@xata.io/client/0.21.0_typescript@4.8.4:
-    resolution: {integrity: sha512-0fMF66nECWg6MTstEsP9aE3GQxNYJu7gloAbwUAY58gWcCZnWjxHhueoAc+eUZxLsb7kvG3VM3M8LGnXsK+Wag==}
-    peerDependencies:
-      typescript: '>=4.5'
-    dependencies:
-      typescript: 4.8.4
-    dev: false
-
-  /@xata.io/client/0.21.3:
-    resolution: {integrity: sha512-y0ITyIqw8JcqlynxvoAIJLiPj5j6CldIcwlOuUIXJ9RyxipevCCliDT/PbJUegHkj3hS+eTPPT9SVmvRJBQ6SA==}
-    peerDependencies:
-      typescript: '>=4.5'
-    dev: false
-
-  /@xata.io/client/0.21.3_typescript@4.9.3:
-    resolution: {integrity: sha512-y0ITyIqw8JcqlynxvoAIJLiPj5j6CldIcwlOuUIXJ9RyxipevCCliDT/PbJUegHkj3hS+eTPPT9SVmvRJBQ6SA==}
-    peerDependencies:
-      typescript: '>=4.5'
-    dependencies:
-      typescript: 4.9.3
-    dev: false
-
   /@xata.io/client/0.21.6:
     resolution: {integrity: sha512-XAHQsopU8aXCwhieEGSzBgAwkBv5UKMOAxQg9oeGF6okE66QCe987j/nxsk6vYZKYgsv7cgnOikpwXbYv7oIsQ==}
     peerDependencies:
       typescript: '>=4.5'
     dev: false
-
-  /@xata.io/client/0.21.6_typescript@4.8.4:
-    resolution: {integrity: sha512-XAHQsopU8aXCwhieEGSzBgAwkBv5UKMOAxQg9oeGF6okE66QCe987j/nxsk6vYZKYgsv7cgnOikpwXbYv7oIsQ==}
-    peerDependencies:
-      typescript: '>=4.5'
-    dependencies:
-      typescript: 4.8.4
-    dev: false
-    optional: true
 
   /@xata.io/client/0.21.6_typescript@4.9.3:
     resolution: {integrity: sha512-XAHQsopU8aXCwhieEGSzBgAwkBv5UKMOAxQg9oeGF6okE66QCe987j/nxsk6vYZKYgsv7cgnOikpwXbYv7oIsQ==}
@@ -5370,6 +5335,7 @@ packages:
       typescript: '>=4.5'
     dependencies:
       typescript: 4.9.3
+    dev: true
 
   /@xata.io/client/0.21.6_typescript@4.9.4:
     resolution: {integrity: sha512-XAHQsopU8aXCwhieEGSzBgAwkBv5UKMOAxQg9oeGF6okE66QCe987j/nxsk6vYZKYgsv7cgnOikpwXbYv7oIsQ==}
@@ -5377,6 +5343,29 @@ packages:
       typescript: '>=4.5'
     dependencies:
       typescript: 4.9.4
+    dev: true
+
+  /@xata.io/client/0.22.0:
+    resolution: {integrity: sha512-pLo0kMu/n6idKCq+75xS8vaHsIDlNxgeam+qZEmagkEHwIB1E1Z4ZrdTD4RceAQ6lr8TUrqFfFfjVr+RYyasaw==}
+    peerDependencies:
+      typescript: '>=4.5'
+    dev: false
+
+  /@xata.io/client/0.22.0_typescript@4.8.4:
+    resolution: {integrity: sha512-pLo0kMu/n6idKCq+75xS8vaHsIDlNxgeam+qZEmagkEHwIB1E1Z4ZrdTD4RceAQ6lr8TUrqFfFfjVr+RYyasaw==}
+    peerDependencies:
+      typescript: '>=4.5'
+    dependencies:
+      typescript: 4.8.4
+    dev: false
+
+  /@xata.io/client/0.22.0_typescript@4.9.3:
+    resolution: {integrity: sha512-pLo0kMu/n6idKCq+75xS8vaHsIDlNxgeam+qZEmagkEHwIB1E1Z4ZrdTD4RceAQ6lr8TUrqFfFfjVr+RYyasaw==}
+    peerDependencies:
+      typescript: '>=4.5'
+    dependencies:
+      typescript: 4.9.3
+    dev: false
 
   /@xata.io/client/0.22.0_typescript@4.9.4:
     resolution: {integrity: sha512-pLo0kMu/n6idKCq+75xS8vaHsIDlNxgeam+qZEmagkEHwIB1E1Z4ZrdTD4RceAQ6lr8TUrqFfFfjVr+RYyasaw==}
@@ -5405,18 +5394,6 @@ packages:
       - typescript
     dev: false
 
-  /@xata.io/importer/0.3.2_typescript@4.8.4:
-    resolution: {integrity: sha512-Y++eUgQXbJZYsauPsFN4N0nGIGrfGorzn0zzMoaOztMjnBu4GsQdxEBYl7X8OezUipHI8NRYn0cg64BjUsLSDg==}
-    dependencies:
-      '@xata.io/client': 0.21.6_typescript@4.8.4
-      camelcase: 7.0.1
-      csvtojson: 2.0.10
-      transliteration: 2.3.5
-    transitivePeerDependencies:
-      - typescript
-    dev: false
-    optional: true
-
   /@xata.io/importer/0.3.2_typescript@4.9.3:
     resolution: {integrity: sha512-Y++eUgQXbJZYsauPsFN4N0nGIGrfGorzn0zzMoaOztMjnBu4GsQdxEBYl7X8OezUipHI8NRYn0cg64BjUsLSDg==}
     dependencies:
@@ -5438,6 +5415,18 @@ packages:
     transitivePeerDependencies:
       - typescript
     dev: true
+
+  /@xata.io/importer/0.3.3_typescript@4.8.4:
+    resolution: {integrity: sha512-V6ICIR3OifCBMmf0OrgV6J87lvV2lqwmn+cQkmBUnXlnB5PHJtXdMJYLa2AgZACRDLgTWPH32Yp71xCgDzTfIw==}
+    dependencies:
+      '@xata.io/client': 0.22.0_typescript@4.8.4
+      camelcase: 7.0.1
+      csvtojson: 2.0.10
+      transliteration: 2.3.5
+    transitivePeerDependencies:
+      - typescript
+    dev: false
+    optional: true
 
   /@xata.io/importer/0.3.3_typescript@4.9.4:
     resolution: {integrity: sha512-V6ICIR3OifCBMmf0OrgV6J87lvV2lqwmn+cQkmBUnXlnB5PHJtXdMJYLa2AgZACRDLgTWPH32Yp71xCgDzTfIw==}
@@ -5812,7 +5801,6 @@ packages:
   /babel-plugin-module-extension-resolver/1.0.0:
     resolution: {integrity: sha512-TIwNuS8jfdmoyn+tKMM9T6fczI5y6hHbicbCTIF+RyPSNSnQMlZNnCs/pQceOEZ/0qFNbaj5p0LCLG2VS1EF7g==}
     engines: {node: '>=6.9.0'}
-    dev: true
 
   /babel-plugin-module-extension-resolver/1.0.0-rc.2:
     resolution: {integrity: sha512-nSvCi7Eq079snAYgWbq+VM8eci7OER9MAhDchuxpdimuyJr06x/Stsmc2b6zP5CDv4XR54Etkpf7jOo5NfzgVg==}
@@ -6715,7 +6703,6 @@ packages:
   /dotenv-expand/10.0.0:
     resolution: {integrity: sha512-GopVGCpVS1UKH75VKHGuQFqS1Gusej0z4FyQkPdwjil2gNIv+LNsqBlboOzpJFZKVT95GkCyWJbBSdFEFUWI2A==}
     engines: {node: '>=12'}
-    dev: true
 
   /dotenv-expand/9.0.0:
     resolution: {integrity: sha512-uW8Hrhp5ammm9x7kBLR6jDfujgaDarNA02tprvZdyrJ7MpdzD1KyrIHG4l+YoC2fJ2UcdFdNWNWIjt+sexBHJw==}
@@ -6791,7 +6778,6 @@ packages:
       pretty-bytes: 5.6.0
       pretty-ms: 7.0.1
       time-span: 4.0.0
-    dev: true
 
   /ee-first/1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
@@ -13254,7 +13240,6 @@ packages:
 
   /wordwrap/1.0.0:
     resolution: {integrity: sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==}
-    dev: true
 
   /wrap-ansi/6.2.0:
     resolution: {integrity: sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==}
