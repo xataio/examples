@@ -24,7 +24,7 @@
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
-    "@xata.io/cli": "0.11.6",
+    "@xata.io/cli": "0.11.7",
     "autoprefixer": "^10.4.12",
     "concurrently": "^7.5.0",
     "esbuild": "^0.17.0",
