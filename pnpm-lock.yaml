@@ -283,7 +283,7 @@ importers:
 
   apps/starter-vercel-serverless-functions:
     specifiers:
-      '@vercel/node': 2.9.2
+      '@vercel/node': 2.9.3
       '@xata.io/cli': 0.11.8
       '@xata.io/client': 0.22.1
       esbuild: ^0.17.0
@@ -295,7 +295,7 @@ importers:
       '@xata.io/client': 0.22.1_typescript@4.9.5
       isomorphic-fetch: 3.0.0
     devDependencies:
-      '@vercel/node': 2.9.2
+      '@vercel/node': 2.9.3
       '@xata.io/cli': 0.11.8_rkjmoekmlkbgppdzdbhpvee76y
       esbuild: 0.17.0
       rollup: 3.6.0
@@ -4735,8 +4735,8 @@ packages:
     resolution: {integrity: sha512-mEbr7m/hDdIjw3thALn0hgsK3eRLLmHxnfwJgFERRCUdvuoPMFSeZsr6vIqKHlqCk0XzQmDzyQ+Dqs7sCg9tgw==}
     dev: true
 
-  /@vercel/build-utils/6.2.1:
-    resolution: {integrity: sha512-N02exe9Ip9mB1Jrbt/UT2+fOtSptT74M70AUpzNUeOVTn9801dMAGB2OKyHREnLYYmnuOqF/mrvIDEBWRH2pZQ==}
+  /@vercel/build-utils/6.2.2:
+    resolution: {integrity: sha512-xpexr6GQ8NPo1NHrA1VBpVEapmM+vfkViVtGRjvSYMVrIXZumSCYg8ZJiixn43RwNnGUnPPMD33FZXuGiQXU6g==}
     dev: true
 
   /@vercel/go/2.2.17:
@@ -4770,8 +4770,8 @@ packages:
       - encoding
       - supports-color
 
-  /@vercel/node-bridge/3.1.10:
-    resolution: {integrity: sha512-0DQzF5pdyP+xd5f1Ss2fAO+9xIvzUhngRAPazwg4XHZE9iLkv2L+A1u3L8NYi4hoUlAAZQ5GF3txlm/oBn4tNw==}
+  /@vercel/node-bridge/3.1.11:
+    resolution: {integrity: sha512-LGbj+kPGgRnIlKo3949z01mLbHVi4BnRE7V5R6+J4E3f7xpQ12I9Wek10V7ivLB+LyS1+ATdjasdXAF4HOhqQw==}
     dev: true
 
   /@vercel/node-bridge/3.1.2:
@@ -4796,13 +4796,13 @@ packages:
       - encoding
     dev: true
 
-  /@vercel/node/2.9.2:
-    resolution: {integrity: sha512-RwGQFjhlp3vHuudREmNRtLGn5TlvhXkC297vJZvAs7ATDZpWscRboVDUZL1jcQiyOrO9lDXNyUeEh6LY89NpFw==}
+  /@vercel/node/2.9.3:
+    resolution: {integrity: sha512-BexOx3i1ZM3wizWgS/hlqWxA5+S79ZLfvgnsT6MKv7s9okYsSDpi4w5hMpv8/TTvrxGA6VlbquuHo5irm6NJcQ==}
     dependencies:
       '@edge-runtime/vm': 2.0.0
       '@types/node': 14.18.33
-      '@vercel/build-utils': 6.2.1
-      '@vercel/node-bridge': 3.1.10
+      '@vercel/build-utils': 6.2.2
+      '@vercel/node-bridge': 3.1.11
       '@vercel/static-config': 2.0.12
       edge-runtime: 2.0.0
       esbuild: 0.14.47
