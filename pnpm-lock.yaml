@@ -20,7 +20,7 @@ importers:
     specifiers:
       '@types/node': 18.13.0
       '@types/react': 18.0.28
-      '@types/react-dom': 18.0.10
+      '@types/react-dom': 18.0.11
       '@vercel/og': ^0.1.0
       '@xata.io/cli': 0.11.8
       '@xata.io/client': 0.22.1
@@ -48,7 +48,7 @@ importers:
     devDependencies:
       '@types/node': 18.13.0
       '@types/react': 18.0.28
-      '@types/react-dom': 18.0.10
+      '@types/react-dom': 18.0.11
       '@xata.io/cli': 0.11.8_emhuif53gpbkiubavhzwgx2yny
       autoprefixer: 10.4.12_postcss@8.4.18
       concurrently: 7.5.0
@@ -65,7 +65,7 @@ importers:
       '@next/font': 13.1.6
       '@types/node': 18.13.0
       '@types/react': 18.0.28
-      '@types/react-dom': 18.0.9
+      '@types/react-dom': 18.0.11
       '@xata.io/client': latest
       eslint: 8.34.0
       eslint-config-next: 13.1.6
@@ -79,7 +79,7 @@ importers:
       '@next/font': 13.1.6
       '@types/node': 18.13.0
       '@types/react': 18.0.28
-      '@types/react-dom': 18.0.9
+      '@types/react-dom': 18.0.11
       '@xata.io/client': 0.22.1_typescript@4.9.5
       eslint: 8.34.0
       eslint-config-next: 13.1.6_7kw3g6rralp5ps6mg3uyzz6azm
@@ -94,7 +94,7 @@ importers:
       '@types/bcrypt': ^5.0.0
       '@types/node': 18.13.0
       '@types/react': 18.0.28
-      '@types/react-dom': 18.0.10
+      '@types/react-dom': 18.0.11
       '@xata.io/client': 0.22.1
       bcrypt: ^5.1.0
       eslint: 8.34.0
@@ -113,7 +113,7 @@ importers:
       '@types/bcrypt': 5.0.0
       '@types/node': 18.13.0
       '@types/react': 18.0.28
-      '@types/react-dom': 18.0.10
+      '@types/react-dom': 18.0.11
       eslint: 8.34.0
       eslint-config-next: 13.1.6_7kw3g6rralp5ps6mg3uyzz6azm
       typescript: 4.9.5
@@ -173,7 +173,7 @@ importers:
       '@trpc/server': ^10.5.0
       '@types/node': 18.13.0
       '@types/react': 18.0.28
-      '@types/react-dom': 18.0.10
+      '@types/react-dom': 18.0.11
       '@xata.io/cli': ^0.11.5
       '@xata.io/client': ^0.22.0
       eslint: 8.34.0
@@ -197,7 +197,7 @@ importers:
       '@trpc/server': 10.7.0
       '@types/node': 18.13.0
       '@types/react': 18.0.28
-      '@types/react-dom': 18.0.10
+      '@types/react-dom': 18.0.11
       '@xata.io/client': 0.22.0_typescript@4.9.5
       eslint: 8.34.0
       eslint-config-next: 13.1.6_7kw3g6rralp5ps6mg3uyzz6azm
@@ -4436,8 +4436,8 @@ packages:
     resolution: {integrity: sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==}
     dev: false
 
-  /@types/react-dom/18.0.10:
-    resolution: {integrity: sha512-E42GW/JA4Qv15wQdqJq8DL4JhNpB3prJgjgapN3qJT9K2zO5IIAQh4VXvCEDupoqAwnz0cY4RlXeC/ajX5SFHg==}
+  /@types/react-dom/18.0.11:
+    resolution: {integrity: sha512-O38bPbI2CWtgw/OoQoY+BRelw7uysmXbWvw3nLWO21H1HSh+GOlqPuXshJfjmpNlKiiSDG9cc1JZAaMmVdcTlw==}
     dependencies:
       '@types/react': 18.0.28
 
@@ -4445,6 +4445,7 @@ packages:
     resolution: {integrity: sha512-qnVvHxASt/H7i+XG1U1xMiY5t+IHcPGUK7TDMDzom08xa7e86eCeKOiLZezwCKVxJn6NEiiy2ekgX8aQssjIKg==}
     dependencies:
       '@types/react': 18.0.28
+    dev: true
 
   /@types/react/18.0.25:
     resolution: {integrity: sha512-xD6c0KDT4m7n9uD4ZHi02lzskaiqcBxf4zi+tXZY98a04wvc0hi/TcCPC2FOESZi51Nd7tlUeOJY8RofL799/g==}
