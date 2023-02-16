@@ -283,7 +283,7 @@ importers:
 
   apps/starter-vercel-serverless-functions:
     specifiers:
-      '@vercel/node': 2.9.5
+      '@vercel/node': 2.9.6
       '@xata.io/cli': 0.11.8
       '@xata.io/client': 0.22.1
       esbuild: ^0.17.0
@@ -295,7 +295,7 @@ importers:
       '@xata.io/client': 0.22.1_typescript@4.9.5
       isomorphic-fetch: 3.0.0
     devDependencies:
-      '@vercel/node': 2.9.5
+      '@vercel/node': 2.9.6
       '@xata.io/cli': 0.11.8_rkjmoekmlkbgppdzdbhpvee76y
       esbuild: 0.17.0
       rollup: 3.6.0
@@ -4736,8 +4736,8 @@ packages:
     resolution: {integrity: sha512-mEbr7m/hDdIjw3thALn0hgsK3eRLLmHxnfwJgFERRCUdvuoPMFSeZsr6vIqKHlqCk0XzQmDzyQ+Dqs7sCg9tgw==}
     dev: true
 
-  /@vercel/build-utils/6.2.4:
-    resolution: {integrity: sha512-CSywnRTyPnQ77UXUqjPCg4mgyxNHv1xv6t1u71bcScOAe8Bqqyawzw3NEmuzZpax38fKfYQll7Jg3Xmp++GgbA==}
+  /@vercel/build-utils/6.3.0:
+    resolution: {integrity: sha512-Nbu/CIsv8HMp1+KPZ0n2YlHTKPfGRDrwhMgKW9Dx4z2S5sQWkXpe9WQ5ajePgwZVd7V1XiJYx1CCRaupIVgUwA==}
     dev: true
 
   /@vercel/go/2.2.17:
@@ -4797,14 +4797,14 @@ packages:
       - encoding
     dev: true
 
-  /@vercel/node/2.9.5:
-    resolution: {integrity: sha512-XUX9xkww4FLuj0gvsDcnnfN+Rs8xLFnfpcRs+MjZowetwVOW80kiT0TCRquDdHEQjzjRiErf4m8pu/SUKAtM4g==}
+  /@vercel/node/2.9.6:
+    resolution: {integrity: sha512-A1/1LucW54jUH8YspTTQYeGdhOPK8Z17bt5vrnB4PW5PGnq5Dn2DaC1mly0/Lo4Qlz44xDIiknwGvAitLAs2gQ==}
     dependencies:
       '@edge-runtime/vm': 2.0.0
       '@types/node': 14.18.33
-      '@vercel/build-utils': 6.2.4
+      '@vercel/build-utils': 6.3.0
       '@vercel/node-bridge': 3.1.11
-      '@vercel/static-config': 2.0.12
+      '@vercel/static-config': 2.0.13
       edge-runtime: 2.0.0
       esbuild: 0.14.47
       exit-hook: 2.2.1
@@ -4866,8 +4866,8 @@ packages:
     resolution: {integrity: sha512-wlvB+ujsE+PqUQE/f7KqDcymD5Rf6LgTQStz/9NcFU+FAPApnnJFZ7JbkV4K7XSo/48ahjLJIfmqRrbdu26z2Q==}
     dev: true
 
-  /@vercel/static-config/2.0.12:
-    resolution: {integrity: sha512-mkTS3t6RV6Fu7G21LpegEuuHl9rwfyNkoBvsNV5BBP0h7/3OzHwHip+t20oKWk3IrWu5ic0nbLNhyARdkeA1hQ==}
+  /@vercel/static-config/2.0.13:
+    resolution: {integrity: sha512-09bVISGyhRMoL6gQTfM7n89SeUmyOlIzVMo2oNOj3thy4AIKGuN0SzEp0qNRw8d9j07rifp9JPD4rOuDRx4+eA==}
     dependencies:
       ajv: 8.6.3
       json-schema-to-ts: 1.6.4
