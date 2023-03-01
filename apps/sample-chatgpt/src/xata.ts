@@ -11,19 +11,23 @@ type Database = {
 export const getDatabases = (): Database[] => {
   const docs = new BaseClient({
     databaseURL: 'https://sample-databases-v0sn1n.us-east-1.xata.sh/db/docs',
+    branch: 'main',
   })
 
   const hp = new BaseClient({
     databaseURL:
       'https://sample-databases-v0sn1n.us-east-1.xata.sh/db/harry-potter',
+    branch: 'main',
   })
 
   const pokemon = new BaseClient({
     databaseURL: 'https://sample-databases-v0sn1n.us-east-1.xata.sh/db/pokemon',
+    branch: 'main',
   })
 
   const f1 = new BaseClient({
     databaseURL: 'https://sample-databases-v0sn1n.eu-west-1.xata.sh/db/f1',
+    branch: 'main',
   })
 
   return [
