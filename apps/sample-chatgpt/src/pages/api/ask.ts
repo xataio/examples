@@ -45,7 +45,6 @@ const handler = async (req: NextRequest): Promise<Response> => {
       xata[database].db[lookupTable].ask(question, {
         ...options,
         onMessage: (message: AskResult) => {
-          console.log('message', message)
           controller.enqueue(encoder.encode(`event: message\n`))
           controller.enqueue(
             encoder.encode(`data: ${JSON.stringify(message)}\n\n`)

@@ -29,9 +29,8 @@ function prettyFormatNumber(num: number) {
 }
 
 const useAskXataDocs = () => {
-  const [data, setAnswer] = useState<string>()
+  const [answer, setAnswer] = useState<string>()
   const [isLoading, setIsLoading] = useState(false)
-  const [error, setError] = useState<string>()
 
   const askQuestion = useCallback((database: string, question: string) => {
     if (!question) return
@@ -45,17 +44,12 @@ const useAskXataDocs = () => {
       headers: { 'Content-Type': 'application/json' },
       onmessage(ev) {
         try {
-          const data = JSON.parse(ev.data)
-          setAnswer((answer) => `${answer || ''}${data.answer}`)
+          const { answer = '', done } = JSON.parse(ev.data)
+          setAnswer((prev = '') => `${prev}${answer}`)
+          setIsLoading(!done)
         } catch (e) {}
       },
     })
-      .catch(({ message }) => {
-        setError(message)
-      })
-      .finally(() => {
-        setIsLoading(false)
-      })
   }, [])
 
   // Clear answer function
@@ -64,7 +58,7 @@ const useAskXataDocs = () => {
     setIsLoading(false)
   }, [])
 
-  return { isLoading, data, error, askQuestion, clearAnswer }
+  return { isLoading, answer, askQuestion, clearAnswer }
 }
 
 export default function Home({
@@ -73,7 +67,12 @@ export default function Home({
   const [question, setQuestion] = useState<string>('')
   const [selected, setSelected] = useState<ClientKey>(dbs[0].id)
 
-  const { isLoading, data: response, askQuestion } = useAskXataDocs()
+  const { answer, isLoading, askQuestion } = useAskXataDocs()
+
+  const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    askQuestion(selected, question)
+  }
 
   return (
     <>
@@ -105,7 +104,7 @@ export default function Home({
               </div>
             ))}
           </div>
-          <div className={styles.inputGroup}>
+          <form className={styles.inputGroup} onSubmit={handleFormSubmit}>
             <input
               value={question}
               onChange={(e) => setQuestion(e.target.value)}
@@ -113,15 +112,18 @@ export default function Home({
               placeholder={'Write a question to ask the chatbot'}
             />
             <div className={styles.inputRightElement}>
-              <button
-                className={styles.button}
-                onClick={() => askQuestion(selected, question)}
-              >
+              <button className={styles.button} type="submit">
                 Ask
               </button>
             </div>
-          </div>
-          {response ? <p className={styles.response}>{response}</p> : null}
+          </form>
+          {answer ? (
+            <p className={styles.response}>{answer}</p>
+          ) : isLoading ? (
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <span className={styles.loader} />
+            </div>
+          ) : null}
         </div>
       </main>
     </>

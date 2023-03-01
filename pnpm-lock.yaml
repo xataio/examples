@@ -18,10 +18,11 @@ importers:
 
   apps/sample-chatgpt:
     specifiers:
+      '@microsoft/fetch-event-source': ^2.0.1
       '@types/node': 18.14.2
       '@types/react': 18.0.28
       '@types/react-dom': 18.0.11
-      '@xata.io/client': 0.0.0-alpha.v69ffb98
+      '@xata.io/client': 0.0.0-alpha.v12471a4
       eslint: 8.35.0
       eslint-config-next: 13.2.1
       next: 13.2.1
@@ -30,7 +31,8 @@ importers:
       typescript: 4.9.5
       zod: ^3.20.2
     dependencies:
-      '@xata.io/client': 0.0.0-alpha.v69ffb98_typescript@4.9.5
+      '@microsoft/fetch-event-source': 2.0.1
+      '@xata.io/client': 0.0.0-alpha.v12471a4_typescript@4.9.5
       next: 13.2.1_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -2705,6 +2707,10 @@ packages:
       - encoding
       - supports-color
 
+  /@microsoft/fetch-event-source/2.0.1:
+    resolution: {integrity: sha512-W6CLUJ2eBMw3Rec70qrsEW0jOm/3twwJv21mrmj2yORiaVmVYGS4sSS5yUwvQc1ZlDLYGPnClVWmUUMagKNsfA==}
+    dev: false
+
   /@miniflare/cache/2.12.1:
     resolution: {integrity: sha512-6Pj5avy53qULTa13gWxGTDBuwX0yAzr4Zkzb0ZBh40bcbHp4vRkOk7PvHBoxV0M76JxQDHotGaW+ik510z5Xrg==}
     engines: {node: '>=16.13'}
@@ -4671,8 +4677,8 @@ packages:
       - typescript
       - utf-8-validate
 
-  /@xata.io/client/0.0.0-alpha.v69ffb98_typescript@4.9.5:
-    resolution: {integrity: sha512-9Cq6yw8B0KI9sQsykvOFAzRWZ8PmOLSffs8UNsdGJvgVHV0AfWLpNx3sQDW9DXmBJLlBG+mYo04aCfCqT+bslw==}
+  /@xata.io/client/0.0.0-alpha.v12471a4_typescript@4.9.5:
+    resolution: {integrity: sha512-7ofI6fjLqponUqdepcqaqw66Dtufapt1eDavLHC8QI2uo9cf18+/t+efMwxbxYjrL161ij0EzMtKXJenmc1h2Q==}
     peerDependencies:
       typescript: '>=4.5'
     dependencies:
