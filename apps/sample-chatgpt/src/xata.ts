@@ -11,23 +11,23 @@ type Database = {
 export const getDatabases = (): Database[] => {
   const docs = new BaseClient({
     databaseURL: 'https://sample-databases-v0sn1n.us-east-1.xata.sh/db/docs',
-  })
-
-  const f1 = new BaseClient({
-    databaseURL: 'https://sample-databases-v0sn1n.eu-west-1.xata.sh/db/f1',
+    branch: 'main',
   })
 
   const hp = new BaseClient({
     databaseURL:
       'https://sample-databases-v0sn1n.us-east-1.xata.sh/db/harry-potter',
-  })
-
-  const imdb = new BaseClient({
-    databaseURL: 'https://sample-databases-v0sn1n.eu-west-1.xata.sh/db/imdb',
+    branch: 'main',
   })
 
   const pokemon = new BaseClient({
     databaseURL: 'https://sample-databases-v0sn1n.us-east-1.xata.sh/db/pokemon',
+    branch: 'main',
+  })
+
+  const f1 = new BaseClient({
+    databaseURL: 'https://sample-databases-v0sn1n.eu-west-1.xata.sh/db/f1',
+    branch: 'main',
   })
 
   return [
@@ -123,49 +123,6 @@ export const getDatabases = (): Database[] => {
           'If the user asks for data of a race be precise and respond with the correct data.',
           "Don't answer questions about the future.",
           'If you are asked a question that is not about F1, respond with "That is not a question I can answer."',
-        ],
-      },
-    },
-
-    {
-      id: 'movies',
-      client: imdb,
-      name: 'IMDB Movies',
-      lookupTable: 'titles',
-      options: {
-        searchType: 'keyword',
-        search: {
-          fuzziness: 1,
-          prefix: 'phrase',
-          target: [
-            { column: 'primaryTitle', weight: 4 },
-            { column: 'originalTitle', weight: 4 },
-            'summary',
-          ],
-        },
-        rules: [
-          'If the user asks for a movie that does not exist, respond with "I don\'t know that movie."',
-          'Only answer questions that are relating to the know plot of the movie.',
-          'If you are asked a question that is not about IMDB movies, respond with "That is not a question I can answer."',
-        ],
-      },
-    },
-    {
-      id: 'actors',
-      client: imdb,
-      name: 'IMDB Personalities',
-      lookupTable: 'names',
-      options: {
-        searchType: 'keyword',
-        search: {
-          fuzziness: 1,
-          prefix: 'phrase',
-          target: [{ column: 'primaryName', weight: 4 }, 'biography'],
-        },
-        rules: [
-          'If the user asks for a personality that does not exist, respond with "I don\'t know that personality."',
-          'Only answer questions that are relating to the know biographical information of the personality.',
-          'If you are asked a question that is not about IMDB personalities, respond with "That is not a question I can answer."',
         ],
       },
     },
