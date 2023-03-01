@@ -1,7 +1,7 @@
 import { AskResult } from '@xata.io/client'
 import { NextRequest } from 'next/server'
 import { z } from 'zod'
-import { databases, getXataClients, isClientKey } from '~/xata'
+import { getDatabases } from '~/xata'
 
 export const config = {
   runtime: 'edge',
@@ -26,27 +26,19 @@ const handler = async (req: NextRequest): Promise<Response> => {
     })
   }
 
-  const { database, question } = body.data
-  if (!isClientKey(database)) {
-    return new Response(JSON.stringify({ message: 'Invalid database' }), {
-      status: 400,
-    })
-  }
-
-  const xata = getXataClients()
-
   const encoder = new TextEncoder()
-  const variant = databases.find((db) => db.id === database)
+  const variant = getDatabases().find((db) => db.id === body.data.database)
   if (!variant) {
     return new Response(JSON.stringify({ message: 'Invalid database' }), {
       status: 400,
     })
   }
 
+  const { client: xata, lookupTable, options } = variant
   const stream = new ReadableStream({
     async start(controller) {
-      xata[database].db[variant.lookupTable].ask(question, {
-        ...variant.options,
+      xata.db[lookupTable].ask(body.data.question, {
+        ...options,
         onMessage: (message: AskResult) => {
           controller.enqueue(encoder.encode(`event: message\n`))
           controller.enqueue(

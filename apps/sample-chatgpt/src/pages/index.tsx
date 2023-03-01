@@ -3,17 +3,14 @@ import { InferGetStaticPropsType } from 'next'
 import Head from 'next/head'
 import { useCallback, useState } from 'react'
 import styles from '~/styles/Home.module.css'
-import { ClientKey, databases, getXataClients } from '~/xata'
+import { getDatabases } from '~/xata'
 
 export async function getStaticProps() {
-  const xata = getXataClients()
   const dbs = []
 
-  for (const database of databases) {
-    const { id, name, lookupTable } = database
-
-    // @ts-ignore The table name is dynamic
-    const { aggs } = await xata[id].db[lookupTable]?.aggregate({
+  for (const database of getDatabases()) {
+    const { id, name, client: xata, lookupTable } = database
+    const { aggs } = await xata.db[lookupTable]?.aggregate({
       total: { count: '*' },
     })
 
@@ -64,7 +61,7 @@ export default function Home({
   dbs,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const [question, setQuestion] = useState<string>('')
-  const [selected, setSelected] = useState<ClientKey>(dbs[0].id)
+  const [selected, setSelected] = useState<string>(dbs[0].id)
 
   const { answer, isLoading, askQuestion } = useAskXataDocs()
 
