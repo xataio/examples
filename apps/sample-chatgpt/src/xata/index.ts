@@ -3,12 +3,15 @@ import { getXataClient as getDocsClient } from './docs'
 import { getXataClient as getF1Client } from './f1'
 import { getXataClient as getImdbClient } from './imdb'
 import { getXataClient as getPokemonClient } from './pokemon'
+import { getXataClient as getHarryPotterClient } from './hp'
 
 export const getXataClients = () => {
   return {
     docs: getDocsClient(),
     f1: getF1Client(),
-    imdb: getImdbClient(),
+    hp: getHarryPotterClient(),
+    actors: getImdbClient(),
+    movies: getImdbClient(),
     pokemon: getPokemonClient(),
   }
 }
@@ -60,32 +63,32 @@ export const databases: Database[] = [
     },
   },
   {
-    id: 'f1',
-    name: 'F1',
-    lookupTable: 'circuits',
-  },
-  {
-    id: 'imdb',
-    name: 'IMDB',
-    lookupTable: 'titles',
-  },
-  {
-    id: 'pokemon',
-    name: 'Pokemon',
-    lookupTable: 'pokemon',
+    id: 'hp',
+    name: 'Harry Potter',
+    lookupTable: 'overview',
     options: {
       searchType: 'keyword',
       search: {
         fuzziness: 1,
         prefix: 'phrase',
-        target: [
-          'japaneseName',
-          { column: 'name', weight: 4 },
-          'abilities',
-          'classfication',
-          { column: 'type1', weight: 2 },
-          { column: 'type2', weight: 2 },
-        ],
+      },
+      rules: [
+        'If the user asks for a character that does not exist, respond with "I don\'t know that character."',
+        'If the user asks for a spell that does not exist, respond with "I don\'t know that spell."',
+        'If the user asks for a potion that does not exist, respond with "I don\'t know that potion."',
+        'Only answer questions that are relating to the know plot of the movie.',
+      ],
+    },
+  },
+  {
+    id: 'pokemon',
+    name: 'Pokemon',
+    lookupTable: 'overview',
+    options: {
+      searchType: 'keyword',
+      search: {
+        fuzziness: 1,
+        prefix: 'phrase',
       },
       rules: [
         'If the user asks for a pokemon that does not exist, respond with "I don\'t know that pokemon."',
@@ -93,6 +96,65 @@ export const databases: Database[] = [
         'If the user asks for a fight between two pokemon that do not exist, respond with "I don\'t know those pokemon."',
         'If the user asks for a fight between two pokemon that are the same, respond with "They are the same pokemon."',
         'If you are asked a question that is not about pokemon, respond with "That is not a question I can answer."',
+      ],
+    },
+  },
+  {
+    id: 'f1',
+    name: 'Formula 1',
+    lookupTable: 'overview',
+    options: {
+      searchType: 'keyword',
+      search: {
+        fuzziness: 1,
+        prefix: 'phrase',
+      },
+      rules: [
+        'If the user asks for a driver that does not exist, respond with "I don\'t know that driver."',
+        'If the user asks for data of a race be precise and respond with the correct data.',
+        "Don't answer questions about the future.",
+        'If you are asked a question that is not about F1, respond with "That is not a question I can answer."',
+      ],
+    },
+  },
+
+  {
+    id: 'movies',
+    name: 'IMDB Movies',
+    lookupTable: 'titles',
+    options: {
+      searchType: 'keyword',
+      search: {
+        fuzziness: 1,
+        prefix: 'phrase',
+        target: [
+          { column: 'primaryTitle', weight: 4 },
+          { column: 'originalTitle', weight: 4 },
+          'summary',
+        ],
+      },
+      rules: [
+        'If the user asks for a movie that does not exist, respond with "I don\'t know that movie."',
+        'Only answer questions that are relating to the know plot of the movie.',
+        'If you are asked a question that is not about IMDB movies, respond with "That is not a question I can answer."',
+      ],
+    },
+  },
+  {
+    id: 'actors',
+    name: 'IMDB Personalities',
+    lookupTable: 'names',
+    options: {
+      searchType: 'keyword',
+      search: {
+        fuzziness: 1,
+        prefix: 'phrase',
+        target: [{ column: 'primaryName', weight: 4 }, 'biography'],
+      },
+      rules: [
+        'If the user asks for a personality that does not exist, respond with "I don\'t know that personality."',
+        'Only answer questions that are relating to the know biographical information of the personality.',
+        'If you are asked a question that is not about IMDB personalities, respond with "That is not a question I can answer."',
       ],
     },
   },

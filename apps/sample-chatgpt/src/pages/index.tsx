@@ -1,7 +1,8 @@
+import { fetchEventSource } from '@microsoft/fetch-event-source'
 import { InferGetStaticPropsType } from 'next'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
 import styles from '~/styles/Home.module.css'
 import { ClientKey, databases, getXataClients } from '~/xata'
 
@@ -10,20 +11,14 @@ export async function getStaticProps() {
   const dbs = []
 
   for (const database of databases) {
-    const { id, name } = database
-    const tables = Object.keys(xata[id].db)
-    let recordCount = 0
+    const { id, name, lookupTable } = database
 
-    for (const table of tables) {
-      // @ts-ignore We know this is a valid table
-      const { aggs } = await xata[id].db[table]?.aggregate({
-        total: { count: '*' },
-      })
+    // @ts-ignore The table name is dynamic
+    const { aggs } = await xata[id].db[lookupTable]?.aggregate({
+      total: { count: '*' },
+    })
 
-      recordCount += aggs.total
-    }
-
-    dbs.push({ id, name, tableCount: tables.length, recordCount })
+    dbs.push({ id, name, recordCount: aggs.total })
   }
 
   return { props: { dbs } }
@@ -33,43 +28,52 @@ function prettyFormatNumber(num: number) {
   return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
 }
 
+const useAskXataDocs = () => {
+  const [data, setAnswer] = useState<string>()
+  const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState<string>()
+
+  const askQuestion = useCallback((database: string, question: string) => {
+    if (!question) return
+
+    setAnswer(undefined)
+    setIsLoading(true)
+
+    void fetchEventSource(`/api/ask`, {
+      method: 'POST',
+      body: JSON.stringify({ question, database }),
+      headers: { 'Content-Type': 'application/json' },
+      onmessage(ev) {
+        try {
+          const data = JSON.parse(ev.data)
+          setAnswer((answer) => `${answer || ''}${data.answer}`)
+        } catch (e) {}
+      },
+    })
+      .catch(({ message }) => {
+        setError(message)
+      })
+      .finally(() => {
+        setIsLoading(false)
+      })
+  }, [])
+
+  // Clear answer function
+  const clearAnswer = useCallback(() => {
+    setAnswer(undefined)
+    setIsLoading(false)
+  }, [])
+
+  return { isLoading, data, error, askQuestion, clearAnswer }
+}
+
 export default function Home({
   dbs,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const [question, setQuestion] = useState<string>('')
-  const [response, setResponse] = useState<string>('')
   const [selected, setSelected] = useState<ClientKey>(dbs[0].id)
 
-  const ask = async (e: any) => {
-    e.preventDefault()
-    setResponse('')
-
-    const response = await fetch('/api/ask', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ question, database: selected }),
-    })
-
-    if (!response.ok) {
-      throw new Error(response.statusText)
-    }
-
-    const data = response.body
-    if (!data) return
-
-    const reader = data.getReader()
-    const decoder = new TextDecoder()
-    let done = false
-
-    while (!done) {
-      const { value, done: doneReading } = await reader.read()
-      done = doneReading
-      try {
-        const { answer } = JSON.parse(decoder.decode(value))
-        setResponse((prev) => `${prev || ''}${answer}`)
-      } catch (e) {}
-    }
-  }
+  const { isLoading, data: response, askQuestion } = useAskXataDocs()
 
   return (
     <>
@@ -83,7 +87,7 @@ export default function Home({
           <h1 className={styles.title}>Xata Ask Demo</h1>
 
           <div className={styles.grid}>
-            {dbs.map(({ id, name, tableCount, recordCount }) => (
+            {dbs.map(({ id, name, recordCount }) => (
               <div
                 key={`database-${id}`}
                 className={styles.card}
@@ -94,9 +98,6 @@ export default function Home({
                 }}
               >
                 <h3 style={{ marginBottom: 10 }}>{name}</h3>
-                <p>
-                  {tableCount} {tableCount === 1 ? 'table' : 'tables'}
-                </p>
                 <p>
                   {prettyFormatNumber(recordCount)}{' '}
                   {recordCount === 1 ? 'record' : 'records'}
@@ -112,7 +113,10 @@ export default function Home({
               placeholder={'Write a question to ask the chatbot'}
             />
             <div className={styles.inputRightElement}>
-              <button className={styles.button} onClick={ask}>
+              <button
+                className={styles.button}
+                onClick={() => askQuestion(selected, question)}
+              >
                 Ask
               </button>
             </div>

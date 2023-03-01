@@ -2,7 +2,6 @@ import { AskResult } from '@xata.io/client'
 import { NextRequest } from 'next/server'
 import { z } from 'zod'
 import { databases, getXataClients, isClientKey } from '~/xata'
-import { getXataClient } from '~/xata/docs'
 
 export const config = {
   runtime: 'edge',
@@ -47,13 +46,22 @@ const handler = async (req: NextRequest): Promise<Response> => {
         ...options,
         onMessage: (message: AskResult) => {
           console.log('message', message)
-          controller.enqueue(encoder.encode(JSON.stringify(message)))
+          controller.enqueue(encoder.encode(`event: message\n`))
+          controller.enqueue(
+            encoder.encode(`data: ${JSON.stringify(message)}\n\n`)
+          )
         },
       })
     },
   })
 
-  return new Response(stream)
+  return new Response(stream, {
+    headers: {
+      Connection: 'keep-alive',
+      'Cache-Control': 'no-cache, no-transform',
+      'Content-Type': 'text/event-stream;charset=utf-8',
+    },
+  })
 }
 
 export default handler
