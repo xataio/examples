@@ -31,7 +31,7 @@ type Database = {
   id: ClientKey
   name: string
   lookupTable: string
-  options?: AskOptions<any>
+  options: AskOptions<any>
 }
 
 export const databases: Database[] = [

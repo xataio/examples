@@ -36,14 +36,17 @@ const handler = async (req: NextRequest): Promise<Response> => {
   const xata = getXataClients()
 
   const encoder = new TextEncoder()
-  const { options, lookupTable } =
-    databases.find((db) => db.id === database) ?? {}
+  const variant = databases.find((db) => db.id === database)
+  if (!variant) {
+    return new Response(JSON.stringify({ message: 'Invalid database' }), {
+      status: 400,
+    })
+  }
 
   const stream = new ReadableStream({
     async start(controller) {
-      // @ts-ignore We know this is a valid table
-      xata[database].db[lookupTable].ask(question, {
-        ...options,
+      xata[database].db[variant.lookupTable].ask(question, {
+        ...variant.options,
         onMessage: (message: AskResult) => {
           controller.enqueue(encoder.encode(`event: message\n`))
           controller.enqueue(
