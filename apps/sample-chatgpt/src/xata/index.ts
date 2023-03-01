@@ -2,12 +2,14 @@ import { AskOptions } from '@xata.io/client'
 import { getXataClient as getDocsClient } from './docs'
 import { getXataClient as getF1Client } from './f1'
 import { getXataClient as getImdbClient } from './imdb'
+import { getXataClient as getPokemonClient } from './pokemon'
 
 export const getXataClients = () => {
   return {
     docs: getDocsClient(),
     f1: getF1Client(),
     imdb: getImdbClient(),
+    pokemon: getPokemonClient(),
   }
 }
 
@@ -66,6 +68,33 @@ export const databases: Database[] = [
     id: 'imdb',
     name: 'IMDB',
     lookupTable: 'titles',
+  },
+  {
+    id: 'pokemon',
+    name: 'Pokemon',
+    lookupTable: 'pokemon',
+    options: {
+      searchType: 'keyword',
+      search: {
+        fuzziness: 1,
+        prefix: 'phrase',
+        target: [
+          'japaneseName',
+          { column: 'name', weight: 4 },
+          'abilities',
+          'classfication',
+          { column: 'type1', weight: 2 },
+          { column: 'type2', weight: 2 },
+        ],
+      },
+      rules: [
+        'If the user asks for a pokemon that does not exist, respond with "I don\'t know that pokemon."',
+        'If the user asks for a fight between two pokemon, make sure to respond with the winner and the reason why.',
+        'If the user asks for a fight between two pokemon that do not exist, respond with "I don\'t know those pokemon."',
+        'If the user asks for a fight between two pokemon that are the same, respond with "They are the same pokemon."',
+        'If you are asked a question that is not about pokemon, respond with "That is not a question I can answer."',
+      ],
+    },
   },
 ]
 
