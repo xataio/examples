@@ -1,19 +1,28 @@
-import { AskOptions } from '@xata.io/client'
-import { getXataClient as getDocsClient } from './docs'
-import { getXataClient as getF1Client } from './f1'
-import { getXataClient as getImdbClient } from './imdb'
-import { getXataClient as getPokemonClient } from './pokemon'
-import { getXataClient as getHarryPotterClient } from './hp'
+import { AskOptions, BaseClient } from '@xata.io/client'
 
 export const getXataClients = () => {
-  return {
-    docs: getDocsClient(),
-    f1: getF1Client(),
-    hp: getHarryPotterClient(),
-    actors: getImdbClient(),
-    movies: getImdbClient(),
-    pokemon: getPokemonClient(),
-  }
+  const docs = new BaseClient({
+    databaseURL: 'https://sample-databases-v0sn1n.us-east-1.xata.sh/db/docs',
+  })
+
+  const f1 = new BaseClient({
+    databaseURL: 'https://sample-databases-v0sn1n.eu-west-1.xata.sh/db/f1',
+  })
+
+  const hp = new BaseClient({
+    databaseURL:
+      'https://sample-databases-v0sn1n.us-east-1.xata.sh/db/harry-potter',
+  })
+
+  const imdb = new BaseClient({
+    databaseURL: 'https://sample-databases-v0sn1n.eu-west-1.xata.sh/db/imdb',
+  })
+
+  const pokemon = new BaseClient({
+    databaseURL: 'https://sample-databases-v0sn1n.us-east-1.xata.sh/db/pokemon',
+  })
+
+  return { docs, f1, hp, actors: imdb, movies: imdb, pokemon }
 }
 
 export type ClientKey = keyof ReturnType<typeof getXataClients>

@@ -1,6 +1,5 @@
 import { fetchEventSource } from '@microsoft/fetch-event-source'
 import { InferGetStaticPropsType } from 'next'
-import { Inter } from 'next/font/google'
 import Head from 'next/head'
 import { useCallback, useState } from 'react'
 import styles from '~/styles/Home.module.css'
