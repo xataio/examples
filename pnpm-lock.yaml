@@ -172,7 +172,7 @@ importers:
 
   apps/starter-astro:
     specifiers:
-      '@astrojs/react': ^1.2.2
+      '@astrojs/react': ^2.0.0
       '@astrojs/vercel': ^2.3.4
       '@types/react': ^18.0.25
       '@xata.io/cli': ^0.11.0
@@ -181,7 +181,7 @@ importers:
       react: ^18.2.0
       react-dom: ^18.2.0
     dependencies:
-      '@astrojs/react': 1.2.2_zula6vjvt3wdocc4mwcxqa6nzi
+      '@astrojs/react': 2.0.2_zula6vjvt3wdocc4mwcxqa6nzi
       '@astrojs/vercel': 2.4.0
       '@types/react': 18.0.28
       '@xata.io/cli': 0.11.11
@@ -399,9 +399,9 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/react/1.2.2_zula6vjvt3wdocc4mwcxqa6nzi:
-    resolution: {integrity: sha512-ab9fYvzkC74J7N+M3DWQuZgwu7sYjW0aLO3sEAdCX/jZZz+0BhrqS8m9QjtGJyQK/niF4tgJjpPfadopxKc56g==}
-    engines: {node: ^14.18.0 || >=16.12.0}
+  /@astrojs/react/2.0.2_zula6vjvt3wdocc4mwcxqa6nzi:
+    resolution: {integrity: sha512-UmQNvzJul5M/Q9aZJXnqz4z0ODZXkLuaNvgsYoKB7OdM8c2v85FsTjMZZJ7BvFo4On31jJ0rL/gwTaCeuYqmpw==}
+    engines: {node: '>=16.12.0'}
     peerDependencies:
       '@types/react': ^17.0.50 || ^18.0.21
       '@types/react-dom': ^17.0.17 || ^18.0.6
