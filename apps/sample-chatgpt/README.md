@@ -20,9 +20,22 @@ npx degit xataio/examples/apps/sample-chatgpt my-xata-chatgpt-app
 npm install
 ```
 
-## Customize the databases you want to use
+## Customize Used Databases
 
-This project uses several databases to ask questions and get answers. You can customize the databases you want to use by editing the `src/xata.ts` file.
+This project supports multiple databases to ask questions and get answers one at a time. Once you add to your `.env.local` a `XATA_API_KEY` and a `XATA_BRANCH` you can edit your `src/xata.ts` file to connect to each one of them.
+
+<details>
+<summary>Setup Environment Variables</summary>
+
+Check the docs on how to [generate your API Key](https://xata.io/docs/getting-started/api-keys).
+
+```
+XATA_API_KEY=< your api key>
+XATA_BRANCH=main
+```
+
+</details>
+
 
 ```ts
 export const getDatabases = (): Database[] => {
@@ -63,5 +76,7 @@ export const getDatabases = (): Database[] => {
 ```bash
 npm run dev
 ```
+By default the app runs on [localhost:3000](http://localhost:3000)
+---
 
 > 🐛 If you encounter any issues while using Xata, please open a [support ticket](https://support.xata.io/hc/en-usrequests/new).
