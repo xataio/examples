@@ -22,7 +22,7 @@ importers:
       '@types/node': 18.14.4
       '@types/react': 18.0.28
       '@types/react-dom': 18.0.11
-      '@xata.io/client': 0.0.0-alpha.v12471a4
+      '@xata.io/client': 0.22.4
       eslint: 8.35.0
       eslint-config-next: 13.2.3
       next: 13.2.3
@@ -32,7 +32,7 @@ importers:
       zod: ^3.20.2
     dependencies:
       '@microsoft/fetch-event-source': 2.0.1
-      '@xata.io/client': 0.0.0-alpha.v12471a4_typescript@4.9.5
+      '@xata.io/client': 0.22.4_typescript@4.9.5
       next: 13.2.3_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -52,7 +52,7 @@ importers:
       '@types/react-dom': 18.0.11
       '@vercel/og': ^0.2.0
       '@xata.io/cli': 0.11.12
-      '@xata.io/client': 0.22.3
+      '@xata.io/client': 0.22.4
       autoprefixer: ^10.4.12
       concurrently: ^7.5.0
       esbuild: ^0.17.0
@@ -68,7 +68,7 @@ importers:
       typescript: 4.9.5
     dependencies:
       '@vercel/og': 0.2.0
-      '@xata.io/client': 0.22.3_typescript@4.9.5
+      '@xata.io/client': 0.22.4_typescript@4.9.5
       next: 13.2.3_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -124,7 +124,7 @@ importers:
       '@types/node': 18.14.4
       '@types/react': 18.0.28
       '@types/react-dom': 18.0.11
-      '@xata.io/client': 0.22.3
+      '@xata.io/client': 0.22.4
       bcrypt: ^5.1.0
       eslint: 8.35.0
       eslint-config-next: 13.2.3
@@ -133,7 +133,7 @@ importers:
       react-dom: 18.2.0
       typescript: 4.9.5
     dependencies:
-      '@xata.io/client': 0.22.3_typescript@4.9.5
+      '@xata.io/client': 0.22.4_typescript@4.9.5
       bcrypt: 5.1.0
       next: 13.2.3_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
@@ -152,14 +152,14 @@ importers:
       '@types/react': ^18.0.24
       '@types/react-dom': ^18.0.8
       '@vitejs/plugin-react': ^3.0.0
-      '@xata.io/client': 0.22.3
+      '@xata.io/client': 0.22.4
       concurrently: ^7.5.0
       react: ^18.2.0
       react-dom: ^18.2.0
       typescript: ^4.6.4
       vite: ^4.0.0
     dependencies:
-      '@xata.io/client': 0.22.3_typescript@4.9.5
+      '@xata.io/client': 0.22.4_typescript@4.9.5
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     devDependencies:
@@ -314,14 +314,14 @@ importers:
     specifiers:
       '@vercel/node': 2.9.10
       '@xata.io/cli': 0.11.12
-      '@xata.io/client': 0.22.3
+      '@xata.io/client': 0.22.4
       esbuild: ^0.17.0
       isomorphic-fetch: 3.0.0
       rollup: ^3.6.0
       typescript: 4.9.5
       vercel: ^28.5.6
     dependencies:
-      '@xata.io/client': 0.22.3_typescript@4.9.5
+      '@xata.io/client': 0.22.4_typescript@4.9.5
       isomorphic-fetch: 3.0.0
     devDependencies:
       '@vercel/node': 2.9.10
@@ -4791,14 +4791,6 @@ packages:
       - typescript
       - utf-8-validate
     optional: true
-
-  /@xata.io/client/0.0.0-alpha.v12471a4_typescript@4.9.5:
-    resolution: {integrity: sha512-7ofI6fjLqponUqdepcqaqw66Dtufapt1eDavLHC8QI2uo9cf18+/t+efMwxbxYjrL161ij0EzMtKXJenmc1h2Q==}
-    peerDependencies:
-      typescript: '>=4.5'
-    dependencies:
-      typescript: 4.9.5
-    dev: false
 
   /@xata.io/client/0.22.3:
     resolution: {integrity: sha512-2brx6LMhckQpRiXDhxDKa0H4cre5yDvOJ4DA/AskHyoyd5ZacqnLx9eFOThITC0/egu+6e6QKn1MtwY+gq5wTA==}
