@@ -12,7 +12,7 @@
     "dev:turbo": "next dev --turbo"
   },
   "dependencies": {
-    "@vercel/og": "^0.2.0",
+    "@vercel/og": "^0.3.0",
     "@xata.io/client": "0.22.4",
     "next": "13.2.3",
     "react": "18.2.0",
