@@ -312,7 +312,7 @@ importers:
 
   apps/starter-vercel-serverless-functions:
     specifiers:
-      '@vercel/node': 2.9.10
+      '@vercel/node': 2.9.12
       '@xata.io/cli': 0.11.12
       '@xata.io/client': 0.22.4
       esbuild: ^0.17.0
@@ -324,7 +324,7 @@ importers:
       '@xata.io/client': 0.22.4_typescript@4.9.5
       isomorphic-fetch: 3.0.0
     devDependencies:
-      '@vercel/node': 2.9.10
+      '@vercel/node': 2.9.12
       '@xata.io/cli': 0.11.12_bup5wlkgvj4yy3uwswp53c55dq
       esbuild: 0.17.10
       rollup: 3.17.3
@@ -4280,6 +4280,10 @@ packages:
     resolution: {integrity: sha512-wUYa8eUyTg1jPGRCrjpIxJm1r6hQE7ccbECWzDCAikuWG4iadS2zWrF7bsAcuUj7fTMf8sNFhmsknTJgyN3B3g==}
     dev: true
 
+  /@vercel/build-utils/6.3.4:
+    resolution: {integrity: sha512-7qhJP/5yz/9aBmkJirRxcTrvrLdV6PUT9DpxsILnfdw7WAJ5KSa59kBj8Aw4VhW4CqK4pFcuMMHr73aYRcEmkg==}
+    dev: true
+
   /@vercel/gatsby-plugin-vercel-analytics/1.0.8:
     resolution: {integrity: sha512-EL5xH3KOtAwzLc50NA2Df5BQwIV9tu8QBIG0unSTUtOpIaqqnOMBZT86DxadsAniUs7xYRcaeXOkQog/PbpWDw==}
     dependencies:
@@ -4366,6 +4370,26 @@ packages:
       '@edge-runtime/vm': 2.0.0
       '@types/node': 14.18.33
       '@vercel/build-utils': 6.3.2
+      '@vercel/node-bridge': 3.1.14
+      '@vercel/static-config': 2.0.13
+      edge-runtime: 2.0.0
+      esbuild: 0.14.47
+      exit-hook: 2.2.1
+      node-fetch: 2.6.7
+      ts-node: 10.9.1_jh3j7gf3qptnaxtpzk3sx5vjku
+      typescript: 4.3.4
+    transitivePeerDependencies:
+      - '@swc/core'
+      - '@swc/wasm'
+      - encoding
+    dev: true
+
+  /@vercel/node/2.9.12:
+    resolution: {integrity: sha512-NGbOK9bl7Lhnr1OfB+iz2yIOuMhOQKZz66jn11153mDqqlQ93i7cNcQeMU61A1waJj1KubqViMGWKgxO7QTCUw==}
+    dependencies:
+      '@edge-runtime/vm': 2.0.0
+      '@types/node': 14.18.33
+      '@vercel/build-utils': 6.3.4
       '@vercel/node-bridge': 3.1.14
       '@vercel/static-config': 2.0.13
       edge-runtime: 2.0.0
