@@ -91,7 +91,7 @@ importers:
   apps/sample-next-auth:
     specifiers:
       '@next-auth/xata-adapter': latest
-      '@next/font': 13.2.3
+      '@next/font': 13.2.4
       '@types/node': 18.15.0
       '@types/react': 18.0.28
       '@types/react-dom': 18.0.11
@@ -105,7 +105,7 @@ importers:
       typescript: 4.9.5
     dependencies:
       '@next-auth/xata-adapter': 0.2.2_7ohggx4dpo75vub7p6hsdexate
-      '@next/font': 13.2.3
+      '@next/font': 13.2.4
       '@types/node': 18.15.0
       '@types/react': 18.0.28
       '@types/react-dom': 18.0.11
@@ -193,7 +193,7 @@ importers:
   apps/starter-nextjs-trpc-clerk:
     specifiers:
       '@clerk/nextjs': ^4.6.13
-      '@next/font': 13.2.3
+      '@next/font': 13.2.4
       '@tanstack/react-query': ^4.20.4
       '@tanstack/react-query-devtools': ^4.20.4
       '@trpc/client': ^10.5.0
@@ -217,7 +217,7 @@ importers:
       zod: ^3.20.2
     dependencies:
       '@clerk/nextjs': 4.11.1_nvzgbose6yf6w7ijjprgspqefi
-      '@next/font': 13.2.3
+      '@next/font': 13.2.4
       '@tanstack/react-query': 4.24.10_biqbaboplfbrettd7655fr4n2y
       '@tanstack/react-query-devtools': 4.24.12_636dldj5wfr5vkyyqzs5k363kq
       '@trpc/client': 10.13.2_@trpc+server@10.13.2
@@ -2870,8 +2870,8 @@ packages:
     dependencies:
       glob: 7.1.7
 
-  /@next/font/13.2.3:
-    resolution: {integrity: sha512-7EHzk0f7FVYICLUZTpyPk93IfcTUao++Xt1Sgb+Zk5dVOCYHabqLtlF5ywSoXIqyFlo0qlshEBxsrzHAGTWkDw==}
+  /@next/font/13.2.4:
+    resolution: {integrity: sha512-lMAnuOYjv5g22WhD00u0DQ9u2rTMJH0S64PKE4Sy8Y2q+FJTYs6ZHT2z3VRoI8+AOWSLK4FirpnygcjOienQ9A==}
     dev: false
 
   /@next/swc-android-arm-eabi/13.2.1:
