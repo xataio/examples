@@ -14,7 +14,7 @@
   "dependencies": {
     "@vercel/og": "^0.4.0",
     "@xata.io/client": "0.23.0",
-    "next": "13.2.3",
+    "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
