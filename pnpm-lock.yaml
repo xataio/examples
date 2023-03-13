@@ -51,7 +51,7 @@ importers:
       '@types/react': 18.0.28
       '@types/react-dom': 18.0.11
       '@vercel/og': ^0.4.0
-      '@xata.io/cli': 0.11.13
+      '@xata.io/cli': 0.11.14
       '@xata.io/client': 0.23.0
       autoprefixer: ^10.4.12
       concurrently: ^7.5.0
@@ -78,7 +78,7 @@ importers:
       '@types/node': 18.15.1
       '@types/react': 18.0.28
       '@types/react-dom': 18.0.11
-      '@xata.io/cli': 0.11.13_grie3l3x35prb3hxzh7mxibw4a
+      '@xata.io/cli': 0.11.14_grie3l3x35prb3hxzh7mxibw4a
       autoprefixer: 10.4.13_postcss@8.4.21
       concurrently: 7.6.0
       esbuild: 0.17.10
@@ -104,12 +104,12 @@ importers:
       react-dom: 18.2.0
       typescript: 4.9.5
     dependencies:
-      '@next-auth/xata-adapter': 0.2.2_7ohggx4dpo75vub7p6hsdexate
+      '@next-auth/xata-adapter': 0.2.2_qyvh4ih5qfew46te2h2anyb4gu
       '@next/font': 13.2.4
       '@types/node': 18.15.1
       '@types/react': 18.0.28
       '@types/react-dom': 18.0.11
-      '@xata.io/client': 0.23.0_typescript@4.9.5
+      '@xata.io/client': 0.23.1_typescript@4.9.5
       eslint: 8.36.0
       eslint-config-next: 13.2.4_vgl77cfdswitgr47lm5swmv43m
       next: 13.2.1_biqbaboplfbrettd7655fr4n2y
@@ -262,7 +262,7 @@ importers:
       solid-start: 0.2.22_rpxz55rikdgkliqmxdjd5bmt4m
       undici: 5.20.0
     optionalDependencies:
-      '@xata.io/cli': 0.11.13_typescript@4.9.5
+      '@xata.io/cli': 0.11.14_typescript@4.9.5
     devDependencies:
       solid-start-node: 0.2.22_ppwjshleycygoco43sslduznmy
       solid-start-vercel: 0.2.22_wuiowtpworfjg7n2vbvba37nn4
@@ -313,7 +313,7 @@ importers:
   apps/starter-vercel-serverless-functions:
     specifiers:
       '@vercel/node': 2.9.12
-      '@xata.io/cli': 0.11.13
+      '@xata.io/cli': 0.11.14
       '@xata.io/client': 0.23.0
       esbuild: ^0.17.0
       isomorphic-fetch: 3.0.0
@@ -325,7 +325,7 @@ importers:
       isomorphic-fetch: 3.0.0
     devDependencies:
       '@vercel/node': 2.9.12
-      '@xata.io/cli': 0.11.13_bup5wlkgvj4yy3uwswp53c55dq
+      '@xata.io/cli': 0.11.14_bup5wlkgvj4yy3uwswp53c55dq
       esbuild: 0.17.10
       rollup: 3.17.3
       typescript: 4.9.5
@@ -2882,13 +2882,13 @@ packages:
       - bufferutil
       - utf-8-validate
 
-  /@next-auth/xata-adapter/0.2.2_7ohggx4dpo75vub7p6hsdexate:
+  /@next-auth/xata-adapter/0.2.2_qyvh4ih5qfew46te2h2anyb4gu:
     resolution: {integrity: sha512-sEGGYMMdgEjS0djL50u1po03Xo4VSOXxHR1ytPClxYQ5zgd1LOEvdfzCDlRwfofz0eR0QrCuko03TMaUCie90A==}
     peerDependencies:
       '@xata.io/client': '>=0.13.0'
       next-auth: ^4
     dependencies:
-      '@xata.io/client': 0.23.0_typescript@4.9.5
+      '@xata.io/client': 0.23.1_typescript@4.9.5
       next-auth: 4.19.2_qgtcjgzkkjtbiyvnx7d32fl5vu
     dev: false
 
@@ -4708,8 +4708,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@xata.io/cli/0.11.13_bup5wlkgvj4yy3uwswp53c55dq:
-    resolution: {integrity: sha512-0gdrHfBVbncxdWAMneW8PnpOTcw/JsgGFqb5RzPVDS5w1zY3QHpXDzgXagmJfprRnCTw19gWrnIG08PPtn3xjQ==}
+  /@xata.io/cli/0.11.14_bup5wlkgvj4yy3uwswp53c55dq:
+    resolution: {integrity: sha512-o/jxESOhKrRaCTWySrPBr8e9FN+RX1GP4iITozwn0ooymDkCumtJ6suik3nB+LnGLcz6wyb9cfxrPmy2G1h9MQ==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
@@ -4726,9 +4726,9 @@ packages:
       '@rollup/plugin-virtual': 3.0.1_rollup@3.17.3
       '@types/ini': 1.3.31
       '@types/prompts': 2.4.2
-      '@xata.io/client': 0.23.0_typescript@4.9.5
+      '@xata.io/client': 0.23.1_typescript@4.9.5
       '@xata.io/codegen': 0.22.3
-      '@xata.io/importer': 0.3.9_typescript@4.9.5
+      '@xata.io/importer': 0.3.10_typescript@4.9.5
       ansi-regex: 6.0.1
       babel-plugin-module-extension-resolver: 1.0.0
       chalk: 5.2.0
@@ -4769,8 +4769,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@xata.io/cli/0.11.13_grie3l3x35prb3hxzh7mxibw4a:
-    resolution: {integrity: sha512-0gdrHfBVbncxdWAMneW8PnpOTcw/JsgGFqb5RzPVDS5w1zY3QHpXDzgXagmJfprRnCTw19gWrnIG08PPtn3xjQ==}
+  /@xata.io/cli/0.11.14_grie3l3x35prb3hxzh7mxibw4a:
+    resolution: {integrity: sha512-o/jxESOhKrRaCTWySrPBr8e9FN+RX1GP4iITozwn0ooymDkCumtJ6suik3nB+LnGLcz6wyb9cfxrPmy2G1h9MQ==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
@@ -4787,9 +4787,9 @@ packages:
       '@rollup/plugin-virtual': 3.0.1
       '@types/ini': 1.3.31
       '@types/prompts': 2.4.2
-      '@xata.io/client': 0.23.0_typescript@4.9.5
+      '@xata.io/client': 0.23.1_typescript@4.9.5
       '@xata.io/codegen': 0.22.3
-      '@xata.io/importer': 0.3.9_typescript@4.9.5
+      '@xata.io/importer': 0.3.10_typescript@4.9.5
       ansi-regex: 6.0.1
       babel-plugin-module-extension-resolver: 1.0.0
       chalk: 5.2.0
@@ -4830,8 +4830,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@xata.io/cli/0.11.13_typescript@4.9.5:
-    resolution: {integrity: sha512-0gdrHfBVbncxdWAMneW8PnpOTcw/JsgGFqb5RzPVDS5w1zY3QHpXDzgXagmJfprRnCTw19gWrnIG08PPtn3xjQ==}
+  /@xata.io/cli/0.11.14_typescript@4.9.5:
+    resolution: {integrity: sha512-o/jxESOhKrRaCTWySrPBr8e9FN+RX1GP4iITozwn0ooymDkCumtJ6suik3nB+LnGLcz6wyb9cfxrPmy2G1h9MQ==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
@@ -4848,9 +4848,9 @@ packages:
       '@rollup/plugin-virtual': 3.0.1
       '@types/ini': 1.3.31
       '@types/prompts': 2.4.2
-      '@xata.io/client': 0.23.0_typescript@4.9.5
+      '@xata.io/client': 0.23.1_typescript@4.9.5
       '@xata.io/codegen': 0.22.3
-      '@xata.io/importer': 0.3.9_typescript@4.9.5
+      '@xata.io/importer': 0.3.10_typescript@4.9.5
       ansi-regex: 6.0.1
       babel-plugin-module-extension-resolver: 1.0.0
       chalk: 5.2.0
@@ -4917,6 +4917,14 @@ packages:
       typescript: '>=4.5'
     dependencies:
       typescript: 4.9.5
+    dev: false
+
+  /@xata.io/client/0.23.1_typescript@4.9.5:
+    resolution: {integrity: sha512-qeCwmJBYYaNwhCJ0dlpkvcQdwvmxZAxbDG88C8bQyTFdAIAz6OeCE9nrrlDp3iYAYSqbFekq8bKZMKte4f7Eqg==}
+    peerDependencies:
+      typescript: '>=4.5'
+    dependencies:
+      typescript: 4.9.5
 
   /@xata.io/codegen/0.22.3:
     resolution: {integrity: sha512-s4N5KRodwV1iOeOVgblp5qgCJkQouhgK5HeX79V29VXEbc2mEklkssrbVyYV6Nj5g04vq8Ts8dShsUvrthqf7g==}
@@ -4926,6 +4934,17 @@ packages:
       ts-morph: 17.0.1
       typescript: 4.9.5
       zod: 3.20.6
+
+  /@xata.io/importer/0.3.10_typescript@4.9.5:
+    resolution: {integrity: sha512-8cVxMNxJZPtDAONL4/vZkD3wFJtYl//iWSWW8FdsTstR+viiURPxK3cAA0EvxRlpYzMobMacsorFoP51XsQgqw==}
+    dependencies:
+      '@faker-js/faker': 7.6.0
+      '@xata.io/client': 0.23.1_typescript@4.9.5
+      camelcase: 7.0.1
+      csvtojson: 2.0.10
+      transliteration: 2.3.5
+    transitivePeerDependencies:
+      - typescript
 
   /@xata.io/importer/0.3.7:
     resolution: {integrity: sha512-H8Du2QBWwSgN69FsQ2X2r5bNMh/11176V2SSG9uYYQGE7EGXMTnYMaD8Urd3kWCEH2R06DBrq7FY1OZzw9kF8Q==}
@@ -4950,17 +4969,6 @@ packages:
     transitivePeerDependencies:
       - typescript
     dev: true
-
-  /@xata.io/importer/0.3.9_typescript@4.9.5:
-    resolution: {integrity: sha512-gdytVDpYJ0P283hRWSNBbLIeMO9MAPUJU4RD8ls18dP4Hn2GPXkldU9nQFx9g9c/68zQcBrxboG6e+so8ofYSg==}
-    dependencies:
-      '@faker-js/faker': 7.6.0
-      '@xata.io/client': 0.23.0_typescript@4.9.5
-      camelcase: 7.0.1
-      csvtojson: 2.0.10
-      transliteration: 2.3.5
-    transitivePeerDependencies:
-      - typescript
 
   /abbrev/1.1.1:
     resolution: {integrity: sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==}
