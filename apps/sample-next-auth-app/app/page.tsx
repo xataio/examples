@@ -1,9 +1,9 @@
-import { unstable_getServerSession } from 'next-auth'
+import { getServerSession } from 'next-auth'
 import { authConfig } from '~/pages/api/auth/[...nextauth]'
 import { Home } from '~/shared/components/home'
 
 export default async function Index() {
-  const session = await unstable_getServerSession(authConfig)
+  const session = await getServerSession(authConfig)
 
   return <Home session={session} callbackUrl={'/in'} />
 }

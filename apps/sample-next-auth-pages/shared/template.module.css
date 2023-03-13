@@ -1,0 +1,15 @@
+@keyframes load {
+  0% {
+    transform: translateY(-2rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.wrapper {
+  animation: load 500ms ease-in;
+}

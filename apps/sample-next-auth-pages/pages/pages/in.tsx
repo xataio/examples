@@ -1,4 +1,4 @@
-import { unstable_getServerSession } from 'next-auth'
+import { getServerSession } from 'next-auth'
 import { authConfig } from '~/pages/api/auth/[...nextauth]'
 import { InferGetServerSidePropsType, GetServerSidePropsContext } from 'next'
 import { Logout } from '~/shared/components/logout'
@@ -25,7 +25,7 @@ export const getServerSideProps = async ({
   req,
   res,
 }: GetServerSidePropsContext) => {
-  const session = await unstable_getServerSession(req, res, authConfig)
+  const session = await getServerSession(req, res, authConfig)
 
   if (!session || !session.user) {
     return {
