@@ -1,10 +1,10 @@
-import { unstable_getServerSession } from 'next-auth'
+import { getServerSession } from 'next-auth'
 import { redirect } from 'next/navigation'
 import { authConfig } from '~/pages/api/auth/[...nextauth]'
 import { Profile } from '~/shared/components/profile'
 
 export default async function In() {
-  const session = await unstable_getServerSession(authConfig)
+  const session = await getServerSession(authConfig)
 
   if (!session || !session.user) {
     redirect('/')

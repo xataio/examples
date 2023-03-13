@@ -1,0 +1,20 @@
+.logout {
+  padding-top: 1.5em;
+  background: transparent;
+  font-size: 2rem;
+  border: 0;
+  outline: 0;
+  transition: all 250ms linear;
+}
+
+.logout:hover {
+  transform: translateX(-0.5rem) rotate(-2deg);
+  text-shadow: 10px 3px rgba(255, 255, 255, 0.3);
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  position: relative;
+  top: 5px;
+}

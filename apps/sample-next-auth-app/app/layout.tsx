@@ -1,7 +1,7 @@
 import '~/shared/globals.css'
 import { type ReactNode } from 'react'
 import { Inter } from '@next/font/google'
-import { unstable_getServerSession } from 'next-auth'
+import { getServerSession } from 'next-auth'
 import { authConfig } from '~/pages/api/auth/[...nextauth]'
 import { Logout } from '~/shared/components/logout'
 
@@ -12,7 +12,7 @@ export default async function RootLayout({
 }: {
   children: ReactNode
 }) {
-  const session = await unstable_getServerSession(authConfig)
+  const session = await getServerSession(authConfig)
 
   return (
     <html lang="en" className={inter.className}>

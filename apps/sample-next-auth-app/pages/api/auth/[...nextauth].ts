@@ -1,8 +1,3 @@
-/**
- * @Attention
- * This route is used for both /app and /pages implementation
- */
-
 import NextAuth from 'next-auth'
 import GitHubProvider from 'next-auth/providers/github'
 import { XataAdapter } from '@next-auth/xata-adapter'

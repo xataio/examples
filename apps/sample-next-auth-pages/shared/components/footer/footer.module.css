@@ -1,0 +1,11 @@
+.wrap {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.wrap img {
+  position: relative;
+  top: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+}
