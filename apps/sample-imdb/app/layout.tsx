@@ -1,9 +1,42 @@
-import Image from 'next/image'
+import type { Metadata } from 'next'
 import { type ReactNode } from 'react'
-import '~/styles/globals.css'
+import Image from 'next/image'
 import xatafly from '~/public/xatafly.svg'
 import xataflyWhite from '~/public/xatafly-white.svg'
 import { SiGithub as Github, SiDiscord as Discord } from 'react-icons/si'
+import '~/styles/globals.css'
+
+const defaults = {
+  title: 'XMDB: Xata Movie Database',
+  description:
+    'Xata Movie Database (XMDB) was built with Xata using Next.js and TypeScript to showcase Xata can be used by large databases (over 9 million records).',
+  image: `${process.env.VERCEL_URL}/xmdb-og.png`,
+}
+
+export const metadata: Metadata = {
+  ...defaults,
+  themeColor: 'black',
+  keywords: ['Xata', 'Database', 'Serverless', 'Next.js', 'React'],
+  colorScheme: 'dark',
+  icons: {
+    icon: '/favicon.ico',
+  },
+  openGraph: {
+    ...defaults,
+    url: '',
+    locale: 'en-US',
+    type: 'website',
+    siteName: 'Xata Movie Database',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    siteId: '1467726470533754880',
+    creator: '@xata',
+    images: [defaults.description],
+    title: defaults.title,
+    description: defaults.description,
+  },
+}
 
 function RootLayout({ children }: { children: ReactNode }) {
   return (
