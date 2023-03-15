@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@microsoft/fetch-event-source": "^2.0.1",
-    "@xata.io/client": "0.23.1",
+    "@xata.io/client": "0.23.2",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
