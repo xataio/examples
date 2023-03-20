@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import { Footer } from '~/shared/components/footer'
+import { Footer } from '~/components/footer'
 
 export default function InLayout({ children }: { children: ReactNode }) {
   return (

@@ -1,8 +1,8 @@
 import { useSession } from 'next-auth/react'
-import { Home } from '~/shared/components/home'
+import { Home } from '~/components/home'
 
 export default function Index() {
   const { data: session } = useSession()
 
-  return <Home session={session} callbackUrl="/pages/in" />
+  return <Home session={session} callbackUrl="/in" />
 }

@@ -1,7 +1,7 @@
 import NextAuth from 'next-auth'
 import GitHubProvider from 'next-auth/providers/github'
 import { XataAdapter } from '@next-auth/xata-adapter'
-import { XataClient } from '~/shared/xata.codegen'
+import { XataClient } from '~/lib/xata.codegen'
 
 const client = new XataClient()
 

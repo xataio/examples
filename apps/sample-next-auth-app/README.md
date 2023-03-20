@@ -1,10 +1,12 @@
 # Xata + Next.js + Auth.js
 
-Sample app using Next-Auth for managing OAuth login with the Xata adapter. For both App and Pages directories in Next.js.
+Sample app using Next-Auth for managing OAuth login with the Xata adapter.
+
+> ⚠️ This example uses the **App Routing**, if using `/pages`, go for **Pages Routing**.
 
 ## Features ⚡️
 
-- `/app` and `/pages` implementations.
+- React Server Components
 - Next-Auth API Routes.
 - GitHub as OAuth Provider with Xata official adapter.
 
@@ -12,7 +14,7 @@ Sample app using Next-Auth for managing OAuth login with the Xata adapter. For b
 
 ```bash
 # create a new project in my-awesome-app
-npx degit xataio/examples/apps/sample-next-auth my-awesome-app
+npx degit xataio/examples/apps/sample-next-auth-app my-awesome-app
 ```
 
 ## Initialize your Database
@@ -48,7 +50,7 @@ This sample uses GitHub as the SSO Provider, any of the [supported providers by 
 | Directory  | Description                                               |
 | ---------- | --------------------------------------------------------- |
 | `/app`     | Routes and files for **App directory** structure.         |
-| `/pages`   | Routes for **Pages directory** structure.                 |
+| `/pages`   | Where the API Routes live.                                |
 | `/public`  | Static resources and assets (Next.js convention).         |
 | `/shared`  | Components and libraries used by both routing structures. |
 | `/.vscode` | TypeScript helper plugins for Next.js.                    |

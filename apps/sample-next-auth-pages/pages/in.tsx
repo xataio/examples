@@ -1,9 +1,9 @@
 import { getServerSession } from 'next-auth'
 import { authConfig } from '~/pages/api/auth/[...nextauth]'
 import { InferGetServerSidePropsType, GetServerSidePropsContext } from 'next'
-import { Logout } from '~/shared/components/logout'
-import { Profile } from '~/shared/components/profile'
-import { Footer } from '~/shared/components/footer'
+import { Logout } from '~/components/logout'
+import { Profile } from '~/components/profile'
+import { Footer } from '~/components/footer'
 
 export default function In({
   user,
@@ -12,7 +12,7 @@ export default function In({
     <>
       {Boolean(user) && (
         <aside>
-          <Logout callbackUrl="/pages" />
+          <Logout callbackUrl="/" />
         </aside>
       )}
       <Profile user={user} />

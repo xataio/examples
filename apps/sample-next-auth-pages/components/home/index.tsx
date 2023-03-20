@@ -2,8 +2,8 @@ import type { Session } from 'next-auth'
 import Link from 'next/link'
 import Image from 'next/image'
 import xataColored from '~/public/xatafly-colored.svg'
-import { Login } from '~/shared/components/login'
-import { Footer } from '~/shared/components/footer'
+import { Login } from '~/components/login'
+import { Footer } from '~/components/footer'
 import styles from './home.module.css'
 
 export function Home({
@@ -22,7 +22,7 @@ export function Home({
       <article className={styles.ctaWrap}>
         <pre className={styles.code}>
           {`npx degit \\
-https://github.com/xataio/examples/apps/sample-next-auth \\
+https://github.com/xataio/examples/apps/sample-next-auth-pages \\
 <your_directory>`}
         </pre>
         {Boolean(session) ? (

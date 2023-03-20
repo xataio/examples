@@ -1,9 +1,9 @@
-import '~/shared/globals.css'
+import './globals.css'
 import { type ReactNode } from 'react'
 import { Inter } from '@next/font/google'
 import { getServerSession } from 'next-auth'
 import { authConfig } from '~/pages/api/auth/[...nextauth]'
-import { Logout } from '~/shared/components/logout'
+import { Logout } from '~/components/logout'
 
 const inter = Inter({ subsets: ['latin'], display: 'swap' })
 
