@@ -32,6 +32,10 @@ aside {
   padding: 0;
 }
 
+.wrapper {
+  animation: load 500ms ease-in;
+}
+
 @media (min-width: 600px) {
   aside {
     padding-top: 3rem;
@@ -75,4 +79,16 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+@keyframes load {
+  0% {
+    transform: translateY(-2rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
