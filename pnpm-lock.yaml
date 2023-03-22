@@ -342,7 +342,7 @@ importers:
 
   apps/starter-vercel-serverless-functions:
     specifiers:
-      '@vercel/node': 2.9.13
+      '@vercel/node': 2.9.14
       '@xata.io/cli': 0.11.18
       '@xata.io/client': 0.23.3
       esbuild: ^0.17.0
@@ -354,7 +354,7 @@ importers:
       '@xata.io/client': 0.23.3_typescript@5.0.2
       isomorphic-fetch: 3.0.0
     devDependencies:
-      '@vercel/node': 2.9.13
+      '@vercel/node': 2.9.14
       '@xata.io/cli': 0.11.18_y2mkhijwwcvdwfvfanorgnfzuu
       esbuild: 0.17.10
       rollup: 3.17.3
@@ -4848,7 +4848,7 @@ packages:
     dependencies:
       '@rollup/pluginutils': 5.0.2
       '@types/resolve': 1.20.2
-      deepmerge: 4.3.0
+      deepmerge: 4.3.1
       is-builtin-module: 3.2.1
       is-module: 1.0.0
       resolve: 1.22.1
@@ -4864,7 +4864,7 @@ packages:
     dependencies:
       '@rollup/pluginutils': 5.0.2_rollup@3.17.3
       '@types/resolve': 1.20.2
-      deepmerge: 4.3.0
+      deepmerge: 4.3.1
       is-builtin-module: 3.2.1
       is-module: 1.0.0
       resolve: 1.22.1
@@ -5036,7 +5036,7 @@ packages:
       vite: ^4.0.0
     dependencies:
       debug: 4.3.4
-      deepmerge: 4.3.0
+      deepmerge: 4.3.1
       kleur: 4.1.5
       magic-string: 0.29.0
       svelte: 3.55.1
@@ -5711,8 +5711,8 @@ packages:
     resolution: {integrity: sha512-wUYa8eUyTg1jPGRCrjpIxJm1r6hQE7ccbECWzDCAikuWG4iadS2zWrF7bsAcuUj7fTMf8sNFhmsknTJgyN3B3g==}
     dev: true
 
-  /@vercel/build-utils/6.4.0:
-    resolution: {integrity: sha512-kQEvyQOEjpfAwiX8cxuGmetffb3zkydrqQB1hJd4BihCz4Bt2f5YJvxEagzrehbGn5pCd4NRIKIi9cUL6vZRTA==}
+  /@vercel/build-utils/6.5.0:
+    resolution: {integrity: sha512-DMM2YY2/cZ6UWME/JBoHkXu0b2NRNDuVlHN+zPyL+QldLsFi1NnAKFdj8vHmhlgJvF4ba9ZAEe8ZA7w+XihELQ==}
     dev: true
 
   /@vercel/gatsby-plugin-vercel-analytics/1.0.8:
@@ -5815,12 +5815,12 @@ packages:
       - encoding
     dev: true
 
-  /@vercel/node/2.9.13:
-    resolution: {integrity: sha512-cG8oxysTmHkjX/vYSISslaw6ytntBhRFxWuQq4GnwkBBk1Nwd75ULNY94mvG/HKgDylQSaXbpwuFgma/WurwCQ==}
+  /@vercel/node/2.9.14:
+    resolution: {integrity: sha512-fxJQFTGwBza9A5glpdhfqgQ6j4Hk0Vh9fj1pvLVPl0uf5V5nYoqidTFyjDyW3L1Z/SOrP8GfuqtaUZoyQnbpoA==}
     dependencies:
       '@edge-runtime/vm': 2.0.0
       '@types/node': 14.18.33
-      '@vercel/build-utils': 6.4.0
+      '@vercel/build-utils': 6.5.0
       '@vercel/node-bridge': 3.1.14
       '@vercel/static-config': 2.0.14
       edge-runtime: 2.0.0
