@@ -46,10 +46,12 @@ const useAskXataDocs = () => {
       body: JSON.stringify({ question, database }),
       headers: { 'Content-Type': 'application/json' },
       signal: controller.signal,
+      openWhenHidden: true,
       onmessage(ev) {
         try {
           const { text = '', done, error } = JSON.parse(ev.data)
           if (error) {
+            console.error(error)
             return
           }
 
@@ -64,6 +66,8 @@ const useAskXataDocs = () => {
         // Re-throw the error to stop the event source
         throw error
       },
+    }).catch(() => {
+      setIsLoading(false)
     })
   }, [])
 
