@@ -27,6 +27,7 @@ function prettyFormatNumber(num: number) {
 const useAskXataDocs = () => {
   const [answer, setAnswer] = useState<string>()
   const [isLoading, setIsLoading] = useState(false)
+  const [, setAbortController] = useState<AbortController>()
 
   const askQuestion = useCallback((database: string, question: string) => {
     if (!question) return
@@ -34,16 +35,34 @@ const useAskXataDocs = () => {
     setAnswer(undefined)
     setIsLoading(true)
 
+    const controller = new AbortController()
+    setAbortController((prev) => {
+      prev?.abort()
+      return controller
+    })
+
     void fetchEventSource(`/api/ask`, {
       method: 'POST',
       body: JSON.stringify({ question, database }),
       headers: { 'Content-Type': 'application/json' },
+      signal: controller.signal,
       onmessage(ev) {
         try {
-          const { answer = '', done } = JSON.parse(ev.data)
-          setAnswer((prev = '') => `${prev}${answer}`)
+          const { text = '', done, error } = JSON.parse(ev.data)
+          if (error) {
+            return
+          }
+
+          setAnswer((prev = '') => `${prev}${text}`)
           setIsLoading(!done)
         } catch (e) {}
+      },
+      onclose() {
+        setIsLoading(false)
+      },
+      onerror(error) {
+        // Re-throw the error to stop the event source
+        throw error
       },
     })
   }, [])
