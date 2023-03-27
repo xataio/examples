@@ -20,7 +20,7 @@ importers:
     specifiers:
       '@microsoft/fetch-event-source': ^2.0.1
       '@types/node': 18.15.10
-      '@types/react': 18.0.29
+      '@types/react': 18.0.30
       '@types/react-dom': 18.0.11
       '@xata.io/client': 0.23.4
       eslint: 8.36.0
@@ -39,7 +39,7 @@ importers:
       zod: 3.20.6
     devDependencies:
       '@types/node': 18.15.10
-      '@types/react': 18.0.29
+      '@types/react': 18.0.30
       '@types/react-dom': 18.0.11
       eslint: 8.36.0
       eslint-config-next: 13.2.4_j4766f7ecgqbon3u7zlxn5zszu
@@ -48,7 +48,7 @@ importers:
   apps/sample-imdb:
     specifiers:
       '@types/node': 18.15.10
-      '@types/react': 18.0.29
+      '@types/react': 18.0.30
       '@types/react-dom': 18.0.11
       '@vercel/og': ^0.4.0
       '@xata.io/cli': 0.11.19
@@ -76,7 +76,7 @@ importers:
       server-only: 0.0.1
     devDependencies:
       '@types/node': 18.15.10
-      '@types/react': 18.0.29
+      '@types/react': 18.0.30
       '@types/react-dom': 18.0.11
       '@xata.io/cli': 0.11.19_aaob7lkl3sqjgb5vrl3abypdyq
       autoprefixer: 10.4.13_postcss@8.4.21
@@ -93,7 +93,7 @@ importers:
       '@next-auth/xata-adapter': latest
       '@next/font': 13.2.4
       '@types/node': 18.15.10
-      '@types/react': 18.0.29
+      '@types/react': 18.0.30
       '@types/react-dom': 18.0.11
       '@xata.io/client': latest
       eslint: 8.36.0
@@ -107,7 +107,7 @@ importers:
       '@next-auth/xata-adapter': 0.2.2_r4yz3nf3ul4xxrowqzasr62ysa
       '@next/font': 13.2.4
       '@types/node': 18.15.10
-      '@types/react': 18.0.29
+      '@types/react': 18.0.30
       '@types/react-dom': 18.0.11
       '@xata.io/client': 0.23.4_typescript@5.0.2
       eslint: 8.36.0
@@ -123,7 +123,7 @@ importers:
       '@next-auth/xata-adapter': latest
       '@next/font': 13.2.4
       '@types/node': 18.15.10
-      '@types/react': 18.0.29
+      '@types/react': 18.0.30
       '@types/react-dom': 18.0.11
       '@xata.io/client': latest
       eslint: 8.36.0
@@ -137,7 +137,7 @@ importers:
       '@next-auth/xata-adapter': 0.2.2_r4yz3nf3ul4xxrowqzasr62ysa
       '@next/font': 13.2.4
       '@types/node': 18.15.10
-      '@types/react': 18.0.29
+      '@types/react': 18.0.30
       '@types/react-dom': 18.0.11
       '@xata.io/client': 0.23.4_typescript@5.0.2
       eslint: 8.36.0
@@ -152,7 +152,7 @@ importers:
     specifiers:
       '@types/bcrypt': ^5.0.0
       '@types/node': 18.15.10
-      '@types/react': 18.0.29
+      '@types/react': 18.0.30
       '@types/react-dom': 18.0.11
       '@xata.io/client': 0.23.4
       bcrypt: ^5.1.0
@@ -171,7 +171,7 @@ importers:
     devDependencies:
       '@types/bcrypt': 5.0.0
       '@types/node': 18.15.10
-      '@types/react': 18.0.29
+      '@types/react': 18.0.30
       '@types/react-dom': 18.0.11
       eslint: 8.36.0
       eslint-config-next: 13.2.4_j4766f7ecgqbon3u7zlxn5zszu
@@ -231,7 +231,7 @@ importers:
       '@trpc/react-query': ^10.5.0
       '@trpc/server': ^10.5.0
       '@types/node': 18.15.10
-      '@types/react': 18.0.29
+      '@types/react': 18.0.30
       '@types/react-dom': 18.0.11
       '@xata.io/cli': ^0.11.5
       '@xata.io/client': ^0.23.0
@@ -255,7 +255,7 @@ importers:
       '@trpc/react-query': 10.13.2_4d7irbdidsmzpcceffzhg76qwi
       '@trpc/server': 10.13.2
       '@types/node': 18.15.10
-      '@types/react': 18.0.29
+      '@types/react': 18.0.30
       '@types/react-dom': 18.0.11
       '@xata.io/client': 0.23.0_typescript@5.0.2
       eslint: 8.36.0
@@ -4745,7 +4745,7 @@ packages:
     dependencies:
       '@remix-run/router': 1.3.2
       '@types/cookie': 0.4.1
-      '@types/react': 18.0.29
+      '@types/react': 18.0.30
       '@web3-storage/multipart-parser': 1.0.0
       cookie: 0.4.2
       set-cookie-parser: 2.5.1
@@ -5451,7 +5451,7 @@ packages:
   /@types/react-dom/18.0.11:
     resolution: {integrity: sha512-O38bPbI2CWtgw/OoQoY+BRelw7uysmXbWvw3nLWO21H1HSh+GOlqPuXshJfjmpNlKiiSDG9cc1JZAaMmVdcTlw==}
     dependencies:
-      '@types/react': 18.0.29
+      '@types/react': 18.0.30
 
   /@types/react/18.0.28:
     resolution: {integrity: sha512-RD0ivG1kEztNBdoAK7lekI9M+azSnitIn85h4iOiaLjaTrMjzslhaqCGaI4IyCJ1RljWiLCEu4jyrLLgqxBTew==}
@@ -5460,8 +5460,8 @@ packages:
       '@types/scheduler': 0.16.2
       csstype: 3.1.1
 
-  /@types/react/18.0.29:
-    resolution: {integrity: sha512-wXHktgUABxplw1+UnljseDq4+uztQyp2tlWZRIxHlpchsCFqiYkvaDS8JR7eKOQm8wziTH/el5qL7D6gYNkYcw==}
+  /@types/react/18.0.30:
+    resolution: {integrity: sha512-AnME2cHDH11Pxt/yYX6r0w448BfTwQOLEhQEjCdwB7QskEI7EKtxhGUsExTQe/MsY3D9D5rMtu62WRocw9A8FA==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
