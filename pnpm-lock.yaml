@@ -482,8 +482,8 @@ importers:
         version: 3.0.0
     devDependencies:
       '@vercel/node':
-        specifier: 2.10.1
-        version: 2.10.1
+        specifier: 2.10.2
+        version: 2.10.2
       '@xata.io/cli':
         specifier: 0.11.19
         version: 0.11.19(@types/node@18.15.11)(esbuild@0.17.10)(rollup@3.17.3)(typescript@5.0.2)
@@ -5569,8 +5569,8 @@ packages:
     resolution: {integrity: sha512-wUYa8eUyTg1jPGRCrjpIxJm1r6hQE7ccbECWzDCAikuWG4iadS2zWrF7bsAcuUj7fTMf8sNFhmsknTJgyN3B3g==}
     dev: true
 
-  /@vercel/build-utils@6.6.0:
-    resolution: {integrity: sha512-FkNuEainnqjoEjcqvaeP448F6Ups5DNAOfrpB6HfC+UX9xvWwoaOq1GPh8YMwplrCvCXruC9tSnIzZRstLAssQ==}
+  /@vercel/build-utils@6.7.0:
+    resolution: {integrity: sha512-1cHgu0AzETSMLo1ugeHOT2pcrXNoZb1bwgxBP7yTIlJAKWLIEqPHbJWFvKQXZl2FV3kzzTctTrw/YNUWmntYiA==}
     dev: true
 
   /@vercel/gatsby-plugin-vercel-analytics@1.0.8:
@@ -5657,12 +5657,12 @@ packages:
     resolution: {integrity: sha512-617HSGelTGR68s0kqsPV0R2UiSvcw3Zf5Yv32S5NN4AH5TZGRr5DQJ3ATr4C/HrK7CHK5B7FDVrv2JebdVpPYQ==}
     dev: true
 
-  /@vercel/node@2.10.1:
-    resolution: {integrity: sha512-+3rMKeo+Yn9B61jJ2g2TsMIZmEBrv5DLpQ1zQHjEj3fEg5kSqWRcf/c17Kku9Fyrel5gucAfBgnOmHxpkejqxQ==}
+  /@vercel/node@2.10.2:
+    resolution: {integrity: sha512-rsxVEosHUtSBswZfZWxWgV4v5x8COB9kTp4lhaxZXC9cHFgXT5ydV7m4R2NOPwcRGUbQSyy9ushX1RnsOan0qw==}
     dependencies:
       '@edge-runtime/vm': 2.0.0
       '@types/node': 14.18.33
-      '@vercel/build-utils': 6.6.0
+      '@vercel/build-utils': 6.7.0
       '@vercel/node-bridge': 4.0.0
       '@vercel/static-config': 2.0.14
       edge-runtime: 2.0.0
