@@ -45,8 +45,8 @@ importers:
         specifier: 18.15.11
         version: 18.15.11
       '@types/react':
-        specifier: 18.0.30
-        version: 18.0.30
+        specifier: 18.0.31
+        version: 18.0.31
       '@types/react-dom':
         specifier: 18.0.11
         version: 18.0.11
@@ -88,8 +88,8 @@ importers:
         specifier: 18.15.11
         version: 18.15.11
       '@types/react':
-        specifier: 18.0.30
-        version: 18.0.30
+        specifier: 18.0.31
+        version: 18.0.31
       '@types/react-dom':
         specifier: 18.0.11
         version: 18.0.11
@@ -133,8 +133,8 @@ importers:
         specifier: 18.15.11
         version: 18.15.11
       '@types/react':
-        specifier: 18.0.30
-        version: 18.0.30
+        specifier: 18.0.31
+        version: 18.0.31
       '@types/react-dom':
         specifier: 18.0.11
         version: 18.0.11
@@ -175,8 +175,8 @@ importers:
         specifier: 18.15.11
         version: 18.15.11
       '@types/react':
-        specifier: 18.0.30
-        version: 18.0.30
+        specifier: 18.0.31
+        version: 18.0.31
       '@types/react-dom':
         specifier: 18.0.11
         version: 18.0.11
@@ -230,8 +230,8 @@ importers:
         specifier: 18.15.11
         version: 18.15.11
       '@types/react':
-        specifier: 18.0.30
-        version: 18.0.30
+        specifier: 18.0.31
+        version: 18.0.31
       '@types/react-dom':
         specifier: 18.0.11
         version: 18.0.11
@@ -333,8 +333,8 @@ importers:
         specifier: 18.15.11
         version: 18.15.11
       '@types/react':
-        specifier: 18.0.30
-        version: 18.0.30
+        specifier: 18.0.31
+        version: 18.0.31
       '@types/react-dom':
         specifier: 18.0.11
         version: 18.0.11
@@ -4589,7 +4589,7 @@ packages:
     dependencies:
       '@remix-run/router': 1.3.2
       '@types/cookie': 0.4.1
-      '@types/react': 18.0.30
+      '@types/react': 18.0.31
       '@web3-storage/multipart-parser': 1.0.0
       cookie: 0.4.2
       set-cookie-parser: 2.5.1
@@ -5302,7 +5302,7 @@ packages:
   /@types/react-dom@18.0.11:
     resolution: {integrity: sha512-O38bPbI2CWtgw/OoQoY+BRelw7uysmXbWvw3nLWO21H1HSh+GOlqPuXshJfjmpNlKiiSDG9cc1JZAaMmVdcTlw==}
     dependencies:
-      '@types/react': 18.0.30
+      '@types/react': 18.0.31
 
   /@types/react@18.0.28:
     resolution: {integrity: sha512-RD0ivG1kEztNBdoAK7lekI9M+azSnitIn85h4iOiaLjaTrMjzslhaqCGaI4IyCJ1RljWiLCEu4jyrLLgqxBTew==}
@@ -5311,8 +5311,8 @@ packages:
       '@types/scheduler': 0.16.2
       csstype: 3.1.1
 
-  /@types/react@18.0.30:
-    resolution: {integrity: sha512-AnME2cHDH11Pxt/yYX6r0w448BfTwQOLEhQEjCdwB7QskEI7EKtxhGUsExTQe/MsY3D9D5rMtu62WRocw9A8FA==}
+  /@types/react@18.0.31:
+    resolution: {integrity: sha512-EEG67of7DsvRDU6BLLI0p+k1GojDLz9+lZsnCpCRTa/lOokvyPBvp8S5x+A24hME3yyQuIipcP70KJ6H7Qupww==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
