@@ -2,6 +2,38 @@ import { HeaderNav } from '~/components/header-nav'
 import { Rating } from '~/components/ratings'
 import { fetchDefaultTitles, getMovie } from '~/lib/db.server'
 import { notFound } from 'next/navigation'
+import { Metadata } from 'next'
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { id: string }
+}): Promise<Metadata> {
+  const { id } = params
+  const movie = await getMovie(id)
+  const title = `${movie?.primaryTitle} - XMDB`
+  const description =
+    movie?.summary || `Page for title: ${movie?.primaryTitle} on XMDB`
+
+  const image = `${process.env.VERCEL_URL}/api/og?title=${encodeURI(
+    title
+  )}&image=${movie?.coverUrl && encodeURI(movie?.coverUrl)}`
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      images: [image],
+    },
+    twitter: {
+      title,
+      description,
+      images: [image],
+    },
+  }
+}
 
 export default async function Movie({ params }: { params: { id: string } }) {
   const { id } = params

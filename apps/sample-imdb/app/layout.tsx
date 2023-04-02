@@ -5,6 +5,33 @@ import xatafly from '~/public/xatafly.svg'
 import xataflyWhite from '~/public/xatafly-white.svg'
 import { SiGithub as Github, SiDiscord as Discord } from 'react-icons/si'
 
+import { type Metadata } from 'next'
+
+const image = `${process.env.VERCEL_URL}/xmdb-og.png` as const
+const title = 'XMDB: Xata Movie Database'
+const description =
+  'Xata Movie Database (XMDB) was built with Xata using Next.js and TypeScript to showcase Xata can be used by large databases (over 9 million records).'
+
+export const metadata: Metadata = {
+  icons: {
+    icon: '/favicon.ico',
+  },
+  title: title,
+  description: description,
+  openGraph: {
+    images: [image],
+    title: title,
+    description: description,
+    type: 'website',
+  },
+  twitter: {
+    images: [image],
+    title: title,
+    description: description,
+    card: 'summary_large_image',
+  },
+}
+
 function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
