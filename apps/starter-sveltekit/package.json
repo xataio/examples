@@ -14,8 +14,8 @@
 		"xata:codegen": "xata codegen"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "next",
-		"@sveltejs/kit": "next",
+		"@sveltejs/adapter-auto": "latest",
+		"@sveltejs/kit": "latest",
 		"@typescript-eslint/eslint-plugin": "^5.27.0",
 		"@typescript-eslint/parser": "^5.27.0",
 		"@xata.io/cli": "^0.11.1",
