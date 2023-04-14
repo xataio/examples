@@ -1,5 +1,5 @@
 import type { Actions } from './$types';
-import { invalid } from '@sveltejs/kit';
+import { fail } from '@sveltejs/kit';
 import { xata } from '$lib/xata';
 
 export async function load() {
@@ -12,7 +12,7 @@ export const actions: Actions = {
 		const data = await request.formData();
 		const id = data.get('id');
 		if (typeof id !== 'string' || id === '') {
-			return invalid(422, {
+			return fail(422, {
 				id,
 				missing: true
 			});
