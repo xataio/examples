@@ -417,18 +417,18 @@ importers:
   apps/starter-sveltekit:
     dependencies:
       '@sveltejs/adapter-vercel':
-        specifier: 2.4.1
-        version: 2.4.1(@sveltejs/kit@1.15.6)
+        specifier: 2.4.2
+        version: 2.4.2(@sveltejs/kit@1.15.7)
       '@xata.io/client':
         specifier: ^0.23.0
         version: 0.23.0(typescript@5.0.2)
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: latest
-        version: 2.0.0(@sveltejs/kit@1.15.6)
+        version: 2.0.0(@sveltejs/kit@1.15.7)
       '@sveltejs/kit':
         specifier: latest
-        version: 1.15.6(svelte@3.55.1)(vite@4.1.4)
+        version: 1.15.7(svelte@3.55.1)(vite@4.1.4)
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.27.0
         version: 5.54.0(@typescript-eslint/parser@5.54.0)(eslint@8.35.0)(typescript@5.0.2)
@@ -5103,21 +5103,21 @@ packages:
     dependencies:
       solid-js: 1.6.11
 
-  /@sveltejs/adapter-auto@2.0.0(@sveltejs/kit@1.15.6):
+  /@sveltejs/adapter-auto@2.0.0(@sveltejs/kit@1.15.7):
     resolution: {integrity: sha512-b+gkHFZgD771kgV3aO4avHFd7y1zhmMYy9i6xOK7m/rwmwaRO8gnF5zBc0Rgca80B2PMU1bKNxyBTHA14OzUAQ==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
     dependencies:
-      '@sveltejs/kit': 1.15.6(svelte@3.55.1)(vite@4.1.4)
+      '@sveltejs/kit': 1.15.7(svelte@3.55.1)(vite@4.1.4)
       import-meta-resolve: 2.2.1
     dev: true
 
-  /@sveltejs/adapter-vercel@2.4.1(@sveltejs/kit@1.15.6):
-    resolution: {integrity: sha512-7YOHBq8onxqD5ZshQhveuSzJg9ZOicKoNZQtOnAj++0MJmPElxQ5Mjqp6aQfIhHAHl8tn5UbacCpvR39mPejgw==}
+  /@sveltejs/adapter-vercel@2.4.2(@sveltejs/kit@1.15.7):
+    resolution: {integrity: sha512-HxItPKrt9DmSbKw2X4XVRYa4J2ueTEfQr79ijDcI/ZUtQ64d4X3ilUnLpmm1nXMBb1DyxaWJF4o8avwiV4O2Hw==}
     peerDependencies:
       '@sveltejs/kit': ^1.5.0
     dependencies:
-      '@sveltejs/kit': 1.15.6(svelte@3.55.1)(vite@4.1.4)
+      '@sveltejs/kit': 1.15.7(svelte@3.55.1)(vite@4.1.4)
       '@vercel/nft': 0.22.6
       esbuild: 0.16.17
     transitivePeerDependencies:
@@ -5125,8 +5125,8 @@ packages:
       - supports-color
     dev: false
 
-  /@sveltejs/kit@1.15.6(svelte@3.55.1)(vite@4.1.4):
-    resolution: {integrity: sha512-nXAVKq4veZqztZbPRDMpZszerSuZk3dMZmIoYc/6YvctYYkZS0cdQy5qfeGQ404wXRonCpaCQb0lUrdJZ81f9A==}
+  /@sveltejs/kit@1.15.7(svelte@3.55.1)(vite@4.1.4):
+    resolution: {integrity: sha512-dgdKExsMJ16X3q8tEcuDlv+QIWAlJcf7IqCU2HWV13nmtTzwSA2n4VtEx9Gy5OGhH0SUAGNIupmlf0TdFSMXbw==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
