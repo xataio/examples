@@ -50,3 +50,4 @@ apps/**/xata.codegen.ts
 .env.*
 
 xata.codegen.ts
+.vercel

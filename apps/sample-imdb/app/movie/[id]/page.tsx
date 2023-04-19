@@ -9,6 +9,7 @@ export async function generateMetadata({
 }: {
   params: { id: string }
 }): Promise<Metadata> {
+  console.log(params)
   const { id } = params
   const movie = await getMovie(id)
   const title = `${movie?.primaryTitle} - XMDB`
@@ -18,6 +19,8 @@ export async function generateMetadata({
   const image = `${process.env.VERCEL_URL}/api/og?title=${encodeURI(
     title
   )}&image=${movie?.coverUrl && encodeURI(movie?.coverUrl)}`
+
+  console.log(id)
 
   return {
     title,
@@ -107,10 +110,10 @@ export default async function Movie({ params }: { params: { id: string } }) {
 }
 
 // Pre-Render the default 20 homepage results' pages
-export async function generateStaticParams() {
-  const { titles } = await fetchDefaultTitles()
+// export async function generateStaticParams({ params }: { params: { id: string } }) {
+//   const { titles } = await fetchDefaultTitles()
 
-  return titles.map((title) => ({
-    id: title.id,
-  }))
-}
+//   return titles.map((title) => ({
+//     id: title.id,
+//   }))
+// }
