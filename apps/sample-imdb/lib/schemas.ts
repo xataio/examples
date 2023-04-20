@@ -5,6 +5,8 @@ export const OMDBschema = z.object({
   Plot: z.string().nullish(),
 })
 
+export type OMDBdata = z.infer<typeof OMDBschema>
+
 export const movie = z.object({
   id: z.string(),
   isAdult: z.boolean().catch(true),
@@ -23,4 +25,19 @@ export const movie = z.object({
 
 export const movieList = z.array(movie)
 
-export type OMDBdata = z.infer<typeof OMDBschema>
+const envVariables = z.object({
+  XATA_API_KEY: z.string(),
+  XATA_BRANCH: z.string(),
+  VERCEL_URL: z.string().catch('http://localhost:3000'),
+  OMDB_API_KEY: z.string(),
+  NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: z.string(),
+  CLERK_SECRET_KEY: z.string(),
+})
+
+envVariables.parse(process.env)
+
+declare global {
+  namespace NodeJS {
+    interface ProcessEnv extends z.infer<typeof envVariables> {}
+  }
+}

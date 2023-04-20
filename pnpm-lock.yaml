@@ -62,6 +62,12 @@ importers:
 
   apps/sample-imdb:
     dependencies:
+      '@clerk/nextjs':
+        specifier: ^4.6.13
+        version: 4.11.1(next@13.3.0)(react-dom@18.2.0)(react@18.2.0)
+      '@clerk/themes':
+        specifier: ^1.6.3
+        version: 1.6.3(react@18.2.0)
       '@vercel/og':
         specifier: ^0.5.0
         version: 0.5.0
@@ -96,15 +102,9 @@ importers:
       '@types/react-dom':
         specifier: 18.0.11
         version: 18.0.11
-      '@xata.io/cli':
-        specifier: 0.11.19
-        version: 0.11.19(@types/node@18.15.12)(esbuild@0.17.10)(rollup@3.17.3)(typescript@5.0.4)
       autoprefixer:
         specifier: ^10.4.12
         version: 10.4.13(postcss@8.4.21)
-      concurrently:
-        specifier: ^7.5.0
-        version: 7.6.0
       esbuild:
         specifier: ^0.17.0
         version: 0.17.10
@@ -3092,6 +3092,15 @@ packages:
     dependencies:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@clerk/themes@1.6.3(react@18.2.0):
+    resolution: {integrity: sha512-xkentFnCgyNaDavgqMLb2+4C/fh9PlXg1/QnBPe0vhv8riw20q1gSm3Jy3dG5LiUIAdjLUi34ilt6fufRw/AEQ==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      react: '>=16'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /@clerk/types@3.28.3:

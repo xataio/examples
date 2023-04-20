@@ -10,6 +10,9 @@ export async function generateMetadata({
   params: { id: string }
 }): Promise<Metadata> {
   const { id } = params
+  if (!id) {
+    return notFound()
+  }
   const movie = await getMovie(id)
   const title = `${movie?.primaryTitle} - XMDB`
   const description =
