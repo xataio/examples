@@ -70,7 +70,7 @@ export async function GET(req: Request) {
       }
     )
   } catch (e: any) {
-    console.log(`${e.message}`)
+    console.log(e.message)
     return new Response(`Failed to generate the image`, {
       status: 500,
     })
