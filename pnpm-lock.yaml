@@ -30,7 +30,7 @@ importers:
         version: 0.23.4(typescript@5.0.4)
       next:
         specifier: 13.3.0
-        version: 13.3.0(react-dom@18.2.0)(react@18.2.0)
+        version: 13.3.0(@babel/core@7.21.0)(react-dom@18.2.0)(react@18.2.0)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -70,7 +70,7 @@ importers:
         version: 0.23.4(typescript@5.0.4)
       next:
         specifier: 13.3.0
-        version: 13.3.0(react-dom@18.2.0)(react@18.2.0)
+        version: 13.3.0(@babel/core@7.21.3)(react-dom@18.2.0)(react@18.2.0)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -98,7 +98,7 @@ importers:
         version: 18.0.11
       '@xata.io/cli':
         specifier: 0.11.19
-        version: 0.11.19(@types/node@18.15.12)(esbuild@0.17.10)(rollup@3.17.3)(typescript@5.0.4)
+        version: 0.11.19(@types/node@18.15.12)(esbuild@0.17.10)(rollup@2.79.1)(typescript@5.0.4)
       autoprefixer:
         specifier: ^10.4.12
         version: 10.4.13(postcss@8.4.21)
@@ -218,7 +218,7 @@ importers:
         version: 5.1.0
       next:
         specifier: 13.3.0
-        version: 13.3.0(react-dom@18.2.0)(react@18.2.0)
+        version: 13.3.0(@babel/core@7.21.0)(react-dom@18.2.0)(react@18.2.0)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -283,7 +283,7 @@ importers:
     dependencies:
       '@astrojs/react':
         specifier: ^2.0.0
-        version: 2.0.2(@types/react@18.0.28)(react-dom@18.2.0)(react@18.2.0)
+        version: 2.0.2(@types/react-dom@18.0.11)(@types/react@18.0.28)(react-dom@18.2.0)(react@18.2.0)
       '@astrojs/vercel':
         specifier: ^3.0.0
         version: 3.1.3(astro@2.0.16)(react@18.2.0)
@@ -292,7 +292,7 @@ importers:
         version: 18.0.28
       '@xata.io/cli':
         specifier: ^0.11.0
-        version: 0.11.11(@types/node@18.15.12)(typescript@5.0.4)
+        version: 0.11.11(@types/node@18.15.12)(esbuild@0.17.10)(rollup@2.79.1)(typescript@5.0.4)
       '@xata.io/client':
         specifier: ^0.23.0
         version: 0.23.0(typescript@5.0.4)
@@ -352,7 +352,7 @@ importers:
         version: 13.3.0(eslint@8.38.0)(typescript@5.0.4)
       next:
         specifier: 13.3.0
-        version: 13.3.0(react-dom@18.2.0)(react@18.2.0)
+        version: 13.3.0(@babel/core@7.21.0)(react-dom@18.2.0)(react@18.2.0)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -371,7 +371,7 @@ importers:
     devDependencies:
       '@xata.io/cli':
         specifier: ^0.11.5
-        version: 0.11.11(@types/node@18.15.12)(typescript@5.0.4)
+        version: 0.11.11(@types/node@18.15.12)(esbuild@0.17.10)(rollup@2.79.1)(typescript@5.0.4)
       eslint-config-prettier:
         specifier: ^8.5.0
         version: 8.6.0(eslint@8.38.0)
@@ -402,7 +402,7 @@ importers:
     optionalDependencies:
       '@xata.io/cli':
         specifier: ^0.11.0
-        version: 0.11.19(@types/node@18.15.12)(esbuild@0.17.10)(rollup@3.17.3)(typescript@5.0.4)
+        version: 0.11.19(@types/node@18.15.12)(esbuild@0.17.10)(rollup@2.79.1)(typescript@5.0.2)
     devDependencies:
       solid-start-node:
         specifier: ^0.2.0
@@ -421,17 +421,17 @@ importers:
     dependencies:
       '@sveltejs/adapter-vercel':
         specifier: 2.4.2
-        version: 2.4.2(@sveltejs/kit@1.13.0)
+        version: 2.4.2(@sveltejs/kit@1.15.7)
       '@xata.io/client':
         specifier: ^0.23.0
         version: 0.23.0(typescript@5.0.2)
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: latest
-        version: 2.0.0(@sveltejs/kit@1.13.0)
+        version: 2.0.0(@sveltejs/kit@1.15.7)
       '@sveltejs/kit':
         specifier: latest
-        version: 1.13.0(svelte@3.55.1)(vite@4.1.4)
+        version: 1.15.7(svelte@3.55.1)(vite@4.1.4)
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.27.0
         version: 5.54.0(@typescript-eslint/parser@5.54.0)(eslint@8.35.0)(typescript@5.0.2)
@@ -440,7 +440,7 @@ importers:
         version: 5.54.0(eslint@8.35.0)(typescript@5.0.2)
       '@xata.io/cli':
         specifier: ^0.11.1
-        version: 0.11.11(@types/node@18.15.12)(typescript@5.0.2)
+        version: 0.11.11(@types/node@18.15.12)(esbuild@0.17.10)(rollup@2.79.1)(typescript@5.0.2)
       eslint:
         specifier: ^8.16.0
         version: 8.35.0
@@ -461,10 +461,10 @@ importers:
         version: 3.55.1
       svelte-check:
         specifier: ^3.0.0
-        version: 3.0.4(svelte@3.55.1)
+        version: 3.0.4(@babel/core@7.21.0)(svelte@3.55.1)
       svelte-preprocess:
         specifier: ^5.0.0
-        version: 5.0.1(svelte@3.55.1)(typescript@5.0.2)
+        version: 5.0.1(@babel/core@7.21.0)(svelte@3.55.1)(typescript@5.0.2)
       tslib:
         specifier: ^2.3.1
         version: 2.5.0
@@ -485,8 +485,8 @@ importers:
         version: 3.0.0
     devDependencies:
       '@vercel/node':
-        specifier: 2.11.0
-        version: 2.11.0
+        specifier: 2.12.0
+        version: 2.12.0
       '@xata.io/cli':
         specifier: 0.11.19
         version: 0.11.19(@types/node@18.15.12)(esbuild@0.17.10)(rollup@3.17.3)(typescript@5.0.4)
@@ -571,7 +571,7 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/react@2.0.2(@types/react@18.0.28)(react-dom@18.2.0)(react@18.2.0):
+  /@astrojs/react@2.0.2(@types/react-dom@18.0.11)(@types/react@18.0.28)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-UmQNvzJul5M/Q9aZJXnqz4z0ODZXkLuaNvgsYoKB7OdM8c2v85FsTjMZZJ7BvFo4On31jJ0rL/gwTaCeuYqmpw==}
     engines: {node: '>=16.12.0'}
     peerDependencies:
@@ -583,6 +583,7 @@ packages:
       '@babel/core': 7.21.0
       '@babel/plugin-transform-react-jsx': 7.21.0(@babel/core@7.21.0)
       '@types/react': 18.0.28
+      '@types/react-dom': 18.0.11
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     transitivePeerDependencies:
@@ -599,7 +600,7 @@ packages:
       dset: 3.1.2
       is-docker: 3.0.0
       is-wsl: 2.2.0
-      undici: 5.20.0
+      undici: 5.21.0
       which-pm-runs: 1.1.0
     transitivePeerDependencies:
       - supports-color
@@ -3078,7 +3079,7 @@ packages:
       '@clerk/clerk-react': 4.11.6(react-dom@18.2.0)(react@18.2.0)
       '@clerk/clerk-sdk-node': 4.7.6
       '@clerk/types': 3.28.3
-      next: 13.3.0(react-dom@18.2.0)(react@18.2.0)
+      next: 13.3.0(@babel/core@7.21.0)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       tslib: 2.4.1
@@ -4458,6 +4459,47 @@ packages:
       - '@types/node'
       - typescript
 
+  /@oclif/core@2.6.5(@types/node@18.15.12)(typescript@5.0.2):
+    resolution: {integrity: sha512-fk2dVH3eJ3skL+gOrxowy4dlqTMH/0iBffubLncSEOTb3pXuDQspzNmP60aq5Y82XxKN0iOj/5ZqxtiMHpH1Sg==}
+    engines: {node: '>=14.0.0'}
+    dependencies:
+      '@types/cli-progress': 3.11.0
+      ansi-escapes: 4.3.2
+      ansi-styles: 4.3.0
+      cardinal: 2.1.1
+      chalk: 4.1.2
+      clean-stack: 3.0.1
+      cli-progress: 3.12.0
+      debug: 4.3.4(supports-color@8.1.1)
+      ejs: 3.1.8
+      fs-extra: 9.1.0
+      get-package-type: 0.1.0
+      globby: 11.1.0
+      hyperlinker: 1.0.0
+      indent-string: 4.0.0
+      is-wsl: 2.2.0
+      js-yaml: 3.14.1
+      natural-orderby: 2.0.3
+      object-treeify: 1.1.33
+      password-prompt: 1.1.2
+      semver: 7.3.8
+      string-width: 4.2.3
+      strip-ansi: 6.0.1
+      supports-color: 8.1.1
+      supports-hyperlinks: 2.3.0
+      ts-node: 10.9.1(@types/node@18.15.12)(typescript@5.0.2)
+      tslib: 2.5.0
+      widest-line: 3.1.0
+      wordwrap: 1.0.0
+      wrap-ansi: 7.0.0
+    transitivePeerDependencies:
+      - '@swc/core'
+      - '@swc/wasm'
+      - '@types/node'
+      - typescript
+    dev: false
+    optional: true
+
   /@oclif/core@2.6.5(@types/node@18.15.12)(typescript@5.0.4):
     resolution: {integrity: sha512-fk2dVH3eJ3skL+gOrxowy4dlqTMH/0iBffubLncSEOTb3pXuDQspzNmP60aq5Y82XxKN0iOj/5ZqxtiMHpH1Sg==}
     engines: {node: '>=14.0.0'}
@@ -4496,6 +4538,7 @@ packages:
       - '@swc/wasm'
       - '@types/node'
       - typescript
+    dev: true
 
   /@oclif/plugin-help@5.2.6(@types/node@18.15.12)(typescript@5.0.2):
     resolution: {integrity: sha512-nvpSbIOGtPIct3+OqXca3OIu5liyIynascncAXZy4JDD7z8rIGZ3NYJH2M4JhMVyGxCDZxQuLVsdALyIt67G5g==}
@@ -4520,6 +4563,19 @@ packages:
       - '@types/node'
       - typescript
 
+  /@oclif/plugin-help@5.2.8(@types/node@18.15.12)(typescript@5.0.2):
+    resolution: {integrity: sha512-Fl1DD6Hm7USG/BYqcUmc/hMXK6Bnd3HvkZsRG+qi0dbYaNtY9zJ58C5b3lgPn69bXJlyi1eWX4S8djSUWD8VYg==}
+    engines: {node: '>=12.0.0'}
+    dependencies:
+      '@oclif/core': 2.6.5(@types/node@18.15.12)(typescript@5.0.2)
+    transitivePeerDependencies:
+      - '@swc/core'
+      - '@swc/wasm'
+      - '@types/node'
+      - typescript
+    dev: false
+    optional: true
+
   /@oclif/plugin-help@5.2.8(@types/node@18.15.12)(typescript@5.0.4):
     resolution: {integrity: sha512-Fl1DD6Hm7USG/BYqcUmc/hMXK6Bnd3HvkZsRG+qi0dbYaNtY9zJ58C5b3lgPn69bXJlyi1eWX4S8djSUWD8VYg==}
     engines: {node: '>=12.0.0'}
@@ -4530,6 +4586,7 @@ packages:
       - '@swc/wasm'
       - '@types/node'
       - typescript
+    dev: true
 
   /@oclif/plugin-not-found@2.3.21(@types/node@18.15.12)(typescript@5.0.2):
     resolution: {integrity: sha512-6N0gTWQhl5nuE5bXipv5+8vH5cHyGgEd3MKJHQYxFnHIFwwb9jJnFl0BZ0fo7Jrjd9HZYCLT7rjnouS7p1Dl1w==}
@@ -4560,6 +4617,22 @@ packages:
       - '@types/node'
       - typescript
 
+  /@oclif/plugin-not-found@2.3.22(@types/node@18.15.12)(typescript@5.0.2):
+    resolution: {integrity: sha512-dZ202qQZwZFXKKGSxpKh063eGzjS1sw2CX9S/x8rhMALeU3p0GAJtLSLQx6AFXdlJTPpqw2b/KDn8OLlIMHhJA==}
+    engines: {node: '>=12.0.0'}
+    dependencies:
+      '@oclif/color': 1.0.4
+      '@oclif/core': 2.6.5(@types/node@18.15.12)(typescript@5.0.2)
+      fast-levenshtein: 3.0.0
+      lodash: 4.17.21
+    transitivePeerDependencies:
+      - '@swc/core'
+      - '@swc/wasm'
+      - '@types/node'
+      - typescript
+    dev: false
+    optional: true
+
   /@oclif/plugin-not-found@2.3.22(@types/node@18.15.12)(typescript@5.0.4):
     resolution: {integrity: sha512-dZ202qQZwZFXKKGSxpKh063eGzjS1sw2CX9S/x8rhMALeU3p0GAJtLSLQx6AFXdlJTPpqw2b/KDn8OLlIMHhJA==}
     engines: {node: '>=12.0.0'}
@@ -4573,6 +4646,7 @@ packages:
       - '@swc/wasm'
       - '@types/node'
       - typescript
+    dev: true
 
   /@oclif/plugin-plugins@2.3.2(@types/node@18.15.12)(typescript@5.0.2):
     resolution: {integrity: sha512-jq/ik7A7bCO/oQp0/Znnpu8/JBXifAQ2OF2KmswbNYt7EpsLqz2DaI/CvkrXRSb+Edzx4Xx3usEgSyocVN/u2A==}
@@ -4619,6 +4693,30 @@ packages:
       - supports-color
       - typescript
 
+  /@oclif/plugin-plugins@2.4.3(@types/node@18.15.12)(typescript@5.0.2):
+    resolution: {integrity: sha512-dkbzijBkWVCwETQHFIsWTyjX4Sfk8qF6LoWSb5jE6drwlYd89YcrneMLEYn3Fbs/vKUUjxDhO1wFwAatibbHGw==}
+    engines: {node: '>=12.0.0'}
+    dependencies:
+      '@oclif/color': 1.0.4
+      '@oclif/core': 2.6.5(@types/node@18.15.12)(typescript@5.0.2)
+      chalk: 4.1.2
+      debug: 4.3.4(supports-color@8.1.1)
+      fs-extra: 9.1.0
+      http-call: 5.3.0
+      load-json-file: 5.3.0
+      npm-run-path: 4.0.1
+      semver: 7.3.8
+      tslib: 2.5.0
+      yarn: 1.22.19
+    transitivePeerDependencies:
+      - '@swc/core'
+      - '@swc/wasm'
+      - '@types/node'
+      - supports-color
+      - typescript
+    dev: false
+    optional: true
+
   /@oclif/plugin-plugins@2.4.3(@types/node@18.15.12)(typescript@5.0.4):
     resolution: {integrity: sha512-dkbzijBkWVCwETQHFIsWTyjX4Sfk8qF6LoWSb5jE6drwlYd89YcrneMLEYn3Fbs/vKUUjxDhO1wFwAatibbHGw==}
     engines: {node: '>=12.0.0'}
@@ -4640,6 +4738,7 @@ packages:
       - '@types/node'
       - supports-color
       - typescript
+    dev: true
 
   /@panva/hkdf@1.0.4:
     resolution: {integrity: sha512-003xWiCuvePbLaPHT+CRuaV4GlyCAVm6XYSbBZDHoWZGn1mNkVKFaDbGJjjxmEFvizUwlCoM6O18FCBMMky2zQ==}
@@ -4778,6 +4877,17 @@ packages:
     engines: {node: '>= 10'}
     dev: false
 
+  /@rollup/plugin-auto-install@3.0.3(rollup@2.79.1):
+    resolution: {integrity: sha512-1+PJojFCicfQqwXLN14a/B1YJJ+aR34B09kHl+2sXD7IQ+v/SpF+75iQ6UivX2yb16KjAqN3kdhMRQiJMnMHtQ==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0||^3.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+    dependencies:
+      rollup: 2.79.1
+
   /@rollup/plugin-auto-install@3.0.3(rollup@3.17.3):
     resolution: {integrity: sha512-1+PJojFCicfQqwXLN14a/B1YJJ+aR34B09kHl+2sXD7IQ+v/SpF+75iQ6UivX2yb16KjAqN3kdhMRQiJMnMHtQ==}
     engines: {node: '>=14.0.0'}
@@ -4788,6 +4898,24 @@ packages:
         optional: true
     dependencies:
       rollup: 3.17.3
+    dev: true
+
+  /@rollup/plugin-commonjs@24.0.1(rollup@2.79.1):
+    resolution: {integrity: sha512-15LsiWRZk4eOGqvrJyu3z3DaBu5BhXIMeWnijSRvd8irrrg9SHpQ1pH+BUK4H6Z9wL9yOxZJMTLU+Au86XHxow==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^2.68.0||^3.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+    dependencies:
+      '@rollup/pluginutils': 5.0.2(rollup@2.79.1)
+      commondir: 1.0.1
+      estree-walker: 2.0.2
+      glob: 8.1.0
+      is-reference: 1.2.1
+      magic-string: 0.27.0
+      rollup: 2.79.1
 
   /@rollup/plugin-commonjs@24.0.1(rollup@3.17.3):
     resolution: {integrity: sha512-15LsiWRZk4eOGqvrJyu3z3DaBu5BhXIMeWnijSRvd8irrrg9SHpQ1pH+BUK4H6Z9wL9yOxZJMTLU+Au86XHxow==}
@@ -4832,6 +4960,23 @@ packages:
       resolve: 1.22.1
       rollup: 3.17.3
 
+  /@rollup/plugin-node-resolve@15.0.1(rollup@2.79.1):
+    resolution: {integrity: sha512-ReY88T7JhJjeRVbfCyNj+NXAG3IIsVMsX9b5/9jC98dRP8/yxlZdz7mHZbHk5zHr24wZZICS5AcXsFZAXYUQEg==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^2.78.0||^3.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+    dependencies:
+      '@rollup/pluginutils': 5.0.2(rollup@2.79.1)
+      '@types/resolve': 1.20.2
+      deepmerge: 4.3.1
+      is-builtin-module: 3.2.1
+      is-module: 1.0.0
+      resolve: 1.22.1
+      rollup: 2.79.1
+
   /@rollup/plugin-node-resolve@15.0.1(rollup@3.17.3):
     resolution: {integrity: sha512-ReY88T7JhJjeRVbfCyNj+NXAG3IIsVMsX9b5/9jC98dRP8/yxlZdz7mHZbHk5zHr24wZZICS5AcXsFZAXYUQEg==}
     engines: {node: '>=14.0.0'}
@@ -4848,6 +4993,18 @@ packages:
       is-module: 1.0.0
       resolve: 1.22.1
       rollup: 3.17.3
+    dev: true
+
+  /@rollup/plugin-virtual@3.0.1(rollup@2.79.1):
+    resolution: {integrity: sha512-fK8O0IL5+q+GrsMLuACVNk2x21g3yaw+sG2qn16SnUd3IlBsQyvWxLMGHmCmXRMecPjGRSZ/1LmZB4rjQm68og==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0||^3.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+    dependencies:
+      rollup: 2.79.1
 
   /@rollup/plugin-virtual@3.0.1(rollup@3.17.3):
     resolution: {integrity: sha512-fK8O0IL5+q+GrsMLuACVNk2x21g3yaw+sG2qn16SnUd3IlBsQyvWxLMGHmCmXRMecPjGRSZ/1LmZB4rjQm68og==}
@@ -4859,6 +5016,7 @@ packages:
         optional: true
     dependencies:
       rollup: 3.17.3
+    dev: true
 
   /@rollup/pluginutils@3.1.0(rollup@3.17.3):
     resolution: {integrity: sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==}
@@ -4877,6 +5035,20 @@ packages:
     dependencies:
       estree-walker: 2.0.2
       picomatch: 2.3.1
+
+  /@rollup/pluginutils@5.0.2(rollup@2.79.1):
+    resolution: {integrity: sha512-pTd9rIsP92h+B6wWwFbW8RkZv4hiR/xKsqre4SIuAOaOEQRxi0lqLke9k2/7WegC85GgUs9pjmOjCUi3In4vwA==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0||^3.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+    dependencies:
+      '@types/estree': 1.0.0
+      estree-walker: 2.0.2
+      picomatch: 2.3.1
+      rollup: 2.79.1
 
   /@rollup/pluginutils@5.0.2(rollup@3.17.3):
     resolution: {integrity: sha512-pTd9rIsP92h+B6wWwFbW8RkZv4hiR/xKsqre4SIuAOaOEQRxi0lqLke9k2/7WegC85GgUs9pjmOjCUi3In4vwA==}
@@ -4934,21 +5106,21 @@ packages:
     dependencies:
       solid-js: 1.6.11
 
-  /@sveltejs/adapter-auto@2.0.0(@sveltejs/kit@1.13.0):
+  /@sveltejs/adapter-auto@2.0.0(@sveltejs/kit@1.15.7):
     resolution: {integrity: sha512-b+gkHFZgD771kgV3aO4avHFd7y1zhmMYy9i6xOK7m/rwmwaRO8gnF5zBc0Rgca80B2PMU1bKNxyBTHA14OzUAQ==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
     dependencies:
-      '@sveltejs/kit': 1.13.0(svelte@3.55.1)(vite@4.1.4)
+      '@sveltejs/kit': 1.15.7(svelte@3.55.1)(vite@4.1.4)
       import-meta-resolve: 2.2.1
     dev: true
 
-  /@sveltejs/adapter-vercel@2.4.2(@sveltejs/kit@1.13.0):
+  /@sveltejs/adapter-vercel@2.4.2(@sveltejs/kit@1.15.7):
     resolution: {integrity: sha512-HxItPKrt9DmSbKw2X4XVRYa4J2ueTEfQr79ijDcI/ZUtQ64d4X3ilUnLpmm1nXMBb1DyxaWJF4o8avwiV4O2Hw==}
     peerDependencies:
       '@sveltejs/kit': ^1.5.0
     dependencies:
-      '@sveltejs/kit': 1.13.0(svelte@3.55.1)(vite@4.1.4)
+      '@sveltejs/kit': 1.15.7(svelte@3.55.1)(vite@4.1.4)
       '@vercel/nft': 0.22.6
       esbuild: 0.16.17
     transitivePeerDependencies:
@@ -4956,8 +5128,8 @@ packages:
       - supports-color
     dev: false
 
-  /@sveltejs/kit@1.13.0(svelte@3.55.1)(vite@4.1.4):
-    resolution: {integrity: sha512-t44xqlSTn/k+BridiJFTD8dCRPNd9msCSSPLZT+/3P9deNp/al6ed396MSpsskK7r2kevYmmxywK16qtn6Rvjw==}
+  /@sveltejs/kit@1.15.7(svelte@3.55.1)(vite@4.1.4):
+    resolution: {integrity: sha512-dgdKExsMJ16X3q8tEcuDlv+QIWAlJcf7IqCU2HWV13nmtTzwSA2n4VtEx9Gy5OGhH0SUAGNIupmlf0TdFSMXbw==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
@@ -4978,7 +5150,7 @@ packages:
       sirv: 2.0.2
       svelte: 3.55.1
       tiny-glob: 0.2.9
-      undici: 5.21.0
+      undici: 5.20.0
       vite: 4.1.4(@types/node@18.15.12)
     transitivePeerDependencies:
       - supports-color
@@ -5086,7 +5258,7 @@ packages:
       '@trpc/client': 10.13.2(@trpc/server@10.13.2)
       '@trpc/react-query': 10.13.2(@tanstack/react-query@4.24.10)(@trpc/client@10.13.2)(@trpc/server@10.13.2)(react-dom@18.2.0)(react@18.2.0)
       '@trpc/server': 10.13.2
-      next: 13.3.0(react-dom@18.2.0)(react@18.2.0)
+      next: 13.3.0(@babel/core@7.21.0)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       react-ssr-prepass: 1.5.0(react@18.2.0)
@@ -5698,6 +5870,10 @@ packages:
     resolution: {integrity: sha512-Ecc9oQBSVwk1suENcRcj1L6gQrUt4+0XA9oPFxrUpoFEk04lP/ZV3qAQPk+ex08N+vfUulYdqb+cmVTnwqsmqw==}
     dev: true
 
+  /@vercel/error-utils@1.0.8:
+    resolution: {integrity: sha512-s+f7jP2oH1koICbQ8e3K9hOpOeUct7rbCnF9qsNwXemq850wAh2e90tp9R6oYBM0BNpiLRRm+oG5zD2sCIm3HQ==}
+    dev: true
+
   /@vercel/gatsby-plugin-vercel-analytics@1.0.8:
     resolution: {integrity: sha512-EL5xH3KOtAwzLc50NA2Df5BQwIV9tu8QBIG0unSTUtOpIaqqnOMBZT86DxadsAniUs7xYRcaeXOkQog/PbpWDw==}
     dependencies:
@@ -5782,15 +5958,17 @@ packages:
     resolution: {integrity: sha512-XEfKfnLGzlIBpad7eGNPql1HnMhoSTv9q3uDNC4axdaAC/kI5yvl8kXjuCPAXYvpbJnVQPpcSUC5/r5ap8F3jA==}
     dev: true
 
-  /@vercel/node@2.11.0:
-    resolution: {integrity: sha512-vGZyh+r+qkU5Ys9nJ22o5RfuVAtZMA2wox96kGvA/XEX333FZNlFfbOUZfNSrDaQkrbDIeAA4zDj3XtvIyYlZw==}
+  /@vercel/node@2.12.0:
+    resolution: {integrity: sha512-QItQ4DjKrHqTMk/hmtX64V5RfDdp+fDoFzbSbPUICkIOHK3EBCJ5c/392Iv05AwSv+mJIALZUGRQz5o4HKvs6A==}
     dependencies:
       '@edge-runtime/vm': 2.0.0
       '@types/node': 14.18.33
       '@vercel/build-utils': 6.7.1
+      '@vercel/error-utils': 1.0.8
       '@vercel/node-bridge': 4.0.1
       '@vercel/static-config': 2.0.16
-      edge-runtime: 2.0.0
+      async-listen: 1.2.0
+      edge-runtime: 2.1.4
       esbuild: 0.14.47
       exit-hook: 2.2.1
       node-fetch: 2.6.7
@@ -5939,7 +6117,7 @@ packages:
     resolution: {integrity: sha512-BEO6al7BYqcnfX15W2cnGR+Q566ACXAT9UQykORCWW80lmkpWsnEob6zJS1ZVBKsSJC8+7vJkHwlp+lXG1UCdw==}
     dev: true
 
-  /@xata.io/cli@0.11.11(@types/node@18.15.12)(typescript@5.0.2):
+  /@xata.io/cli@0.11.11(@types/node@18.15.12)(esbuild@0.17.10)(rollup@2.79.1)(typescript@5.0.2):
     resolution: {integrity: sha512-PMNrA4o6DVDvKUU937hHLPGE78yLetjQZJ+M/2MqqhJlR9RZ2+8s8SVXgk1As1fU/a8hZQM0yGm6ff/WnGzlLQ==}
     engines: {node: '>=12.0.0'}
     hasBin: true
@@ -5951,10 +6129,10 @@ packages:
       '@oclif/plugin-help': 5.2.6(@types/node@18.15.12)(typescript@5.0.2)
       '@oclif/plugin-not-found': 2.3.21(@types/node@18.15.12)(typescript@5.0.2)
       '@oclif/plugin-plugins': 2.3.2(@types/node@18.15.12)(typescript@5.0.2)
-      '@rollup/plugin-auto-install': 3.0.3(rollup@3.17.3)
-      '@rollup/plugin-commonjs': 24.0.1(rollup@3.17.3)
-      '@rollup/plugin-node-resolve': 15.0.1(rollup@3.17.3)
-      '@rollup/plugin-virtual': 3.0.1(rollup@3.17.3)
+      '@rollup/plugin-auto-install': 3.0.3(rollup@2.79.1)
+      '@rollup/plugin-commonjs': 24.0.1(rollup@2.79.1)
+      '@rollup/plugin-node-resolve': 15.0.1(rollup@2.79.1)
+      '@rollup/plugin-virtual': 3.0.1(rollup@2.79.1)
       '@types/ini': 1.3.31
       '@types/prompts': 2.4.2
       '@xata.io/client': 0.22.3(typescript@5.0.2)
@@ -5980,9 +6158,9 @@ packages:
       open: 8.4.2
       prompts: 2.4.2
       relaxed-json: 1.0.3
-      rollup-plugin-esbuild: 5.0.0(esbuild@0.17.10)(rollup@3.17.3)
+      rollup-plugin-esbuild: 5.0.0(esbuild@0.17.10)(rollup@2.79.1)
       rollup-plugin-hypothetical: 2.1.1
-      rollup-plugin-import-cdn: 0.2.2(rollup@3.17.3)
+      rollup-plugin-import-cdn: 0.2.2(rollup@2.79.1)
       rollup-plugin-virtual-fs: 4.0.1-alpha.0
       text-table: 0.2.0
       tmp: 0.2.1
@@ -6003,7 +6181,7 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@xata.io/cli@0.11.11(@types/node@18.15.12)(typescript@5.0.4):
+  /@xata.io/cli@0.11.11(@types/node@18.15.12)(esbuild@0.17.10)(rollup@2.79.1)(typescript@5.0.4):
     resolution: {integrity: sha512-PMNrA4o6DVDvKUU937hHLPGE78yLetjQZJ+M/2MqqhJlR9RZ2+8s8SVXgk1As1fU/a8hZQM0yGm6ff/WnGzlLQ==}
     engines: {node: '>=12.0.0'}
     hasBin: true
@@ -6015,10 +6193,10 @@ packages:
       '@oclif/plugin-help': 5.2.6(@types/node@18.15.12)(typescript@5.0.4)
       '@oclif/plugin-not-found': 2.3.21(@types/node@18.15.12)(typescript@5.0.4)
       '@oclif/plugin-plugins': 2.3.2(@types/node@18.15.12)(typescript@5.0.4)
-      '@rollup/plugin-auto-install': 3.0.3(rollup@3.17.3)
-      '@rollup/plugin-commonjs': 24.0.1(rollup@3.17.3)
-      '@rollup/plugin-node-resolve': 15.0.1(rollup@3.17.3)
-      '@rollup/plugin-virtual': 3.0.1(rollup@3.17.3)
+      '@rollup/plugin-auto-install': 3.0.3(rollup@2.79.1)
+      '@rollup/plugin-commonjs': 24.0.1(rollup@2.79.1)
+      '@rollup/plugin-node-resolve': 15.0.1(rollup@2.79.1)
+      '@rollup/plugin-virtual': 3.0.1(rollup@2.79.1)
       '@types/ini': 1.3.31
       '@types/prompts': 2.4.2
       '@xata.io/client': 0.22.3(typescript@5.0.4)
@@ -6044,9 +6222,9 @@ packages:
       open: 8.4.2
       prompts: 2.4.2
       relaxed-json: 1.0.3
-      rollup-plugin-esbuild: 5.0.0(esbuild@0.17.10)(rollup@3.17.3)
+      rollup-plugin-esbuild: 5.0.0(esbuild@0.17.10)(rollup@2.79.1)
       rollup-plugin-hypothetical: 2.1.1
-      rollup-plugin-import-cdn: 0.2.2(rollup@3.17.3)
+      rollup-plugin-import-cdn: 0.2.2(rollup@2.79.1)
       rollup-plugin-virtual-fs: 4.0.1-alpha.0
       text-table: 0.2.0
       tmp: 0.2.1
@@ -6065,6 +6243,134 @@ packages:
       - supports-color
       - typescript
       - utf-8-validate
+
+  /@xata.io/cli@0.11.19(@types/node@18.15.12)(esbuild@0.17.10)(rollup@2.79.1)(typescript@5.0.2):
+    resolution: {integrity: sha512-X3PF5lJq+7L+nzrnmIpi3u0y+ioqOjZeV6KAlz502IndXlfpmQbC8XWVJC5NlzRpjyS7H0yS0Xwjr51cY34sLQ==}
+    engines: {node: '>=12.0.0'}
+    hasBin: true
+    dependencies:
+      '@babel/core': 7.21.3
+      '@babel/preset-react': 7.18.6(@babel/core@7.21.3)
+      '@babel/preset-typescript': 7.21.0(@babel/core@7.21.3)
+      '@oclif/core': 2.6.5(@types/node@18.15.12)(typescript@5.0.2)
+      '@oclif/plugin-help': 5.2.8(@types/node@18.15.12)(typescript@5.0.2)
+      '@oclif/plugin-not-found': 2.3.22(@types/node@18.15.12)(typescript@5.0.2)
+      '@oclif/plugin-plugins': 2.4.3(@types/node@18.15.12)(typescript@5.0.2)
+      '@rollup/plugin-auto-install': 3.0.3(rollup@2.79.1)
+      '@rollup/plugin-commonjs': 24.0.1(rollup@2.79.1)
+      '@rollup/plugin-node-resolve': 15.0.1(rollup@2.79.1)
+      '@rollup/plugin-virtual': 3.0.1(rollup@2.79.1)
+      '@types/ini': 1.3.31
+      '@types/prompts': 2.4.3
+      '@xata.io/client': 0.23.4(typescript@5.0.2)
+      '@xata.io/codegen': 0.23.2
+      '@xata.io/importer': 0.3.13(typescript@5.0.2)
+      ansi-regex: 6.0.1
+      babel-plugin-module-extension-resolver: 1.0.0
+      chalk: 5.2.0
+      chokidar: 3.5.3
+      cosmiconfig: 8.1.3
+      deepmerge: 4.3.1
+      dotenv: 16.0.3
+      dotenv-expand: 10.0.0
+      edge-runtime: 2.1.2
+      enquirer: 2.3.6
+      env-editor: 1.1.0
+      ini: 3.0.1
+      lodash.compact: 3.0.1
+      lodash.get: 4.4.2
+      lodash.set: 4.3.2
+      miniflare: 2.12.1
+      node-fetch: 3.3.1
+      open: 8.4.2
+      prompts: 2.4.2
+      relaxed-json: 1.0.3
+      rollup-plugin-esbuild: 5.0.0(esbuild@0.17.10)(rollup@2.79.1)
+      rollup-plugin-hypothetical: 2.1.1
+      rollup-plugin-import-cdn: 0.2.2(rollup@2.79.1)
+      rollup-plugin-virtual-fs: 4.0.1-alpha.0
+      text-table: 0.2.0
+      tmp: 0.2.1
+      which: 3.0.0
+      zod: 3.21.4
+    transitivePeerDependencies:
+      - '@miniflare/storage-redis'
+      - '@swc/core'
+      - '@swc/wasm'
+      - '@types/node'
+      - bufferutil
+      - cron-schedule
+      - esbuild
+      - ioredis
+      - rollup
+      - supports-color
+      - typescript
+      - utf-8-validate
+    optional: true
+
+  /@xata.io/cli@0.11.19(@types/node@18.15.12)(esbuild@0.17.10)(rollup@2.79.1)(typescript@5.0.4):
+    resolution: {integrity: sha512-X3PF5lJq+7L+nzrnmIpi3u0y+ioqOjZeV6KAlz502IndXlfpmQbC8XWVJC5NlzRpjyS7H0yS0Xwjr51cY34sLQ==}
+    engines: {node: '>=12.0.0'}
+    hasBin: true
+    dependencies:
+      '@babel/core': 7.21.3
+      '@babel/preset-react': 7.18.6(@babel/core@7.21.3)
+      '@babel/preset-typescript': 7.21.0(@babel/core@7.21.3)
+      '@oclif/core': 2.6.5(@types/node@18.15.12)(typescript@5.0.4)
+      '@oclif/plugin-help': 5.2.8(@types/node@18.15.12)(typescript@5.0.4)
+      '@oclif/plugin-not-found': 2.3.22(@types/node@18.15.12)(typescript@5.0.4)
+      '@oclif/plugin-plugins': 2.4.3(@types/node@18.15.12)(typescript@5.0.4)
+      '@rollup/plugin-auto-install': 3.0.3(rollup@2.79.1)
+      '@rollup/plugin-commonjs': 24.0.1(rollup@2.79.1)
+      '@rollup/plugin-node-resolve': 15.0.1(rollup@2.79.1)
+      '@rollup/plugin-virtual': 3.0.1(rollup@2.79.1)
+      '@types/ini': 1.3.31
+      '@types/prompts': 2.4.3
+      '@xata.io/client': 0.23.4(typescript@5.0.4)
+      '@xata.io/codegen': 0.23.2
+      '@xata.io/importer': 0.3.13(typescript@5.0.4)
+      ansi-regex: 6.0.1
+      babel-plugin-module-extension-resolver: 1.0.0
+      chalk: 5.2.0
+      chokidar: 3.5.3
+      cosmiconfig: 8.1.3
+      deepmerge: 4.3.1
+      dotenv: 16.0.3
+      dotenv-expand: 10.0.0
+      edge-runtime: 2.1.2
+      enquirer: 2.3.6
+      env-editor: 1.1.0
+      ini: 3.0.1
+      lodash.compact: 3.0.1
+      lodash.get: 4.4.2
+      lodash.set: 4.3.2
+      miniflare: 2.12.1
+      node-fetch: 3.3.1
+      open: 8.4.2
+      prompts: 2.4.2
+      relaxed-json: 1.0.3
+      rollup-plugin-esbuild: 5.0.0(esbuild@0.17.10)(rollup@2.79.1)
+      rollup-plugin-hypothetical: 2.1.1
+      rollup-plugin-import-cdn: 0.2.2(rollup@2.79.1)
+      rollup-plugin-virtual-fs: 4.0.1-alpha.0
+      text-table: 0.2.0
+      tmp: 0.2.1
+      which: 3.0.0
+      zod: 3.21.4
+    transitivePeerDependencies:
+      - '@miniflare/storage-redis'
+      - '@swc/core'
+      - '@swc/wasm'
+      - '@types/node'
+      - bufferutil
+      - cron-schedule
+      - esbuild
+      - ioredis
+      - rollup
+      - supports-color
+      - typescript
+      - utf-8-validate
+    dev: true
 
   /@xata.io/cli@0.11.19(@types/node@18.15.12)(esbuild@0.17.10)(rollup@3.17.3)(typescript@5.0.4):
     resolution: {integrity: sha512-X3PF5lJq+7L+nzrnmIpi3u0y+ioqOjZeV6KAlz502IndXlfpmQbC8XWVJC5NlzRpjyS7H0yS0Xwjr51cY34sLQ==}
@@ -6128,6 +6434,7 @@ packages:
       - supports-color
       - typescript
       - utf-8-validate
+    dev: true
 
   /@xata.io/client@0.22.3(typescript@5.0.2):
     resolution: {integrity: sha512-2brx6LMhckQpRiXDhxDKa0H4cre5yDvOJ4DA/AskHyoyd5ZacqnLx9eFOThITC0/egu+6e6QKn1MtwY+gq5wTA==}
@@ -6193,6 +6500,19 @@ packages:
       typescript: 4.9.5
       zod: 3.21.4
 
+  /@xata.io/importer@0.3.13(typescript@5.0.2):
+    resolution: {integrity: sha512-AV6va6Vqh577YKvtvyDwBwRgtboEZ6NGfwarDEuB/5401fWjVBCd/wZ0UOgIYYPHJ+ft2F2s1dd30+SE21JByA==}
+    dependencies:
+      '@faker-js/faker': 7.6.0
+      '@xata.io/client': 0.23.4(typescript@5.0.2)
+      camelcase: 7.0.1
+      csvtojson: 2.0.10
+      transliteration: 2.3.5
+    transitivePeerDependencies:
+      - typescript
+    dev: false
+    optional: true
+
   /@xata.io/importer@0.3.13(typescript@5.0.4):
     resolution: {integrity: sha512-AV6va6Vqh577YKvtvyDwBwRgtboEZ6NGfwarDEuB/5401fWjVBCd/wZ0UOgIYYPHJ+ft2F2s1dd30+SE21JByA==}
     dependencies:
@@ -6203,6 +6523,7 @@ packages:
       transliteration: 2.3.5
     transitivePeerDependencies:
       - typescript
+    dev: true
 
   /@xata.io/importer@0.3.7(typescript@5.0.2):
     resolution: {integrity: sha512-H8Du2QBWwSgN69FsQ2X2r5bNMh/11176V2SSG9uYYQGE7EGXMTnYMaD8Urd3kWCEH2R06DBrq7FY1OZzw9kF8Q==}
@@ -6554,6 +6875,15 @@ packages:
       - supports-color
       - terser
     dev: false
+
+  /async-listen@1.2.0:
+    resolution: {integrity: sha512-CcEtRh/oc9Jc4uWeUwdpG/+Mb2YUHKmdaTf0gUr7Wa+bfp4xx70HOb3RuSTJMvqKNB1TkdTfjLdrcz2X4rkkZA==}
+    dev: true
+
+  /async-listen@2.0.3:
+    resolution: {integrity: sha512-WVLi/FGIQaXyfYyNvmkwKT1RZbkzszLLnmW/gFCc5lbVvN/0QQCWpBwRBk2OWSdkkmKRBc8yD6BrKsjA3XKaSw==}
+    engines: {node: '>= 14'}
+    dev: true
 
   /async-sema@3.1.1:
     resolution: {integrity: sha512-tLRNUXati5MFePdAk8dw7Qt7DpxPB60ofAgn8WRhW6a2rcimZnYBP9oxHiv0OHy+Wz7kPMG+t4LGdt31+4EmGg==}
@@ -7709,6 +8039,22 @@ packages:
       pretty-bytes: 5.6.0
       pretty-ms: 7.0.1
       time-span: 4.0.0
+
+  /edge-runtime@2.1.4:
+    resolution: {integrity: sha512-SertKByzAmjm+MkLbFl1q0ko+/90V24dhZgQM8fcdguQaDYVEVtb6okEBGeg8IQgL1/JUP8oSlUIxSI/bvsVRQ==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dependencies:
+      '@edge-runtime/format': 2.0.1
+      '@edge-runtime/vm': 2.1.2
+      async-listen: 2.0.3
+      exit-hook: 2.2.1
+      mri: 1.2.0
+      picocolors: 1.0.0
+      pretty-bytes: 5.6.0
+      pretty-ms: 7.0.1
+      time-span: 4.0.0
+    dev: true
 
   /ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
@@ -11346,7 +11692,7 @@ packages:
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      styled-jsx: 5.1.1(react@18.2.0)
+      styled-jsx: 5.1.1(@babel/core@7.21.0)(react@18.2.0)
     optionalDependencies:
       '@next/swc-android-arm-eabi': 13.2.4
       '@next/swc-android-arm64': 13.2.4
@@ -11366,7 +11712,7 @@ packages:
       - babel-plugin-macros
     dev: false
 
-  /next@13.3.0(react-dom@18.2.0)(react@18.2.0):
+  /next@13.3.0(@babel/core@7.21.0)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-OVTw8MpIPa12+DCUkPqRGPS3thlJPcwae2ZL4xti3iBff27goH024xy4q2lhlsdoYiKOi8Kz6uJoLW/GXwgfOA==}
     engines: {node: '>=14.6.0'}
     hasBin: true
@@ -11394,7 +11740,51 @@ packages:
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      styled-jsx: 5.1.1(react@18.2.0)
+      styled-jsx: 5.1.1(@babel/core@7.21.0)(react@18.2.0)
+    optionalDependencies:
+      '@next/swc-darwin-arm64': 13.3.0
+      '@next/swc-darwin-x64': 13.3.0
+      '@next/swc-linux-arm64-gnu': 13.3.0
+      '@next/swc-linux-arm64-musl': 13.3.0
+      '@next/swc-linux-x64-gnu': 13.3.0
+      '@next/swc-linux-x64-musl': 13.3.0
+      '@next/swc-win32-arm64-msvc': 13.3.0
+      '@next/swc-win32-ia32-msvc': 13.3.0
+      '@next/swc-win32-x64-msvc': 13.3.0
+    transitivePeerDependencies:
+      - '@babel/core'
+      - babel-plugin-macros
+    dev: false
+
+  /next@13.3.0(@babel/core@7.21.3)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-OVTw8MpIPa12+DCUkPqRGPS3thlJPcwae2ZL4xti3iBff27goH024xy4q2lhlsdoYiKOi8Kz6uJoLW/GXwgfOA==}
+    engines: {node: '>=14.6.0'}
+    hasBin: true
+    peerDependencies:
+      '@opentelemetry/api': ^1.1.0
+      fibers: '>= 3.1.0'
+      node-sass: ^6.0.0 || ^7.0.0
+      react: ^18.2.0
+      react-dom: ^18.2.0
+      sass: ^1.3.0
+    peerDependenciesMeta:
+      '@opentelemetry/api':
+        optional: true
+      fibers:
+        optional: true
+      node-sass:
+        optional: true
+      sass:
+        optional: true
+    dependencies:
+      '@next/env': 13.3.0
+      '@swc/helpers': 0.4.14
+      busboy: 1.6.0
+      caniuse-lite: 1.0.30001458
+      postcss: 8.4.14
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      styled-jsx: 5.1.1(@babel/core@7.21.3)(react@18.2.0)
     optionalDependencies:
       '@next/swc-darwin-arm64': 13.3.0
       '@next/swc-darwin-x64': 13.3.0
@@ -12804,6 +13194,23 @@ packages:
     dependencies:
       glob: 7.2.3
 
+  /rollup-plugin-esbuild@5.0.0(esbuild@0.17.10)(rollup@2.79.1):
+    resolution: {integrity: sha512-1cRIOHAPh8WQgdQQyyvFdeOdxuiyk+zB5zJ5+YOwrZP4cJ0MT3Fs48pQxrZeyZHcn+klFherytILVfE4aYrneg==}
+    engines: {node: '>=14.18.0', npm: '>=8.0.0'}
+    peerDependencies:
+      esbuild: '>=0.10.1'
+      rollup: ^1.20.0 || ^2.0.0 || ^3.0.0
+    dependencies:
+      '@rollup/pluginutils': 5.0.2(rollup@2.79.1)
+      debug: 4.3.4(supports-color@8.1.1)
+      es-module-lexer: 1.2.0
+      esbuild: 0.17.10
+      joycon: 3.1.1
+      jsonc-parser: 3.2.0
+      rollup: 2.79.1
+    transitivePeerDependencies:
+      - supports-color
+
   /rollup-plugin-esbuild@5.0.0(esbuild@0.17.10)(rollup@3.17.3):
     resolution: {integrity: sha512-1cRIOHAPh8WQgdQQyyvFdeOdxuiyk+zB5zJ5+YOwrZP4cJ0MT3Fs48pQxrZeyZHcn+klFherytILVfE4aYrneg==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
@@ -12820,10 +13227,19 @@ packages:
       rollup: 3.17.3
     transitivePeerDependencies:
       - supports-color
+    dev: true
 
   /rollup-plugin-hypothetical@2.1.1:
     resolution: {integrity: sha512-Ne40a4qyXap1C41ObstbgfklT8VGEirJ57ZRIEgkEMaEIxdx5kNwdzrxfyS9cn59tAYROHh+2hfiFU4sTQt1rw==}
     engines: {node: '>=0.12'}
+
+  /rollup-plugin-import-cdn@0.2.2(rollup@2.79.1):
+    resolution: {integrity: sha512-hfHB3ZGUSGcWVx1/GAdrk+wOkPIMaI1Mr41X6Knpi1r9OTvOPw1iIyb7VLdjvKeT/vfM5RkyVSw8890p4QMC2w==}
+    peerDependencies:
+      rollup: ^2.70.2
+    dependencies:
+      es-module-lexer: 0.10.5
+      rollup: 2.79.1
 
   /rollup-plugin-import-cdn@0.2.2(rollup@3.17.3):
     resolution: {integrity: sha512-hfHB3ZGUSGcWVx1/GAdrk+wOkPIMaI1Mr41X6Knpi1r9OTvOPw1iIyb7VLdjvKeT/vfM5RkyVSw8890p4QMC2w==}
@@ -12832,6 +13248,7 @@ packages:
     dependencies:
       es-module-lexer: 0.10.5
       rollup: 3.17.3
+    dev: true
 
   /rollup-plugin-inject@3.0.2:
     resolution: {integrity: sha512-ptg9PQwzs3orn4jkgXJ74bfs5vYz1NCZlSQMBUA0wKcGp5i5pA1AO3fOUEte8enhGUC+iapTCzEWw2jEFFUO/w==}
@@ -12881,6 +13298,13 @@ packages:
     dependencies:
       rollup: 3.17.3
       route-sort: 1.0.0
+
+  /rollup@2.79.1:
+    resolution: {integrity: sha512-uKxbd0IhMZOhjAiD5oAFp7BqvkA4Dv47qpOCtaNvng4HBwdbWtdOh8f5nZNuk2rp51PMGk3bzfWu5oayNEuYnw==}
+    engines: {node: '>=10.0.0'}
+    hasBin: true
+    optionalDependencies:
+      fsevents: 2.3.2
 
   /rollup@3.17.3:
     resolution: {integrity: sha512-p5LaCXiiOL/wrOkj8djsIDFmyU9ysUxcyW+EKRLHb6TKldJzXpImjcRSR+vgo09DBdofGcOoLOsRyxxG2n5/qQ==}
@@ -13569,7 +13993,7 @@ packages:
       inline-style-parser: 0.1.1
     dev: true
 
-  /styled-jsx@5.1.1(react@18.2.0):
+  /styled-jsx@5.1.1(@babel/core@7.21.0)(react@18.2.0):
     resolution: {integrity: sha512-pW7uC1l4mBZ8ugbiZrcIsiIvVx1UmTfw7UkC3Um2tmfUq9Bhk8IiyEIPl6F8agHgjzku6j0xQEZbfA5uSgSaCw==}
     engines: {node: '>= 12.0.0'}
     peerDependencies:
@@ -13582,6 +14006,25 @@ packages:
       babel-plugin-macros:
         optional: true
     dependencies:
+      '@babel/core': 7.21.0
+      client-only: 0.0.1
+      react: 18.2.0
+    dev: false
+
+  /styled-jsx@5.1.1(@babel/core@7.21.3)(react@18.2.0):
+    resolution: {integrity: sha512-pW7uC1l4mBZ8ugbiZrcIsiIvVx1UmTfw7UkC3Um2tmfUq9Bhk8IiyEIPl6F8agHgjzku6j0xQEZbfA5uSgSaCw==}
+    engines: {node: '>= 12.0.0'}
+    peerDependencies:
+      '@babel/core': '*'
+      babel-plugin-macros: '*'
+      react: '>= 16.8.0 || 17.x.x || ^18.0.0-0'
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      babel-plugin-macros:
+        optional: true
+    dependencies:
+      '@babel/core': 7.21.3
       client-only: 0.0.1
       react: 18.2.0
     dev: false
@@ -13634,7 +14077,7 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  /svelte-check@3.0.4(svelte@3.55.1):
+  /svelte-check@3.0.4(@babel/core@7.21.0)(svelte@3.55.1):
     resolution: {integrity: sha512-feIyBAA5cSIxq4vq6mwGvGQTHy/wBVQbs5b+/VvE21WN8X7nonAuSqwvZv0UDBowzRka3Rh4gmLPH8rPePz3/w==}
     hasBin: true
     peerDependencies:
@@ -13647,7 +14090,7 @@ packages:
       picocolors: 1.0.0
       sade: 1.8.1
       svelte: 3.55.1
-      svelte-preprocess: 5.0.1(svelte@3.55.1)(typescript@4.9.5)
+      svelte-preprocess: 5.0.1(@babel/core@7.21.0)(svelte@3.55.1)(typescript@4.9.5)
       typescript: 4.9.5
     transitivePeerDependencies:
       - '@babel/core'
@@ -13669,7 +14112,7 @@ packages:
     dependencies:
       svelte: 3.55.1
 
-  /svelte-preprocess@5.0.1(svelte@3.55.1)(typescript@4.9.5):
+  /svelte-preprocess@5.0.1(@babel/core@7.21.0)(svelte@3.55.1)(typescript@4.9.5):
     resolution: {integrity: sha512-0HXyhCoc9rsW4zGOgtInylC6qj259E1hpFnJMJWTf+aIfeqh4O/QHT31KT2hvPEqQfdjmqBR/kO2JDkkciBLrQ==}
     engines: {node: '>= 14.10.0'}
     requiresBuild: true
@@ -13707,6 +14150,7 @@ packages:
       typescript:
         optional: true
     dependencies:
+      '@babel/core': 7.21.0
       '@types/pug': 2.0.6
       '@types/sass': 1.43.1
       detect-indent: 6.1.0
@@ -13717,7 +14161,7 @@ packages:
       typescript: 4.9.5
     dev: true
 
-  /svelte-preprocess@5.0.1(svelte@3.55.1)(typescript@5.0.2):
+  /svelte-preprocess@5.0.1(@babel/core@7.21.0)(svelte@3.55.1)(typescript@5.0.2):
     resolution: {integrity: sha512-0HXyhCoc9rsW4zGOgtInylC6qj259E1hpFnJMJWTf+aIfeqh4O/QHT31KT2hvPEqQfdjmqBR/kO2JDkkciBLrQ==}
     engines: {node: '>= 14.10.0'}
     requiresBuild: true
@@ -13755,6 +14199,7 @@ packages:
       typescript:
         optional: true
     dependencies:
+      '@babel/core': 7.21.0
       '@types/pug': 2.0.6
       '@types/sass': 1.43.1
       detect-indent: 6.1.0
@@ -14056,7 +14501,6 @@ packages:
       typescript: 5.0.2
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
-    dev: true
 
   /ts-node@10.9.1(@types/node@18.15.12)(typescript@5.0.4):
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
@@ -14331,6 +14775,7 @@ packages:
     engines: {node: '>=12.18'}
     dependencies:
       busboy: 1.6.0
+    dev: false
 
   /unherit@3.0.1:
     resolution: {integrity: sha512-akOOQ/Yln8a2sgcLj4U0Jmx0R5jpIg2IUyRrWOzmEbjBtGzBdHtSeFKgoEcoH4KYIG/Pb8GQ/BwtYm0GCq1Sqg==}
