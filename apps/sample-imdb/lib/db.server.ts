@@ -1,18 +1,19 @@
 import 'server-only'
 import { getXataClient, TitlesRecord } from '~/lib/xata.codegen.server'
 import { gte, le } from '@xata.io/client'
-
-type OMDBdata = {
-  Poster: string
-  Plot: string
-}
+import { movie, movieList, OMDBschema } from './schemas'
 
 const xata = getXataClient()
 
 export const getMovie = async (id: TitlesRecord['id']) => {
   const title = await xata.db.titles.read(id)
 
-  return title
+  if (title === null) {
+    console.error(`there is no movie with ${id}`)
+    return null
+  }
+
+  return movie.parse(title)
 }
 
 export const getFunFacts = async () => {
@@ -93,7 +94,7 @@ export const fetchDefaultTitles = async () => {
           `http://omdbapi.com/?apikey=${process.env.OMDB_API_KEY}&i=${title.id}`
         )
 
-        const omdbData: OMDBdata = await omdbResponse.json()
+        const omdbData = OMDBschema.parse(await omdbResponse.json())
 
         xata.db.titles.createOrUpdate({
           id: title.id,
@@ -113,7 +114,7 @@ export const fetchDefaultTitles = async () => {
   )
 
   return {
-    titles: titles.filter(({ summary }) => summary !== 'N/A'),
+    titles: movieList.parse(titles.filter(({ summary }) => summary !== 'N/A')),
   }
 }
 
@@ -153,9 +154,7 @@ export const searchMovies = async (term: string) => {
           return record
         }
 
-        const omdbData: OMDBdata = omdbResponse.ok
-          ? await omdbResponse.json()
-          : {}
+        const omdbData = OMDBschema.parse(await omdbResponse.json())
 
         if (
           typeof omdbData.Poster === 'string' &&
@@ -179,7 +178,9 @@ export const searchMovies = async (term: string) => {
   )
 
   return {
-    titles: records.filter(({ summary }) => summary && summary !== 'N/A'),
+    titles: movieList.parse(
+      records.filter(({ summary }) => summary && summary !== 'N/A')
+    ),
   }
 }
 
