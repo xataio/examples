@@ -27,4 +27,9 @@
     text-shadow: 0 0 theme(colors.pink.200);
     @apply text-transparent;
   }
+
+  .top-nav-active-link::after {
+    content: '⤵';
+    @apply absolute -bottom-2;
+  }
 }

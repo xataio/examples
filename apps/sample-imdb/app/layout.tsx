@@ -41,7 +41,7 @@ function RootLayout({ children }: { children: ReactNode }) {
         }}
       >
         <body className="grid grid-rows-[auto,1fr,auto] min-h-screen">
-          {/* @ts-expect-error */}
+          {/* @ts-expect-error Server Component */}
           <TopHeader />
           {children}
           <footer className="flex justify-center items-center gap-2 py-12">

@@ -2,16 +2,18 @@ import xataflyWhite from '~/public/xatafly-white.svg'
 import { SiGithub as Github, SiDiscord as Discord } from 'react-icons/si'
 import Image from 'next/image'
 import { UserButton, auth } from '@clerk/nextjs/app-beta'
-import { User } from './user'
+import { Login } from './login'
+import TopNav from './top-nav'
 
 export async function TopHeader() {
-  const { sessionId } = auth()
+  const { userId } = auth()
 
   return (
-    <aside className="sticky top-0 flex justify-between group bg-black">
+    <aside className="sticky top-0 grid grid-cols-[auto_1fr_auto] group bg-black">
       <div className="pt-8 pl-8">
-        {sessionId !== null ? <UserButton /> : 'not logged in'}
+        {userId !== null ? <UserButton /> : <Login />}
       </div>
+      <TopNav userId={userId} />
       <ul className="flex justify-end gap-3 pt-8 pr-8 opacity-40 group-focus-within:opacity-100 group-hover:opacity-100">
         <li>
           <a href="https://xata.io" rel="noopener noreferrer">

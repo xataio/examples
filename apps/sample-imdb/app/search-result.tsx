@@ -16,12 +16,7 @@ export const SearchResult = async ({
         </article>
       ) : (
         <article>
-          {/**
-           * there is no TypeScript support for
-           * async Server Components in JSX
-           *
-           */}
-          {/** @ts-expect-error */}
+          {/** @ts-expect-error Server Component */}
           <MoviesList titles={titles} />
         </article>
       )}

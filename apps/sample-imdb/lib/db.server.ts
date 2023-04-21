@@ -5,6 +5,28 @@ import { movie, movieList, OMDBschema } from './schemas'
 
 const xata = getXataClient()
 
+export const getLikesList = async (idClerk: string) => {
+  const likeList = await xata.db.likes
+    .filter({
+      idClerk,
+    })
+    .getFirst()
+
+  return likeList
+}
+
+export const getLikedMovies = async (idList: string[]) => {
+  const { records } = await xata.db.titles
+    .filter({
+      id: {
+        $any: idList,
+      },
+    })
+    .getPaginated()
+
+  return movieList.parse(records)
+}
+
 export const getMovie = async (id: TitlesRecord['id']) => {
   const title = await xata.db.titles.read(id)
 
