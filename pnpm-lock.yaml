@@ -45,11 +45,11 @@ importers:
         specifier: 18.16.0
         version: 18.16.0
       '@types/react':
-        specifier: 18.0.38
-        version: 18.0.38
+        specifier: 18.2.0
+        version: 18.2.0
       '@types/react-dom':
-        specifier: 18.0.11
-        version: 18.0.11
+        specifier: 18.2.0
+        version: 18.2.0
       eslint:
         specifier: 8.39.0
         version: 8.39.0
@@ -91,11 +91,11 @@ importers:
         specifier: 18.16.0
         version: 18.16.0
       '@types/react':
-        specifier: 18.0.38
-        version: 18.0.38
+        specifier: 18.2.0
+        version: 18.2.0
       '@types/react-dom':
-        specifier: 18.0.11
-        version: 18.0.11
+        specifier: 18.2.0
+        version: 18.2.0
       '@xata.io/cli':
         specifier: 0.11.19
         version: 0.11.19(@types/node@18.16.0)(esbuild@0.17.10)(rollup@2.79.1)(typescript@5.0.4)
@@ -136,11 +136,11 @@ importers:
         specifier: 18.16.0
         version: 18.16.0
       '@types/react':
-        specifier: 18.0.38
-        version: 18.0.38
+        specifier: 18.2.0
+        version: 18.2.0
       '@types/react-dom':
-        specifier: 18.0.11
-        version: 18.0.11
+        specifier: 18.2.0
+        version: 18.2.0
       '@xata.io/client':
         specifier: latest
         version: 0.23.4(typescript@5.0.4)
@@ -178,11 +178,11 @@ importers:
         specifier: 18.16.0
         version: 18.16.0
       '@types/react':
-        specifier: 18.0.38
-        version: 18.0.38
+        specifier: 18.2.0
+        version: 18.2.0
       '@types/react-dom':
-        specifier: 18.0.11
-        version: 18.0.11
+        specifier: 18.2.0
+        version: 18.2.0
       '@xata.io/client':
         specifier: latest
         version: 0.23.4(typescript@5.0.4)
@@ -233,11 +233,11 @@ importers:
         specifier: 18.16.0
         version: 18.16.0
       '@types/react':
-        specifier: 18.0.38
-        version: 18.0.38
+        specifier: 18.2.0
+        version: 18.2.0
       '@types/react-dom':
-        specifier: 18.0.11
-        version: 18.0.11
+        specifier: 18.2.0
+        version: 18.2.0
       eslint:
         specifier: 8.39.0
         version: 8.39.0
@@ -283,7 +283,7 @@ importers:
     dependencies:
       '@astrojs/react':
         specifier: ^2.0.0
-        version: 2.0.2(@types/react-dom@18.0.11)(@types/react@18.0.28)(react-dom@18.2.0)(react@18.2.0)
+        version: 2.0.2(@types/react-dom@18.2.0)(@types/react@18.0.28)(react-dom@18.2.0)(react@18.2.0)
       '@astrojs/vercel':
         specifier: ^3.0.0
         version: 3.1.3(astro@2.0.16)(react@18.2.0)
@@ -336,11 +336,11 @@ importers:
         specifier: 18.16.0
         version: 18.16.0
       '@types/react':
-        specifier: 18.0.38
-        version: 18.0.38
+        specifier: 18.2.0
+        version: 18.2.0
       '@types/react-dom':
-        specifier: 18.0.11
-        version: 18.0.11
+        specifier: 18.2.0
+        version: 18.2.0
       '@xata.io/client':
         specifier: ^0.23.0
         version: 0.23.0(typescript@5.0.4)
@@ -421,17 +421,17 @@ importers:
     dependencies:
       '@sveltejs/adapter-vercel':
         specifier: 2.4.2
-        version: 2.4.2(@sveltejs/kit@1.15.7)
+        version: 2.4.2(@sveltejs/kit@1.15.8)
       '@xata.io/client':
         specifier: ^0.23.0
         version: 0.23.0(typescript@5.0.2)
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: latest
-        version: 2.0.0(@sveltejs/kit@1.15.7)
+        version: 2.0.1(@sveltejs/kit@1.15.8)
       '@sveltejs/kit':
         specifier: latest
-        version: 1.15.7(svelte@3.55.1)(vite@4.1.4)
+        version: 1.15.8(svelte@3.55.1)(vite@4.1.4)
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.27.0
         version: 5.54.0(@typescript-eslint/parser@5.54.0)(eslint@8.35.0)(typescript@5.0.2)
@@ -571,7 +571,7 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/react@2.0.2(@types/react-dom@18.0.11)(@types/react@18.0.28)(react-dom@18.2.0)(react@18.2.0):
+  /@astrojs/react@2.0.2(@types/react-dom@18.2.0)(@types/react@18.0.28)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-UmQNvzJul5M/Q9aZJXnqz4z0ODZXkLuaNvgsYoKB7OdM8c2v85FsTjMZZJ7BvFo4On31jJ0rL/gwTaCeuYqmpw==}
     engines: {node: '>=16.12.0'}
     peerDependencies:
@@ -583,7 +583,7 @@ packages:
       '@babel/core': 7.21.0
       '@babel/plugin-transform-react-jsx': 7.21.0(@babel/core@7.21.0)
       '@types/react': 18.0.28
-      '@types/react-dom': 18.0.11
+      '@types/react-dom': 18.2.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     transitivePeerDependencies:
@@ -600,7 +600,7 @@ packages:
       dset: 3.1.2
       is-docker: 3.0.0
       is-wsl: 2.2.0
-      undici: 5.21.0
+      undici: 5.22.0
       which-pm-runs: 1.1.0
     transitivePeerDependencies:
       - supports-color
@@ -4865,7 +4865,7 @@ packages:
     dependencies:
       '@remix-run/router': 1.3.2
       '@types/cookie': 0.4.1
-      '@types/react': 18.0.38
+      '@types/react': 18.2.0
       '@web3-storage/multipart-parser': 1.0.0
       cookie: 0.4.2
       set-cookie-parser: 2.5.1
@@ -5106,21 +5106,21 @@ packages:
     dependencies:
       solid-js: 1.6.11
 
-  /@sveltejs/adapter-auto@2.0.0(@sveltejs/kit@1.15.7):
-    resolution: {integrity: sha512-b+gkHFZgD771kgV3aO4avHFd7y1zhmMYy9i6xOK7m/rwmwaRO8gnF5zBc0Rgca80B2PMU1bKNxyBTHA14OzUAQ==}
+  /@sveltejs/adapter-auto@2.0.1(@sveltejs/kit@1.15.8):
+    resolution: {integrity: sha512-anxxYMcQy7HWSKxN4YNaVcgNzCHtNFwygq72EA1Xv7c+5gSECOJ1ez1PYoLciPiFa7A3XBvMDQXUFJ2eqLDtAA==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
     dependencies:
-      '@sveltejs/kit': 1.15.7(svelte@3.55.1)(vite@4.1.4)
-      import-meta-resolve: 2.2.1
+      '@sveltejs/kit': 1.15.8(svelte@3.55.1)(vite@4.1.4)
+      import-meta-resolve: 3.0.0
     dev: true
 
-  /@sveltejs/adapter-vercel@2.4.2(@sveltejs/kit@1.15.7):
+  /@sveltejs/adapter-vercel@2.4.2(@sveltejs/kit@1.15.8):
     resolution: {integrity: sha512-HxItPKrt9DmSbKw2X4XVRYa4J2ueTEfQr79ijDcI/ZUtQ64d4X3ilUnLpmm1nXMBb1DyxaWJF4o8avwiV4O2Hw==}
     peerDependencies:
       '@sveltejs/kit': ^1.5.0
     dependencies:
-      '@sveltejs/kit': 1.15.7(svelte@3.55.1)(vite@4.1.4)
+      '@sveltejs/kit': 1.15.8(svelte@3.55.1)(vite@4.1.4)
       '@vercel/nft': 0.22.6
       esbuild: 0.16.17
     transitivePeerDependencies:
@@ -5128,8 +5128,8 @@ packages:
       - supports-color
     dev: false
 
-  /@sveltejs/kit@1.15.7(svelte@3.55.1)(vite@4.1.4):
-    resolution: {integrity: sha512-dgdKExsMJ16X3q8tEcuDlv+QIWAlJcf7IqCU2HWV13nmtTzwSA2n4VtEx9Gy5OGhH0SUAGNIupmlf0TdFSMXbw==}
+  /@sveltejs/kit@1.15.8(svelte@3.55.1)(vite@4.1.4):
+    resolution: {integrity: sha512-xPIF3UbFEA5BBZWFTGGUtSZ0O3DAtmzIp/yZZVdLIfzZ9+geKG3iGSVFnOUdYstjU7JcvJg12UC5MD5xoED59A==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
@@ -5137,7 +5137,7 @@ packages:
       svelte: ^3.54.0
       vite: ^4.0.0
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 2.0.3(svelte@3.55.1)(vite@4.1.4)
+      '@sveltejs/vite-plugin-svelte': 2.1.0(svelte@3.55.1)(vite@4.1.4)
       '@types/cookie': 0.5.1
       cookie: 0.5.0
       devalue: 4.3.0
@@ -5150,13 +5150,13 @@ packages:
       sirv: 2.0.2
       svelte: 3.55.1
       tiny-glob: 0.2.9
-      undici: 5.20.0
+      undici: 5.22.0
       vite: 4.1.4(@types/node@18.16.0)
     transitivePeerDependencies:
       - supports-color
 
-  /@sveltejs/vite-plugin-svelte@2.0.3(svelte@3.55.1)(vite@4.1.4):
-    resolution: {integrity: sha512-o+cguBFdwIGtRbNkYOyqTM7KvRUffxh5bfK4oJsWKG2obu+v/cbpT03tJrGl58C7tRXo/aEC0/axN5FVHBj0nA==}
+  /@sveltejs/vite-plugin-svelte@2.1.0(svelte@3.55.1)(vite@4.1.4):
+    resolution: {integrity: sha512-Bc9A8mtTGlhTICdLL/aZ+jyHI3kwtkcXremOH5xwjbNNKOTOtY8nMyG8/oZ5KK8IuUfAn1WL58Bp2tofDJBW0w==}
     engines: {node: ^14.18.0 || >= 16}
     peerDependencies:
       svelte: ^3.54.0
@@ -5165,7 +5165,7 @@ packages:
       debug: 4.3.4(supports-color@8.1.1)
       deepmerge: 4.3.1
       kleur: 4.1.5
-      magic-string: 0.29.0
+      magic-string: 0.30.0
       svelte: 3.55.1
       svelte-hmr: 0.15.1(svelte@3.55.1)
       vite: 4.1.4(@types/node@18.16.0)
@@ -5584,7 +5584,13 @@ packages:
   /@types/react-dom@18.0.11:
     resolution: {integrity: sha512-O38bPbI2CWtgw/OoQoY+BRelw7uysmXbWvw3nLWO21H1HSh+GOlqPuXshJfjmpNlKiiSDG9cc1JZAaMmVdcTlw==}
     dependencies:
-      '@types/react': 18.0.38
+      '@types/react': 18.2.0
+    dev: true
+
+  /@types/react-dom@18.2.0:
+    resolution: {integrity: sha512-8yQrvS6sMpSwIovhPOwfyNf2Wz6v/B62LFSVYQ85+Rq3tLsBIG7rP5geMxaijTUxSkrO6RzN/IRuIAADYQsleA==}
+    dependencies:
+      '@types/react': 18.2.0
 
   /@types/react@18.0.28:
     resolution: {integrity: sha512-RD0ivG1kEztNBdoAK7lekI9M+azSnitIn85h4iOiaLjaTrMjzslhaqCGaI4IyCJ1RljWiLCEu4jyrLLgqxBTew==}
@@ -5593,8 +5599,8 @@ packages:
       '@types/scheduler': 0.16.2
       csstype: 3.1.1
 
-  /@types/react@18.0.38:
-    resolution: {integrity: sha512-ExsidLLSzYj4cvaQjGnQCk4HFfVT9+EZ9XZsQ8Hsrcn8QNgXtpZ3m9vSIC2MWtx7jHictK6wYhQgGh6ic58oOw==}
+  /@types/react@18.2.0:
+    resolution: {integrity: sha512-0FLj93y5USLHdnhIhABk83rm8XEGA7kH3cr+YUlvxoUGp1xNt/DINUMvqPxLyOQMzLmZe8i4RTHbvb8MC7NmrA==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
@@ -10101,6 +10107,11 @@ packages:
 
   /import-meta-resolve@2.2.1:
     resolution: {integrity: sha512-C6lLL7EJPY44kBvA80gq4uMsVFw5x3oSKfuMl1cuZ2RkI5+UJqQXgn+6hlUew0y4ig7Ypt4CObAAIzU53Nfpuw==}
+    dev: false
+
+  /import-meta-resolve@3.0.0:
+    resolution: {integrity: sha512-4IwhLhNNA8yy445rPjD/lWh++7hMDOml2eHtd58eG7h+qK3EryMuuRbsHGPikCoAgIkkDnckKfWSk2iDla/ejg==}
+    dev: true
 
   /imurmurhash@0.1.4:
     resolution: {integrity: sha512-JmXMZ6wuvDmLiHEml9ykzqO6lwFbof0GG4IkcGaENdCRDDmMVnny7s5HsIgHCbaq0w2MyPhDqkhTUgS2LU2PHA==}
@@ -10810,12 +10821,6 @@ packages:
 
   /magic-string@0.27.0:
     resolution: {integrity: sha512-8UnnX2PeRAPZuN12svgR9j7M1uWMovg/CEnIwIG0LFkXSJJe4PdfUGiTGl8V9bsBHFUtfVINcSyYxd7q+kx9fA==}
-    engines: {node: '>=12'}
-    dependencies:
-      '@jridgewell/sourcemap-codec': 1.4.14
-
-  /magic-string@0.29.0:
-    resolution: {integrity: sha512-WcfidHrDjMY+eLjlU+8OvwREqHwpgCeKVBUpQ3OhYYuvfaYCUgcbuBzappNzZvg/v8onU3oQj+BYpkOJe9Iw4Q==}
     engines: {node: '>=12'}
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.14
@@ -14784,12 +14789,11 @@ packages:
     dependencies:
       busboy: 1.6.0
 
-  /undici@5.21.0:
-    resolution: {integrity: sha512-HOjK8l6a57b2ZGXOcUsI5NLfoTrfmbOl90ixJDl0AEFG4wgHNDQxtZy15/ZQp7HhjkpaGlp/eneMgtsu1dIlUA==}
-    engines: {node: '>=12.18'}
+  /undici@5.22.0:
+    resolution: {integrity: sha512-fR9RXCc+6Dxav4P9VV/sp5w3eFiSdOjJYsbtWfd4s5L5C4ogyuVpdKIVHeW0vV1MloM65/f7W45nR9ZxwVdyiA==}
+    engines: {node: '>=14.0'}
     dependencies:
       busboy: 1.6.0
-    dev: false
 
   /unherit@3.0.1:
     resolution: {integrity: sha512-akOOQ/Yln8a2sgcLj4U0Jmx0R5jpIg2IUyRrWOzmEbjBtGzBdHtSeFKgoEcoH4KYIG/Pb8GQ/BwtYm0GCq1Sqg==}
