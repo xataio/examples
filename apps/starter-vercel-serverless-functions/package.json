@@ -18,7 +18,7 @@
     "vercel": "^28.5.6"
   },
   "dependencies": {
-    "@xata.io/client": "0.23.4",
+    "@xata.io/client": "0.23.5",
     "isomorphic-fetch": "3.0.0"
   }
 }
