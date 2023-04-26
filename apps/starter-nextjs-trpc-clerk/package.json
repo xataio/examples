@@ -33,7 +33,7 @@
     "zod": "^3.20.2"
   },
   "devDependencies": {
-    "@xata.io/cli": "^0.11.5",
+    "@xata.io/cli": "^0.12.0",
     "eslint-config-prettier": "^8.5.0",
     "prettier": "^2.8.1"
   }
