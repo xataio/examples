@@ -4,13 +4,20 @@ import { getTotalTitles } from '~/lib/db.server'
 import { SearchResult } from './search-result'
 import { HeaderNav } from '~/components/header-nav'
 
-const Home = async () => {
+const Home = async ({
+  searchParams,
+}: {
+  searchParams: { searchField?: string }
+}) => {
   const aggregateTitles = getTotalTitles()
   const { totalTitles = '0' } = await aggregateTitles
 
   return (
     <main>
-      <HeaderNav totalTitles={totalTitles} />
+      <HeaderNav
+        searchTerm={searchParams.searchField}
+        totalTitles={totalTitles}
+      />
       <Suspense fallback={<Loader />}>
         {/**
          * there is no TypeScript support for
@@ -18,7 +25,7 @@ const Home = async () => {
          *
          */}
         {/** @ts-expect-error */}
-        <SearchResult />
+        <SearchResult searchTerm={searchParams.searchField} />
       </Suspense>
     </main>
   )

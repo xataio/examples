@@ -1,28 +1,28 @@
-'use client'
-import { useRouter } from 'next/navigation'
-import { FormEvent } from 'react'
+async function searchAction(data: FormData) {
+  'use server'
+  const searchTerm = data.get('searchField') ?? ''
+
+  if (searchTerm?.length > 0) {
+    return {
+      redirect: {
+        destination: `/search/${searchTerm}`,
+        permanent: false,
+      },
+    }
+  }
+}
 
 export const Search = ({ term }: { term?: string }) => {
-  const router = useRouter()
-
   return (
     <form
-      onSubmit={(evt: FormEvent<HTMLFormElement>) => {
-        evt.preventDefault()
-        const value = new FormData(evt.currentTarget).get(
-          'searchField'
-        ) as string
-
-        if (value.length) {
-          router.push(`/search/${value}`)
-        }
-      }}
+      // @ts-expect-error async action callback
+      action={searchAction}
       className=" grid grid-cols-[1fr,auto] h-[2em] w-[50ch] pl-4 border-2 border-neutral-600 rounded-2xl  focus-within:transform focus-within:scale-110 origin-left transition-all focus-within:border-pink-500 overflow-hidden"
     >
       <input
         type="search"
         name="searchField"
-        defaultValue={term ? decodeURI(term) : ''}
+        defaultValue={typeof term === 'string' ? decodeURI(term) : ''}
         autoComplete="off"
         className="bg-transparent text-white outline-none"
       />
