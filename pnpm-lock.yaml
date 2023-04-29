@@ -485,8 +485,8 @@ importers:
         version: 3.0.0
     devDependencies:
       '@vercel/node':
-        specifier: 2.13.0
-        version: 2.13.0
+        specifier: 2.14.0
+        version: 2.14.0
       '@xata.io/cli':
         specifier: 0.12.0
         version: 0.12.0(@types/node@18.16.3)(esbuild@0.17.10)(rollup@3.17.3)(typescript@5.0.4)
@@ -4158,7 +4158,7 @@ packages:
       kleur: 4.1.5
       selfsigned: 2.1.1
       undici: 5.20.0
-      ws: 8.12.1
+      ws: 8.13.0
       youch: 2.2.2
     transitivePeerDependencies:
       - bufferutil
@@ -4240,7 +4240,7 @@ packages:
       '@miniflare/core': 2.13.0
       '@miniflare/shared': 2.13.0
       undici: 5.20.0
-      ws: 8.12.1
+      ws: 8.13.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -5938,8 +5938,8 @@ packages:
     resolution: {integrity: sha512-TAbo0rwBenmWywcEup+5lZgr6ILPPq55P33JRX+oJJuTxYib0NqVj47gEvLTxaj3MoJFgp0iDlC9A0uAf4ykxQ==}
     dev: true
 
-  /@vercel/node@2.13.0:
-    resolution: {integrity: sha512-GbRpXNePrFlTDoFXY2DI90CD4kWgsiBOC11OVyRrOP6Kob25/jmkB4YWRfDFhsj0L6AYVwyNkdQ0MpFXIz6a2Q==}
+  /@vercel/node@2.14.0:
+    resolution: {integrity: sha512-oLahDnrotT4IzJ9dGiFt4shL6ME7rhNVQ0E4yeVH1drmwCA5aC9G+kiHaFXUFELlSqP7/mgxLqcQ5MkidOO7xA==}
     dependencies:
       '@edge-runtime/vm': 2.0.0
       '@types/node': 14.18.33
@@ -5956,10 +5956,14 @@ packages:
       ts-morph: 12.0.0
       ts-node: 10.9.1(@types/node@14.18.33)(typescript@4.9.5)
       typescript: 4.9.5
+      undici: 5.22.0
+      ws: 8.13.0
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
+      - bufferutil
       - encoding
+      - utf-8-validate
     dev: true
 
   /@vercel/node@2.9.10:
@@ -15292,8 +15296,8 @@ packages:
         optional: true
     dev: true
 
-  /ws@8.12.1:
-    resolution: {integrity: sha512-1qo+M9Ba+xNhPB+YTWUlK6M17brTut5EXbcBaMRN5pH5dFrXz7lzz1ChFSUq3bOUl8yEvSenhHmYUNJxFzdJew==}
+  /ws@8.13.0:
+    resolution: {integrity: sha512-x9vcZYTrFPC7aSIbj7sRCYo7L/Xb8Iy+pW0ng0wt2vCJv7M9HOMy0UoN3rr+IFC7hb7vXoqS+P9ktyLLLhO+LA==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
