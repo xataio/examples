@@ -38,9 +38,20 @@ XATA_BRANCH=main
 
 
 ```ts
+import { AskOptions, BaseClient } from '@xata.io/client'
+
+type Database = {
+  id: string
+  name: string
+  client: BaseClient
+  lookupTable: string
+  options: AskOptions<any>
+}
+
 export const getDatabases = (): Database[] => {
   const blog = new BaseClient({
     databaseURL: 'https://awesome-f9u3t5.us-east-1.xata.sh/db/blog',
+    branch: 'main',
   })
 
   return [
