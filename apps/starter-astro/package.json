@@ -1,5 +1,4 @@
 {
-  "name": "@example/basics",
   "type": "module",
   "version": "0.0.1",
   "private": true,
@@ -10,15 +9,14 @@
     "preview": "astro preview",
     "astro": "astro",
     "xata": "xata",
-    "xata:init": "xata init --schema=schema.template.json --codegen src/lib/xata.codegen.server.ts",
+    "xata:init": "npx @xata.io/cli@latest init --schema=schema.template.json --codegen src/lib/xata.codegen.server.ts",
     "xata:codegen": "xata codegen"
   },
   "dependencies": {
     "@astrojs/react": "^2.0.0",
     "@astrojs/vercel": "^3.0.0",
     "@types/react": "^18.0.25",
-    "@xata.io/cli": "^0.12.0",
-    "@xata.io/client": "^0.23.0",
+    "@xata.io/client": "latest",
     "astro": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
