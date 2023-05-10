@@ -482,8 +482,8 @@ importers:
         version: 3.0.0
     devDependencies:
       '@vercel/node':
-        specifier: 2.14.1
-        version: 2.14.1
+        specifier: 2.14.2
+        version: 2.14.2
       '@xata.io/cli':
         specifier: 0.12.0
         version: 0.12.0(@types/node@18.16.7)(esbuild@0.17.10)(rollup@3.17.3)(typescript@5.0.4)
@@ -4155,7 +4155,7 @@ packages:
       kleur: 4.1.5
       selfsigned: 2.1.1
       undici: 5.20.0
-      ws: 8.12.1
+      ws: 8.13.0
       youch: 2.2.2
     transitivePeerDependencies:
       - bufferutil
@@ -4237,7 +4237,7 @@ packages:
       '@miniflare/core': 2.13.0
       '@miniflare/shared': 2.13.0
       undici: 5.20.0
-      ws: 8.12.1
+      ws: 8.13.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -5939,8 +5939,8 @@ packages:
     resolution: {integrity: sha512-TAbo0rwBenmWywcEup+5lZgr6ILPPq55P33JRX+oJJuTxYib0NqVj47gEvLTxaj3MoJFgp0iDlC9A0uAf4ykxQ==}
     dev: true
 
-  /@vercel/node@2.14.1:
-    resolution: {integrity: sha512-9wtWyrsPNAy+UkLJvdUIFzpqAybkAmdap4nwfrgcNDQ4YsLHr+Wd11BWlHVeKL6Oqjny9N4YikEHdOEPjoIRtA==}
+  /@vercel/node@2.14.2:
+    resolution: {integrity: sha512-BPuMVO5ocTic6rgFyFfDbhdRwBLOfnJ0OYTtfiPF+cY1MNuG86ADWtA+6b3vPhxHC3uumcWfrhwLd9OTSYNfKw==}
     dependencies:
       '@edge-runtime/vm': 2.0.0
       '@types/node': 14.18.33
@@ -5948,7 +5948,7 @@ packages:
       '@vercel/build-utils': 6.7.2
       '@vercel/error-utils': 1.0.8
       '@vercel/static-config': 2.0.17
-      async-listen: 1.2.0
+      async-listen: 3.0.0
       edge-runtime: 2.1.4
       esbuild: 0.14.47
       exit-hook: 2.2.1
@@ -6746,13 +6746,14 @@ packages:
       - terser
     dev: false
 
-  /async-listen@1.2.0:
-    resolution: {integrity: sha512-CcEtRh/oc9Jc4uWeUwdpG/+Mb2YUHKmdaTf0gUr7Wa+bfp4xx70HOb3RuSTJMvqKNB1TkdTfjLdrcz2X4rkkZA==}
-    dev: true
-
   /async-listen@2.0.3:
     resolution: {integrity: sha512-WVLi/FGIQaXyfYyNvmkwKT1RZbkzszLLnmW/gFCc5lbVvN/0QQCWpBwRBk2OWSdkkmKRBc8yD6BrKsjA3XKaSw==}
     engines: {node: '>= 14'}
+
+  /async-listen@3.0.0:
+    resolution: {integrity: sha512-V+SsTpDqkrWTimiotsyl33ePSjA5/KrithwupuvJ6ztsqPvGv6ge4OredFhPffVXiLN/QUWvE0XcqJaYgt6fOg==}
+    engines: {node: '>= 14'}
+    dev: true
 
   /async-sema@3.1.1:
     resolution: {integrity: sha512-tLRNUXati5MFePdAk8dw7Qt7DpxPB60ofAgn8WRhW6a2rcimZnYBP9oxHiv0OHy+Wz7kPMG+t4LGdt31+4EmGg==}
@@ -15303,18 +15304,6 @@ packages:
         optional: true
     dev: true
 
-  /ws@8.12.1:
-    resolution: {integrity: sha512-1qo+M9Ba+xNhPB+YTWUlK6M17brTut5EXbcBaMRN5pH5dFrXz7lzz1ChFSUq3bOUl8yEvSenhHmYUNJxFzdJew==}
-    engines: {node: '>=10.0.0'}
-    peerDependencies:
-      bufferutil: ^4.0.1
-      utf-8-validate: '>=5.0.2'
-    peerDependenciesMeta:
-      bufferutil:
-        optional: true
-      utf-8-validate:
-        optional: true
-
   /ws@8.13.0:
     resolution: {integrity: sha512-x9vcZYTrFPC7aSIbj7sRCYo7L/Xb8Iy+pW0ng0wt2vCJv7M9HOMy0UoN3rr+IFC7hb7vXoqS+P9ktyLLLhO+LA==}
     engines: {node: '>=10.0.0'}
@@ -15326,7 +15315,6 @@ packages:
         optional: true
       utf-8-validate:
         optional: true
-    dev: true
 
   /xdm@2.1.0:
     resolution: {integrity: sha512-3LxxbxKcRogYY7cQSMy1tUuU1zKNK9YPqMT7/S0r7Cz2QpyF8O9yFySGD7caOZt+LWUOQioOIX+6ZzCoBCpcAA==}
