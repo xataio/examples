@@ -22,7 +22,7 @@
     "zod": "^3.20.2"
   },
   "devDependencies": {
-    "@types/node": "18.16.10",
+    "@types/node": "18.16.11",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
     "@xata.io/cli": "0.12.0",
