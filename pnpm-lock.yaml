@@ -26,8 +26,8 @@ importers:
         specifier: ^2.0.1
         version: 2.0.1
       '@xata.io/client':
-        specifier: 0.23.5
-        version: 0.23.5(typescript@5.0.4)
+        specifier: 0.24.0
+        version: 0.24.0(typescript@5.0.4)
       next:
         specifier: 13.4.3
         version: 13.4.3(@babel/core@7.21.4)(react-dom@18.2.0)(react@18.2.0)
@@ -66,8 +66,8 @@ importers:
         specifier: ^0.5.0
         version: 0.5.0
       '@xata.io/client':
-        specifier: 0.23.5
-        version: 0.23.5(typescript@5.0.4)
+        specifier: 0.24.0
+        version: 0.24.0(typescript@5.0.4)
       next:
         specifier: 13.4.3
         version: 13.4.3(@babel/core@7.21.8)(react-dom@18.2.0)(react@18.2.0)
@@ -211,8 +211,8 @@ importers:
   apps/sample-nextjs-basic-auth:
     dependencies:
       '@xata.io/client':
-        specifier: 0.23.5
-        version: 0.23.5(typescript@5.0.4)
+        specifier: 0.24.0
+        version: 0.24.0(typescript@5.0.4)
       bcrypt:
         specifier: ^5.1.0
         version: 5.1.0
@@ -251,8 +251,8 @@ importers:
   apps/sample-workers-vite-react:
     dependencies:
       '@xata.io/client':
-        specifier: 0.23.5
-        version: 0.23.5(typescript@5.0.2)
+        specifier: 0.24.0
+        version: 0.24.0(typescript@5.0.2)
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -339,8 +339,8 @@ importers:
         specifier: 18.2.4
         version: 18.2.4
       '@xata.io/client':
-        specifier: ^0.23.0
-        version: 0.23.0(typescript@5.0.4)
+        specifier: ^0.24.0
+        version: 0.24.0(typescript@5.0.4)
       eslint:
         specifier: 8.41.0
         version: 8.41.0
@@ -385,8 +385,8 @@ importers:
         specifier: ^0.8.0
         version: 0.8.0(solid-js@1.6.11)
       '@xata.io/client':
-        specifier: ^0.23.0
-        version: 0.23.0(typescript@5.0.2)
+        specifier: ^0.24.0
+        version: 0.24.0(typescript@5.0.2)
       solid-js:
         specifier: ^1.6.6
         version: 1.6.11
@@ -420,8 +420,8 @@ importers:
         specifier: 2.4.3
         version: 2.4.3(@sveltejs/kit@1.18.0)
       '@xata.io/client':
-        specifier: ^0.23.0
-        version: 0.23.0(typescript@5.0.2)
+        specifier: ^0.24.0
+        version: 0.24.0(typescript@5.0.2)
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: latest
@@ -475,8 +475,8 @@ importers:
   apps/starter-vercel-serverless-functions:
     dependencies:
       '@xata.io/client':
-        specifier: 0.23.5
-        version: 0.23.5(typescript@5.0.4)
+        specifier: 0.24.0
+        version: 0.24.0(typescript@5.0.4)
       isomorphic-fetch:
         specifier: 3.0.0
         version: 3.0.0
@@ -6974,28 +6974,13 @@ packages:
       - utf-8-validate
     optional: true
 
-  /@xata.io/client@0.23.0(typescript@5.0.2):
-    resolution: {integrity: sha512-+2UlIehvUxvStkROdzBqfsDmTOnbu6RLxaRCPRvD95vl6r9BvS6enDGMr6Vatb5zeedLTPU8mahMklAaC/Q2wg==}
-    peerDependencies:
-      typescript: '>=4.5'
-    dependencies:
-      typescript: 5.0.2
-    dev: false
-
-  /@xata.io/client@0.23.0(typescript@5.0.4):
-    resolution: {integrity: sha512-+2UlIehvUxvStkROdzBqfsDmTOnbu6RLxaRCPRvD95vl6r9BvS6enDGMr6Vatb5zeedLTPU8mahMklAaC/Q2wg==}
-    peerDependencies:
-      typescript: '>=4.5'
-    dependencies:
-      typescript: 5.0.4
-    dev: false
-
   /@xata.io/client@0.23.5(typescript@5.0.2):
     resolution: {integrity: sha512-xNi6eLW6kXi6Ka8Q/TD/4+uGsfAUQ/Mna4CrPZGEQmPHRCqcwuSyaixPcJIaEO0mYfFGFjn5iUyvc4PLQ0rtiw==}
     peerDependencies:
       typescript: '>=4.5'
     dependencies:
       typescript: 5.0.2
+    dev: true
 
   /@xata.io/client@0.23.5(typescript@5.0.4):
     resolution: {integrity: sha512-xNi6eLW6kXi6Ka8Q/TD/4+uGsfAUQ/Mna4CrPZGEQmPHRCqcwuSyaixPcJIaEO0mYfFGFjn5iUyvc4PLQ0rtiw==}
@@ -7003,6 +6988,7 @@ packages:
       typescript: '>=4.5'
     dependencies:
       typescript: 5.0.4
+    dev: true
 
   /@xata.io/client@0.24.0(typescript@5.0.2):
     resolution: {integrity: sha512-+HF4mt0OPP17DUX8COBoSXIW4nAuoVkfuUNb99486P0c4aPVWCZq/DUEuaQQaaCBqT9J6wirAB8yKuUG0M6a9w==}
@@ -7011,7 +6997,6 @@ packages:
     dependencies:
       typescript: 5.0.2
     dev: false
-    optional: true
 
   /@xata.io/client@0.24.0(typescript@5.0.4):
     resolution: {integrity: sha512-+HF4mt0OPP17DUX8COBoSXIW4nAuoVkfuUNb99486P0c4aPVWCZq/DUEuaQQaaCBqT9J6wirAB8yKuUG0M6a9w==}
