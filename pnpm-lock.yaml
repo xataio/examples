@@ -97,8 +97,8 @@ importers:
         specifier: 18.2.4
         version: 18.2.4
       '@xata.io/cli':
-        specifier: 0.12.1
-        version: 0.12.1(@types/node@18.16.14)(esbuild@0.17.10)(rollup@2.79.1)(typescript@5.0.4)
+        specifier: 0.12.2
+        version: 0.12.2(@types/node@18.16.14)(esbuild@0.17.10)(rollup@2.79.1)(typescript@5.0.4)
       autoprefixer:
         specifier: ^10.4.12
         version: 10.4.13(postcss@8.4.21)
@@ -399,7 +399,7 @@ importers:
     optionalDependencies:
       '@xata.io/cli':
         specifier: ^0.12.0
-        version: 0.12.1(@types/node@18.16.14)(esbuild@0.17.18)(rollup@2.79.1)(typescript@5.0.2)
+        version: 0.12.2(@types/node@18.16.14)(esbuild@0.17.18)(rollup@2.79.1)(typescript@5.0.2)
     devDependencies:
       solid-start-node:
         specifier: ^0.2.0
@@ -485,8 +485,8 @@ importers:
         specifier: 2.14.3
         version: 2.14.3
       '@xata.io/cli':
-        specifier: 0.12.1
-        version: 0.12.1(@types/node@18.16.14)(esbuild@0.17.10)(rollup@3.17.3)(typescript@5.0.4)
+        specifier: 0.12.2
+        version: 0.12.2(@types/node@18.16.14)(esbuild@0.17.10)(rollup@3.17.3)(typescript@5.0.4)
       esbuild:
         specifier: ^0.17.0
         version: 0.17.10
@@ -6782,8 +6782,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@xata.io/cli@0.12.1(@types/node@18.16.14)(esbuild@0.17.10)(rollup@2.79.1)(typescript@5.0.4):
-    resolution: {integrity: sha512-IdM2hS+zBC73bmw/dwdhZ9e5KfBU241PbE27UM5riYHgw38Y/9OX3tX6WzGauc8fqFLybI4rOmWgRTDcMe7zEw==}
+  /@xata.io/cli@0.12.2(@types/node@18.16.14)(esbuild@0.17.10)(rollup@2.79.1)(typescript@5.0.4):
+    resolution: {integrity: sha512-cBDMHqkUhM3ctpKOj8eo+Y5hDF8liMs9zQx1DoAVYrHPf7avdehCC8ka2g2uye4cELfFTWV7KJluqwmF4jk5Qw==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
@@ -6814,7 +6814,7 @@ packages:
       edge-runtime: 2.2.0
       enquirer: 2.3.6
       env-editor: 1.1.0
-      ini: 4.1.0
+      ini: 4.1.1
       lodash.compact: 3.0.1
       lodash.get: 4.4.2
       lodash.set: 4.3.2
@@ -6846,8 +6846,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@xata.io/cli@0.12.1(@types/node@18.16.14)(esbuild@0.17.10)(rollup@3.17.3)(typescript@5.0.4):
-    resolution: {integrity: sha512-IdM2hS+zBC73bmw/dwdhZ9e5KfBU241PbE27UM5riYHgw38Y/9OX3tX6WzGauc8fqFLybI4rOmWgRTDcMe7zEw==}
+  /@xata.io/cli@0.12.2(@types/node@18.16.14)(esbuild@0.17.10)(rollup@3.17.3)(typescript@5.0.4):
+    resolution: {integrity: sha512-cBDMHqkUhM3ctpKOj8eo+Y5hDF8liMs9zQx1DoAVYrHPf7avdehCC8ka2g2uye4cELfFTWV7KJluqwmF4jk5Qw==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
@@ -6878,7 +6878,7 @@ packages:
       edge-runtime: 2.2.0
       enquirer: 2.3.6
       env-editor: 1.1.0
-      ini: 4.1.0
+      ini: 4.1.1
       lodash.compact: 3.0.1
       lodash.get: 4.4.2
       lodash.set: 4.3.2
@@ -6910,8 +6910,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@xata.io/cli@0.12.1(@types/node@18.16.14)(esbuild@0.17.18)(rollup@2.79.1)(typescript@5.0.2):
-    resolution: {integrity: sha512-IdM2hS+zBC73bmw/dwdhZ9e5KfBU241PbE27UM5riYHgw38Y/9OX3tX6WzGauc8fqFLybI4rOmWgRTDcMe7zEw==}
+  /@xata.io/cli@0.12.2(@types/node@18.16.14)(esbuild@0.17.18)(rollup@2.79.1)(typescript@5.0.2):
+    resolution: {integrity: sha512-cBDMHqkUhM3ctpKOj8eo+Y5hDF8liMs9zQx1DoAVYrHPf7avdehCC8ka2g2uye4cELfFTWV7KJluqwmF4jk5Qw==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
@@ -6942,7 +6942,7 @@ packages:
       edge-runtime: 2.2.0
       enquirer: 2.3.6
       env-editor: 1.1.0
-      ini: 4.1.0
+      ini: 4.1.1
       lodash.compact: 3.0.1
       lodash.get: 4.4.2
       lodash.set: 4.3.2
@@ -10698,6 +10698,11 @@ packages:
 
   /ini@4.1.0:
     resolution: {integrity: sha512-HLR38RSF2iulAzc3I/sma4CoYxQP844rPYCNfzGDOHqa/YqVlwuuZgBx6M50/X8dKgzk0cm1qRg3+47mK2N+cQ==}
+    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
+    dev: true
+
+  /ini@4.1.1:
+    resolution: {integrity: sha512-QQnnxNyfvmHFIsj7gkPcYymR8Jdw/o7mp5ZFihxn6h8Ci6fh3Dx4E1gPjpQEpIuPo9XVNY/ZUwh4BPMjGyL01g==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
 
   /inline-style-parser@0.1.1:
