@@ -16,7 +16,7 @@ export default function Home() {
         <ExpandingArrow />
       </Link>
       <h1 className="pt-4 pb-8 bg-gradient-to-br from-black via-[#171717] to-[#575757] bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl">
-        Join our newsletter
+        Success!
       </h1>
       <div className="bg-white/30 p-12 shadow-xl ring-1 ring-gray-900/5 rounded-lg backdrop-blur-lg max-w-xl mx-auto w-full">
         <div className="flex justify-between items-center mb-4">
@@ -35,7 +35,7 @@ export default function Home() {
       </div>
       <p className="font-light text-gray-600 w-full max-w-lg text-center my-10">
         <Link
-          href="https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions"
+          href=""
           className="font-medium underline underline-offset-4 hover:text-black transition-colors"
         >
           React Server Actions
@@ -74,7 +74,7 @@ export default function Home() {
           priority
         />
         <Link
-          href="https://github.com/xataio/examples/tree/rsc-actions/apps/starter-nextjs-rsc-actions"
+          href="https://github.com/vercel/examples/tree/main/storage/kv-redis-starter"
           className="flex items-center space-x-2"
         >
           <Image

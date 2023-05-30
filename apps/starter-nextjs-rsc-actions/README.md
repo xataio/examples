@@ -36,13 +36,13 @@ Execute [`create-next-app`]() with [pnpm](https://pnpm.io/installation) to boots
 pnpm create next-app --example https://github.com/xataio/examples/tree/main/
 ```
 
-Once that's done, copy the .env.example file in this directory to .env.local (which will be ignored by Git):
+Initialize the Xata db and create an `emails` table
 
 ```bash
-cp .env.example .env.local
+xata init --shcema schema.json
 ```
 
-Then open .env.local and set the environment variables to match the ones in your Vercel Storage Dashboard. Your keys should be available under your database's `.env` tab.
+Once that's done, Xata should create the correct `.env` variables for you to use. Check `.env.example` to find an example of what is needed. Set the environment variables to match the ones in your Vercel Storage Dashboard. Your keys should be available under your database's `.env` tab.
 
 Next, run Next.js in development mode:
 

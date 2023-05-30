@@ -1,0 +1,13 @@
+{
+  "tables": [
+    {
+      "name": "emails",
+      "columns": [
+        {
+          "name": "email",
+          "type": "email"
+        }
+      ]
+    }
+  ]
+}

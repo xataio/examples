@@ -1,4 +1,5 @@
 import { getXataClient } from "@/services/xata";
+import { redirect } from 'next/navigation'
 
 async function create(formData: FormData) {
   "use server";
@@ -7,6 +8,7 @@ async function create(formData: FormData) {
   const email = formData.get("email");
   if (typeof email === "string") {
     await xata.db.emails.create({ email });
+    redirect("/success");
   }
 }
 
