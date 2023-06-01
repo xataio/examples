@@ -10,7 +10,7 @@
     "xata:codegen": "xata codegen -o=\"_lib/xata.codegen.ts\""
   },
   "devDependencies": {
-    "@vercel/node": "2.14.3",
+    "@vercel/node": "2.14.4",
     "@xata.io/cli": "0.12.3",
     "esbuild": "^0.17.0",
     "rollup": "^3.6.0",
