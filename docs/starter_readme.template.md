@@ -29,7 +29,7 @@ npx degit xataio/examples/apps/<name-of-app> my-xata-app
 
 ## Initialize your Database 🐣
 
-In order to connect to a workspace, a `XATA_API_TOKEN` and a database URL. One of way of setting it up is running the [Xata CLI](https://xata.io/docs/cli/getting-started).
+In order to connect to a workspace, a `XATA_API_TOKEN` and a database URL. One of way of setting it up is running the [Xata CLI](https://xata.io/docs/getting-started/cli).
 
 > 💡 Having it globally will speed-up linking your project via `xata init`, just make sure you have it up-to-date so it generates the SDK with compatible types.
 
