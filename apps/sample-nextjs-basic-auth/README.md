@@ -10,7 +10,7 @@ Copy the code from this repository. Or use it as a Next.js starter:
 npx create-next-app -e https://github.com/xataio/examples/apps/sample-nextjs-basic-auth
 ```
 
-We recomend to have the [Xata CLI](https://xata.io/docs/cli/getting-started) installed globally to make your usage more ergonomic:
+We recomend to have the [Xata CLI](https://xata.io/docs/getting-started/cli) installed globally to make your usage more ergonomic:
 
 ```
 npm i -g @xata.io/cli@latest
