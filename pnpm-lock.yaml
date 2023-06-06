@@ -486,8 +486,8 @@ importers:
         version: 3.0.0
     devDependencies:
       '@vercel/node':
-        specifier: 2.14.5
-        version: 2.14.5
+        specifier: 2.15.0
+        version: 2.15.0
       '@xata.io/cli':
         specifier: 0.12.5
         version: 0.12.5(@types/node@18.16.16)(esbuild@0.17.0)(rollup@3.6.0)(typescript@5.1.3)
@@ -2165,6 +2165,11 @@ packages:
   /@edge-runtime/format@2.1.0:
     resolution: {integrity: sha512-gc2qbYEIIJRczBApBPznVI1c5vZgzrZQOsFZnAxxFiYah9qldHiu1YEitzSvXI8X8ZgvAguuIiyIbpWz17nlXA==}
     engines: {node: '>=14'}
+
+  /@edge-runtime/node-utils@2.0.3:
+    resolution: {integrity: sha512-JUSbi5xu/A8+D2t9B9wfirCI1J8n8q0660FfmqZgA+n3RqxD3y7SnamL1sKRE5/AbHsKs9zcqCbK2YDklbc9Bg==}
+    engines: {node: '>=14'}
+    dev: true
 
   /@edge-runtime/primitives@2.0.0:
     resolution: {integrity: sha512-AXqUq1zruTJAICrllUvZcgciIcEGHdF6KJ3r6FM0n4k8LpFxZ62tPWVIJ9HKm+xt+ncTBUZxwgUaQ73QMUQEKw==}
@@ -4350,9 +4355,11 @@ packages:
     resolution: {integrity: sha512-dgcLXug0IqUeRsywf0G8IrhUFcgw+GYj+EZB4JneglKSofFBh3Xy/t7KfBUxLlKnoq6kyGYJvTmAVB1YBt11qw==}
     dev: true
 
-  /@vercel/node@2.14.5:
-    resolution: {integrity: sha512-0vzzeIheLWSxoF/1zMG8GwZxdxOvNLRgDMlClljCqiSa5MIXtTsmCj93JHeYo6BWgvIbiR5XrD0vt2IYqFQCug==}
+  /@vercel/node@2.15.0:
+    resolution: {integrity: sha512-Wtvi0f45t7JIY8piFrlR26X7wAiezl8I6JybjkScY8jRvsSL2latbIaLHkggDwUY49DG9l+fIVmpcPcQvYSROA==}
     dependencies:
+      '@edge-runtime/node-utils': 2.0.3
+      '@edge-runtime/primitives': 2.1.2
       '@edge-runtime/vm': 2.0.0
       '@types/node': 14.18.33
       '@types/node-fetch': 2.6.3
