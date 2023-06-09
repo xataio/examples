@@ -28,7 +28,7 @@
     "@xata.io/cli": "0.12.5",
     "autoprefixer": "^10.4.12",
     "concurrently": "^7.5.0",
-    "esbuild": "^0.17.0",
+    "esbuild": "^0.18.0",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.4",
     "postcss": "^8.4.18",
