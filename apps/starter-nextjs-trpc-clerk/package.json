@@ -21,7 +21,7 @@
     "@trpc/server": "^10.5.0",
     "@types/node": "18.16.17",
     "@types/react": "18.2.11",
-    "@types/react-dom": "18.2.4",
+    "@types/react-dom": "18.2.5",
     "@xata.io/client": "^0.24.0",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.5",
