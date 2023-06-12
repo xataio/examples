@@ -30,8 +30,8 @@ importers:
         specifier: ^2.0.1
         version: 2.0.1
       '@xata.io/client':
-        specifier: 0.24.2
-        version: 0.24.2(typescript@5.1.3)
+        specifier: 0.24.3
+        version: 0.24.3(typescript@5.1.3)
       next:
         specifier: 13.4.5
         version: 13.4.5(@babel/core@7.22.1)(react-dom@18.2.0)(react@18.2.0)
@@ -70,8 +70,8 @@ importers:
         specifier: ^0.5.0
         version: 0.5.0
       '@xata.io/client':
-        specifier: 0.24.2
-        version: 0.24.2(typescript@5.1.3)
+        specifier: 0.24.3
+        version: 0.24.3(typescript@5.1.3)
       next:
         specifier: 13.4.5
         version: 13.4.5(@babel/core@7.22.1)(react-dom@18.2.0)(react@18.2.0)
@@ -215,8 +215,8 @@ importers:
   apps/sample-nextjs-basic-auth:
     dependencies:
       '@xata.io/client':
-        specifier: 0.24.2
-        version: 0.24.2(typescript@5.1.3)
+        specifier: 0.24.3
+        version: 0.24.3(typescript@5.1.3)
       bcrypt:
         specifier: ^5.1.0
         version: 5.1.0
@@ -255,8 +255,8 @@ importers:
   apps/sample-workers-vite-react:
     dependencies:
       '@xata.io/client':
-        specifier: 0.24.2
-        version: 0.24.2(typescript@5.1.3)
+        specifier: 0.24.3
+        version: 0.24.3(typescript@5.1.3)
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -479,8 +479,8 @@ importers:
   apps/starter-vercel-serverless-functions:
     dependencies:
       '@xata.io/client':
-        specifier: 0.24.2
-        version: 0.24.2(typescript@5.1.3)
+        specifier: 0.24.3
+        version: 0.24.3(typescript@5.1.3)
       isomorphic-fetch:
         specifier: 3.0.0
         version: 3.0.0
@@ -4825,6 +4825,7 @@ packages:
       typescript: '>=4.5'
     dependencies:
       typescript: 5.1.3
+    dev: true
 
   /@xata.io/client@0.24.3(typescript@5.1.3):
     resolution: {integrity: sha512-TaGEBSKBfMBuLM1eakyx2aRFMNmhEhQC7q/KCURJpUoCPYfpG9dfmgnDecnkmauZ4eHpZA/ktIgK7ko2PZrJTQ==}
