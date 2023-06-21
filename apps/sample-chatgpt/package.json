@@ -11,7 +11,7 @@
   "dependencies": {
     "@microsoft/fetch-event-source": "^2.0.1",
     "@xata.io/client": "0.24.3",
-    "next": "13.4.6",
+    "next": "13.4.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "zod": "^3.20.2"
@@ -21,7 +21,7 @@
     "@types/react": "18.2.13",
     "@types/react-dom": "18.2.6",
     "eslint": "8.43.0",
-    "eslint-config-next": "13.4.6",
+    "eslint-config-next": "13.4.7",
     "typescript": "5.1.3"
   }
 }
