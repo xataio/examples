@@ -31,7 +31,7 @@
           "link": {
             "table": "nextauth_users"
           }
-        },
+        },        
         {
           "name": "type",
           "type": "string"
@@ -47,6 +47,10 @@
         {
           "name": "refresh_token",
           "type": "string"
+        },
+        {
+          "name": "refresh_token_expires_in",
+          "type": "int"
         },
         {
           "name": "access_token",

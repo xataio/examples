@@ -1,59 +1,59 @@
 # Xata + Next.js + Auth.js
 
-Sample app using Next-Auth for managing OAuth login with the Xata adapter.
+This is a simple dashboard built using Next 13 with Auth.js to manage OAuth & the official [Xata adapter](https://authjs.dev/reference/adapter/xata) to capture user storage, sessions, and more!
 
-> ⚠️ This example uses the **App Routing**, if using `/pages`, go for **Pages Routing**.
+> ⚠️ This example uses the Next 13 `app router`. If you're using `page routing` you can find an example [here](https://github.com/xataio/examples/tree/main/apps/sample-next-auth-pages).
 
 ## Features ⚡️
 
 - React Server Components
-- Next-Auth API Routes.
-- GitHub as OAuth Provider with Xata official adapter.
+- Auth.js Route Handlers
+- GitHub as OAuth Provider
+- User sessions, storage, and more in your database using the Xata adapter
 
 ### Cloning the Project
 
+We'll be using [degit](https://github.com/Rich-Harris/degit) to clone the example locally, without any of the git history
+
 ```bash
-# create a new project in my-awesome-app
-npx degit xataio/examples/apps/sample-next-auth-app my-awesome-app
+npx degit xataio/examples/apps/sample-next-auth-app your/project/name
 ```
 
 ## Initialize your Database
 
-In order to connect to a workspace, a `XATA_API_TOKEN` and a database URL. One of way of setting it up is running the [Xata CLI](https://xata.io/docs/getting-started/cli).
-
-> 💡 Having it globally will speed-up linking your project via `xata init`, just make sure you have it up-to-date so it generates the SDK with compatible types.
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), you need to initialize your database:
+First, make sure you've globally installed the [Xata CLI](https://xata.io/docs/getting-started/cli).
 
 ```bash
-npm run xata:init
+npm install --location=global @xata.io/cli@latest
 ```
 
-> ⚠️ By default this command runs with `npx`, adjust your `package.json` accordingly, specially if you have the CLI globally available in your system.
+Once installed we'll authorize our Xata account using the `auth` command:
 
-### Regenerating Types
-
-Once the project is already linked, re-generate your types every time the schema changes via
-
-```
-npm run xata:codegen
+```bash
+xata auth login
 ```
 
-> ⚠️ By default this command runs with `npx`, adjust your `package.json` accordingly, specially if you have the CLI globally available in your system.
+Finally we have to do a few things:
+
+- Create a new database
+- Create the schema to match Auth.js' [expectations](https://authjs.dev/reference/adapter/xata#setup)
+- Connect our new database to our project & generate the Xata client
+
+Thankfully, the CLI can handle all of this using the `init` command (since we already have a local json schema).
+
+```bash
+xata init --schema=schema.template.json --codegen lib/xata.codegen.ts
+```
+
+> 💡 If you're curious about the above flags
+>
+> - `--schema=schema.template.json` defines a path to our schema that Xata can use to initialize tables in our database
+>
+> - `--codegen lib/xata.codegen.ts` defines a path to generate the Xata client & types
 
 ## Setup GitHub as Single Sign-On Provider
 
 This sample uses GitHub as the SSO Provider, any of the [supported providers by Auth.js](https://next-auth.js.org/providers/) can be used. [To setup the GitHub OAuth App, check Auth.js docs](https://next-auth.js.org/providers/github).
-
-## File Structure and Routes
-
-| Directory  | Description                                               |
-| ---------- | --------------------------------------------------------- |
-| `/app`     | Routes and files for **App directory** structure.         |
-| `/pages`   | Where the API Routes live.                                |
-| `/public`  | Static resources and assets (Next.js convention).         |
-| `/shared`  | Components and libraries used by both routing structures. |
-| `/.vscode` | TypeScript helper plugins for Next.js.                    |
 
 ## Set Environment Variables
 

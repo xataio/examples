@@ -1,8 +1,8 @@
 import './globals.css'
 import { type ReactNode } from 'react'
-import { Inter } from '@next/font/google'
-import { getServerSession } from 'next-auth'
-import { authConfig } from '~/pages/api/auth/[...nextauth]'
+import { Inter } from 'next/font/google'
+import { getServerSession } from 'next-auth/next'
+import { authConfig } from '~/app/api/auth/[...nextauth]/route'
 import { Logout } from '~/components/logout'
 
 const inter = Inter({ subsets: ['latin'], display: 'swap' })

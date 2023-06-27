@@ -1,5 +1,5 @@
-import { getServerSession } from 'next-auth'
-import { authConfig } from '~/pages/api/auth/[...nextauth]'
+import { getServerSession } from 'next-auth/next'
+import { authConfig } from '~/app/api/auth/[...nextauth]/route'
 import { Home } from '~/components/home'
 
 export default async function Index() {
