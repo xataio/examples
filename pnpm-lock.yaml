@@ -52,8 +52,8 @@ importers:
         specifier: 18.2.14
         version: 18.2.14
       '@types/react-dom':
-        specifier: 18.2.6
-        version: 18.2.6
+        specifier: 18.2.7
+        version: 18.2.7
       eslint:
         specifier: 8.44.0
         version: 8.44.0
@@ -98,8 +98,8 @@ importers:
         specifier: 18.2.14
         version: 18.2.14
       '@types/react-dom':
-        specifier: 18.2.6
-        version: 18.2.6
+        specifier: 18.2.7
+        version: 18.2.7
       '@xata.io/cli':
         specifier: 0.12.7
         version: 0.12.7(@types/node@18.16.19)(esbuild@0.18.0)(rollup@2.79.1)(typescript@5.1.6)
@@ -143,8 +143,8 @@ importers:
         specifier: 18.2.14
         version: 18.2.14
       '@types/react-dom':
-        specifier: 18.2.6
-        version: 18.2.6
+        specifier: 18.2.7
+        version: 18.2.7
       '@xata.io/client':
         specifier: latest
         version: 0.24.3(typescript@5.1.6)
@@ -185,8 +185,8 @@ importers:
         specifier: 18.2.14
         version: 18.2.14
       '@types/react-dom':
-        specifier: 18.2.6
-        version: 18.2.6
+        specifier: 18.2.7
+        version: 18.2.7
       '@xata.io/client':
         specifier: latest
         version: 0.24.3(typescript@5.1.6)
@@ -240,8 +240,8 @@ importers:
         specifier: 18.2.14
         version: 18.2.14
       '@types/react-dom':
-        specifier: 18.2.6
-        version: 18.2.6
+        specifier: 18.2.7
+        version: 18.2.7
       eslint:
         specifier: 8.44.0
         version: 8.44.0
@@ -287,7 +287,7 @@ importers:
     dependencies:
       '@astrojs/react':
         specifier: ^2.0.0
-        version: 2.0.0(@types/react-dom@18.2.6)(@types/react@18.2.8)(react-dom@18.2.0)(react@18.2.0)
+        version: 2.0.0(@types/react-dom@18.2.7)(@types/react@18.2.8)(react-dom@18.2.0)(react@18.2.0)
       '@astrojs/vercel':
         specifier: ^3.0.0
         version: 3.0.0(astro@2.0.0)
@@ -340,8 +340,8 @@ importers:
         specifier: 18.2.14
         version: 18.2.14
       '@types/react-dom':
-        specifier: 18.2.6
-        version: 18.2.6
+        specifier: 18.2.7
+        version: 18.2.7
       '@xata.io/client':
         specifier: ^0.24.0
         version: 0.24.1(typescript@5.1.6)
@@ -422,17 +422,17 @@ importers:
     dependencies:
       '@sveltejs/adapter-vercel':
         specifier: 2.4.3
-        version: 2.4.3(@sveltejs/kit@1.22.1)
+        version: 2.4.3(@sveltejs/kit@1.22.3)
       '@xata.io/client':
         specifier: ^0.24.0
         version: 0.24.1(typescript@5.1.3)
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: latest
-        version: 2.1.0(@sveltejs/kit@1.22.1)
+        version: 2.1.0(@sveltejs/kit@1.22.3)
       '@sveltejs/kit':
         specifier: latest
-        version: 1.22.1(svelte@3.44.0)(vite@4.0.0)
+        version: 1.22.3(svelte@3.44.0)(vite@4.0.0)
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.27.0
         version: 5.27.0(@typescript-eslint/parser@5.27.0)(eslint@8.42.0)(typescript@5.1.3)
@@ -573,7 +573,7 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/react@2.0.0(@types/react-dom@18.2.6)(@types/react@18.2.8)(react-dom@18.2.0)(react@18.2.0):
+  /@astrojs/react@2.0.0(@types/react-dom@18.2.7)(@types/react@18.2.8)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-drHnCnYH6u6hKN4ObNepw4OQiCvMsRFLeKqRbbGmME5yJyxfdkFw2K4m/8zGah90LgW1xmr9hyPsSVU3PTmd9g==}
     engines: {node: '>=16.12.0'}
     peerDependencies:
@@ -585,7 +585,7 @@ packages:
       '@babel/core': 7.22.1
       '@babel/plugin-transform-react-jsx': 7.22.3(@babel/core@7.22.1)
       '@types/react': 18.2.8
-      '@types/react-dom': 18.2.6
+      '@types/react-dom': 18.2.7
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     transitivePeerDependencies:
@@ -4380,21 +4380,21 @@ packages:
     dependencies:
       solid-js: 1.6.6
 
-  /@sveltejs/adapter-auto@2.1.0(@sveltejs/kit@1.22.1):
+  /@sveltejs/adapter-auto@2.1.0(@sveltejs/kit@1.22.3):
     resolution: {integrity: sha512-o2pZCfATFtA/Gw/BB0Xm7k4EYaekXxaPGER3xGSY3FvzFJGTlJlZjBseaXwYSM94lZ0HniOjTokN3cWaLX6fow==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
     dependencies:
-      '@sveltejs/kit': 1.22.1(svelte@3.44.0)(vite@4.0.0)
+      '@sveltejs/kit': 1.22.3(svelte@3.44.0)(vite@4.0.0)
       import-meta-resolve: 3.0.0
     dev: true
 
-  /@sveltejs/adapter-vercel@2.4.3(@sveltejs/kit@1.22.1):
+  /@sveltejs/adapter-vercel@2.4.3(@sveltejs/kit@1.22.3):
     resolution: {integrity: sha512-3k/3udwaioFYdKDAgQcWSByB+KCbtjX+ARonYGCtYE0iuxWLStrESxy3SaU+17XD5Frh8w7tfY8ft4TV3ej3Dg==}
     peerDependencies:
       '@sveltejs/kit': ^1.5.0
     dependencies:
-      '@sveltejs/kit': 1.22.1(svelte@3.44.0)(vite@4.0.0)
+      '@sveltejs/kit': 1.22.3(svelte@3.44.0)(vite@4.0.0)
       '@vercel/nft': 0.22.6
       esbuild: 0.17.19
     transitivePeerDependencies:
@@ -4402,8 +4402,8 @@ packages:
       - supports-color
     dev: false
 
-  /@sveltejs/kit@1.22.1(svelte@3.44.0)(vite@4.0.0):
-    resolution: {integrity: sha512-idFhKVEHuCKbTETvuo3V7UShqSYX9JMKVJXP546dOTkh5ZRejo5XtKtsB5TCSwNBa0TH8hIV44/bnylaFhM1Vg==}
+  /@sveltejs/kit@1.22.3(svelte@3.44.0)(vite@4.0.0):
+    resolution: {integrity: sha512-IpHD5wvuoOIHYaHQUBJ1zERD2Iz+fB/rBXhXjl8InKw6X4VKE9BSus+ttHhE7Ke+Ie9ecfilzX8BnWE3FeQyng==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
@@ -4822,8 +4822,8 @@ packages:
       '@types/react': 18.2.14
     dev: true
 
-  /@types/react-dom@18.2.6:
-    resolution: {integrity: sha512-2et4PDvg6PVCyS7fuTc4gPoksV58bW0RwSxWKcPRcHZf0PRUGq03TKcD/rUHe3azfV6/5/biUBJw+HhCQjaP0A==}
+  /@types/react-dom@18.2.7:
+    resolution: {integrity: sha512-GRaAEriuT4zp9N4p1i8BDBYmEyfo+xQ3yHjJU4eiK5NDa1RmUZG+unZABUTK4/Ox/M+GaHwb6Ow8rUITrtjszA==}
     dependencies:
       '@types/react': 18.2.14
 
