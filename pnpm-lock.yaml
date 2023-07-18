@@ -486,8 +486,8 @@ importers:
         version: 3.0.0
     devDependencies:
       '@vercel/node':
-        specifier: 2.15.5
-        version: 2.15.5
+        specifier: 2.15.6
+        version: 2.15.6
       '@xata.io/cli':
         specifier: 0.12.7
         version: 0.12.7(@types/node@18.16.19)(esbuild@0.18.0)(rollup@3.6.0)(typescript@5.1.6)
@@ -5147,8 +5147,8 @@ packages:
     resolution: {integrity: sha512-dgcLXug0IqUeRsywf0G8IrhUFcgw+GYj+EZB4JneglKSofFBh3Xy/t7KfBUxLlKnoq6kyGYJvTmAVB1YBt11qw==}
     dev: true
 
-  /@vercel/node@2.15.5:
-    resolution: {integrity: sha512-KYMeVyGBsZ1xw/74/95wZdE/ZW1cRa8nrMKasjy2r54IuOUcdE35bcpMhw7hip34esL+PtQI50rXtMTQOLa0kQ==}
+  /@vercel/node@2.15.6:
+    resolution: {integrity: sha512-LXV971i7bCL+W9lz+IFG6P876gnp2coA0/5mrG3nr+wbo+9iU0pPO6YZcQ8tmhcmepILl8HnTvYHNTECZUeN6w==}
     dependencies:
       '@edge-runtime/node-utils': 2.0.3
       '@edge-runtime/primitives': 2.1.2
