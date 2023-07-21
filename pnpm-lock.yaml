@@ -134,8 +134,8 @@ importers:
         specifier: latest
         version: 0.2.2(@xata.io/client@0.24.3)(next-auth@4.18.6)
       '@next/font':
-        specifier: 13.4.10
-        version: 13.4.10
+        specifier: 13.4.11
+        version: 13.4.11
       '@types/node':
         specifier: 18.16.19
         version: 18.16.19
@@ -176,8 +176,8 @@ importers:
         specifier: latest
         version: 0.2.2(@xata.io/client@0.24.3)(next-auth@4.18.6)
       '@next/font':
-        specifier: 13.4.10
-        version: 13.4.10
+        specifier: 13.4.11
+        version: 13.4.11
       '@types/node':
         specifier: 18.16.19
         version: 18.16.19
@@ -313,8 +313,8 @@ importers:
         specifier: ^4.6.13
         version: 4.6.13(next@13.4.11)(react@18.2.0)
       '@next/font':
-        specifier: 13.4.10
-        version: 13.4.10
+        specifier: 13.4.11
+        version: 13.4.11
       '@tanstack/react-query':
         specifier: ^4.20.4
         version: 4.20.4(react-dom@18.2.0)(react@18.2.0)
@@ -3497,8 +3497,8 @@ packages:
     dependencies:
       glob: 7.1.7
 
-  /@next/font@13.4.10:
-    resolution: {integrity: sha512-BqV71ikHIFh+PZLpCR0nMZnlg/3Hcuw9qIUN42I4iCpneDHHiViUtanUeE113gy0Wm9oePTGX5OeKnPbSNnnHA==}
+  /@next/font@13.4.11:
+    resolution: {integrity: sha512-WvUnWOumUAIH1M/EboauoO53EwkXyDM3M5uLFaIsbYJBdBTQR5i4U+tdmxvgjb+TAnCF0s+cGzWPp9UwUCUkjQ==}
     dev: false
 
   /@next/swc-darwin-arm64@13.4.11:
