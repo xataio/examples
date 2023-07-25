@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@types/node": "18.17.0",
-    "@types/react": "18.2.15",
+    "@types/react": "18.2.16",
     "@types/react-dom": "18.2.7",
     "@xata.io/cli": "0.12.7",
     "autoprefixer": "^10.4.12",
