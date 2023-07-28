@@ -22,7 +22,7 @@
     "@types/node": "18.17.1",
     "@types/react": "18.2.17",
     "@types/react-dom": "18.2.7",
-    "@xata.io/client": "^0.24.0",
+    "@xata.io/client": "^0.25.0",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.12",
     "next": "13.4.12",
