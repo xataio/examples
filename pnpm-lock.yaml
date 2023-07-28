@@ -101,8 +101,8 @@ importers:
         specifier: 18.2.7
         version: 18.2.7
       '@xata.io/cli':
-        specifier: 0.13.0
-        version: 0.13.0(@types/node@18.17.1)(esbuild@0.18.0)(typescript@5.1.6)
+        specifier: 0.13.2
+        version: 0.13.2(@types/node@18.17.1)(esbuild@0.18.0)(typescript@5.1.6)
       autoprefixer:
         specifier: ^10.4.12
         version: 10.4.12(postcss@8.4.18)
@@ -132,7 +132,7 @@ importers:
     dependencies:
       '@next-auth/xata-adapter':
         specifier: latest
-        version: 0.2.2(@xata.io/client@0.25.0)(next-auth@4.18.6)
+        version: 0.2.2(@xata.io/client@0.25.1)(next-auth@4.18.6)
       '@next/font':
         specifier: 13.4.12
         version: 13.4.12
@@ -147,7 +147,7 @@ importers:
         version: 18.2.7
       '@xata.io/client':
         specifier: latest
-        version: 0.25.0(typescript@5.1.6)
+        version: 0.25.1(typescript@5.1.6)
       eslint:
         specifier: 8.45.0
         version: 8.45.0
@@ -174,7 +174,7 @@ importers:
     dependencies:
       '@next-auth/xata-adapter':
         specifier: latest
-        version: 0.2.2(@xata.io/client@0.25.0)(next-auth@4.18.6)
+        version: 0.2.2(@xata.io/client@0.25.1)(next-auth@4.18.6)
       '@next/font':
         specifier: 13.4.12
         version: 13.4.12
@@ -189,7 +189,7 @@ importers:
         version: 18.2.7
       '@xata.io/client':
         specifier: latest
-        version: 0.25.0(typescript@5.1.6)
+        version: 0.25.1(typescript@5.1.6)
       eslint:
         specifier: 8.45.0
         version: 8.45.0
@@ -296,7 +296,7 @@ importers:
         version: 18.2.8
       '@xata.io/client':
         specifier: latest
-        version: 0.25.0(typescript@5.1.6)
+        version: 0.25.1(typescript@5.1.6)
       astro:
         specifier: ^2.0.0
         version: 2.0.0(@types/node@18.17.1)
@@ -403,7 +403,7 @@ importers:
     optionalDependencies:
       '@xata.io/cli':
         specifier: ^0.13.0
-        version: 0.13.0(@types/node@18.17.1)(esbuild@0.18.0)(typescript@5.1.3)
+        version: 0.13.2(@types/node@18.17.1)(esbuild@0.18.0)(typescript@5.1.3)
     devDependencies:
       solid-start-node:
         specifier: ^0.2.0
@@ -489,8 +489,8 @@ importers:
         specifier: 2.15.6
         version: 2.15.6
       '@xata.io/cli':
-        specifier: 0.13.0
-        version: 0.13.0(@types/node@18.17.1)(esbuild@0.18.0)(typescript@5.1.6)
+        specifier: 0.13.2
+        version: 0.13.2(@types/node@18.17.1)(esbuild@0.18.0)(typescript@5.1.6)
       esbuild:
         specifier: ^0.18.0
         version: 0.18.0
@@ -711,7 +711,7 @@ packages:
     resolution: {integrity: sha512-duORpUiYrEpzKIop6iNbjnwKLAKnJ47csTyRACyEmWj0QdUrm5aqNJGHSSEQSUAvNW0ojX0dOmK9dZduvkfeXA==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/types': 7.22.4
+      '@babel/types': 7.22.5
     dev: false
 
   /@babel/helper-annotate-as-pure@7.22.5:
@@ -862,7 +862,7 @@ packages:
     resolution: {integrity: sha512-orajc5T2PsRYUN3ZryCEFeMDYwyw09c/pZeaQEZPH0MpKzSvn3e0uXsDBu3k03VI+9DBiRo+l22BfKTpKwa/Wg==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/types': 7.22.4
+      '@babel/types': 7.22.5
     dev: false
 
   /@babel/helper-module-imports@7.22.5:
@@ -3369,13 +3369,13 @@ packages:
       - bufferutil
       - utf-8-validate
 
-  /@next-auth/xata-adapter@0.2.2(@xata.io/client@0.25.0)(next-auth@4.18.6):
+  /@next-auth/xata-adapter@0.2.2(@xata.io/client@0.25.1)(next-auth@4.18.6):
     resolution: {integrity: sha512-sEGGYMMdgEjS0djL50u1po03Xo4VSOXxHR1ytPClxYQ5zgd1LOEvdfzCDlRwfofz0eR0QrCuko03TMaUCie90A==}
     peerDependencies:
       '@xata.io/client': '>=0.13.0'
       next-auth: ^4
     dependencies:
-      '@xata.io/client': 0.25.0(typescript@5.1.6)
+      '@xata.io/client': 0.25.1(typescript@5.1.6)
       next-auth: 4.18.6(next@13.4.4)(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
@@ -4989,6 +4989,7 @@ packages:
       - supports-color
       - typescript
       - utf-8-validate
+    dev: true
 
   /@xata.io/cli@0.13.0(@types/node@18.17.1)(esbuild@0.18.0)(typescript@5.1.6):
     resolution: {integrity: sha512-VyMrrdMmPoQhv6Nqom/dqFogo5dK3vEPit7AmfHhOwaF2qL/NK79PYV1VDaChnwuMQ2C6I92C02rGK2ighXTVA==}
@@ -5011,6 +5012,134 @@ packages:
       '@xata.io/client': 0.25.0(typescript@5.1.6)
       '@xata.io/codegen': 0.25.0
       '@xata.io/importer': 1.0.0(typescript@5.1.6)
+      ansi-regex: 6.0.1
+      babel-plugin-module-extension-resolver: 1.0.0
+      chalk: 5.3.0
+      chokidar: 3.5.3
+      cosmiconfig: 8.2.0
+      deepmerge: 4.3.1
+      dotenv: 16.3.1
+      dotenv-expand: 10.0.0
+      edge-runtime: 2.4.4
+      enquirer: 2.3.6
+      env-editor: 1.1.0
+      ini: 4.1.1
+      lodash.compact: 3.0.1
+      lodash.get: 4.4.2
+      lodash.set: 4.3.2
+      miniflare: 2.14.0
+      node-fetch: 3.3.1
+      open: 9.1.0
+      prompts: 2.4.2
+      relaxed-json: 1.0.3
+      rollup: 3.26.3
+      rollup-plugin-esbuild: 5.0.0(esbuild@0.18.0)(rollup@3.26.3)
+      rollup-plugin-hypothetical: 2.1.1
+      rollup-plugin-import-cdn: 0.2.2(rollup@3.26.3)
+      rollup-plugin-virtual-fs: 4.0.1-alpha.0
+      text-table: 0.2.0
+      tmp: 0.2.1
+      which: 3.0.1
+      zod: 3.21.4
+    transitivePeerDependencies:
+      - '@miniflare/storage-redis'
+      - '@swc/core'
+      - '@swc/wasm'
+      - '@types/node'
+      - bufferutil
+      - cron-schedule
+      - esbuild
+      - ioredis
+      - supports-color
+      - typescript
+      - utf-8-validate
+    dev: true
+
+  /@xata.io/cli@0.13.2(@types/node@18.17.1)(esbuild@0.18.0)(typescript@5.1.3):
+    resolution: {integrity: sha512-GDIIOfexZc6pfpkLVucxZvb6gnvuG0VLIXgtKwidS6B50sQ7wMZNFWVay6UNgjQqsxoAS6UuXZz0LIM3YTq1JQ==}
+    engines: {node: '>=12.0.0'}
+    hasBin: true
+    dependencies:
+      '@babel/core': 7.22.6
+      '@babel/preset-react': 7.22.5(@babel/core@7.22.6)
+      '@babel/preset-typescript': 7.22.5(@babel/core@7.22.6)
+      '@oclif/core': 2.8.11(@types/node@18.17.1)(typescript@5.1.3)
+      '@oclif/plugin-help': 5.2.11(@types/node@18.17.1)(typescript@5.1.3)
+      '@oclif/plugin-not-found': 2.3.26(@types/node@18.17.1)(typescript@5.1.3)
+      '@oclif/plugin-plugins': 3.1.6(@types/node@18.17.1)(typescript@5.1.3)
+      '@rollup/plugin-auto-install': 3.0.4(rollup@3.26.3)
+      '@rollup/plugin-commonjs': 25.0.2(rollup@3.26.3)
+      '@rollup/plugin-node-resolve': 15.1.0(rollup@3.26.3)
+      '@rollup/plugin-virtual': 3.0.1(rollup@3.26.3)
+      '@types/ini': 1.3.31
+      '@types/prompts': 2.4.4
+      '@xata.io/client': 0.25.1(typescript@5.1.3)
+      '@xata.io/codegen': 0.25.1
+      '@xata.io/importer': 1.0.1(typescript@5.1.3)
+      ansi-regex: 6.0.1
+      babel-plugin-module-extension-resolver: 1.0.0
+      chalk: 5.3.0
+      chokidar: 3.5.3
+      cosmiconfig: 8.2.0
+      deepmerge: 4.3.1
+      dotenv: 16.3.1
+      dotenv-expand: 10.0.0
+      edge-runtime: 2.4.4
+      enquirer: 2.3.6
+      env-editor: 1.1.0
+      ini: 4.1.1
+      lodash.compact: 3.0.1
+      lodash.get: 4.4.2
+      lodash.set: 4.3.2
+      miniflare: 2.14.0
+      node-fetch: 3.3.1
+      open: 9.1.0
+      prompts: 2.4.2
+      relaxed-json: 1.0.3
+      rollup: 3.26.3
+      rollup-plugin-esbuild: 5.0.0(esbuild@0.18.0)(rollup@3.26.3)
+      rollup-plugin-hypothetical: 2.1.1
+      rollup-plugin-import-cdn: 0.2.2(rollup@3.26.3)
+      rollup-plugin-virtual-fs: 4.0.1-alpha.0
+      text-table: 0.2.0
+      tmp: 0.2.1
+      which: 3.0.1
+      zod: 3.21.4
+    transitivePeerDependencies:
+      - '@miniflare/storage-redis'
+      - '@swc/core'
+      - '@swc/wasm'
+      - '@types/node'
+      - bufferutil
+      - cron-schedule
+      - esbuild
+      - ioredis
+      - supports-color
+      - typescript
+      - utf-8-validate
+    optional: true
+
+  /@xata.io/cli@0.13.2(@types/node@18.17.1)(esbuild@0.18.0)(typescript@5.1.6):
+    resolution: {integrity: sha512-GDIIOfexZc6pfpkLVucxZvb6gnvuG0VLIXgtKwidS6B50sQ7wMZNFWVay6UNgjQqsxoAS6UuXZz0LIM3YTq1JQ==}
+    engines: {node: '>=12.0.0'}
+    hasBin: true
+    dependencies:
+      '@babel/core': 7.22.6
+      '@babel/preset-react': 7.22.5(@babel/core@7.22.6)
+      '@babel/preset-typescript': 7.22.5(@babel/core@7.22.6)
+      '@oclif/core': 2.8.11(@types/node@18.17.1)(typescript@5.1.6)
+      '@oclif/plugin-help': 5.2.11(@types/node@18.17.1)(typescript@5.1.6)
+      '@oclif/plugin-not-found': 2.3.26(@types/node@18.17.1)(typescript@5.1.6)
+      '@oclif/plugin-plugins': 3.1.6(@types/node@18.17.1)(typescript@5.1.6)
+      '@rollup/plugin-auto-install': 3.0.4(rollup@3.26.3)
+      '@rollup/plugin-commonjs': 25.0.2(rollup@3.26.3)
+      '@rollup/plugin-node-resolve': 15.1.0(rollup@3.26.3)
+      '@rollup/plugin-virtual': 3.0.1(rollup@3.26.3)
+      '@types/ini': 1.3.31
+      '@types/prompts': 2.4.4
+      '@xata.io/client': 0.25.1(typescript@5.1.6)
+      '@xata.io/codegen': 0.25.1
+      '@xata.io/importer': 1.0.1(typescript@5.1.6)
       ansi-regex: 6.0.1
       babel-plugin-module-extension-resolver: 1.0.0
       chalk: 5.3.0
@@ -5092,9 +5221,25 @@ packages:
       typescript: '>=4.5'
     dependencies:
       typescript: 5.1.3
+    dev: true
 
   /@xata.io/client@0.25.0(typescript@5.1.6):
     resolution: {integrity: sha512-3pp12K31rto1OGaDqGtxnyhfiKksCwyLboUKwtrSjio3U8odvNxAqu0AVqO7a4DIED62ETq9Cr0kaZPK5Mkp2w==}
+    peerDependencies:
+      typescript: '>=4.5'
+    dependencies:
+      typescript: 5.1.6
+    dev: true
+
+  /@xata.io/client@0.25.1(typescript@5.1.3):
+    resolution: {integrity: sha512-BPB+JX1URNvvSsL5crhWnWC3X0PlilQ14MJTwX3jShGXRyqgkb5/tRgntkHMI6IS8UgLHsPnCS02uf8JkuBHJQ==}
+    peerDependencies:
+      typescript: '>=4.5'
+    dependencies:
+      typescript: 5.1.3
+
+  /@xata.io/client@0.25.1(typescript@5.1.6):
+    resolution: {integrity: sha512-BPB+JX1URNvvSsL5crhWnWC3X0PlilQ14MJTwX3jShGXRyqgkb5/tRgntkHMI6IS8UgLHsPnCS02uf8JkuBHJQ==}
     peerDependencies:
       typescript: '>=4.5'
     dependencies:
@@ -5109,12 +5254,23 @@ packages:
       ts-morph: 19.0.0
       typescript: 5.1.6
       zod: 3.21.4
+    dev: true
+
+  /@xata.io/codegen@0.25.1:
+    resolution: {integrity: sha512-wdBy3rwTDGivjmVIjaI3vCeefoLLQwRkh35nFdxb7n91nrBG+m8rCFjvAHxWC9GOiinB8tzIvJMRRZuuvfz2iw==}
+    dependencies:
+      '@xata.io/client': 0.25.1(typescript@5.1.6)
+      case: 1.6.3
+      prettier: 2.8.8
+      ts-morph: 19.0.0
+      typescript: 5.1.6
+      zod: 3.21.4
 
   /@xata.io/importer@1.0.0(typescript@5.1.3):
     resolution: {integrity: sha512-ImKNN91r70K8avM/XaXT6utO9TtuYCOd+rbr/+6vvTw1/wCzPgwhb2HzsxB/tah/ysUvg0s0o2tw7fJKxMqY3Q==}
     dependencies:
       '@faker-js/faker': 8.0.2
-      '@xata.io/client': 0.25.0(typescript@5.1.3)
+      '@xata.io/client': 0.25.1(typescript@5.1.3)
       any-date-parser: 1.5.4
       json5: 2.2.3
       lodash.chunk: 4.2.0
@@ -5124,12 +5280,46 @@ packages:
       zod: 3.21.4
     transitivePeerDependencies:
       - typescript
+    dev: true
 
   /@xata.io/importer@1.0.0(typescript@5.1.6):
     resolution: {integrity: sha512-ImKNN91r70K8avM/XaXT6utO9TtuYCOd+rbr/+6vvTw1/wCzPgwhb2HzsxB/tah/ysUvg0s0o2tw7fJKxMqY3Q==}
     dependencies:
       '@faker-js/faker': 8.0.2
-      '@xata.io/client': 0.25.0(typescript@5.1.6)
+      '@xata.io/client': 0.25.1(typescript@5.1.6)
+      any-date-parser: 1.5.4
+      json5: 2.2.3
+      lodash.chunk: 4.2.0
+      lodash.pick: 4.4.0
+      p-queue: 7.3.4
+      papaparse: 5.4.1
+      zod: 3.21.4
+    transitivePeerDependencies:
+      - typescript
+    dev: true
+
+  /@xata.io/importer@1.0.1(typescript@5.1.3):
+    resolution: {integrity: sha512-k7r3d9zwddQr9KhQHRYApVpQ9XotxTus24fqobNsMhuVi9vP/ZUXx2lesR52N0T7cNPPfcYhZQVotw/5INJNcA==}
+    dependencies:
+      '@faker-js/faker': 8.0.2
+      '@xata.io/client': 0.25.1(typescript@5.1.3)
+      any-date-parser: 1.5.4
+      json5: 2.2.3
+      lodash.chunk: 4.2.0
+      lodash.pick: 4.4.0
+      p-queue: 7.3.4
+      papaparse: 5.4.1
+      zod: 3.21.4
+    transitivePeerDependencies:
+      - typescript
+    dev: false
+    optional: true
+
+  /@xata.io/importer@1.0.1(typescript@5.1.6):
+    resolution: {integrity: sha512-k7r3d9zwddQr9KhQHRYApVpQ9XotxTus24fqobNsMhuVi9vP/ZUXx2lesR52N0T7cNPPfcYhZQVotw/5INJNcA==}
+    dependencies:
+      '@faker-js/faker': 8.0.2
+      '@xata.io/client': 0.25.1(typescript@5.1.6)
       any-date-parser: 1.5.4
       json5: 2.2.3
       lodash.chunk: 4.2.0
@@ -12654,7 +12844,7 @@ packages:
       '@types/node': 18.17.1
       esbuild: 0.17.19
       postcss: 8.4.24
-      rollup: 3.23.1
+      rollup: 3.26.3
     optionalDependencies:
       fsevents: 2.3.2
     dev: false
