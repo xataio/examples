@@ -10,7 +10,7 @@
     "xata:codegen": "xata codegen"
   },
   "dependencies": {
-    "@xata.io/client": "0.24.3",
+    "@xata.io/client": "0.25.1",
     "bcrypt": "^5.1.0",
     "next": "13.4.12",
     "react": "18.2.0",
