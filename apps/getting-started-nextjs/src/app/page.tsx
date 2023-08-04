@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 import { getXataClient } from '@/xata'
 
 const xata = getXataClient()
