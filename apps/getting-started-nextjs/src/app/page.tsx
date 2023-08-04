@@ -1,9 +1,19 @@
 import { getXataClient } from '@/xata'
+import { useSearchParams } from 'next/navigation'
 
 const xata = getXataClient()
 
-export default async function Home() {
-  const records = await xata.db.Posts.getAll()
+export default async function Home({
+  searchParams,
+}: {
+  searchParams: { search: string }
+}) {
+  let records = null
+  if (searchParams.search) {
+    records = await xata.db.Posts.search(searchParams.search, { fuzziness: 2 })
+  } else {
+    records = await xata.db.Posts.getAll()
+  }
 
   return (
     <main className="p-8 lg:p-24 min-h-screen">
@@ -19,6 +29,18 @@ export default async function Home() {
       </div>
 
       <div className="w-full max-w-5xl mt-16">
+        <form>
+          <input
+            name="search"
+            defaultValue={searchParams.search}
+            placeholder="Search..."
+            className="w-full rounded-lg p-2 dark:text-purple-950"
+          />
+        </form>
+      </div>
+
+      <div className="w-full max-w-5xl mt-16">
+        {records.length === 0 && <p>No blog posts found</p>}
         {records.map((record) => (
           <div key={record.id} className="mb-16">
             <p className="text-xs mb-2 text-purple-950 dark:text-purple-200">
