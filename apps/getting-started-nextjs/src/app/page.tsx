@@ -1,5 +1,4 @@
 import { getXataClient } from '@/xata'
-import { useSearchParams } from 'next/navigation'
 
 const xata = getXataClient()
 
