@@ -486,8 +486,8 @@ importers:
         version: 3.0.0
     devDependencies:
       '@vercel/node':
-        specifier: 2.15.8
-        version: 2.15.8
+        specifier: 2.15.9
+        version: 2.15.9
       '@xata.io/cli':
         specifier: 0.13.3
         version: 0.13.3(@types/node@18.17.3)(esbuild@0.19.0)(typescript@5.1.6)
@@ -4728,8 +4728,8 @@ packages:
     resolution: {integrity: sha512-mEbr7m/hDdIjw3thALn0hgsK3eRLLmHxnfwJgFERRCUdvuoPMFSeZsr6vIqKHlqCk0XzQmDzyQ+Dqs7sCg9tgw==}
     dev: true
 
-  /@vercel/build-utils@6.8.2:
-    resolution: {integrity: sha512-pyDBREAzaLBM3zoURCCKjnKIqtqPprKcwDdd9eBTGI32qOSpbwswtyqtgj2zH/Ro0LI61jCr6sK87JHILCr1sg==}
+  /@vercel/build-utils@6.8.3:
+    resolution: {integrity: sha512-C86OPuPAvG/pSr27DPKecmptkYYsgyhOKdHTLv9jI3Pv1yvru78k+JjrAyn7N+0ev75KNV0Prv4P3p76168ePw==}
     dev: true
 
   /@vercel/error-utils@1.0.10:
@@ -4793,15 +4793,15 @@ packages:
     resolution: {integrity: sha512-dgcLXug0IqUeRsywf0G8IrhUFcgw+GYj+EZB4JneglKSofFBh3Xy/t7KfBUxLlKnoq6kyGYJvTmAVB1YBt11qw==}
     dev: true
 
-  /@vercel/node@2.15.8:
-    resolution: {integrity: sha512-G8+rC3mAouBFonsCKeQ9nINv7WL4SeHa6qx+bW/6BQAFc/eLKfQNa04t6ZYKLiXZQSw4COSC3g2afh7ejYVvVg==}
+  /@vercel/node@2.15.9:
+    resolution: {integrity: sha512-nsfTMBZOuXFxz3s7A2b+3rkt2QN016TXn7apPb+apWaO+UzMaRLE0Gubn8TXQ08N4ag6G5bBJXrWRJywL4whrQ==}
     dependencies:
       '@edge-runtime/node-utils': 2.0.3
       '@edge-runtime/primitives': 2.1.2
       '@edge-runtime/vm': 3.0.1
       '@types/node': 14.18.33
       '@types/node-fetch': 2.6.3
-      '@vercel/build-utils': 6.8.2
+      '@vercel/build-utils': 6.8.3
       '@vercel/error-utils': 1.0.10
       '@vercel/static-config': 2.0.17
       async-listen: 3.0.0
