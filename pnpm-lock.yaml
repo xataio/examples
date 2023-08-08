@@ -406,8 +406,8 @@ importers:
         version: 0.13.3(@types/node@18.17.3)(esbuild@0.19.0)(typescript@5.1.3)
     devDependencies:
       solid-start-node:
-        specifier: ^0.2.0
-        version: 0.2.0(solid-start@0.2.9)(undici@5.11.0)(vite@4.0.0)
+        specifier: ^0.3.0
+        version: 0.3.0(solid-start@0.2.9)(undici@5.11.0)(vite@4.0.0)
       solid-start-vercel:
         specifier: ^0.2.5
         version: 0.2.5(solid-start@0.2.9)(vite@4.0.0)
@@ -3851,6 +3851,24 @@ packages:
       rollup: 2.79.1
     dev: true
 
+  /@rollup/plugin-commonjs@24.1.0(rollup@3.26.3):
+    resolution: {integrity: sha512-eSL45hjhCWI0jCCXcNtLVqM5N1JlBGvlFfY0m6oOYnLCJ6N0qEXoZql4sY2MOUArzhH4SA/qBpTxvvZp2Sc+DQ==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^2.68.0||^3.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+    dependencies:
+      '@rollup/pluginutils': 5.0.2(rollup@3.26.3)
+      commondir: 1.0.1
+      estree-walker: 2.0.2
+      glob: 8.1.0
+      is-reference: 1.2.1
+      magic-string: 0.27.0
+      rollup: 3.26.3
+    dev: true
+
   /@rollup/plugin-commonjs@25.0.2(rollup@3.26.3):
     resolution: {integrity: sha512-NGTwaJxIO0klMs+WSFFtBP7b9TdTJ3K76HZkewT8/+yHzMiUGVQgaPtLQxNVYIgT5F7lxkEyVID+yS3K7bhCow==}
     engines: {node: '>=14.0.0'}
@@ -3875,6 +3893,19 @@ packages:
     dependencies:
       '@rollup/pluginutils': 3.1.0(rollup@2.79.1)
       rollup: 2.79.1
+    dev: true
+
+  /@rollup/plugin-json@6.0.0(rollup@3.26.3):
+    resolution: {integrity: sha512-i/4C5Jrdr1XUarRhVu27EEwjt4GObltD7c+MkCIpO2QIbojw8MUs+CCTqOphQi3Qtg1FLmYt+l+6YeoIf51J7w==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0||^3.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+    dependencies:
+      '@rollup/pluginutils': 5.0.2(rollup@3.26.3)
+      rollup: 3.26.3
     dev: true
 
   /@rollup/plugin-node-resolve@13.3.0(rollup@2.79.1):
@@ -11419,22 +11450,22 @@ packages:
       '@babel/types': 7.22.5
       solid-js: 1.6.6
 
-  /solid-start-node@0.2.0(solid-start@0.2.9)(undici@5.11.0)(vite@4.0.0):
-    resolution: {integrity: sha512-PBGm9HkzKrVf0cl3V2ViWmy51GgbrA1tklDAqbbMvhO7Dhh0TnkVRoySgJuahln9nX+1yoJw+uJST3+s0leQ9w==}
+  /solid-start-node@0.3.0(solid-start@0.2.9)(undici@5.11.0)(vite@4.0.0):
+    resolution: {integrity: sha512-kg0J6aTvnxGj3OnK4L6EQWY6O3y4dn0CB8Q+6e++Pbzw+VMs8uZg/H9/jg+Ul3fw9uitsnwgxQmieKviaSIxMQ==}
     peerDependencies:
       solid-start: '*'
       undici: ^5.8.0
       vite: '*'
     dependencies:
-      '@rollup/plugin-commonjs': 22.0.2(rollup@2.79.1)
-      '@rollup/plugin-json': 4.1.0(rollup@2.79.1)
-      '@rollup/plugin-node-resolve': 13.3.0(rollup@2.79.1)
+      '@rollup/plugin-commonjs': 24.1.0(rollup@3.26.3)
+      '@rollup/plugin-json': 6.0.0(rollup@3.26.3)
+      '@rollup/plugin-node-resolve': 15.1.0(rollup@3.26.3)
       compression: 1.7.4
       polka: 1.0.0-next.22
-      rollup: 2.79.1
+      rollup: 3.26.3
       sirv: 2.0.3
       solid-start: 0.2.9(@solidjs/meta@0.28.0)(@solidjs/router@0.8.0)(solid-js@1.6.6)(vite@4.0.0)
-      terser: 5.17.7
+      terser: 5.19.2
       undici: 5.11.0
       vite: 4.0.0(@types/node@18.17.3)
     transitivePeerDependencies:
@@ -12014,6 +12045,17 @@ packages:
       acorn: 8.9.0
       commander: 2.20.3
       source-map-support: 0.5.21
+
+  /terser@5.19.2:
+    resolution: {integrity: sha512-qC5+dmecKJA4cpYxRa5aVkKehYsQKc+AHeKl0Oe62aYjBL8ZA33tTljktDHJSaxxMnbI5ZYw+o/S2DxxLu8OfA==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dependencies:
+      '@jridgewell/source-map': 0.3.3
+      acorn: 8.9.0
+      commander: 2.20.3
+      source-map-support: 0.5.21
+    dev: true
 
   /text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
