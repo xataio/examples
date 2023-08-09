@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "solid-start-node": "^0.3.0",
-    "solid-start-vercel": "^0.2.5",
+    "solid-start-vercel": "^0.3.0",
     "typescript": "^5.0.0",
     "vite": "^4.0.0"
   },
