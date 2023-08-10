@@ -67,5 +67,5 @@ npm run dev
 
 To learn more about Xata and Next.js, take a look at the following resources:
 
-- [Xata](https://xata.io/docs) - learn about Xata.
-- [Next.js Documentation](https://nextjs.org/docs) - learn about the Next.js features and API.
+- [Xata docs](https://xata.io/docs)
+- [Next.js Documentation](https://nextjs.org/docs)
