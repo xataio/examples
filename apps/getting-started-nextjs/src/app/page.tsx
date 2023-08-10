@@ -1,21 +1,17 @@
-import { getXataClient } from '@/xata'
+import { getXataClient } from '@/xata';
 
-const xata = getXataClient()
+const xata = getXataClient();
 
-export default async function Home({
-  searchParams,
-}: {
-  searchParams: { search: string }
-}) {
-  let records = null
+export default async function Home({ searchParams }: { searchParams: { search: string } }) {
+  let records = null;
   if (searchParams.search) {
-    records = await xata.db.Posts.search(searchParams.search, { fuzziness: 2 })
+    records = await xata.db.Posts.search(searchParams.search, { fuzziness: 2 });
   } else {
-    records = await xata.db.Posts.getAll()
+    records = await xata.db.Posts.getAll();
   }
 
   return (
-    <main className="p-8 lg:p-24 min-h-screen">
+    <main className="flex flex-wrap justify-center p-8 lg:p-24 min-h-screen">
       <div className="z-10 h-50 w-full max-w-5xl items-center justify-between text-xl lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center pb-6 pt-8 lg:static lg:w-auto bg-gradient-to-b from-white via-white via-65% dark:from-black dark:via-black">
           <a href="/">Get started with Xata and Next.js</a>
@@ -42,15 +38,11 @@ export default async function Home({
         {records.length === 0 && <p>No blog posts found</p>}
         {records.map((record) => (
           <div key={record.id} className="mb-16">
-            <p className="text-xs mb-2 text-purple-950 dark:text-purple-200">
-              {record.pubDate?.toDateString()}
-            </p>
+            <p className="text-xs mb-2 text-purple-950 dark:text-purple-200">{record.pubDate?.toDateString()}</p>
             <h2 className="text-2xl mb-2">
               <a href={`posts/${record.slug}`}>{record.title}</a>
             </h2>
-            <p className="text-purple-950 dark:text-purple-200 mb-5">
-              {record.description}
-            </p>
+            <p className="text-purple-950 dark:text-purple-200 mb-5">{record.description}</p>
             <a
               href={`posts/${record.slug}`}
               className="px-4 py-2 font-semibold text-sm bg-purple-700 text-white rounded-lg shadow-sm w-fit"
@@ -61,5 +53,5 @@ export default async function Home({
         ))}
       </div>
     </main>
-  )
+  );
 }

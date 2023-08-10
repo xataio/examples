@@ -1,12 +1,12 @@
-import { getXataClient } from '@/xata'
+import { getXataClient } from '@/xata';
 
-const xata = getXataClient()
+const xata = getXataClient();
 
 export default async function Post({ params }: { params: { slug: string } }) {
-  const post = await xata.db.Posts.filter({ slug: params.slug }).getFirst()
+  const post = await xata.db.Posts.filter({ slug: params.slug }).getFirst();
 
   return (
-    <main className="p-8 lg:p-24 min-h-screen">
+    <main className="flex flex-wrap justify-center p-8 lg:p-24 min-h-screen">
       <div className="z-10 h-50 w-full max-w-5xl items-center justify-between text-xl lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center pb-6 pt-8 lg:static lg:w-auto bg-gradient-to-b from-white via-white via-65% dark:from-black dark:via-black">
           <a href="/">Get started with Xata and Next.js</a>
@@ -25,11 +25,9 @@ export default async function Post({ params }: { params: { slug: string } }) {
           </a>
         </p>
         <h1 className="text-3xl mb-2">{post?.title}</h1>
-        <p className="text-sm mb-4 text-purple-950 dark:text-purple-200">
-          {post?.pubDate?.toDateString()}
-        </p>
+        <p className="text-sm mb-4 text-purple-950 dark:text-purple-200">{post?.pubDate?.toDateString()}</p>
         <p className="text-xl">{post?.description}</p>
       </div>
     </main>
-  )
+  );
 }
