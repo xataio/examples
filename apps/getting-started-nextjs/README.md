@@ -22,6 +22,12 @@ xata auth login
 npx degit xataio/examples/apps/getting-started-nextjs xata-nextjs
 ```
 
+And `cd` into the app directory:
+
+```sh
+cd xata-nextjs
+```
+
 ## Initialize your Xata project
 
 Initialize a new Xata project with the following command, agreeing to the default prompt options:
@@ -40,16 +46,18 @@ The above command will create a `.env` file containing your Xata project configu
 Create your database schema and seed the database using the CSV of blog post listings in `seed/blog-posts.csv`:
 
 ```sh
-xata import csv seed/blog-posts.csv --table Posts
+xata import csv seed/blog-posts.csv --table Posts --create
 ```
 
-Next, generate the code based on the schema that was created by the above command:
+Next, update the generated code in `src/xata.ts` based on the schema that was created by the above command:
 
 ```sh
-xata pull
+xata pull main
 ```
 
 ## Run the Xata + Next.js application
+
+Run the application as follows:
 
 ```sh
 npm run dev
