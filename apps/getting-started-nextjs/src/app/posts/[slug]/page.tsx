@@ -6,7 +6,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
   const post = await xata.db.Posts.filter({ slug: params.slug }).getFirst();
 
   return (
-    <main className="flex flex-wrap justify-center p-8 lg:p-24 min-h-screen">
+    <main className="flex flex-wrap justify-center content-start p-8 lg:p-24 min-h-screen">
       <div className="z-10 h-50 w-full max-w-5xl items-center justify-between text-xl lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center pb-6 pt-8 lg:static lg:w-auto bg-gradient-to-b from-white via-white via-65% dark:from-black dark:via-black">
           <a href="/">Get started with Xata and Next.js</a>
