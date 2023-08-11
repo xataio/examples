@@ -2,10 +2,10 @@ import { getXataClient } from '@/xata';
 
 const xata = getXataClient();
 
-export default async function Home({ searchParams }: { searchParams: { search: string } }) {
+export default async function Home({ searchParams }: { searchParams: { q: string } }) {
   let posts = null;
-  if (searchParams.search) {
-    posts = await xata.db.Posts.search(searchParams.search, { fuzziness: 2 });
+  if (searchParams.q) {
+    posts = await xata.db.Posts.search(searchParams.q, { fuzziness: 2 });
   } else {
     posts = await xata.db.Posts.getAll();
   }
@@ -26,8 +26,8 @@ export default async function Home({ searchParams }: { searchParams: { search: s
       <div className="w-full max-w-5xl mt-16">
         <form>
           <input
-            name="search"
-            defaultValue={searchParams.search}
+            name="q"
+            defaultValue={searchParams.q}
             placeholder="Search..."
             className="w-full rounded-lg p-2 dark:text-purple-950"
           />
