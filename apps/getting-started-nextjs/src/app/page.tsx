@@ -3,17 +3,17 @@ import { getXataClient } from '@/xata';
 const xata = getXataClient();
 
 export default async function Home({ searchParams }: { searchParams: { search: string } }) {
-  let records = null;
+  let posts = null;
   if (searchParams.search) {
-    records = await xata.db.Posts.search(searchParams.search, { fuzziness: 2 });
+    posts = await xata.db.Posts.search(searchParams.search, { fuzziness: 2 });
   } else {
-    records = await xata.db.Posts.getAll();
+    posts = await xata.db.Posts.getAll();
   }
 
   return (
     <main className="flex flex-wrap justify-center content-start p-8 lg:p-24 min-h-screen">
       <div className="z-10 h-50 w-full max-w-5xl items-center justify-between text-xl lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center pb-6 pt-8 lg:static lg:w-auto bg-gradient-to-b from-white via-white via-65% dark:from-black dark:via-black">
+        <p className="fixed left-0 top-0 flex w-full justify-center pb-6 pt-8 lg:static lg:w-auto bg-gradient-to-b from-white via-white via-65% dark:from-black dark:via-black lg:bg-none">
           <a href="/">Get started with Xata and Next.js</a>
         </p>
         <div className="fixed bottom-0 left-0 flex w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
@@ -35,8 +35,8 @@ export default async function Home({ searchParams }: { searchParams: { search: s
       </div>
 
       <div className="w-full max-w-5xl mt-16">
-        {records.length === 0 && <p>No blog posts found</p>}
-        {records.map((record) => (
+        {posts.length === 0 && <p>No blog posts found</p>}
+        {posts.map((record) => (
           <div key={record.id} className="mb-16">
             <p className="text-xs mb-2 text-purple-950 dark:text-purple-200">{record.pubDate?.toDateString()}</p>
             <h2 className="text-2xl mb-2">
