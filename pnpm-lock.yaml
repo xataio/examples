@@ -30,8 +30,8 @@ importers:
         specifier: ^2.0.1
         version: 2.0.1
       '@xata.io/client':
-        specifier: 0.25.1
-        version: 0.25.1(typescript@5.1.6)
+        specifier: 0.25.2
+        version: 0.25.2(typescript@5.1.6)
       next:
         specifier: 13.4.13
         version: 13.4.13(@babel/core@7.22.6)(react-dom@18.2.0)(react@18.2.0)
@@ -70,8 +70,8 @@ importers:
         specifier: ^0.5.0
         version: 0.5.0
       '@xata.io/client':
-        specifier: 0.25.1
-        version: 0.25.1(typescript@5.1.6)
+        specifier: 0.25.2
+        version: 0.25.2(typescript@5.1.6)
       next:
         specifier: 13.4.13
         version: 13.4.13(@babel/core@7.22.6)(react-dom@18.2.0)(react@18.2.0)
@@ -132,7 +132,7 @@ importers:
     dependencies:
       '@next-auth/xata-adapter':
         specifier: latest
-        version: 0.2.2(@xata.io/client@0.25.1)(next-auth@4.18.6)
+        version: 0.2.2(@xata.io/client@0.25.2)(next-auth@4.18.6)
       '@next/font':
         specifier: 13.4.13
         version: 13.4.13
@@ -147,7 +147,7 @@ importers:
         version: 18.2.7
       '@xata.io/client':
         specifier: latest
-        version: 0.25.1(typescript@5.1.6)
+        version: 0.25.2(typescript@5.1.6)
       eslint:
         specifier: 8.46.0
         version: 8.46.0
@@ -174,7 +174,7 @@ importers:
     dependencies:
       '@next-auth/xata-adapter':
         specifier: latest
-        version: 0.2.2(@xata.io/client@0.25.1)(next-auth@4.18.6)
+        version: 0.2.2(@xata.io/client@0.25.2)(next-auth@4.18.6)
       '@next/font':
         specifier: 13.4.13
         version: 13.4.13
@@ -189,7 +189,7 @@ importers:
         version: 18.2.7
       '@xata.io/client':
         specifier: latest
-        version: 0.25.1(typescript@5.1.6)
+        version: 0.25.2(typescript@5.1.6)
       eslint:
         specifier: 8.46.0
         version: 8.46.0
@@ -215,8 +215,8 @@ importers:
   apps/sample-nextjs-basic-auth:
     dependencies:
       '@xata.io/client':
-        specifier: 0.25.1
-        version: 0.25.1(typescript@5.1.6)
+        specifier: 0.25.2
+        version: 0.25.2(typescript@5.1.6)
       bcrypt:
         specifier: ^5.1.0
         version: 5.1.0
@@ -255,8 +255,8 @@ importers:
   apps/sample-workers-vite-react:
     dependencies:
       '@xata.io/client':
-        specifier: 0.25.1
-        version: 0.25.1(typescript@5.1.3)
+        specifier: 0.25.2
+        version: 0.25.2(typescript@5.1.3)
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -296,7 +296,7 @@ importers:
         version: 18.2.8
       '@xata.io/client':
         specifier: latest
-        version: 0.25.1(typescript@5.1.6)
+        version: 0.25.2(typescript@5.1.6)
       astro:
         specifier: ^2.0.0
         version: 2.0.0(@types/node@18.17.4)
@@ -422,17 +422,17 @@ importers:
     dependencies:
       '@sveltejs/adapter-vercel':
         specifier: 2.4.3
-        version: 2.4.3(@sveltejs/kit@1.22.4)
+        version: 2.4.3(@sveltejs/kit@1.22.5)
       '@xata.io/client':
         specifier: ^0.25.0
         version: 0.25.1(typescript@5.1.3)
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: latest
-        version: 2.1.0(@sveltejs/kit@1.22.4)
+        version: 2.1.0(@sveltejs/kit@1.22.5)
       '@sveltejs/kit':
         specifier: latest
-        version: 1.22.4(svelte@3.44.0)(vite@4.0.0)
+        version: 1.22.5(svelte@3.44.0)(vite@4.0.0)
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.27.0
         version: 5.27.0(@typescript-eslint/parser@5.27.0)(eslint@8.42.0)(typescript@5.1.3)
@@ -479,8 +479,8 @@ importers:
   apps/starter-vercel-serverless-functions:
     dependencies:
       '@xata.io/client':
-        specifier: 0.25.1
-        version: 0.25.1(typescript@5.1.6)
+        specifier: 0.25.2
+        version: 0.25.2(typescript@5.1.6)
       isomorphic-fetch:
         specifier: 3.0.0
         version: 3.0.0
@@ -3398,13 +3398,13 @@ packages:
       - bufferutil
       - utf-8-validate
 
-  /@next-auth/xata-adapter@0.2.2(@xata.io/client@0.25.1)(next-auth@4.18.6):
+  /@next-auth/xata-adapter@0.2.2(@xata.io/client@0.25.2)(next-auth@4.18.6):
     resolution: {integrity: sha512-sEGGYMMdgEjS0djL50u1po03Xo4VSOXxHR1ytPClxYQ5zgd1LOEvdfzCDlRwfofz0eR0QrCuko03TMaUCie90A==}
     peerDependencies:
       '@xata.io/client': '>=0.13.0'
       next-auth: ^4
     dependencies:
-      '@xata.io/client': 0.25.1(typescript@5.1.6)
+      '@xata.io/client': 0.25.2(typescript@5.1.6)
       next-auth: 4.18.6(next@13.4.4)(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
@@ -3996,21 +3996,21 @@ packages:
     dependencies:
       solid-js: 1.6.6
 
-  /@sveltejs/adapter-auto@2.1.0(@sveltejs/kit@1.22.4):
+  /@sveltejs/adapter-auto@2.1.0(@sveltejs/kit@1.22.5):
     resolution: {integrity: sha512-o2pZCfATFtA/Gw/BB0Xm7k4EYaekXxaPGER3xGSY3FvzFJGTlJlZjBseaXwYSM94lZ0HniOjTokN3cWaLX6fow==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
     dependencies:
-      '@sveltejs/kit': 1.22.4(svelte@3.44.0)(vite@4.0.0)
+      '@sveltejs/kit': 1.22.5(svelte@3.44.0)(vite@4.0.0)
       import-meta-resolve: 3.0.0
     dev: true
 
-  /@sveltejs/adapter-vercel@2.4.3(@sveltejs/kit@1.22.4):
+  /@sveltejs/adapter-vercel@2.4.3(@sveltejs/kit@1.22.5):
     resolution: {integrity: sha512-3k/3udwaioFYdKDAgQcWSByB+KCbtjX+ARonYGCtYE0iuxWLStrESxy3SaU+17XD5Frh8w7tfY8ft4TV3ej3Dg==}
     peerDependencies:
       '@sveltejs/kit': ^1.5.0
     dependencies:
-      '@sveltejs/kit': 1.22.4(svelte@3.44.0)(vite@4.0.0)
+      '@sveltejs/kit': 1.22.5(svelte@3.44.0)(vite@4.0.0)
       '@vercel/nft': 0.22.6
       esbuild: 0.17.19
     transitivePeerDependencies:
@@ -4018,8 +4018,8 @@ packages:
       - supports-color
     dev: false
 
-  /@sveltejs/kit@1.22.4(svelte@3.44.0)(vite@4.0.0):
-    resolution: {integrity: sha512-Opkqw1QXk4Cc25b/heJP2D7mX+OUBFAq4MXKfET58svTTxdeiHFKzmnuRsSF3nmxESqrLjqPAgHpib+knNGzRw==}
+  /@sveltejs/kit@1.22.5(svelte@3.44.0)(vite@4.0.0):
+    resolution: {integrity: sha512-LHq+ECucoT6c6/tkrxIQtD8KVNhPFV4QQ+xOKTwBAs/Qdtff8P5gAzsIZiwEaaO6J6sYZoy5RP2VR6m8PSCgLA==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
@@ -4039,7 +4039,7 @@ packages:
       set-cookie-parser: 2.6.0
       sirv: 2.0.3
       svelte: 3.44.0
-      undici: 5.22.1
+      undici: 5.23.0
       vite: 4.0.0(@types/node@18.17.4)
     transitivePeerDependencies:
       - supports-color
@@ -5168,9 +5168,24 @@ packages:
       typescript: '>=4.5'
     dependencies:
       typescript: 5.1.3
+    dev: false
 
   /@xata.io/client@0.25.1(typescript@5.1.6):
     resolution: {integrity: sha512-BPB+JX1URNvvSsL5crhWnWC3X0PlilQ14MJTwX3jShGXRyqgkb5/tRgntkHMI6IS8UgLHsPnCS02uf8JkuBHJQ==}
+    peerDependencies:
+      typescript: '>=4.5'
+    dependencies:
+      typescript: 5.1.6
+
+  /@xata.io/client@0.25.2(typescript@5.1.3):
+    resolution: {integrity: sha512-W3eBfTM2PZzrH5+YLW6niasrgE31oHkVPqf5JW/hosq6M/2F2K4EUiwFoRKRnpsRUo9GP1VmqGvVX2eJAl73SA==}
+    peerDependencies:
+      typescript: '>=4.5'
+    dependencies:
+      typescript: 5.1.3
+
+  /@xata.io/client@0.25.2(typescript@5.1.6):
+    resolution: {integrity: sha512-W3eBfTM2PZzrH5+YLW6niasrgE31oHkVPqf5JW/hosq6M/2F2K4EUiwFoRKRnpsRUo9GP1VmqGvVX2eJAl73SA==}
     peerDependencies:
       typescript: '>=4.5'
     dependencies:
@@ -5201,7 +5216,7 @@ packages:
     resolution: {integrity: sha512-ImKNN91r70K8avM/XaXT6utO9TtuYCOd+rbr/+6vvTw1/wCzPgwhb2HzsxB/tah/ysUvg0s0o2tw7fJKxMqY3Q==}
     dependencies:
       '@faker-js/faker': 8.0.2
-      '@xata.io/client': 0.25.1(typescript@5.1.3)
+      '@xata.io/client': 0.25.2(typescript@5.1.3)
       any-date-parser: 1.5.4
       json5: 2.2.3
       lodash.chunk: 4.2.0
@@ -5217,7 +5232,7 @@ packages:
     resolution: {integrity: sha512-ImKNN91r70K8avM/XaXT6utO9TtuYCOd+rbr/+6vvTw1/wCzPgwhb2HzsxB/tah/ysUvg0s0o2tw7fJKxMqY3Q==}
     dependencies:
       '@faker-js/faker': 8.0.2
-      '@xata.io/client': 0.25.1(typescript@5.1.6)
+      '@xata.io/client': 0.25.2(typescript@5.1.6)
       any-date-parser: 1.5.4
       json5: 2.2.3
       lodash.chunk: 4.2.0
@@ -5233,7 +5248,7 @@ packages:
     resolution: {integrity: sha512-aE9r1jXPQOPB2lKIvJYAylYPSlN1mfnzFJuLiMoDOHULt/FPZ2m2de3tF/6gH5fQL4N4x0lJ9pVFjnr1SN4GOw==}
     dependencies:
       '@faker-js/faker': 8.0.2
-      '@xata.io/client': 0.25.1(typescript@5.1.3)
+      '@xata.io/client': 0.25.2(typescript@5.1.3)
       any-date-parser: 1.5.4
       json5: 2.2.3
       lodash.chunk: 4.2.0
@@ -5250,7 +5265,7 @@ packages:
     resolution: {integrity: sha512-aE9r1jXPQOPB2lKIvJYAylYPSlN1mfnzFJuLiMoDOHULt/FPZ2m2de3tF/6gH5fQL4N4x0lJ9pVFjnr1SN4GOw==}
     dependencies:
       '@faker-js/faker': 8.0.2
-      '@xata.io/client': 0.25.1(typescript@5.1.6)
+      '@xata.io/client': 0.25.2(typescript@5.1.6)
       any-date-parser: 1.5.4
       json5: 2.2.3
       lodash.chunk: 4.2.0
@@ -12257,6 +12272,12 @@ packages:
 
   /undici@5.22.1:
     resolution: {integrity: sha512-Ji2IJhFXZY0x/0tVBXeQwgPlLWw13GVzpsWPQ3rV50IFMMof2I55PZZxtm4P6iNq+L5znYN9nSTAq0ZyE6lSJw==}
+    engines: {node: '>=14.0'}
+    dependencies:
+      busboy: 1.6.0
+
+  /undici@5.23.0:
+    resolution: {integrity: sha512-1D7w+fvRsqlQ9GscLBwcAJinqcZGHUKjbOmXdlE/v8BvEGXjeWAax+341q44EuTcHXXnfyKNbKRq4Lg7OzhMmg==}
     engines: {node: '>=14.0'}
     dependencies:
       busboy: 1.6.0
