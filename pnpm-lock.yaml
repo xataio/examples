@@ -271,8 +271,8 @@ importers:
         specifier: ^18.0.8
         version: 18.2.7
       '@vitejs/plugin-react':
-        specifier: ^3.0.0
-        version: 3.0.0(vite@4.0.0)
+        specifier: ^4.0.0
+        version: 4.0.0(vite@4.0.0)
       concurrently:
         specifier: ^7.5.0
         version: 7.5.0
@@ -4480,16 +4480,15 @@ packages:
       ts-morph: 12.0.0
     dev: true
 
-  /@vitejs/plugin-react@3.0.0(vite@4.0.0):
-    resolution: {integrity: sha512-1mvyPc0xYW5G8CHQvJIJXLoMjl5Ct3q2g5Y2s6Ccfgwm45y48LBvsla7az+GkkAtYikWQ4Lxqcsq5RHLcZgtNQ==}
+  /@vitejs/plugin-react@4.0.0(vite@4.0.0):
+    resolution: {integrity: sha512-HX0XzMjL3hhOYm+0s95pb0Z7F8O81G7joUHgfDd/9J/ZZf5k4xX6QAMFkKsHFxaHlf6X7GD7+XuaZ66ULiJuhQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
-      vite: ^4.0.0
+      vite: ^4.2.0
     dependencies:
       '@babel/core': 7.22.10
       '@babel/plugin-transform-react-jsx-self': 7.22.5(@babel/core@7.22.10)
       '@babel/plugin-transform-react-jsx-source': 7.22.5(@babel/core@7.22.10)
-      magic-string: 0.27.0
       react-refresh: 0.14.0
       vite: 4.0.0(@types/node@18.17.4)
     transitivePeerDependencies:
