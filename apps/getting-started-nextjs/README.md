@@ -43,6 +43,12 @@ The above command will create a `.env` file containing your Xata project configu
 | `XATA_API_KEY` | The API key to your Xata workspace. |
 | `XATA_BRANCH`  | The database branch to be used.     |
 
+Download a CSV file providing a basic schema and seed data for the application:
+
+```sh
+curl https://raw.githubusercontent.com/xataio/examples/main/seed/blog-posts.csv --create-dirs -o seed/blog-posts.csv
+```
+
 Create your database schema and seed the database using the CSV of blog post listings in `seed/blog-posts.csv`:
 
 ```sh
