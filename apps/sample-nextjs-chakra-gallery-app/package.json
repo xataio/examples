@@ -1,0 +1,69 @@
+{
+  "name": "xata-image-gallery",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "chakra-types-gen": "chakra-cli tokens ./theme/theme.ts",
+    "postinstall": "pnpm run chakra-types-gen",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@chakra-ui/next-js": "^2.1.5",
+    "@chakra-ui/react": "^2.8.0",
+    "@chakra-ui/theme": "^3.2.0",
+    "@chakra-ui/theme-tools": "^2.1.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fluentui/react-icons": "^2.0.208",
+    "@xata.io/client": "^0.25.1",
+    "chroma-js": "^2.4.2",
+    "lodash": "^4.17.21",
+    "next": "13.4.12",
+    "prettier": "=2.8.8",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "slugify": "^1.6.6",
+    "typescript": "5.1.6",
+    "uuid": "^9.0.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "prettier --config=.prettierrc.precommit.js --write",
+      "eslint --cache --fix"
+    ],
+    "*.{css,json,md,yml,yaml}": [
+      "prettier --write"
+    ]
+  },
+  "engines": {
+    "node": ">=18.12.1 <19",
+    "pnpm": "^8.6.5"
+  },
+  "devDependencies": {
+    "@chakra-ui/cli": "^2.4.1",
+    "@chakra-ui/styled-system": "^2.9.1",
+    "@types/chroma-js": "^2.4.0",
+    "@types/lodash": "^4.14.196",
+    "@types/node": "20.4.5",
+    "@types/react": "18.2.17",
+    "@types/react-dom": "18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.2.0",
+    "@typescript-eslint/parser": "^6.2.0",
+    "eslint": "8.45.0",
+    "eslint-config-next": "13.4.12",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-check-file": "^2.5.0",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "=4.2.1",
+    "eslint-plugin-react": "^7.33.0",
+    "framer-motion": "^10.15.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "prettier-plugin-organize-imports": "^3.2.2"
+  }
+}

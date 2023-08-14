@@ -1,0 +1,19 @@
+{
+  "id": "mig_cj4i91fq80c62tvvf1dg",
+  "parentID": "mig_cj4i8ug5j5vio0h4uj7g",
+  "checksum": "1:ebd7c2e0553a4ca039bf2a4bd4b4c4f72a375dcfb36ca0e73ebf81b6d318ef56",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "image",
+          "type": "link",
+          "link": {
+            "table": "image"
+          }
+        },
+        "table": "gallery-to-image"
+      }
+    }
+  ]
+}

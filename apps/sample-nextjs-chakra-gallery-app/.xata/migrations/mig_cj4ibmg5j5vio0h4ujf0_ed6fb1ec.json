@@ -1,0 +1,19 @@
+{
+  "id": "mig_cj4ibmg5j5vio0h4ujf0",
+  "parentID": "mig_cj4ibfaf3va3kd8git70",
+  "checksum": "1:ed6fb1ece3c27c1cdc197d8da2b399e81a33c95e1f4bf784e437d666af8cc874",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "tag",
+          "type": "link",
+          "link": {
+            "table": "tag"
+          }
+        },
+        "table": "tag-to-image"
+      }
+    }
+  ]
+}
