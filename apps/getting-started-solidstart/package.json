@@ -17,6 +17,7 @@
   "dependencies": {
     "@solidjs/meta": "^0.28.5",
     "@solidjs/router": "^0.8.2",
+    "@xata.io/client": "^0.25.2",
     "solid-js": "^1.7.11",
     "solid-start": "^0.3.2"
   },
