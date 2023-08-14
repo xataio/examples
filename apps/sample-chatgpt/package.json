@@ -11,7 +11,7 @@
   "dependencies": {
     "@microsoft/fetch-event-source": "^2.0.1",
     "@xata.io/client": "0.25.2",
-    "next": "13.4.13",
+    "next": "13.4.15",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "zod": "^3.20.2"
