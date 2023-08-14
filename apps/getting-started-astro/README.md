@@ -1,13 +1,77 @@
-# Astro with Tailwind
+# Getting Started with Xata + Astro
 
+An example application demonstrating the basics of using Xata within an Astro app.
+
+## Prerequisites
+
+Install the Xata CLI:
+
+```sh
+npm install -g @xata.io/cli
 ```
-npm create astro@latest -- --template with-tailwindcss
+
+Login to your Xata account or signup for an account and authenticate the Xata CLI:
+
+```sh
+xata auth login
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/with-tailwindcss)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/with-tailwindcss)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/with-tailwindcss/devcontainer.json)
+## Clone the application
 
-Astro comes with [Tailwind](https://tailwindcss.com) support out of the box. This example showcases how to style your Astro project with Tailwind.
+```bash
+npx degit xataio/examples/apps/getting-started-astro xata-astro
+```
 
-For complete setup instructions, please see our [Tailwind Integration Guide](https://docs.astro.build/en/guides/integrations-guide/tailwind).
+And `cd` into the app directory:
+
+```sh
+cd xata-astro
+```
+
+## Initialize your Xata project
+
+Initialize a new Xata project with the following command, agreeing to the default prompt options:
+
+```sh
+xata init
+```
+
+The above command will create a `.env` file containing your Xata project configuration.
+
+| Key            | Description                         |
+| -------------- | ----------------------------------- |
+| `XATA_API_KEY` | The API key to your Xata workspace. |
+| `XATA_BRANCH`  | The database branch to be used.     |
+
+Download a CSV file providing a basic schema and seed data for the application:
+
+```sh
+curl https://raw.githubusercontent.com/xataio/examples/main/seed/blog-posts.csv --create-dirs -o seed/blog-posts.csv
+```
+
+Create your database schema and seed the database using the CSV of blog post listings in `seed/blog-posts.csv`:
+
+```sh
+xata import csv seed/blog-posts.csv --table Posts --create
+```
+
+Next, update the generated code in `src/xata.ts` based on the schema that was created by the above command:
+
+```sh
+xata pull main
+```
+
+## Run the Xata + Astro application
+
+Run the application as follows:
+
+```sh
+npm run dev
+```
+
+## Learn More
+
+To learn more about Xata and Astro, take a look at the following resources:
+
+- [Xata docs](https://xata.io/docs)
+- [Astro Documentation](https://docs.astro.build)
