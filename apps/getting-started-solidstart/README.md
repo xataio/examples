@@ -1,30 +1,78 @@
-# SolidStart
+# Getting Started with Xata + SolidStart
 
-Everything you need to build a Solid project, powered by [`solid-start`](https://start.solidjs.com);
+An example application demonstrating the basics of using Xata within an SolidStart app.
 
-## Creating a project
+## Prerequisites
 
-```bash
-# create a new project in the current directory
-npm init solid@latest
+Install the Xata CLI:
 
-# create a new project in my-app
-npm init solid@latest my-app
+```sh
+npm install -g @xata.io/cli
 ```
 
-## Developing
+Login to your Xata account or signup for an account and authenticate the Xata CLI:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+```sh
+xata auth login
+```
+
+## Clone the application
 
 ```bash
+npx degit xataio/examples/apps/getting-started-solidstart xata-solidstart
+```
+
+And `cd` into the app directory:
+
+```sh
+cd xata-solidstart
+```
+
+## Initialize your Xata project
+
+Initialize a new Xata project with the following command, agreeing to the default prompt options:
+
+```sh
+xata init
+```
+
+The above command will create a `.env` file containing your Xata project configuration.
+
+| Key            | Description                         |
+| -------------- | ----------------------------------- |
+| `XATA_API_KEY` | The API key to your Xata workspace. |
+| `XATA_BRANCH`  | The database branch to be used.     |
+
+Download a CSV file providing a basic schema and seed data for the application:
+
+```sh
+curl https://raw.githubusercontent.com/xataio/examples/main/seed/blog-posts.csv --create-dirs -o seed/blog-posts.csv
+```
+
+Create your database schema and seed the database using the CSV of blog post listings in `seed/blog-posts.csv`:
+
+```sh
+xata import csv seed/blog-posts.csv --table Posts --create
+```
+
+Next, update the generated code in `src/xata.ts` based on the schema that was created by the above command:
+
+```sh
+xata pull main
+```
+
+## Run the Xata + Astro application
+
+Run the application as follows:
+
+```sh
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+## Learn More
 
-Solid apps are built with _adapters_, which optimise your project for deployment to different environments.
+To learn more about Xata and Astro, take a look at the following resources:
 
-By default, `npm run build` will generate a Node app that you can run with `npm start`. To use a different adapter, add it to the `devDependencies` in `package.json` and specify in your `vite.config.js`.
+- [Xata docs](https://xata.io/docs)
+- [SolidStart Documentation](https://start.solidjs.com/)
+- [Solid.js Documentation](https://www.solidjs.com/docs)
