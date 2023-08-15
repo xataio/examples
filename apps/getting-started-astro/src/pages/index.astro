@@ -1,9 +1,6 @@
 ---
 import MainLayout from '../layouts/main.astro';
 
-import SearchForm from '../components/search-form.astro'
-import PostsList from '../components/posts-list.astro';
-
 import { XataClient } from '../xata';
 
 const xata = new XataClient({ apiKey: import.meta.env.XATA_API_KEY });
