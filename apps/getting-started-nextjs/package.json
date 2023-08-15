@@ -1,5 +1,5 @@
 {
-  "name": "sample-chatgpt",
+  "name": "getting-started-nextjs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,19 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@microsoft/fetch-event-source": "^2.0.1",
-    "@xata.io/client": "0.25.2",
-    "next": "13.4.16",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "zod": "^3.20.2"
-  },
-  "devDependencies": {
-    "@types/node": "18.17.5",
+    "@types/node": "20.5.0",
     "@types/react": "18.2.20",
     "@types/react-dom": "18.2.7",
+    "@xata.io/client": "^0.25.1",
+    "autoprefixer": "10.4.15",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.16",
+    "next": "13.4.16",
+    "postcss": "8.4.27",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tailwindcss": "3.3.3",
     "typescript": "5.1.6"
   }
 }
