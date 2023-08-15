@@ -36,15 +36,15 @@ export default async function Home({ searchParams }: { searchParams: { q: string
 
       <div className="w-full max-w-5xl mt-16">
         {posts.length === 0 && <p>No blog posts found</p>}
-        {posts.map((record) => (
-          <div key={record.id} className="mb-16">
-            <p className="text-xs mb-2 text-purple-950 dark:text-purple-200">{record.pubDate?.toDateString()}</p>
+        {posts.map((post) => (
+          <div key={post.id} className="mb-16">
+            <p className="text-xs mb-2 text-purple-950 dark:text-purple-200">{post.pubDate?.toDateString()}</p>
             <h2 className="text-2xl mb-2">
-              <a href={`posts/${record.slug}`}>{record.title}</a>
+              <a href={`posts/${post.slug}`}>{post.title}</a>
             </h2>
-            <p className="text-purple-950 dark:text-purple-200 mb-5">{record.description}</p>
+            <p className="text-purple-950 dark:text-purple-200 mb-5">{post.description}</p>
             <a
-              href={`posts/${record.slug}`}
+              href={`posts/${post.slug}`}
               className="px-4 py-2 font-semibold text-sm bg-purple-700 text-white rounded-lg shadow-sm w-fit"
             >
               Read more &rarr;
