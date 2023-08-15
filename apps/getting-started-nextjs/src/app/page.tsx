@@ -29,7 +29,7 @@ export default async function Home({ searchParams }: { searchParams: { q: string
             name="q"
             defaultValue={searchParams.q}
             placeholder="Search..."
-            className="w-full rounded-lg p-2 dark:text-purple-950"
+            className="w-full rounded-lg border-2 p-2 dark:text-purple-950"
           />
         </form>
       </div>
