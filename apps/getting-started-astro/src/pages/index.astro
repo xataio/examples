@@ -5,9 +5,9 @@ import { XataClient } from '../xata';
 
 const xata = new XataClient({ apiKey: import.meta.env.XATA_API_KEY });
 
-let posts = null;
 const search = Astro.url.searchParams.get('q')! || '';
 
+let posts = null;
 if (search) {
 	posts = await xata.db.Posts.search(search, { fuzziness: 2 });
 } else {

@@ -5,14 +5,16 @@ import { XataClient } from '../../xata';
 
 export async function getStaticPaths() {
   const xata = new XataClient({ apiKey: import.meta.env.XATA_API_KEY });
-  const records = await xata.db.Posts.getAll();
+  const posts = await xata.db.Posts.getAll();
 
-  return records.map(({ slug, title, description, pubDate }) => {
+  const routes = posts.map(({ slug, title, description, pubDate }) => {
     return {
       params: { slug },
       props: { title, description, pubDate },
     };
   });
+
+  return routes;
 }
 
 const post = Astro.props;
