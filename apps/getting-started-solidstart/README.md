@@ -61,7 +61,7 @@ Next, update the generated code in `src/xata.ts` based on the schema that was cr
 xata pull main
 ```
 
-## Run the Xata + Astro application
+## Run the Xata + SolidStart application
 
 Run the application as follows:
 
@@ -71,7 +71,7 @@ npm run dev
 
 ## Learn More
 
-To learn more about Xata and Astro, take a look at the following resources:
+To learn more about Xata and SolidStart, take a look at the following resources:
 
 - [Xata docs](https://xata.io/docs)
 - [SolidStart Documentation](https://start.solidjs.com/)
