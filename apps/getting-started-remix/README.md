@@ -1,12 +1,3 @@
-npx create-remix@latest xata-remix
-cd xata-remix
-
-Follow the official Remix + Tailwind guide so we have some basic styling in our app: https://remix.run/docs/en/1.19.3/guides/styling#tailwind-css
-
-Remember to add `darkMode: 'class',` to `tailwind.config.ts`.
-
----
-
 # Getting Started with Xata + Remix
 
 An example application demonstrating the basics of using Xata within an Remix app.
@@ -80,7 +71,7 @@ npm run dev
 
 ## Learn More
 
-To learn more about Xata and Astro, take a look at the following resources:
+To learn more about Xata and Remix, take a look at the following resources:
 
 - [Xata docs](https://xata.io/docs)
 - [Remix Documentation](https://remix.run/docs/)
