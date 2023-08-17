@@ -1,4 +1,5 @@
 {
+  "name": "getting-started-remix",
   "private": true,
   "sideEffects": false,
   "scripts": {
