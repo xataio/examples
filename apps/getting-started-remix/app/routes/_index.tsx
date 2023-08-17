@@ -1,32 +1,32 @@
-import { LoaderArgs, V2_MetaFunction, json } from '@remix-run/node'
-import { useLoaderData } from '@remix-run/react'
-import { getXataClient } from 'src/xata'
+import { LoaderArgs, V2_MetaFunction, json } from '@remix-run/node';
+import { useLoaderData } from '@remix-run/react';
+import { getXataClient } from 'src/xata';
 
 export const meta: V2_MetaFunction = () => {
-  return [{ title: 'Xata and Remix' }]
-}
+  return [{ title: 'Xata and Remix' }];
+};
 
 export async function loader({ request }: LoaderArgs) {
-  const xata = getXataClient()
+  const xata = getXataClient();
 
-  const url = new URL(request.url)
-  const search = url.searchParams.get('q')
+  const url = new URL(request.url);
+  const search = url.searchParams.get('q');
 
-  let posts = null
+  let posts = null;
   if (search) {
-    posts = await xata.db.Posts.search(search, { fuzziness: 2 })
+    posts = await xata.db.Posts.search(search, { fuzziness: 2 });
   } else {
-    posts = await xata.db.Posts.getAll()
+    posts = await xata.db.Posts.getAll();
   }
 
   return json({
     posts,
-    search,
-  })
+    search
+  });
 }
 
 export default function Index() {
-  const { posts, search } = useLoaderData<typeof loader>()
+  const { posts, search } = useLoaderData<typeof loader>();
 
   return (
     <>
@@ -51,9 +51,7 @@ export default function Index() {
             <h2 className="text-2xl mb-2">
               <a href={`posts/${post.slug}`}>{post.title}</a>
             </h2>
-            <p className="text-purple-950 dark:text-purple-200 mb-5">
-              {post.description}
-            </p>
+            <p className="text-purple-950 dark:text-purple-200 mb-5">{post.description}</p>
             <a
               href={`posts/${post.slug}`}
               className="px-4 py-2 font-semibold text-sm bg-purple-700 text-white rounded-lg shadow-sm w-fit"
@@ -64,5 +62,5 @@ export default function Index() {
         ))}
       </div>
     </>
-  )
+  );
 }
