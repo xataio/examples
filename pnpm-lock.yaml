@@ -45,8 +45,8 @@ importers:
         specifier: 8.47.0
         version: 8.47.0
       eslint-config-next:
-        specifier: 13.4.18
-        version: 13.4.18(eslint@8.47.0)(typescript@5.1.6)
+        specifier: 13.4.19
+        version: 13.4.19(eslint@8.47.0)(typescript@5.1.6)
       next:
         specifier: 13.4.19
         version: 13.4.19(@babel/core@7.22.10)(react-dom@18.2.0)(react@18.2.0)
@@ -100,8 +100,8 @@ importers:
         specifier: 8.47.0
         version: 8.47.0
       eslint-config-next:
-        specifier: 13.4.18
-        version: 13.4.18(eslint@8.47.0)(typescript@5.1.6)
+        specifier: 13.4.19
+        version: 13.4.19(eslint@8.47.0)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -158,8 +158,8 @@ importers:
         specifier: 8.47.0
         version: 8.47.0
       eslint-config-next:
-        specifier: 13.4.18
-        version: 13.4.18(eslint@8.47.0)(typescript@5.1.6)
+        specifier: 13.4.19
+        version: 13.4.19(eslint@8.47.0)(typescript@5.1.6)
       postcss:
         specifier: ^8.4.18
         version: 8.4.18
@@ -176,8 +176,8 @@ importers:
         specifier: latest
         version: 0.2.2(@xata.io/client@0.25.2)(next-auth@4.18.6)
       '@next/font':
-        specifier: 13.4.18
-        version: 13.4.18
+        specifier: 13.4.19
+        version: 13.4.19
       '@types/node':
         specifier: 18.17.6
         version: 18.17.6
@@ -194,8 +194,8 @@ importers:
         specifier: 8.47.0
         version: 8.47.0
       eslint-config-next:
-        specifier: 13.4.18
-        version: 13.4.18(eslint@8.47.0)(typescript@5.1.6)
+        specifier: 13.4.19
+        version: 13.4.19(eslint@8.47.0)(typescript@5.1.6)
       next:
         specifier: ^13.0.7
         version: 13.4.13(react-dom@18.2.0)(react@18.2.0)
@@ -218,8 +218,8 @@ importers:
         specifier: latest
         version: 0.2.2(@xata.io/client@0.25.2)(next-auth@4.18.6)
       '@next/font':
-        specifier: 13.4.18
-        version: 13.4.18
+        specifier: 13.4.19
+        version: 13.4.19
       '@types/node':
         specifier: 18.17.6
         version: 18.17.6
@@ -236,8 +236,8 @@ importers:
         specifier: 8.47.0
         version: 8.47.0
       eslint-config-next:
-        specifier: 13.4.18
-        version: 13.4.18(eslint@8.47.0)(typescript@5.1.6)
+        specifier: 13.4.19
+        version: 13.4.19(eslint@8.47.0)(typescript@5.1.6)
       next:
         specifier: ^13.0.7
         version: 13.4.13(react-dom@18.2.0)(react@18.2.0)
@@ -288,8 +288,8 @@ importers:
         specifier: 8.47.0
         version: 8.47.0
       eslint-config-next:
-        specifier: 13.4.18
-        version: 13.4.18(eslint@8.47.0)(typescript@5.1.6)
+        specifier: 13.4.19
+        version: 13.4.19(eslint@8.47.0)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -355,8 +355,8 @@ importers:
         specifier: ^4.6.13
         version: 4.6.13(next@13.4.19)(react@18.2.0)
       '@next/font':
-        specifier: 13.4.18
-        version: 13.4.18
+        specifier: 13.4.19
+        version: 13.4.19
       '@tanstack/react-query':
         specifier: ^4.20.4
         version: 4.20.4(react-dom@18.2.0)(react@18.2.0)
@@ -391,8 +391,8 @@ importers:
         specifier: 8.47.0
         version: 8.47.0
       eslint-config-next:
-        specifier: 13.4.18
-        version: 13.4.18(eslint@8.47.0)(typescript@5.1.6)
+        specifier: 13.4.19
+        version: 13.4.19(eslint@8.47.0)(typescript@5.1.6)
       next:
         specifier: 13.4.19
         version: 13.4.19(@babel/core@7.22.10)(react-dom@18.2.0)(react@18.2.0)
@@ -3270,13 +3270,13 @@ packages:
     resolution: {integrity: sha512-FsAT5x0jF2kkhNkKkukhsyYOrRqtSxrEhfliniIq0bwWbuXLgyt3Gv0Ml+b91XwjwArmuP7NxCiGd++GGKdNMQ==}
     dev: false
 
-  /@next/eslint-plugin-next@13.4.18:
-    resolution: {integrity: sha512-GlOmUjZYYTjKl782mKk5a0bYEmKaouGaxPhi6t9yDILqrppU7JTIyONzLKQPszRXDCVZge0NFd4gwRs1ARZsMg==}
+  /@next/eslint-plugin-next@13.4.19:
+    resolution: {integrity: sha512-N/O+zGb6wZQdwu6atMZHbR7T9Np5SUFUjZqCbj0sXm+MwQO35M8TazVB4otm87GkXYs2l6OPwARd3/PUWhZBVQ==}
     dependencies:
       glob: 7.1.7
 
-  /@next/font@13.4.18:
-    resolution: {integrity: sha512-Xypz8ERqDRLru0+bUa+9z6qMrK2bIiFhNB2rWWvb/wGiXtGTgbNPrJLqXa+NgY1Vrzu/4GkR09USEgRkDsLqaA==}
+  /@next/font@13.4.19:
+    resolution: {integrity: sha512-yOuSRYfqksWcaG/sATr1/DEGvvI8gnmAAnQCCZ0+L9p4Pio3/DMu71J56YHh9Hz84LDN4tMVzuux0ssCuM50sA==}
     dev: false
 
   /@next/swc-darwin-arm64@13.4.13:
@@ -6735,8 +6735,8 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
-  /eslint-config-next@13.4.18(eslint@8.47.0)(typescript@5.1.6):
-    resolution: {integrity: sha512-G15CYbsIHwV6Fzoly5SXo/Mj3pNqNkOzbf+wQcPod3LgVNviWVYlb9czjdiREXHq2VF6oV79Kv0Wunguj6RMEw==}
+  /eslint-config-next@13.4.19(eslint@8.47.0)(typescript@5.1.6):
+    resolution: {integrity: sha512-WE8367sqMnjhWHvR5OivmfwENRQ1ixfNE9hZwQqNCsd+iM3KnuMc1V8Pt6ytgjxjf23D+xbesADv9x3xaKfT3g==}
     peerDependencies:
       eslint: ^7.23.0 || ^8.0.0
       typescript: '>=3.3.1'
@@ -6744,7 +6744,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@next/eslint-plugin-next': 13.4.18
+      '@next/eslint-plugin-next': 13.4.19
       '@rushstack/eslint-patch': 1.3.3
       '@typescript-eslint/parser': 5.62.0(eslint@8.47.0)(typescript@5.1.6)
       eslint: 8.47.0
