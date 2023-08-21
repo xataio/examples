@@ -1,6 +1,6 @@
 # Getting Started with Xata + SvelteKit
 
-An example application demonstrating the basics of using Xata within a SvelteKit app using **App Routing**.
+An example application demonstrating the basics of using Xata within a SvelteKit app.
 
 ## Prerequisites
 
