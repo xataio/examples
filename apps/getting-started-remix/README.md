@@ -1,6 +1,6 @@
 # Getting Started with Xata + Remix
 
-An example application demonstrating the basics of using Xata within an Remix app.
+An example application demonstrating the basics of using Xata within a Remix app.
 
 ## Prerequisites
 
