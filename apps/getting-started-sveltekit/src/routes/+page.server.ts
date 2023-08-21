@@ -2,7 +2,10 @@ import type { PageServerLoad } from './$types';
 
 import { XataClient } from '../xata';
 
-const xata = new XataClient({ apiKey: import.meta.env.VITE_XATA_API_KEY });
+const xata = new XataClient({
+  apiKey: import.meta.env.VITE_XATA_API_KEY,
+  branch: import.meta.env.VITE_XATA_BRANCH
+});
 
 export const load: PageServerLoad = async ({ request }) => {
   const url = new URL(request.url);
@@ -16,6 +19,7 @@ export const load: PageServerLoad = async ({ request }) => {
   }
 
   return {
-    posts
+    posts,
+    search
   };
 };
