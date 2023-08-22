@@ -1,3 +1,4 @@
+import { Title } from 'solid-start';
 import { useParams, useRouteData } from 'solid-start';
 import { createServerData$ } from 'solid-start/server';
 
@@ -21,6 +22,8 @@ export default function Post() {
 
   return (
     <>
+      <Title>{post?.title}</Title>
+
       <div class="w-full max-w-5xl mt-16">
         <p class="mb-2">
           <a href="/" class="text-purple-600">

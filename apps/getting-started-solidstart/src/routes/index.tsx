@@ -3,7 +3,7 @@ import { Match, Switch, For } from 'solid-js';
 import { useRouteData } from 'solid-start';
 import { createServerData$ } from 'solid-start/server';
 
-import { PostsRecord, XataClient } from '~/xata';
+import { XataClient } from '~/xata';
 
 export function routeData() {
   return createServerData$(async () => {
