@@ -1,5 +1,23 @@
+import { useParams, useRouteData } from 'solid-start';
+import { createServerData$ } from 'solid-start/server';
+
+import { XataClient } from '~/xata';
+
+export function routeData() {
+  return createServerData$(async () => {
+    const xata = new XataClient({
+      apiKey: import.meta.env.XATA_API_KEY,
+      branch: import.meta.env.XATA_BRANCH
+    });
+
+    const params = useParams();
+    return await xata.db.Posts.filter({ slug: params.slug }).getFirst();
+  });
+}
+
 export default function Post() {
-  const post = {}
+  const data = useRouteData<typeof routeData>();
+  const post = data();
 
   return (
     <>
@@ -17,5 +35,5 @@ export default function Post() {
         <p class="text-xl">{post?.description}</p>
       </div>
     </>
-  )
+  );
 }

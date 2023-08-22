@@ -1,20 +1,35 @@
-import { Match, Switch, For } from 'solid-js'
-import { useRouteData } from 'solid-start'
-import { createServerData$ } from 'solid-start/server'
+import { useLocation } from '@solidjs/router';
+import { Match, Switch, For } from 'solid-js';
+import { useRouteData } from 'solid-start';
+import { createServerData$ } from 'solid-start/server';
 
-import { XataClient } from '~/xata'
+import { PostsRecord, XataClient } from '~/xata';
 
 export function routeData() {
   return createServerData$(async () => {
-    const xata = new XataClient({ apiKey: import.meta.env.XATA_API_KEY })
-    return await xata.db.Posts.getAll()
-  })
+    const xata = new XataClient({
+      apiKey: import.meta.env.XATA_API_KEY,
+      branch: import.meta.env.XATA_BRANCH
+    });
+
+    const location = useLocation();
+    const search = location.query.q;
+
+    let posts = null;
+    if (search) {
+      posts = await xata.db.Posts.search(search, { fuzziness: 2 });
+    } else {
+      posts = await xata.db.Posts.getAll();
+    }
+    return { posts, search };
+  });
 }
 
 export default function Home() {
-  const search = ''
-  const data = useRouteData<typeof routeData>()
-  const posts = data()
+  const resource = useRouteData<typeof routeData>();
+  const data = resource();
+  const posts = data?.posts;
+  const search = data?.search || '';
 
   return (
     <>
@@ -60,5 +75,5 @@ export default function Home() {
         </Switch>
       </div>
     </>
-  )
+  );
 }
