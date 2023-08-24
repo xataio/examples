@@ -36,8 +36,8 @@ importers:
         specifier: 18.2.7
         version: 18.2.7
       '@xata.io/client':
-        specifier: ^0.25.1
-        version: 0.25.2(typescript@5.1.6)
+        specifier: ^0.26.0
+        version: 0.26.0(typescript@5.1.6)
       autoprefixer:
         specifier: 10.4.15
         version: 10.4.15(postcss@8.4.28)
@@ -72,8 +72,8 @@ importers:
         specifier: ^2.0.1
         version: 2.0.1
       '@xata.io/client':
-        specifier: 0.25.3
-        version: 0.25.3(typescript@5.1.6)
+        specifier: 0.26.0
+        version: 0.26.0(typescript@5.1.6)
       next:
         specifier: 13.4.19
         version: 13.4.19(@babel/core@7.22.10)(react-dom@18.2.0)(react@18.2.0)
@@ -112,8 +112,8 @@ importers:
         specifier: ^0.5.0
         version: 0.5.0
       '@xata.io/client':
-        specifier: 0.25.3
-        version: 0.25.3(typescript@5.1.6)
+        specifier: 0.26.0
+        version: 0.26.0(typescript@5.1.6)
       next:
         specifier: 13.4.19
         version: 13.4.19(@babel/core@7.22.10)(react-dom@18.2.0)(react@18.2.0)
@@ -257,8 +257,8 @@ importers:
   apps/sample-nextjs-basic-auth:
     dependencies:
       '@xata.io/client':
-        specifier: 0.25.3
-        version: 0.25.3(typescript@5.1.6)
+        specifier: 0.26.0
+        version: 0.26.0(typescript@5.1.6)
       bcrypt:
         specifier: ^5.1.0
         version: 5.1.0
@@ -297,8 +297,8 @@ importers:
   apps/sample-workers-vite-react:
     dependencies:
       '@xata.io/client':
-        specifier: 0.25.3
-        version: 0.25.3(typescript@5.1.6)
+        specifier: 0.26.0
+        version: 0.26.0(typescript@5.1.6)
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -385,8 +385,8 @@ importers:
         specifier: 18.2.7
         version: 18.2.7
       '@xata.io/client':
-        specifier: ^0.25.0
-        version: 0.25.2(typescript@5.1.6)
+        specifier: ^0.26.0
+        version: 0.26.0(typescript@5.1.6)
       eslint:
         specifier: 8.47.0
         version: 8.47.0
@@ -431,8 +431,8 @@ importers:
         specifier: ^0.8.0
         version: 0.8.0(solid-js@1.6.6)
       '@xata.io/client':
-        specifier: ^0.25.0
-        version: 0.25.2(typescript@5.1.6)
+        specifier: ^0.26.0
+        version: 0.26.0(typescript@5.1.6)
       solid-js:
         specifier: ^1.6.6
         version: 1.6.6
@@ -466,8 +466,8 @@ importers:
         specifier: 2.4.3
         version: 2.4.3(@sveltejs/kit@1.23.0)
       '@xata.io/client':
-        specifier: ^0.25.0
-        version: 0.25.2(typescript@5.1.6)
+        specifier: ^0.26.0
+        version: 0.26.0(typescript@5.1.6)
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: latest
@@ -521,8 +521,8 @@ importers:
   apps/starter-vercel-serverless-functions:
     dependencies:
       '@xata.io/client':
-        specifier: 0.25.3
-        version: 0.25.3(typescript@5.1.6)
+        specifier: 0.26.0
+        version: 0.26.0(typescript@5.1.6)
       isomorphic-fetch:
         specifier: 3.0.0
         version: 3.0.0
@@ -5145,6 +5145,7 @@ packages:
       typescript: '>=4.5'
     dependencies:
       typescript: 5.1.6
+    dev: true
 
   /@xata.io/client@0.25.3(typescript@5.1.6):
     resolution: {integrity: sha512-JM3FWFRFNG4W+F4PO0jNVf2byMqJP319iH3SrOQh8Hi+AI+WUW2PyNVShCt5cwykjxhJVzeEd9xUnq++HVVdWA==}
@@ -5152,6 +5153,7 @@ packages:
       typescript: '>=4.5'
     dependencies:
       typescript: 5.1.6
+    dev: true
 
   /@xata.io/client@0.26.0(typescript@5.1.6):
     resolution: {integrity: sha512-0JPn2gEo9acNRpfeEzvBRInia//NIWztQ9mRjd+ZItwZG659eAtxB6A5NFEwAjHXoYwCtvOHht1v6S6Pd2f0Ew==}
