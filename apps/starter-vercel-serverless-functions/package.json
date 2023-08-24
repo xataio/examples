@@ -11,14 +11,14 @@
   },
   "devDependencies": {
     "@vercel/node": "2.15.10",
-    "@xata.io/cli": "0.13.4",
+    "@xata.io/cli": "0.13.6",
     "esbuild": "^0.19.0",
     "rollup": "^3.6.0",
     "typescript": "5.1.6",
     "vercel": "^28.5.6"
   },
   "dependencies": {
-    "@xata.io/client": "0.25.2",
+    "@xata.io/client": "0.26.0",
     "isomorphic-fetch": "3.0.0"
   }
 }
