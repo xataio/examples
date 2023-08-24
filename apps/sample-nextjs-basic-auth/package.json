@@ -10,7 +10,7 @@
     "xata:codegen": "xata codegen"
   },
   "dependencies": {
-    "@xata.io/client": "0.25.2",
+    "@xata.io/client": "0.25.3",
     "bcrypt": "^5.1.0",
     "next": "13.4.19",
     "react": "18.2.0",
@@ -18,8 +18,8 @@
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
-    "@types/node": "18.17.6",
-    "@types/react": "18.2.20",
+    "@types/node": "18.17.9",
+    "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.19",
