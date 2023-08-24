@@ -13,7 +13,7 @@
   "dependencies": {
     "@next-auth/xata-adapter": "latest",
     "@next/font": "13.4.19",
-    "@types/node": "18.17.9",
+    "@types/node": "18.17.11",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "@xata.io/client": "latest",
