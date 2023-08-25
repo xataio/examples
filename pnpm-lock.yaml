@@ -33,8 +33,8 @@ importers:
         specifier: ^1.6.0
         version: 1.6.0
       '@xata.io/client':
-        specifier: ^0.25.2
-        version: 0.25.2(typescript@5.2.2)
+        specifier: ^0.26.0
+        version: 0.26.0(typescript@5.2.2)
       astro:
         specifier: ^2.10.5
         version: 2.10.5(@types/node@18.17.11)
@@ -491,17 +491,17 @@ importers:
     dependencies:
       '@sveltejs/adapter-vercel':
         specifier: 2.4.3
-        version: 2.4.3(@sveltejs/kit@1.22.6)
+        version: 2.4.3(@sveltejs/kit@1.23.0)
       '@xata.io/client':
         specifier: ^0.26.0
         version: 0.26.0(typescript@5.1.6)
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: latest
-        version: 2.1.0(@sveltejs/kit@1.22.6)
+        version: 2.1.0(@sveltejs/kit@1.23.0)
       '@sveltejs/kit':
         specifier: latest
-        version: 1.22.6(svelte@3.44.0)(vite@4.0.0)
+        version: 1.23.0(svelte@3.44.0)(vite@4.0.0)
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.27.0
         version: 5.27.0(@typescript-eslint/parser@5.27.0)(eslint@8.47.0)(typescript@5.1.6)
@@ -4296,21 +4296,21 @@ packages:
     dependencies:
       solid-js: 1.6.6
 
-  /@sveltejs/adapter-auto@2.1.0(@sveltejs/kit@1.22.6):
+  /@sveltejs/adapter-auto@2.1.0(@sveltejs/kit@1.23.0):
     resolution: {integrity: sha512-o2pZCfATFtA/Gw/BB0Xm7k4EYaekXxaPGER3xGSY3FvzFJGTlJlZjBseaXwYSM94lZ0HniOjTokN3cWaLX6fow==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
     dependencies:
-      '@sveltejs/kit': 1.22.6(svelte@3.44.0)(vite@4.0.0)
+      '@sveltejs/kit': 1.23.0(svelte@3.44.0)(vite@4.0.0)
       import-meta-resolve: 3.0.0
     dev: true
 
-  /@sveltejs/adapter-vercel@2.4.3(@sveltejs/kit@1.22.6):
+  /@sveltejs/adapter-vercel@2.4.3(@sveltejs/kit@1.23.0):
     resolution: {integrity: sha512-3k/3udwaioFYdKDAgQcWSByB+KCbtjX+ARonYGCtYE0iuxWLStrESxy3SaU+17XD5Frh8w7tfY8ft4TV3ej3Dg==}
     peerDependencies:
       '@sveltejs/kit': ^1.5.0
     dependencies:
-      '@sveltejs/kit': 1.22.6(svelte@3.44.0)(vite@4.0.0)
+      '@sveltejs/kit': 1.23.0(svelte@3.44.0)(vite@4.0.0)
       '@vercel/nft': 0.22.6
       esbuild: 0.17.19
     transitivePeerDependencies:
@@ -4318,8 +4318,8 @@ packages:
       - supports-color
     dev: false
 
-  /@sveltejs/kit@1.22.6(svelte@3.44.0)(vite@4.0.0):
-    resolution: {integrity: sha512-SDKxI/QpsReCwIn5czjT53fKlPBybbmMk67d317gUqfeORroBAFN1Z6s/x0E1JYi+04i7kKllS+Sz9wVfmUkAQ==}
+  /@sveltejs/kit@1.23.0(svelte@3.44.0)(vite@4.0.0):
+    resolution: {integrity: sha512-MuDM6afpSMnPFMtEsE1O+Qn6NVPNHDqsDYYZE/8/+Z3IvGmE+GKHC+za6fEmCfwXLqNlxFZiV8s8kKOeNVJP+g==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
@@ -5534,6 +5534,7 @@ packages:
       typescript: '>=4.5'
     dependencies:
       typescript: 5.2.2
+    dev: true
 
   /@xata.io/client@0.26.0(typescript@5.1.6):
     resolution: {integrity: sha512-0JPn2gEo9acNRpfeEzvBRInia//NIWztQ9mRjd+ZItwZG659eAtxB6A5NFEwAjHXoYwCtvOHht1v6S6Pd2f0Ew==}
