@@ -4,7 +4,10 @@ import MainLayout from '../../layouts/main.astro'
 import { XataClient } from '../../xata';
 
 export async function getStaticPaths() {
-  const xata = new XataClient({ apiKey: import.meta.env.XATA_API_KEY });
+  const xata = new XataClient({ 
+	  apiKey: import.meta.env.XATA_API_KEY,
+	  branch: import.meta.env.XATA_BRANCH
+  });
   const posts = await xata.db.Posts.getAll();
 
   const routes = posts.map(({ slug, title, description, pubDate }) => {

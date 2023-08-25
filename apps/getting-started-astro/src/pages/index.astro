@@ -3,7 +3,10 @@ import MainLayout from '../layouts/main.astro';
 
 import { XataClient } from '../xata';
 
-const xata = new XataClient({ apiKey: import.meta.env.XATA_API_KEY });
+const xata = new XataClient({ 
+	apiKey: import.meta.env.XATA_API_KEY,
+	branch: import.meta.env.XATA_BRANCH
+});
 
 const search = Astro.url.searchParams.get('q')! || '';
 
