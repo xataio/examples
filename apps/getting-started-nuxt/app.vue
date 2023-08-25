@@ -1,3 +1,8 @@
+<script setup lang="ts">
+useHead({
+  title: 'Get started with Xata and Nuxt'
+});
+</script>
 <template>
   <main class="flex flex-wrap justify-center content-start p-8 lg:p-24 min-h-screen">
     <div class="z-10 h-50 w-full max-w-5xl items-center justify-between text-xl lg:flex">

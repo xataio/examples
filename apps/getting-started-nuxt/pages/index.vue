@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const route = useRoute();
 const search = route.query.q;
-const { data } = await useFetch(`/api/posts`, { query: { q: search } });
+const { data: posts } = await useFetch(`/api/posts`, { query: { q: search } });
 </script>
 
 <template>
@@ -12,8 +12,8 @@ const { data } = await useFetch(`/api/posts`, { query: { q: search } });
   </div>
 
   <div class="w-full max-w-5xl mt-16">
-    <p v-if="data && data.length === 0">No blog posts found</p>
-    <div v-for="post in data" class="mb-16">
+    <p v-if="posts && posts.length === 0">No blog posts found</p>
+    <div v-for="post in posts" class="mb-16">
       <p class="text-xs mb-2 text-purple-950 dark:text-purple-200">
         {{ new Date(post.pubDate || '').toDateString() }}
       </p>
