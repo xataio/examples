@@ -18,7 +18,7 @@ export default async function Home({ searchParams }: { searchParams: { q: string
         </p>
         <div className="fixed bottom-0 left-0 flex w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
           <a href="https://xata.io" className="w-20">
-            <img src="https://raw.githubusercontent.com/leggetter/xata-examples/5b0715c9ba36556400b6121bd224203cb89f7741/docs/app_logo.svg" />
+            <img src="https://raw.githubusercontent.com/xataio/examples/main/docs/app_logo.svg" />
           </a>
         </div>
       </div>
