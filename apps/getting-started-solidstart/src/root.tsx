@@ -22,7 +22,7 @@ export default function Root() {
         <Meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Body>
-        <main class="flex flex-wrap justify-center content-start p-8 lg:p-24 min-h-screen">
+        <main class="flex flex-col justify-center items-center p-8 lg:p-24 min-h-screen">
           <div class="z-10 h-50 w-full max-w-5xl items-center justify-between text-xl lg:flex">
             <p class="fixed left-0 top-0 flex w-full justify-center pb-6 pt-8 lg:static lg:w-auto bg-gradient-to-b from-white via-white via-65% dark:from-black dark:via-black lg:bg-none">
               <a href="/">Get started with Xata and SolidStart</a>
