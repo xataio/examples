@@ -4,9 +4,7 @@ useHead({
 });
 </script>
 <template>
-  <main
-    class="flex flex-col justify-center items-center p-8 lg:p-24 min-h-screen"
-  >
+  <main class="flex flex-col items-center p-8 lg:p-24 min-h-screen">
     <div
       class="z-10 h-50 w-full max-w-5xl items-center justify-between text-xl lg:flex"
     >
