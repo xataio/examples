@@ -6,6 +6,13 @@
 
 ## Apps 🏗
 
+- **getting-started**
+
+  - Prefix: `gettingstarted-`
+  - Framework
+  - Minimal Dependencies
+  - Show the results of following the Xata getting started guides
+
 - **starter**
 
   - Prefix: `starter-`
