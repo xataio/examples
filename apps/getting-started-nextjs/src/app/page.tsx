@@ -18,7 +18,7 @@ export default async function Home({ searchParams }: { searchParams: { q: string
         </p>
         <div className="fixed bottom-0 left-0 flex w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
           <a href="https://xata.io" className="w-20">
-            <img src="https://raw.githubusercontent.com/leggetter/xata-examples/5b0715c9ba36556400b6121bd224203cb89f7741/docs/app_logo.svg" />
+            <img src="https://raw.githubusercontent.com/xataio/examples/main/docs/app_logo.svg" />
           </a>
         </div>
       </div>
@@ -29,22 +29,22 @@ export default async function Home({ searchParams }: { searchParams: { q: string
             name="q"
             defaultValue={searchParams.q}
             placeholder="Search..."
-            className="w-full rounded-lg p-2 dark:text-purple-950"
+            className="w-full rounded-lg border-2 p-2 dark:text-purple-950"
           />
         </form>
       </div>
 
       <div className="w-full max-w-5xl mt-16">
         {posts.length === 0 && <p>No blog posts found</p>}
-        {posts.map((record) => (
-          <div key={record.id} className="mb-16">
-            <p className="text-xs mb-2 text-purple-950 dark:text-purple-200">{record.pubDate?.toDateString()}</p>
+        {posts.map((post) => (
+          <div key={post.id} className="mb-16">
+            <p className="text-xs mb-2 text-purple-950 dark:text-purple-200">{post.pubDate?.toDateString()}</p>
             <h2 className="text-2xl mb-2">
-              <a href={`posts/${record.slug}`}>{record.title}</a>
+              <a href={`posts/${post.slug}`}>{post.title}</a>
             </h2>
-            <p className="text-purple-950 dark:text-purple-200 mb-5">{record.description}</p>
+            <p className="text-purple-950 dark:text-purple-200 mb-5">{post.description}</p>
             <a
-              href={`posts/${record.slug}`}
+              href={`posts/${post.slug}`}
               className="px-4 py-2 font-semibold text-sm bg-purple-700 text-white rounded-lg shadow-sm w-fit"
             >
               Read more &rarr;
