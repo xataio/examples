@@ -1,9 +1,18 @@
 import type { LinksFunction } from '@remix-run/node';
-import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react';
+import {
+  Links,
+  LiveReload,
+  Meta,
+  Outlet,
+  Scripts,
+  ScrollRestoration
+} from '@remix-run/react';
 
 import stylesheet from '~/tailwind.css';
 
-export const links: LinksFunction = () => [{ rel: 'stylesheet', href: stylesheet }];
+export const links: LinksFunction = () => [
+  { rel: 'stylesheet', href: stylesheet }
+];
 
 export default function App() {
   return (
@@ -15,7 +24,7 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <main className="flex flex-wrap justify-center content-start p-8 lg:p-24 min-h-screen">
+        <main className="flex flex-col items-center p-8 lg:p-24 min-h-screen">
           <div className="z-10 h-50 w-full max-w-5xl items-center justify-between text-xl lg:flex">
             <p className="fixed left-0 top-0 flex w-full justify-center pb-6 pt-8 lg:static lg:w-auto bg-gradient-to-b from-white via-white via-65% dark:from-black dark:via-black lg:bg-none">
               <a href="/">Get started with Xata</a>
