@@ -21,6 +21,8 @@ export default {
 			apiKey: env.XATA_API_KEY,
 			branch: env.XATA_BRANCH,
 		});
+		// Note that the table name "Posts" may vary
+		// depending on the shape of your schema
 		const posts = await xata.db.Posts.getAll()
 		return new Response(`Total Posts: ${posts.length}`);
 	},
