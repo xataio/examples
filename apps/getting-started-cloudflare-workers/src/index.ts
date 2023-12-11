@@ -13,6 +13,7 @@ import { XataClient } from './xata';
 export interface Env {
 	XATA_BRANCH: string;
 	XATA_API_KEY: string;
+	XATA_DATABASE_URL: string;
 }
 
 export default {
@@ -20,6 +21,7 @@ export default {
 		const xata = new XataClient({
 			apiKey: env.XATA_API_KEY,
 			branch: env.XATA_BRANCH,
+			databaseURL: env.XATA_DATABASE_URL,
 		});
 		// Note that the table name "Posts" may vary
 		// depending on the shape of your schema
