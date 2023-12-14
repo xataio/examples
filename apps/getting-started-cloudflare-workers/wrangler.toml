@@ -1,0 +1,3 @@
+name = "getting-started-cloudflare-workers"
+main = "src/index.ts"
+compatibility_date = "2023-11-21"
