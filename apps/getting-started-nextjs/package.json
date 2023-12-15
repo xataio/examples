@@ -14,7 +14,7 @@
     "@types/react-dom": "18.2.17",
     "@xata.io/client": "^0.28.0",
     "autoprefixer": "10.4.16",
-    "eslint": "8.48.0",
+    "eslint": "8.55.0",
     "eslint-config-next": "13.4.19",
     "next": "13.4.19",
     "postcss": "8.4.32",

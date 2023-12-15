@@ -17,7 +17,7 @@
     "@types/react": "18.2.45",
     "@types/react-dom": "18.2.17",
     "@xata.io/client": "latest",
-    "eslint": "8.48.0",
+    "eslint": "8.55.0",
     "eslint-config-next": "13.4.19",
     "next": "^13.0.7",
     "next-auth": "^4.18.6",
