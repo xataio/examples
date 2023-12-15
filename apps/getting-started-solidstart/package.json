@@ -15,7 +15,7 @@
     "vite": "^4.4.6"
   },
   "dependencies": {
-    "@solidjs/meta": "^0.28.5",
+    "@solidjs/meta": "^0.29.0",
     "@solidjs/router": "^0.8.2",
     "@xata.io/client": "^0.26.0",
     "solid-js": "^1.7.11",
