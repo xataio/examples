@@ -11,7 +11,7 @@
   },
   "type": "module",
   "optionalDependencies": {
-    "@xata.io/cli": "^0.13.0"
+    "@xata.io/cli": "^0.15.0"
   },
   "devDependencies": {
     "solid-start-node": "^0.3.0",
