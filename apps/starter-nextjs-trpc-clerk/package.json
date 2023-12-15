@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^4.6.13",
-    "@next/font": "13.4.19",
+    "@next/font": "13.5.6",
     "@tanstack/react-query": "^4.20.4",
     "@tanstack/react-query-devtools": "^4.20.4",
     "@trpc/client": "^10.5.0",
@@ -24,7 +24,7 @@
     "@types/react-dom": "18.2.17",
     "@xata.io/client": "^0.28.0",
     "eslint": "8.55.0",
-    "eslint-config-next": "13.4.19",
+    "eslint-config-next": "13.5.6",
     "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
