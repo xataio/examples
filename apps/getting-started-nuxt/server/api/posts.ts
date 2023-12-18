@@ -7,7 +7,8 @@ export default defineEventHandler(async (event) => {
 
   let posts = null;
   if (search) {
-    posts = await xata.db.Posts.search(search, { fuzziness: 2 });
+    const { records } = await xata.db.Posts.search(search, { fuzziness: 2 });
+    posts = records;
   } else {
     posts = await xata.db.Posts.getAll();
   }

@@ -9,7 +9,8 @@ export default async function Home({
 }) {
   let posts = null;
   if (searchParams.q) {
-    posts = await xata.db.Posts.search(searchParams.q, { fuzziness: 2 });
+    const { records } = await xata.db.Posts.search(searchParams.q, { fuzziness: 2 });
+    posts = records;
   } else {
     posts = await xata.db.Posts.getAll();
   }
@@ -22,7 +23,7 @@ export default async function Home({
             name="q"
             defaultValue={searchParams.q}
             placeholder="Search..."
-            className="w-full rounded-lg border-2 p-2 dark:text-purple-950"
+            className="w-full p-2 border-2 rounded-lg dark:text-purple-950"
           />
         </form>
       </div>
@@ -31,18 +32,18 @@ export default async function Home({
         {posts.length === 0 && <p>No blog posts found</p>}
         {posts.map((post) => (
           <div key={post.id} className="mb-16">
-            <p className="text-xs mb-2 text-purple-950 dark:text-purple-200">
+            <p className="mb-2 text-xs text-purple-950 dark:text-purple-200">
               {post.pubDate?.toDateString()}
             </p>
-            <h2 className="text-2xl mb-2">
+            <h2 className="mb-2 text-2xl">
               <a href={`posts/${post.slug}`}>{post.title}</a>
             </h2>
-            <p className="text-purple-950 dark:text-purple-200 mb-5">
+            <p className="mb-5 text-purple-950 dark:text-purple-200">
               {post.description}
             </p>
             <a
               href={`posts/${post.slug}`}
-              className="px-4 py-2 font-semibold text-sm bg-purple-700 text-white rounded-lg shadow-sm w-fit"
+              className="px-4 py-2 text-sm font-semibold text-white bg-purple-700 rounded-lg shadow-sm w-fit"
             >
               Read more &rarr;
             </a>
