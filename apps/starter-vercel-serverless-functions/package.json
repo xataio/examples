@@ -13,7 +13,7 @@
     "@vercel/node": "2.15.10",
     "@xata.io/cli": "0.15.3",
     "esbuild": "^0.19.0",
-    "rollup": "^3.6.0",
+    "rollup": "^4.0.0",
     "typescript": "5.2.2",
     "vercel": "^28.5.6"
   },
