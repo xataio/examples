@@ -579,8 +579,8 @@ importers:
         specifier: ^0.15.0
         version: 0.15.2(typescript@5.2.2)
       eslint-config-prettier:
-        specifier: ^8.5.0
-        version: 8.5.0(eslint@8.56.0)
+        specifier: ^9.0.0
+        version: 9.1.0(eslint@8.56.0)
       prettier:
         specifier: ^2.8.1
         version: 2.8.8
@@ -651,8 +651,8 @@ importers:
         specifier: ^8.16.0
         version: 8.47.0
       eslint-config-prettier:
-        specifier: ^8.3.0
-        version: 8.5.0(eslint@8.47.0)
+        specifier: ^9.0.0
+        version: 9.1.0(eslint@8.47.0)
       eslint-plugin-svelte3:
         specifier: ^4.0.0
         version: 4.0.0(eslint@8.47.0)(svelte@3.44.0)
@@ -11110,8 +11110,8 @@ packages:
       - eslint-import-resolver-webpack
       - supports-color
 
-  /eslint-config-prettier@8.5.0(eslint@8.47.0):
-    resolution: {integrity: sha512-obmWKLUNCnhtQRKc+tmnYuQl0pFU1ibYJQ5BGhTVB08bHe9wC8qUeG7c08dj9XX+AuPj1YSGSQIHl1pnDHZR0Q==}
+  /eslint-config-prettier@9.1.0(eslint@8.47.0):
+    resolution: {integrity: sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
@@ -11119,8 +11119,8 @@ packages:
       eslint: 8.47.0
     dev: true
 
-  /eslint-config-prettier@8.5.0(eslint@8.56.0):
-    resolution: {integrity: sha512-obmWKLUNCnhtQRKc+tmnYuQl0pFU1ibYJQ5BGhTVB08bHe9wC8qUeG7c08dj9XX+AuPj1YSGSQIHl1pnDHZR0Q==}
+  /eslint-config-prettier@9.1.0(eslint@8.56.0):
+    resolution: {integrity: sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
