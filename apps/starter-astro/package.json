@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@astrojs/react": "^2.0.0",
-    "@astrojs/vercel": "^3.0.0",
+    "@astrojs/vercel": "^6.0.0",
     "@types/react": "^18.0.25",
     "@xata.io/client": "latest",
     "astro": "^2.0.0",
