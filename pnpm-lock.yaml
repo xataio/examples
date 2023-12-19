@@ -76,8 +76,8 @@ importers:
         specifier: 18.2.45
         version: 18.2.45
       '@types/react-dom':
-        specifier: 18.2.17
-        version: 18.2.17
+        specifier: 18.2.18
+        version: 18.2.18
       '@xata.io/client':
         specifier: ^0.28.0
         version: 0.28.1(typescript@5.2.2)
@@ -288,8 +288,8 @@ importers:
         specifier: 18.2.45
         version: 18.2.45
       '@types/react-dom':
-        specifier: 18.2.17
-        version: 18.2.17
+        specifier: 18.2.18
+        version: 18.2.18
       eslint:
         specifier: 8.55.0
         version: 8.55.0
@@ -334,8 +334,8 @@ importers:
         specifier: 18.2.45
         version: 18.2.45
       '@types/react-dom':
-        specifier: 18.2.17
-        version: 18.2.17
+        specifier: 18.2.18
+        version: 18.2.18
       '@xata.io/cli':
         specifier: 0.15.3
         version: 0.15.3(typescript@5.2.2)
@@ -379,8 +379,8 @@ importers:
         specifier: 18.2.45
         version: 18.2.45
       '@types/react-dom':
-        specifier: 18.2.17
-        version: 18.2.17
+        specifier: 18.2.18
+        version: 18.2.18
       '@xata.io/client':
         specifier: latest
         version: 0.28.0(typescript@5.2.2)
@@ -421,8 +421,8 @@ importers:
         specifier: 18.2.45
         version: 18.2.45
       '@types/react-dom':
-        specifier: 18.2.17
-        version: 18.2.17
+        specifier: 18.2.18
+        version: 18.2.18
       '@xata.io/client':
         specifier: latest
         version: 0.28.0(typescript@5.2.2)
@@ -476,8 +476,8 @@ importers:
         specifier: 18.2.45
         version: 18.2.45
       '@types/react-dom':
-        specifier: 18.2.17
-        version: 18.2.17
+        specifier: 18.2.18
+        version: 18.2.18
       eslint:
         specifier: 8.55.0
         version: 8.55.0
@@ -492,7 +492,7 @@ importers:
     dependencies:
       '@astrojs/react':
         specifier: ^2.0.0
-        version: 2.0.0(@types/react-dom@18.2.17)(@types/react@18.2.20)(react-dom@18.2.0)(react@18.2.0)
+        version: 2.0.0(@types/react-dom@18.2.18)(@types/react@18.2.20)(react-dom@18.2.0)(react@18.2.0)
       '@astrojs/vercel':
         specifier: ^3.0.0
         version: 3.0.0(astro@2.0.0)
@@ -545,8 +545,8 @@ importers:
         specifier: 18.2.45
         version: 18.2.45
       '@types/react-dom':
-        specifier: 18.2.17
-        version: 18.2.17
+        specifier: 18.2.18
+        version: 18.2.18
       '@xata.io/client':
         specifier: ^0.28.0
         version: 0.28.1(typescript@5.2.2)
@@ -835,7 +835,7 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/react@2.0.0(@types/react-dom@18.2.17)(@types/react@18.2.20)(react-dom@18.2.0)(react@18.2.0):
+  /@astrojs/react@2.0.0(@types/react-dom@18.2.18)(@types/react@18.2.20)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-drHnCnYH6u6hKN4ObNepw4OQiCvMsRFLeKqRbbGmME5yJyxfdkFw2K4m/8zGah90LgW1xmr9hyPsSVU3PTmd9g==}
     engines: {node: '>=16.12.0'}
     peerDependencies:
@@ -847,7 +847,7 @@ packages:
       '@babel/core': 7.22.10
       '@babel/plugin-transform-react-jsx': 7.22.5(@babel/core@7.22.10)
       '@types/react': 18.2.20
-      '@types/react-dom': 18.2.17
+      '@types/react-dom': 18.2.18
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     transitivePeerDependencies:
@@ -6860,8 +6860,8 @@ packages:
     resolution: {integrity: sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==}
     dev: false
 
-  /@types/react-dom@18.2.17:
-    resolution: {integrity: sha512-rvrT/M7Df5eykWFxn6MYt5Pem/Dbyc1N8Y0S9Mrkw2WFCRiqUgw9P7ul2NpwsXCSM1DVdENzdG9J5SreqfAIWg==}
+  /@types/react-dom@18.2.18:
+    resolution: {integrity: sha512-TJxDm6OfAX2KJWJdMEVTwWke5Sc/E/RlnPGvGfS0W7+6ocy2xhDVQVh/KvC2Uf7kACs+gDytdusDSdWfWkaNzw==}
     dependencies:
       '@types/react': 18.2.45
 
