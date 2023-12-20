@@ -1,4 +1,0 @@
-.vercel
-.env
-!.env.template
-!xata.codegen.ts
