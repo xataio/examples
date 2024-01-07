@@ -12,8 +12,8 @@ importers:
         specifier: 2.27.1
         version: 2.27.1
       '@types/node':
-        specifier: 20.10.6
-        version: 20.10.6
+        specifier: 20.10.7
+        version: 20.10.7
       prettier:
         specifier: 2.8.8
         version: 2.8.8
@@ -37,7 +37,7 @@ importers:
         version: 0.28.1(typescript@5.2.2)
       astro:
         specifier: ^2.10.5
-        version: 2.10.5(@types/node@20.10.6)
+        version: 2.10.5(@types/node@20.10.7)
       autoprefixer:
         specifier: ^10.4.14
         version: 10.4.15(postcss@8.4.27)
@@ -70,8 +70,8 @@ importers:
   apps/getting-started-nextjs:
     dependencies:
       '@types/node':
-        specifier: 20.10.6
-        version: 20.10.6
+        specifier: 20.10.7
+        version: 20.10.7
       '@types/react':
         specifier: 18.2.47
         version: 18.2.47
@@ -163,7 +163,7 @@ importers:
     devDependencies:
       '@remix-run/dev':
         specifier: ^1.19.3
-        version: 1.19.3(@remix-run/serve@1.19.3)(@types/node@20.10.6)
+        version: 1.19.3(@remix-run/serve@1.19.3)(@types/node@20.10.7)
       '@remix-run/eslint-config':
         specifier: ^1.19.3
         version: 1.19.3(eslint@8.47.0)(react@18.2.0)(typescript@5.2.2)
@@ -218,7 +218,7 @@ importers:
         version: 4.9.5
       vite:
         specifier: ^4.4.6
-        version: 4.4.9(@types/node@20.10.6)
+        version: 4.4.9(@types/node@20.10.7)
 
   apps/getting-started-sveltekit:
     dependencies:
@@ -258,7 +258,7 @@ importers:
         version: 5.2.2
       vite:
         specifier: ^4.4.2
-        version: 4.4.9(@types/node@20.10.6)
+        version: 4.4.9(@types/node@20.10.7)
 
   apps/sample-chatgpt:
     dependencies:
@@ -282,8 +282,8 @@ importers:
         version: 3.20.2
     devDependencies:
       '@types/node':
-        specifier: 20.10.6
-        version: 20.10.6
+        specifier: 20.10.7
+        version: 20.10.7
       '@types/react':
         specifier: 18.2.47
         version: 18.2.47
@@ -309,8 +309,8 @@ importers:
         specifier: 13.5.6
         version: 13.5.6
       '@types/node':
-        specifier: 20.10.6
-        version: 20.10.6
+        specifier: 20.10.7
+        version: 20.10.7
       '@types/react':
         specifier: 18.2.47
         version: 18.2.47
@@ -351,8 +351,8 @@ importers:
         specifier: 13.5.6
         version: 13.5.6
       '@types/node':
-        specifier: 20.10.6
-        version: 20.10.6
+        specifier: 20.10.7
+        version: 20.10.7
       '@types/react':
         specifier: 18.2.47
         version: 18.2.47
@@ -406,8 +406,8 @@ importers:
         specifier: ^5.0.0
         version: 5.0.0
       '@types/node':
-        specifier: 20.10.6
-        version: 20.10.6
+        specifier: 20.10.7
+        version: 20.10.7
       '@types/react':
         specifier: 18.2.47
         version: 18.2.47
@@ -481,7 +481,7 @@ packages:
       astro: ^2.5.0
     dependencies:
       '@astrojs/prism': 2.1.2
-      astro: 2.10.5(@types/node@20.10.6)
+      astro: 2.10.5(@types/node@20.10.7)
       github-slugger: 1.5.0
       import-meta-resolve: 2.2.2
       rehype-raw: 6.1.1
@@ -511,7 +511,7 @@ packages:
       astro: ^2.6.5
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 2.10.5(@types/node@20.10.6)
+      astro: 2.10.5(@types/node@20.10.7)
       autoprefixer: 10.4.15(postcss@8.4.32)
       postcss: 8.4.32
       postcss-load-config: 4.0.1(postcss@8.4.32)
@@ -4226,7 +4226,7 @@ packages:
     engines: {node: '>=14.0.0'}
     dev: false
 
-  /@remix-run/dev@1.19.3(@remix-run/serve@1.19.3)(@types/node@20.10.6):
+  /@remix-run/dev@1.19.3(@remix-run/serve@1.19.3)(@types/node@20.10.7):
     resolution: {integrity: sha512-Yh733OI0AxR7QbPaJbocujxSF1S5CToDmfZnmv5SlTTIXEw5KfnbCceHy9qhUp0nrkz2YT7pd1zbTEVYIi/Vug==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -4248,7 +4248,7 @@ packages:
       '@npmcli/package-json': 2.0.0
       '@remix-run/serve': 1.19.3
       '@remix-run/server-runtime': 1.19.3
-      '@vanilla-extract/integration': 6.2.2(@types/node@20.10.6)
+      '@vanilla-extract/integration': 6.2.2(@types/node@20.10.7)
       arg: 5.0.2
       cacache: 15.3.0
       chalk: 4.1.2
@@ -5003,7 +5003,7 @@ packages:
       sirv: 2.0.3
       svelte: 4.0.5
       undici: 5.23.0
-      vite: 4.4.9(@types/node@20.10.6)
+      vite: 4.4.9(@types/node@20.10.7)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5019,7 +5019,7 @@ packages:
       '@sveltejs/vite-plugin-svelte': 2.4.5(svelte@4.0.5)(vite@4.4.9)
       debug: 4.3.4
       svelte: 4.0.5
-      vite: 4.4.9(@types/node@20.10.6)
+      vite: 4.4.9(@types/node@20.10.7)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5038,7 +5038,7 @@ packages:
       magic-string: 0.30.3
       svelte: 4.0.5
       svelte-hmr: 0.15.3(svelte@4.0.5)
-      vite: 4.4.9(@types/node@20.10.6)
+      vite: 4.4.9(@types/node@20.10.7)
       vitefu: 0.2.4(vite@4.4.9)
     transitivePeerDependencies:
       - supports-color
@@ -5131,7 +5131,7 @@ packages:
   /@types/bcrypt@5.0.0:
     resolution: {integrity: sha512-agtcFKaruL8TmcvqbndlqHPSJgsolhf/qPWchFlgnW1gECTN/nKbFcoFnvKAQRFfKbh+BO6A3SWdJu9t+xF3Lw==}
     dependencies:
-      '@types/node': 20.10.6
+      '@types/node': 20.10.7
     dev: true
 
   /@types/cacheable-request@6.0.3:
@@ -5139,7 +5139,7 @@ packages:
     dependencies:
       '@types/http-cache-semantics': 4.0.1
       '@types/keyv': 3.1.4
-      '@types/node': 20.10.6
+      '@types/node': 20.10.7
       '@types/responselike': 1.0.0
     dev: true
 
@@ -5181,7 +5181,7 @@ packages:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 20.10.6
+      '@types/node': 20.10.7
     dev: true
 
   /@types/hast@2.3.5:
@@ -5196,13 +5196,13 @@ packages:
   /@types/http-proxy@1.17.11:
     resolution: {integrity: sha512-HC8G7c1WmaF2ekqpnFq626xd3Zz0uvaqFmBJNRZCGEZCXkvSdJoNFn/8Ygbd9fKNQj8UzLdCETaI0UWPAjK7IA==}
     dependencies:
-      '@types/node': 20.10.6
+      '@types/node': 20.10.7
     dev: true
 
   /@types/http-proxy@1.17.14:
     resolution: {integrity: sha512-SSrD0c1OQzlFX7pGu1eXxSEjemej64aaNPRhhVYUGqXh0BtldAAx37MG8btcumvpgKyZp1F5Gn3JkktdxiFv6w==}
     dependencies:
-      '@types/node': 20.10.6
+      '@types/node': 20.10.7
     dev: true
 
   /@types/json-schema@7.0.12:
@@ -5219,7 +5219,7 @@ packages:
   /@types/keyv@3.1.4:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
-      '@types/node': 20.10.6
+      '@types/node': 20.10.7
     dev: true
 
   /@types/mdast@3.0.12:
@@ -5258,8 +5258,8 @@ packages:
       undici-types: 5.26.5
     dev: true
 
-  /@types/node@20.10.6:
-    resolution: {integrity: sha512-Vac8H+NlRNNlAmDfGUP7b5h/KA+AtWIzuXy0E6OyP8f1tCLYAtPvKRRDJjAPqhpCb0t6U2j7/xqAuLEebW2kiw==}
+  /@types/node@20.10.7:
+    resolution: {integrity: sha512-fRbIKb8C/Y2lXxB5eVMj4IU7xpdox0Lh8bUPEdtLysaylsml1hOOx1+STloRs/B9nf7C6kPRmmg/V7aQW7usNg==}
     dependencies:
       undici-types: 5.26.5
 
@@ -5310,7 +5310,7 @@ packages:
   /@types/responselike@1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 20.10.6
+      '@types/node': 20.10.7
     dev: true
 
   /@types/scheduler@0.16.3:
@@ -5602,7 +5602,7 @@ packages:
       outdent: 0.8.0
     dev: true
 
-  /@vanilla-extract/integration@6.2.2(@types/node@20.10.6):
+  /@vanilla-extract/integration@6.2.2(@types/node@20.10.7):
     resolution: {integrity: sha512-gV3qPFjFap1+IrPeuFy+tEZOq7l7ifJf1ik/kluDWhPr1ffsFG9puq1/jjJ4rod1BIC79Q5ZWPNvBInHyxfCew==}
     dependencies:
       '@babel/core': 7.22.10
@@ -5616,8 +5616,8 @@ packages:
       lodash: 4.17.21
       mlly: 1.4.1
       outdent: 0.8.0
-      vite: 4.4.9(@types/node@20.10.6)
-      vite-node: 0.28.5(@types/node@20.10.6)
+      vite: 4.4.9(@types/node@20.10.7)
+      vite-node: 0.28.5(@types/node@20.10.7)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -6318,7 +6318,7 @@ packages:
     hasBin: true
     dev: true
 
-  /astro@2.10.5(@types/node@20.10.6):
+  /astro@2.10.5(@types/node@20.10.7):
     resolution: {integrity: sha512-/GlDb0iHq9smACrCqVu/AaNi5+fqJuPOVTthm5fFNi+OBRprY0DW8juaov8o+M1X6SvIyIbOcd04+ZsYrIF0Sg==}
     engines: {node: '>=16.12.0', npm: '>=6.14.0'}
     hasBin: true
@@ -6381,7 +6381,7 @@ packages:
       typescript: 5.2.2
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.4.9(@types/node@20.10.6)
+      vite: 4.4.9(@types/node@20.10.7)
       vitefu: 0.2.4(vite@4.4.9)
       which-pm: 2.0.0
       yargs-parser: 21.1.1
@@ -8866,7 +8866,7 @@ packages:
     resolution: {integrity: sha512-EzV94NYKoO09GLXGjXj9JIlXijVck4ONSr5wiCWDvhsvj5jxSrzTmRU/9C1DyB6uToszLs8aifA6NQ7lEQdvFw==}
     engines: {node: '>= 0.8'}
     dependencies:
-      '@types/node': 20.10.6
+      '@types/node': 20.10.7
       require-like: 0.1.2
     dev: true
 
@@ -14788,7 +14788,7 @@ packages:
       solid-start: 0.3.2(@solidjs/meta@0.29.3)(@solidjs/router@0.10.3)(solid-js@1.7.11)(solid-start-node@0.3.0)(vite@4.4.9)
       terser: 5.19.2
       undici: 5.28.2
-      vite: 4.4.9(@types/node@20.10.6)
+      vite: 4.4.9(@types/node@20.10.7)
     transitivePeerDependencies:
       - supports-color
 
@@ -14860,7 +14860,7 @@ packages:
       solid-start-node: 0.3.0(solid-start@0.3.2)(undici@5.28.2)(vite@4.4.9)
       terser: 5.19.2
       undici: 5.23.0
-      vite: 4.4.9(@types/node@20.10.6)
+      vite: 4.4.9(@types/node@20.10.7)
       vite-plugin-inspect: 0.7.35(rollup@3.28.0)(vite@4.4.9)
       vite-plugin-solid: 2.7.0(solid-js@1.7.11)(vite@4.4.9)
       wait-on: 6.0.1(debug@4.3.4)
@@ -16346,7 +16346,7 @@ packages:
       unist-util-stringify-position: 3.0.3
       vfile-message: 3.1.4
 
-  /vite-node@0.28.5(@types/node@20.10.6):
+  /vite-node@0.28.5(@types/node@20.10.7):
     resolution: {integrity: sha512-LmXb9saMGlrMZbXTvOveJKwMTBTNUH66c8rJnQ0ZPNX+myPEol64+szRzXtV5ORb0Hb/91yq+/D3oERoyAt6LA==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
@@ -16358,7 +16358,7 @@ packages:
       picocolors: 1.0.0
       source-map: 0.6.1
       source-map-support: 0.5.21
-      vite: 4.4.9(@types/node@20.10.6)
+      vite: 4.4.9(@types/node@20.10.7)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -16461,7 +16461,7 @@ packages:
       open: 9.1.0
       picocolors: 1.0.0
       sirv: 2.0.3
-      vite: 4.4.9(@types/node@20.10.6)
+      vite: 4.4.9(@types/node@20.10.7)
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -16504,7 +16504,7 @@ packages:
       merge-anything: 5.1.7
       solid-js: 1.7.11
       solid-refresh: 0.5.3(solid-js@1.7.11)
-      vite: 4.4.9(@types/node@20.10.6)
+      vite: 4.4.9(@types/node@20.10.7)
       vitefu: 0.2.4(vite@4.4.9)
     transitivePeerDependencies:
       - supports-color
@@ -16564,7 +16564,7 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vite@4.4.9(@types/node@20.10.6):
+  /vite@4.4.9(@types/node@20.10.7):
     resolution: {integrity: sha512-2mbUn2LlUmNASWwSCNSJ/EG2HuSRTnVNaydp6vMCm5VIqJsjMfbIWtbH2kDuwUVW5mMUKKZvGPX/rqeqVvv1XA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -16592,7 +16592,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.10.6
+      '@types/node': 20.10.7
       esbuild: 0.18.20
       postcss: 8.4.33
       rollup: 3.28.0
@@ -16607,7 +16607,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.4.9(@types/node@20.10.6)
+      vite: 4.4.9(@types/node@20.10.7)
 
   /vscode-css-languageservice@6.2.6:
     resolution: {integrity: sha512-SA2WkeOecIpUiEbZnjOsP/fI5CRITZEiQGSHXKiDQDwLApfKcnLhZwMtOBbIifSzESVcQa7b/shX/nbnF4NoCg==}
