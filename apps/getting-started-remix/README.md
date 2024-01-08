@@ -28,9 +28,16 @@ And `cd` into the app directory:
 cd xata-remix
 ```
 
+Install the dependencies:
+
+```sh
+npm install
+```
+
 ## Initialize your Xata project
 
-Initialize a new Xata project with the following command, agreeing to the default prompt options:
+Initialize a new Xata project with the following command, agreeing to the default prompt options.
+This step will create a new database with the name `getting-started-remix` for you, the `.xatarc` file and generate the type under `src/xata.ts`.
 
 ```sh
 xata init
