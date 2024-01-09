@@ -1,8 +1,8 @@
-import { LoaderArgs, V2_MetaFunction, json } from '@remix-run/node';
+import { LoaderFunctionArgs, MetaFunction, json } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
 import { getXataClient } from 'src/xata';
 
-export async function loader({ params }: LoaderArgs) {
+export async function loader({ params }: LoaderFunctionArgs) {
   const xata = getXataClient();
 
   const post = await xata.db.Posts.filter({ slug: params.slug }).getFirst();
@@ -12,7 +12,7 @@ export async function loader({ params }: LoaderArgs) {
   });
 }
 
-export const meta: V2_MetaFunction<typeof loader> = ({ data }) => {
+export const meta: MetaFunction<typeof loader> = ({ data }) => {
   return [{ title: `${data?.post?.title} - Xata and Remix` }];
 };
 

@@ -1,12 +1,12 @@
-import { LoaderArgs, V2_MetaFunction, json } from '@remix-run/node';
+import { MetaFunction, json, LoaderFunctionArgs } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
 import { getXataClient } from 'src/xata';
 
-export const meta: V2_MetaFunction = () => {
+export const meta: MetaFunction = () => {
   return [{ title: 'Xata and Remix' }];
 };
 
-export async function loader({ request }: LoaderArgs) {
+export async function loader({ request }: LoaderFunctionArgs) {
   const xata = getXataClient();
 
   const url = new URL(request.url);
