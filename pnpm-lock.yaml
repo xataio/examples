@@ -427,7 +427,7 @@ importers:
         specifier: 5.2.2
         version: 5.2.2
 
-  apps/sample-upload-file:
+  apps/sample-nextjs-upload-file:
     dependencies:
       '@xata.io/client':
         specifier: ^0.28.3
