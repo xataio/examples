@@ -1,7 +1,13 @@
 'use client';
 import { FC, FormEvent, useState } from 'react';
+import { Images, ImagesRecord } from '@/utils/xata';
+import { JSONData } from '@xata.io/client';
 
-export const Upload: FC = () => {
+interface UploadProps {
+  images: JSONData<ImagesRecord>[];
+}
+
+export const Upload: FC<UploadProps> = ({ images }) => {
   const [file, setFile] = useState(null);
   const [message, setMessage] = useState('');
   const [isUploading, setIsUploading] = useState(false);
@@ -39,13 +45,12 @@ export const Upload: FC = () => {
       // directly to Xata on the client side using the PUT request. This lets us upload
       // large files that would otherwise exceed the limit for serverless functions on
       // services like Vercel.
-
       if (response.status === 200) {
         setIsUploading(true);
         try {
           setIsUploading(true);
           await fetch(record.image.uploadUrl, { method: 'PUT', body: file });
-          setMessage('Your image was uploaded successfully.');
+          setMessage('Your image was uploaded successfully. Refresh the page to see it.');
           setIsUploading(false);
         } catch (error) {
           // Delete the record and associated tag
@@ -84,6 +89,18 @@ export const Upload: FC = () => {
           Upload
         </button>
       </form>
+      {images.length > 0 && (
+        <>
+          <h2>Images</h2>
+          <ul>
+            {images.map((image) => (
+              <li key={image.id} style={{ maxWidth: 200}}>
+                <img src={image.image?.url} width="100%" alt={image.image?.name} />
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
     </main>
   );
 };
