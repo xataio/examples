@@ -1,4 +1,4 @@
-# Getting Started with Xata + Next.js
+# Upload file example with Next.js
 
 An example application demonstrating a simple file upload flow as described in our documentation.
 
