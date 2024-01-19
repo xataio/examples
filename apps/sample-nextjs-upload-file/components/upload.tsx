@@ -48,6 +48,7 @@ export const Upload: FC<UploadProps> = ({
     // services like Vercel.
     try {
       setIsUploading(true);
+      setMessage('');
       await fetch(uploadUrl, { method: 'PUT', body: file });
     } catch (error) {
       // Delete the record if the upload fails

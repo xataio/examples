@@ -18,6 +18,7 @@ const createImage = async (mediaType: string) => {
 
 const deleteImage = async (id: string) => {
   'use server';
+
   await xata.db.images.delete(id);
 };
 
