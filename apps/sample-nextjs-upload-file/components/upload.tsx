@@ -32,8 +32,8 @@ export const Upload: FC<UploadProps> = ({
       return;
     }
 
-    // This route creates new image and tag records in Xata
-    // If you look at the api route code, you'll see that we're not actually
+    // This route creates new image records in Xata
+    // If you look at the function code, you'll see that we're not actually
     // uploading the image here. Instead, we're creating a record in the database
     // with a temporary, empty image. We do this because we need to generate a
     // pre-signed URL for the image upload.
