@@ -1,0 +1,16 @@
+{
+  "tables": [
+    {
+      "name": "images",
+      "columns": [
+        {
+          "name": "image",
+          "type": "file",
+          "file": {
+            "defaultPublicAccess": true
+          }
+        }
+      ]
+    }
+  ]
+}
