@@ -19,13 +19,13 @@ xata auth login
 ## Clone the application
 
 ```bash
-npx degit xataio/examples/apps/getting-started-nextjs xata-nextjs
+npx degit xataio/examples/apps/sample-nextjs-upload-file xata-nextjs-upload-file
 ```
 
 And `cd` into the app directory:
 
 ```sh
-cd xata-nextjs
+cd xata-nextjs-upload-file
 ```
 
 Install the dependencies:
@@ -37,10 +37,10 @@ npm install
 ## Initialize your Xata project
 
 Initialize a new Xata project with the following command, agreeing to the default prompt options.
-This step will create a new database with the name `getting-started-nextjs` for you, the `.xatarc` file and generate the type under `src/xata.ts`.
+This step will create a new database with the name `sample-nextjs-upload-file` for you, the `.xatarc` file and generate the client under `utils/xata.ts`.
 
 ```sh
-xata init
+xata init --codegen=utils/xata.ts
 ```
 
 The above command will create a `.env` file containing your Xata project configuration.
