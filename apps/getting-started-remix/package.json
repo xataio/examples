@@ -13,7 +13,7 @@
     "@remix-run/node": "^2.4.1",
     "@remix-run/react": "^2.4.1",
     "@remix-run/serve": "^2.4.1",
-    "@xata.io/client": "^0.28.3",
+    "@xata.io/client": "^0.29.0",
     "isbot": "^4.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
