@@ -33,8 +33,8 @@ importers:
         specifier: ^1.6.4
         version: 1.6.4
       '@xata.io/client':
-        specifier: ^0.28.3
-        version: 0.28.3(typescript@5.3.3)
+        specifier: ^0.29.0
+        version: 0.29.0(typescript@5.3.3)
       astro:
         specifier: ^4.1.0
         version: 4.2.4(@types/node@20.11.10)(typescript@5.3.3)
@@ -54,8 +54,8 @@ importers:
   apps/getting-started-cloudflare-workers:
     dependencies:
       '@xata.io/client':
-        specifier: ^0.28.0
-        version: 0.28.3(typescript@5.3.3)
+        specifier: ^0.29.0
+        version: 0.29.0(typescript@5.3.3)
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20231121.0
@@ -79,8 +79,8 @@ importers:
         specifier: 18.2.18
         version: 18.2.18
       '@xata.io/client':
-        specifier: ^0.28.3
-        version: 0.28.3(typescript@5.3.3)
+        specifier: ^0.29.0
+        version: 0.29.0(typescript@5.3.3)
       autoprefixer:
         specifier: 10.4.17
         version: 10.4.17(postcss@8.4.33)
@@ -112,8 +112,8 @@ importers:
   apps/getting-started-nuxt:
     dependencies:
       '@xata.io/client':
-        specifier: ^0.28.0
-        version: 0.28.3(typescript@5.3.3)
+        specifier: ^0.29.0
+        version: 0.29.0(typescript@5.3.3)
     devDependencies:
       '@nuxt/devtools':
         specifier: latest
@@ -149,8 +149,8 @@ importers:
         specifier: ^2.4.1
         version: 2.5.1(typescript@5.3.3)
       '@xata.io/client':
-        specifier: ^0.28.3
-        version: 0.28.3(typescript@5.3.3)
+        specifier: ^0.29.0
+        version: 0.29.0(typescript@5.3.3)
       isbot:
         specifier: ^4.3.0
         version: 4.4.0
@@ -192,8 +192,8 @@ importers:
         specifier: ^0.10.0
         version: 0.10.9(solid-js@1.8.12)
       '@xata.io/client':
-        specifier: ^0.28.3
-        version: 0.28.3(typescript@5.3.3)
+        specifier: ^0.29.0
+        version: 0.29.0(typescript@5.3.3)
       solid-js:
         specifier: ^1.8.10
         version: 1.8.12
@@ -223,8 +223,8 @@ importers:
   apps/getting-started-sveltekit:
     dependencies:
       '@xata.io/client':
-        specifier: ^0.28.3
-        version: 0.28.3(typescript@5.3.3)
+        specifier: ^0.29.0
+        version: 0.29.0(typescript@5.3.3)
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: ^3.1.0
@@ -269,8 +269,8 @@ importers:
         specifier: ^2.0.1
         version: 2.0.1
       '@xata.io/client':
-        specifier: 0.28.4
-        version: 0.28.4(typescript@5.2.2)
+        specifier: 0.29.0
+        version: 0.29.0(typescript@5.2.2)
       next:
         specifier: 13.4.19
         version: 13.4.19(react-dom@18.2.0)(react@18.2.0)
@@ -390,8 +390,8 @@ importers:
   apps/sample-nextjs-basic-auth:
     dependencies:
       '@xata.io/client':
-        specifier: 0.28.4
-        version: 0.28.4(typescript@5.2.2)
+        specifier: 0.29.0
+        version: 0.29.0(typescript@5.2.2)
       bcrypt:
         specifier: ^5.1.0
         version: 5.1.1
@@ -430,8 +430,8 @@ importers:
   apps/sample-nextjs-upload-file:
     dependencies:
       '@xata.io/client':
-        specifier: ^0.28.3
-        version: 0.28.3(typescript@5.3.3)
+        specifier: ^0.29.0
+        version: 0.29.0(typescript@5.3.3)
       next:
         specifier: 14.1.0
         version: 14.1.0(react-dom@18.2.0)(react@18.2.0)
@@ -4977,20 +4977,20 @@ packages:
       typescript: 5.2.2
     dev: false
 
-  /@xata.io/client@0.28.3(typescript@5.3.3):
-    resolution: {integrity: sha512-aaXct/xWiYqHyFx2srMCnFDGrKvDA5fa6NEkFGzTHXQdYTai5hTQXcraPHxVHGlPUV3dapQWsguR4YJQugDpqQ==}
-    peerDependencies:
-      typescript: '>=4.5'
-    dependencies:
-      typescript: 5.3.3
-    dev: false
-
-  /@xata.io/client@0.28.4(typescript@5.2.2):
-    resolution: {integrity: sha512-B02WHIA/ViHya84XvH6JCo13rd5h4S5vVyY2aYi6fIcjDIbCpsSLJ4oGWpdodovRYeAZy9Go4OhdyZwMIRC4BQ==}
+  /@xata.io/client@0.29.0(typescript@5.2.2):
+    resolution: {integrity: sha512-bTDcKXcpqOVIs44AkpplM11+AtnTZEM+42vYRmMqpzxoFC9h+oJRA11pMyO155GkPg7a3fi6FA602LbGivuvVg==}
     peerDependencies:
       typescript: '>=4.5'
     dependencies:
       typescript: 5.2.2
+    dev: false
+
+  /@xata.io/client@0.29.0(typescript@5.3.3):
+    resolution: {integrity: sha512-bTDcKXcpqOVIs44AkpplM11+AtnTZEM+42vYRmMqpzxoFC9h+oJRA11pMyO155GkPg7a3fi6FA602LbGivuvVg==}
+    peerDependencies:
+      typescript: '>=4.5'
+    dependencies:
+      typescript: 5.3.3
     dev: false
 
   /@zxing/text-encoding@0.9.0:
