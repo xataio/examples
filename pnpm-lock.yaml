@@ -59,7 +59,7 @@ importers:
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20231121.0
-        version: 4.20240117.0
+        version: 4.20240222.0
       typescript:
         specifier: ^5.0.4
         version: 5.3.3
@@ -2015,8 +2015,8 @@ packages:
     dev: true
     optional: true
 
-  /@cloudflare/workers-types@4.20240117.0:
-    resolution: {integrity: sha512-HQU8lJhaJVh8gQXFtVA7lZwd0hK1ckIFjRuxOXkVN2Z9t7DtzNbA2YTwBry5thKNgF5EwjN4THjHg5NUZzj05A==}
+  /@cloudflare/workers-types@4.20240222.0:
+    resolution: {integrity: sha512-luO0BdK3rLlCv3B240+cTrfqm+XSbHtpk+88aJtGwzyVK9QF/Xz8lBgE/oZZLN8nCTmOvxAZnszyxUuZ8GP8Cg==}
     dev: true
 
   /@cspotcode/source-map-support@0.8.1:
