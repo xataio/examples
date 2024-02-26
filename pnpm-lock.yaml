@@ -73,8 +73,8 @@ importers:
         specifier: 20.11.20
         version: 20.11.20
       '@types/react':
-        specifier: 18.2.58
-        version: 18.2.58
+        specifier: 18.2.59
+        version: 18.2.59
       '@types/react-dom':
         specifier: 18.2.19
         version: 18.2.19
@@ -169,7 +169,7 @@ importers:
         version: 2.7.2(eslint@8.57.0)(react@18.2.0)(typescript@5.3.3)
       '@types/react':
         specifier: ^18.2.47
-        version: 18.2.58
+        version: 18.2.59
       '@types/react-dom':
         specifier: ^18.2.18
         version: 18.2.19
@@ -288,8 +288,8 @@ importers:
         specifier: 20.11.20
         version: 20.11.20
       '@types/react':
-        specifier: 18.2.58
-        version: 18.2.58
+        specifier: 18.2.59
+        version: 18.2.59
       '@types/react-dom':
         specifier: 18.2.19
         version: 18.2.19
@@ -315,8 +315,8 @@ importers:
         specifier: 20.11.20
         version: 20.11.20
       '@types/react':
-        specifier: 18.2.58
-        version: 18.2.58
+        specifier: 18.2.59
+        version: 18.2.59
       '@types/react-dom':
         specifier: 18.2.19
         version: 18.2.19
@@ -357,8 +357,8 @@ importers:
         specifier: 20.11.20
         version: 20.11.20
       '@types/react':
-        specifier: 18.2.58
-        version: 18.2.58
+        specifier: 18.2.59
+        version: 18.2.59
       '@types/react-dom':
         specifier: 18.2.19
         version: 18.2.19
@@ -412,8 +412,8 @@ importers:
         specifier: 20.11.20
         version: 20.11.20
       '@types/react':
-        specifier: 18.2.58
-        version: 18.2.58
+        specifier: 18.2.59
+        version: 18.2.59
       '@types/react-dom':
         specifier: 18.2.19
         version: 18.2.19
@@ -447,7 +447,7 @@ importers:
         version: 20.11.20
       '@types/react':
         specifier: ^18
-        version: 18.2.58
+        version: 18.2.59
       '@types/react-dom':
         specifier: ^18
         version: 18.2.19
@@ -4843,10 +4843,10 @@ packages:
   /@types/react-dom@18.2.19:
     resolution: {integrity: sha512-aZvQL6uUbIJpjZk4U8JZGbau9KDeAwMfmhyWorxgBkqDIEf6ROjRozcmPIicqsUwPUjbkDfHKgGee1Lq65APcA==}
     dependencies:
-      '@types/react': 18.2.58
+      '@types/react': 18.2.59
 
-  /@types/react@18.2.58:
-    resolution: {integrity: sha512-TaGvMNhxvG2Q0K0aYxiKfNDS5m5ZsoIBBbtfUorxdH4NGSXIlYvZxLJI+9Dd3KjeB3780bciLyAb7ylO8pLhPw==}
+  /@types/react@18.2.59:
+    resolution: {integrity: sha512-DE+F6BYEC8VtajY85Qr7mmhTd/79rJKIHCg99MU9SWPB4xvLb6D1za2vYflgZfmPqQVEr6UqJTnLXEwzpVPuOg==}
     dependencies:
       '@types/prop-types': 15.7.11
       '@types/scheduler': 0.16.8
@@ -5171,7 +5171,7 @@ packages:
       '@babel/plugin-syntax-typescript': 7.23.3(@babel/core@7.23.9)
       '@vanilla-extract/babel-plugin-debug-ids': 1.0.5
       '@vanilla-extract/css': 1.14.1
-      esbuild: 0.17.6
+      esbuild: 0.19.12
       eval: 0.1.8
       find-up: 5.0.0
       javascript-stringify: 2.1.0
