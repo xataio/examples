@@ -34,7 +34,7 @@ importers:
         version: 1.6.4
       '@xata.io/client':
         specifier: ^0.29.0
-        version: 0.29.0(typescript@5.3.3)
+        version: 0.29.1(typescript@5.3.3)
       astro:
         specifier: ^4.1.0
         version: 4.2.4(@types/node@20.11.20)(typescript@5.3.3)
@@ -55,7 +55,7 @@ importers:
     dependencies:
       '@xata.io/client':
         specifier: ^0.29.0
-        version: 0.29.0(typescript@5.3.3)
+        version: 0.29.1(typescript@5.3.3)
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20231121.0
@@ -80,7 +80,7 @@ importers:
         version: 18.2.19
       '@xata.io/client':
         specifier: ^0.29.0
-        version: 0.29.0(typescript@5.3.3)
+        version: 0.29.1(typescript@5.3.3)
       autoprefixer:
         specifier: 10.4.17
         version: 10.4.17(postcss@8.4.35)
@@ -113,7 +113,7 @@ importers:
     dependencies:
       '@xata.io/client':
         specifier: ^0.29.0
-        version: 0.29.0(typescript@5.3.3)
+        version: 0.29.1(typescript@5.3.3)
     devDependencies:
       '@nuxt/devtools':
         specifier: latest
@@ -150,7 +150,7 @@ importers:
         version: 2.5.1(typescript@5.3.3)
       '@xata.io/client':
         specifier: ^0.29.0
-        version: 0.29.0(typescript@5.3.3)
+        version: 0.29.1(typescript@5.3.3)
       isbot:
         specifier: ^4.3.0
         version: 4.4.0
@@ -193,7 +193,7 @@ importers:
         version: 0.12.4(solid-js@1.8.12)
       '@xata.io/client':
         specifier: ^0.29.0
-        version: 0.29.0(typescript@5.3.3)
+        version: 0.29.1(typescript@5.3.3)
       solid-js:
         specifier: ^1.8.10
         version: 1.8.12
@@ -224,7 +224,7 @@ importers:
     dependencies:
       '@xata.io/client':
         specifier: ^0.29.0
-        version: 0.29.0(typescript@5.3.3)
+        version: 0.29.1(typescript@5.3.3)
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: ^3.1.0
@@ -307,7 +307,7 @@ importers:
     dependencies:
       '@next-auth/xata-adapter':
         specifier: latest
-        version: 0.2.2(@xata.io/client@0.28.3)(next-auth@4.24.5)
+        version: 0.2.2(@xata.io/client@0.29.1)(next-auth@4.24.5)
       '@next/font':
         specifier: 13.5.6
         version: 13.5.6
@@ -322,7 +322,7 @@ importers:
         version: 18.2.19
       '@xata.io/client':
         specifier: latest
-        version: 0.28.3(typescript@5.2.2)
+        version: 0.29.1(typescript@5.2.2)
       eslint:
         specifier: 8.57.0
         version: 8.57.0
@@ -349,7 +349,7 @@ importers:
     dependencies:
       '@next-auth/xata-adapter':
         specifier: latest
-        version: 0.2.2(@xata.io/client@0.28.3)(next-auth@4.24.5)
+        version: 0.2.2(@xata.io/client@0.29.1)(next-auth@4.24.5)
       '@next/font':
         specifier: 13.5.6
         version: 13.5.6
@@ -364,7 +364,7 @@ importers:
         version: 18.2.19
       '@xata.io/client':
         specifier: latest
-        version: 0.28.3(typescript@5.2.2)
+        version: 0.29.1(typescript@5.2.2)
       eslint:
         specifier: 8.57.0
         version: 8.57.0
@@ -431,7 +431,7 @@ importers:
     dependencies:
       '@xata.io/client':
         specifier: ^0.29.0
-        version: 0.29.0(typescript@5.3.3)
+        version: 0.29.1(typescript@5.3.3)
       next:
         specifier: 14.1.0
         version: 14.1.0(react-dom@18.2.0)(react@18.2.0)
@@ -2831,13 +2831,13 @@ packages:
       urlpattern-polyfill: 8.0.2
     dev: true
 
-  /@next-auth/xata-adapter@0.2.2(@xata.io/client@0.28.3)(next-auth@4.24.5):
+  /@next-auth/xata-adapter@0.2.2(@xata.io/client@0.29.1)(next-auth@4.24.5):
     resolution: {integrity: sha512-sEGGYMMdgEjS0djL50u1po03Xo4VSOXxHR1ytPClxYQ5zgd1LOEvdfzCDlRwfofz0eR0QrCuko03TMaUCie90A==}
     peerDependencies:
       '@xata.io/client': '>=0.13.0'
       next-auth: ^4
     dependencies:
-      '@xata.io/client': 0.28.3(typescript@5.2.2)
+      '@xata.io/client': 0.29.1(typescript@5.2.2)
       next-auth: 4.24.5(next@13.4.19)(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
@@ -5108,28 +5108,20 @@ packages:
   /@web3-storage/multipart-parser@1.0.0:
     resolution: {integrity: sha512-BEO6al7BYqcnfX15W2cnGR+Q566ACXAT9UQykORCWW80lmkpWsnEob6zJS1ZVBKsSJC8+7vJkHwlp+lXG1UCdw==}
 
-  /@xata.io/client@0.28.3(typescript@5.2.2):
-    resolution: {integrity: sha512-aaXct/xWiYqHyFx2srMCnFDGrKvDA5fa6NEkFGzTHXQdYTai5hTQXcraPHxVHGlPUV3dapQWsguR4YJQugDpqQ==}
-    peerDependencies:
-      typescript: '>=4.5'
-    dependencies:
-      typescript: 5.2.2
-    dev: false
-
-  /@xata.io/client@0.29.0(typescript@5.3.3):
-    resolution: {integrity: sha512-bTDcKXcpqOVIs44AkpplM11+AtnTZEM+42vYRmMqpzxoFC9h+oJRA11pMyO155GkPg7a3fi6FA602LbGivuvVg==}
-    peerDependencies:
-      typescript: '>=4.5'
-    dependencies:
-      typescript: 5.3.3
-    dev: false
-
   /@xata.io/client@0.29.1(typescript@5.2.2):
     resolution: {integrity: sha512-JuxRxk28tDFQUOgxcSB0VRWvK+t1c307tSgESZmwzu1Uj0NxvD+YH4vW2Ob5A4o/daK0wgaITO22vsdTidwakQ==}
     peerDependencies:
       typescript: '>=4.5'
     dependencies:
       typescript: 5.2.2
+    dev: false
+
+  /@xata.io/client@0.29.1(typescript@5.3.3):
+    resolution: {integrity: sha512-JuxRxk28tDFQUOgxcSB0VRWvK+t1c307tSgESZmwzu1Uj0NxvD+YH4vW2Ob5A4o/daK0wgaITO22vsdTidwakQ==}
+    peerDependencies:
+      typescript: '>=4.5'
+    dependencies:
+      typescript: 5.3.3
     dev: false
 
   /@zxing/text-encoding@0.9.0:
