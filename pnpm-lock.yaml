@@ -79,7 +79,7 @@ importers:
         specifier: 18.2.19
         version: 18.2.19
       '@xata.io/client':
-        specifier: ^0.29.2
+        specifier: ^0.29.0
         version: 0.29.2(typescript@5.3.3)
       autoprefixer:
         specifier: 10.4.17
@@ -249,7 +249,7 @@ importers:
         version: 4.2.12
       svelte-check:
         specifier: ^3.6.2
-        version: 3.6.4(postcss-load-config@5.0.3)(postcss@8.4.35)(svelte@4.2.12)
+        version: 3.6.5(postcss-load-config@5.0.3)(postcss@8.4.35)(svelte@4.2.12)
       tailwindcss:
         specifier: ^3.4.1
         version: 3.4.1
@@ -270,7 +270,7 @@ importers:
         version: 2.0.1
       '@xata.io/client':
         specifier: 0.29.1
-        version: 0.29.2(typescript@5.2.2)
+        version: 0.29.1(typescript@5.2.2)
       next:
         specifier: 13.4.19
         version: 13.4.19(react-dom@18.2.0)(react@18.2.0)
@@ -391,7 +391,7 @@ importers:
     dependencies:
       '@xata.io/client':
         specifier: 0.29.1
-        version: 0.29.2(typescript@5.2.2)
+        version: 0.29.1(typescript@5.2.2)
       bcrypt:
         specifier: ^5.1.0
         version: 5.1.1
@@ -5383,6 +5383,14 @@ packages:
 
   /@web3-storage/multipart-parser@1.0.0:
     resolution: {integrity: sha512-BEO6al7BYqcnfX15W2cnGR+Q566ACXAT9UQykORCWW80lmkpWsnEob6zJS1ZVBKsSJC8+7vJkHwlp+lXG1UCdw==}
+
+  /@xata.io/client@0.29.1(typescript@5.2.2):
+    resolution: {integrity: sha512-JuxRxk28tDFQUOgxcSB0VRWvK+t1c307tSgESZmwzu1Uj0NxvD+YH4vW2Ob5A4o/daK0wgaITO22vsdTidwakQ==}
+    peerDependencies:
+      typescript: '>=4.5'
+    dependencies:
+      typescript: 5.2.2
+    dev: false
 
   /@xata.io/client@0.29.2(typescript@5.2.2):
     resolution: {integrity: sha512-47Idoq49bA3A76hb7m4GGO/nk/MrSQXsn1ME54ltSMlxeWs5HxdksUas0sSFAMmeng17ayfbPds3dL1OLju1ZA==}
@@ -14301,8 +14309,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  /svelte-check@3.6.4(postcss-load-config@5.0.3)(postcss@8.4.35)(svelte@4.2.12):
-    resolution: {integrity: sha512-mY/dqucqm46p72M8yZmn81WPZx9mN6uuw8UVfR3ZKQeLxQg5HDGO3HHm5AZuWZPYNMLJ+TRMn+TeN53HfQ/vsw==}
+  /svelte-check@3.6.5(postcss-load-config@5.0.3)(postcss@8.4.35)(svelte@4.2.12):
+    resolution: {integrity: sha512-5aLgoQEdadvp8ypvKQ2avhnQ+V9YPQQaWrTFlXFw5g/v8xIQBvo+X/WqxTyD+V/ItDqXg3+abUA53rdDHgUjCA==}
     hasBin: true
     peerDependencies:
       svelte: ^3.55.0 || ^4.0.0-next.0 || ^4.0.0 || ^5.0.0-next.0
