@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/node": "20.11.23",
+    "@types/node": "20.11.24",
     "@types/react": "18.2.60",
     "@types/react-dom": "18.2.19",
     "@xata.io/client": "^0.29.0",
