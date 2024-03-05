@@ -76,8 +76,8 @@ importers:
         specifier: 18.2.63
         version: 18.2.63
       '@types/react-dom':
-        specifier: 18.2.19
-        version: 18.2.19
+        specifier: 18.2.20
+        version: 18.2.20
       '@xata.io/client':
         specifier: ^0.29.0
         version: 0.29.2(typescript@5.3.3)
@@ -172,7 +172,7 @@ importers:
         version: 18.2.63
       '@types/react-dom':
         specifier: ^18.2.18
-        version: 18.2.19
+        version: 18.2.20
       eslint:
         specifier: ^8.56.0
         version: 8.57.0
@@ -291,8 +291,8 @@ importers:
         specifier: 18.2.63
         version: 18.2.63
       '@types/react-dom':
-        specifier: 18.2.19
-        version: 18.2.19
+        specifier: 18.2.20
+        version: 18.2.20
       eslint:
         specifier: 8.57.0
         version: 8.57.0
@@ -318,8 +318,8 @@ importers:
         specifier: 18.2.63
         version: 18.2.63
       '@types/react-dom':
-        specifier: 18.2.19
-        version: 18.2.19
+        specifier: 18.2.20
+        version: 18.2.20
       '@xata.io/client':
         specifier: latest
         version: 0.29.2(typescript@5.2.2)
@@ -360,8 +360,8 @@ importers:
         specifier: 18.2.63
         version: 18.2.63
       '@types/react-dom':
-        specifier: 18.2.19
-        version: 18.2.19
+        specifier: 18.2.20
+        version: 18.2.20
       '@xata.io/client':
         specifier: latest
         version: 0.29.2(typescript@5.2.2)
@@ -415,8 +415,8 @@ importers:
         specifier: 18.2.63
         version: 18.2.63
       '@types/react-dom':
-        specifier: 18.2.19
-        version: 18.2.19
+        specifier: 18.2.20
+        version: 18.2.20
       eslint:
         specifier: 8.57.0
         version: 8.57.0
@@ -450,7 +450,7 @@ importers:
         version: 18.2.63
       '@types/react-dom':
         specifier: ^18
-        version: 18.2.19
+        version: 18.2.20
       eslint:
         specifier: ^8
         version: 8.57.0
@@ -4861,8 +4861,8 @@ packages:
     resolution: {integrity: sha512-Sk/uYFOBAB7mb74XcpizmH0KOR2Pv3D2Hmrh1Dmy5BmK3MpdSa5kqZcg6EKBdklU0bFXX9gCfzvpnyUehrPIuA==}
     dev: true
 
-  /@types/react-dom@18.2.19:
-    resolution: {integrity: sha512-aZvQL6uUbIJpjZk4U8JZGbau9KDeAwMfmhyWorxgBkqDIEf6ROjRozcmPIicqsUwPUjbkDfHKgGee1Lq65APcA==}
+  /@types/react-dom@18.2.20:
+    resolution: {integrity: sha512-HXN/biJY8nv20Cn9ZbCFq3liERd4CozVZmKbaiZ9KiKTrWqsP7eoGDO6OOGvJQwoVFuiXaiJ7nBBjiFFbRmQMQ==}
     dependencies:
       '@types/react': 18.2.63
 
