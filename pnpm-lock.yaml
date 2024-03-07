@@ -269,8 +269,8 @@ importers:
         specifier: ^2.0.1
         version: 2.0.1
       '@xata.io/client':
-        specifier: 0.29.2
-        version: 0.29.2(typescript@5.4.2)
+        specifier: 0.29.3
+        version: 0.29.3(typescript@5.4.2)
       next:
         specifier: 13.4.19
         version: 13.4.19(react-dom@18.2.0)(react@18.2.0)
@@ -390,8 +390,8 @@ importers:
   apps/sample-nextjs-basic-auth:
     dependencies:
       '@xata.io/client':
-        specifier: 0.29.2
-        version: 0.29.2(typescript@5.4.2)
+        specifier: 0.29.3
+        version: 0.29.3(typescript@5.4.2)
       bcrypt:
         specifier: ^5.1.0
         version: 5.1.1
@@ -4891,7 +4891,7 @@ packages:
       '@babel/plugin-syntax-typescript': 7.23.3(@babel/core@7.24.0)
       '@vanilla-extract/babel-plugin-debug-ids': 1.0.5
       '@vanilla-extract/css': 1.14.1
-      esbuild: 0.17.6
+      esbuild: 0.19.12
       eval: 0.1.8
       find-up: 5.0.0
       javascript-stringify: 2.1.0
@@ -5107,6 +5107,14 @@ packages:
 
   /@xata.io/client@0.29.2(typescript@5.4.2):
     resolution: {integrity: sha512-47Idoq49bA3A76hb7m4GGO/nk/MrSQXsn1ME54ltSMlxeWs5HxdksUas0sSFAMmeng17ayfbPds3dL1OLju1ZA==}
+    peerDependencies:
+      typescript: '>=4.5'
+    dependencies:
+      typescript: 5.4.2
+    dev: false
+
+  /@xata.io/client@0.29.3(typescript@5.4.2):
+    resolution: {integrity: sha512-GsH3RNU2P0fP+YKTFVZZ/DAkczJ6/25xyXg383GIlgLW9juy5PpMumscFIgfjWIbvnasATKNVN2127C4ONfOTg==}
     peerDependencies:
       typescript: '>=4.5'
     dependencies:
