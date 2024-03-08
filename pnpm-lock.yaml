@@ -28,7 +28,7 @@ importers:
     dependencies:
       '@astrojs/tailwind':
         specifier: ^5.1.0
-        version: 5.1.0(astro@4.4.14)(tailwindcss@3.4.1)
+        version: 5.1.0(astro@4.4.15)(tailwindcss@3.4.1)
       '@types/canvas-confetti':
         specifier: ^1.6.4
         version: 1.6.4
@@ -37,7 +37,7 @@ importers:
         version: 0.29.3(typescript@5.4.2)
       astro:
         specifier: ^4.1.0
-        version: 4.4.14(@types/node@20.11.25)(typescript@5.4.2)
+        version: 4.4.15(@types/node@20.11.25)(typescript@5.4.2)
       autoprefixer:
         specifier: ^10.4.16
         version: 10.4.18(postcss@8.4.35)
@@ -517,13 +517,13 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/tailwind@5.1.0(astro@4.4.14)(tailwindcss@3.4.1):
+  /@astrojs/tailwind@5.1.0(astro@4.4.15)(tailwindcss@3.4.1):
     resolution: {integrity: sha512-BJoCDKuWhU9FT2qYg+fr6Nfb3qP4ShtyjXGHKA/4mHN94z7BGcmauQK23iy+YH5qWvTnhqkd6mQPQ1yTZTe9Ig==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 4.4.14(@types/node@20.11.25)(typescript@5.4.2)
+      astro: 4.4.15(@types/node@20.11.25)(typescript@5.4.2)
       autoprefixer: 10.4.18(postcss@8.4.35)
       postcss: 8.4.35
       postcss-load-config: 4.0.2(postcss@8.4.35)
@@ -4896,7 +4896,7 @@ packages:
       '@babel/plugin-syntax-typescript': 7.23.3(@babel/core@7.24.0)
       '@vanilla-extract/babel-plugin-debug-ids': 1.0.5
       '@vanilla-extract/css': 1.14.1
-      esbuild: 0.19.12
+      esbuild: 0.17.6
       eval: 0.1.8
       find-up: 5.0.0
       javascript-stringify: 2.1.0
@@ -5473,8 +5473,8 @@ packages:
     hasBin: true
     dev: true
 
-  /astro@4.4.14(@types/node@20.11.25)(typescript@5.4.2):
-    resolution: {integrity: sha512-b8l8NyUP38sWDkCSx9PKTX8aISIXhEGCnsx5FugOTyMisYeeY2hwyaiUpL11WvNJafq28RY0RMO+HWBR6te6fA==}
+  /astro@4.4.15(@types/node@20.11.25)(typescript@5.4.2):
+    resolution: {integrity: sha512-RTiAnlO8hDp6GqMVvaeJxyuCJhHNEho09lHshMNQBqgRabYPOJGW0HZZrbLRGNOqN9I14ivhZIunYGgAaGQpWw==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
@@ -6214,6 +6214,7 @@ packages:
 
   /color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
+    requiresBuild: true
 
   /color-string@1.9.1:
     resolution: {integrity: sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg==}
