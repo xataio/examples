@@ -76,8 +76,8 @@ importers:
         specifier: 18.2.65
         version: 18.2.65
       '@types/react-dom':
-        specifier: 18.2.21
-        version: 18.2.21
+        specifier: 18.2.22
+        version: 18.2.22
       '@xata.io/client':
         specifier: ^0.29.0
         version: 0.29.3(typescript@5.4.2)
@@ -172,7 +172,7 @@ importers:
         version: 18.2.65
       '@types/react-dom':
         specifier: ^18.2.18
-        version: 18.2.21
+        version: 18.2.22
       eslint:
         specifier: ^8.56.0
         version: 8.57.0
@@ -291,8 +291,8 @@ importers:
         specifier: 18.2.65
         version: 18.2.65
       '@types/react-dom':
-        specifier: 18.2.21
-        version: 18.2.21
+        specifier: 18.2.22
+        version: 18.2.22
       eslint:
         specifier: 8.57.0
         version: 8.57.0
@@ -318,8 +318,8 @@ importers:
         specifier: 18.2.65
         version: 18.2.65
       '@types/react-dom':
-        specifier: 18.2.21
-        version: 18.2.21
+        specifier: 18.2.22
+        version: 18.2.22
       '@xata.io/client':
         specifier: latest
         version: 0.29.3(typescript@5.4.2)
@@ -360,8 +360,8 @@ importers:
         specifier: 18.2.65
         version: 18.2.65
       '@types/react-dom':
-        specifier: 18.2.21
-        version: 18.2.21
+        specifier: 18.2.22
+        version: 18.2.22
       '@xata.io/client':
         specifier: latest
         version: 0.29.3(typescript@5.4.2)
@@ -415,8 +415,8 @@ importers:
         specifier: 18.2.65
         version: 18.2.65
       '@types/react-dom':
-        specifier: 18.2.21
-        version: 18.2.21
+        specifier: 18.2.22
+        version: 18.2.22
       eslint:
         specifier: 8.57.0
         version: 8.57.0
@@ -450,7 +450,7 @@ importers:
         version: 18.2.65
       '@types/react-dom':
         specifier: ^18
-        version: 18.2.21
+        version: 18.2.22
       eslint:
         specifier: ^8
         version: 8.57.0
@@ -4718,8 +4718,8 @@ packages:
     resolution: {integrity: sha512-Sk/uYFOBAB7mb74XcpizmH0KOR2Pv3D2Hmrh1Dmy5BmK3MpdSa5kqZcg6EKBdklU0bFXX9gCfzvpnyUehrPIuA==}
     dev: true
 
-  /@types/react-dom@18.2.21:
-    resolution: {integrity: sha512-gnvBA/21SA4xxqNXEwNiVcP0xSGHh/gi1VhWv9Bl46a0ItbTT5nFY+G9VSQpaG/8N/qdJpJ+vftQ4zflTtnjLw==}
+  /@types/react-dom@18.2.22:
+    resolution: {integrity: sha512-fHkBXPeNtfvri6gdsMYyW+dW7RXFo6Ad09nLFK0VQWR7yGLai/Cyvyj696gbwYvBnhGtevUG9cET0pmUbMtoPQ==}
     dependencies:
       '@types/react': 18.2.65
 
@@ -5004,7 +5004,7 @@ packages:
       '@babel/plugin-syntax-typescript': 7.23.3(@babel/core@7.24.0)
       '@vanilla-extract/babel-plugin-debug-ids': 1.0.5
       '@vanilla-extract/css': 1.14.1
-      esbuild: 0.17.6
+      esbuild: 0.19.12
       eval: 0.1.8
       find-up: 5.0.0
       javascript-stringify: 2.1.0
@@ -5787,8 +5787,8 @@ packages:
     requiresBuild: true
     optional: true
 
-  /bare-fs@2.2.1:
-    resolution: {integrity: sha512-+CjmZANQDFZWy4PGbVdmALIwmt33aJg8qTkVjClU6X4WmZkTPBDxRHiBn7fpqEWEfF3AC2io++erpViAIQbSjg==}
+  /bare-fs@2.2.2:
+    resolution: {integrity: sha512-X9IqgvyB0/VA5OZJyb5ZstoN62AzD7YxVGog13kkfYWYqJYcK0kcqLZ6TrmH5qr4/8//ejVcX4x/a0UvaogXmA==}
     requiresBuild: true
     dependencies:
       bare-events: 2.2.1
@@ -7578,7 +7578,7 @@ packages:
       eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
       eslint-module-utils: 2.8.1(@typescript-eslint/parser@5.62.0)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
-      hasown: 2.0.2
+      hasown: 2.0.1
       is-core-module: 2.13.1
       is-glob: 4.0.3
       minimatch: 3.1.2
@@ -14331,7 +14331,7 @@ packages:
       pump: 3.0.0
       tar-stream: 3.1.7
     optionalDependencies:
-      bare-fs: 2.2.1
+      bare-fs: 2.2.2
       bare-path: 2.1.0
     dev: false
     optional: true
