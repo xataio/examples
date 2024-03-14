@@ -65,7 +65,7 @@ importers:
         version: 5.4.2
       wrangler:
         specifier: ^3.0.0
-        version: 3.33.0(@cloudflare/workers-types@4.20240312.0)
+        version: 3.34.1(@cloudflare/workers-types@4.20240312.0)
 
   apps/getting-started-nextjs:
     dependencies:
@@ -10720,8 +10720,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /miniflare@3.20240304.1:
-    resolution: {integrity: sha512-U9Br62mV//dI5IiNxGX3qOf6/3tVGsWe94TF+Hy23F5w41AwF+cIgbGW4/JAQQI1rY5uNNmMoS9jqIyoSdw06Q==}
+  /miniflare@3.20240304.2:
+    resolution: {integrity: sha512-yQ5TBKv7TlvF8khFvvH+1WWk8cBnaLgNzcbJ5DLQOdecxdDxUCVlN38HThd6Nhcz6EY+ckDkww8FkugUbSSpIQ==}
     engines: {node: '>=16.13'}
     hasBin: true
     dependencies:
@@ -15672,8 +15672,8 @@ packages:
       '@cloudflare/workerd-windows-64': 1.20240304.0
     dev: true
 
-  /wrangler@3.33.0(@cloudflare/workers-types@4.20240312.0):
-    resolution: {integrity: sha512-1A8frPJSUQjkWAN4XhbykpEtqmfDYdTWPKlc4rTchNrERLwqHF87aCYblP4m5Wm43w4eVL+H4hGUgE2TySk9MA==}
+  /wrangler@3.34.1(@cloudflare/workers-types@4.20240312.0):
+    resolution: {integrity: sha512-/h/tPXmIv2m8HcWpTHVpPtrXrRMkzEHGvMbdYL2g5VYzyzmT6ouXTKYUUTG26D+FryhzpszUBYJvd2BTAi3ObA==}
     engines: {node: '>=16.17.0'}
     hasBin: true
     peerDependencies:
@@ -15689,7 +15689,7 @@ packages:
       blake3-wasm: 2.1.5
       chokidar: 3.6.0
       esbuild: 0.17.19
-      miniflare: 3.20240304.1
+      miniflare: 3.20240304.2
       nanoid: 3.3.7
       path-to-regexp: 6.2.1
       resolve: 1.22.8
