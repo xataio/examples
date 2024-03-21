@@ -94,7 +94,7 @@ importers:
         specifier: 14.1.4
         version: 14.1.4(react-dom@18.2.0)(react@18.2.0)
       postcss:
-        specifier: 8.4.37
+        specifier: 8.4.38
         version: 8.4.38
       react:
         specifier: 18.2.0
