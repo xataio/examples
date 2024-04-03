@@ -11,7 +11,7 @@
   "dependencies": {
     "@types/node": "20.12.3",
     "@types/react": "18.2.74",
-    "@types/react-dom": "18.2.23",
+    "@types/react-dom": "18.2.24",
     "@xata.io/client": "^0.29.0",
     "autoprefixer": "10.4.19",
     "eslint": "8.57.0",
