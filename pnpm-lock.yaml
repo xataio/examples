@@ -28,7 +28,7 @@ importers:
     dependencies:
       '@astrojs/tailwind':
         specifier: ^5.1.0
-        version: 5.1.0(astro@4.5.15)(tailwindcss@3.4.3)
+        version: 5.1.0(astro@4.5.16)(tailwindcss@3.4.3)
       '@types/canvas-confetti':
         specifier: ^1.6.4
         version: 1.6.4
@@ -37,7 +37,7 @@ importers:
         version: 0.29.3(typescript@5.4.3)
       astro:
         specifier: ^4.1.0
-        version: 4.5.15(@types/node@20.12.4)(typescript@5.4.3)
+        version: 4.5.16(@types/node@20.12.4)(typescript@5.4.3)
       autoprefixer:
         specifier: ^10.4.16
         version: 10.4.19(postcss@8.4.38)
@@ -528,13 +528,13 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/tailwind@5.1.0(astro@4.5.15)(tailwindcss@3.4.3):
+  /@astrojs/tailwind@5.1.0(astro@4.5.16)(tailwindcss@3.4.3):
     resolution: {integrity: sha512-BJoCDKuWhU9FT2qYg+fr6Nfb3qP4ShtyjXGHKA/4mHN94z7BGcmauQK23iy+YH5qWvTnhqkd6mQPQ1yTZTe9Ig==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 4.5.15(@types/node@20.12.4)(typescript@5.4.3)
+      astro: 4.5.16(@types/node@20.12.4)(typescript@5.4.3)
       autoprefixer: 10.4.19(postcss@8.4.38)
       postcss: 8.4.38
       postcss-load-config: 4.0.2(postcss@8.4.38)
@@ -1935,12 +1935,12 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/code-frame': 7.24.2
-      '@babel/generator': 7.24.1
+      '@babel/generator': 7.24.4
       '@babel/helper-environment-visitor': 7.22.20
       '@babel/helper-function-name': 7.23.0
       '@babel/helper-hoist-variables': 7.22.5
       '@babel/helper-split-export-declaration': 7.22.6
-      '@babel/parser': 7.24.1
+      '@babel/parser': 7.24.4
       '@babel/types': 7.24.0
       debug: 4.3.4
       globals: 11.12.0
@@ -6339,8 +6339,8 @@ packages:
     hasBin: true
     dev: true
 
-  /astro@4.5.15(@types/node@20.12.4)(typescript@5.4.3):
-    resolution: {integrity: sha512-d2+yMv4ZlWwWFzfbpXIULMniNmdPlbwGrQScacEni0WLeo4k7ETO51/bHN/i/fXwxL9IGfasdEFkk2baYXDRog==}
+  /astro@4.5.16(@types/node@20.12.4)(typescript@5.4.3):
+    resolution: {integrity: sha512-1nOVsMq2OJiXnG6gO0Y77vTAboGN9nLQSy/8SGazq4h6x+alzbsMbQbArBgvaLzOSUXD0m91XLs3D8bOSuavrQ==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
@@ -6383,7 +6383,7 @@ packages:
       http-cache-semantics: 4.1.1
       js-yaml: 4.1.0
       kleur: 4.1.5
-      magic-string: 0.30.8
+      magic-string: 0.30.9
       mime: 3.0.0
       ora: 7.0.1
       p-limit: 5.0.0
@@ -10621,13 +10621,13 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
+    dev: true
 
   /magic-string@0.30.9:
     resolution: {integrity: sha512-S1+hd+dIrC8EZqKyT9DstTH/0Z+f76kmmvZnkfQVmOpDEF9iVgdYif3Q/pIWHmCoo59bQVGW0kVL3e2nl+9+Sw==}
     engines: {node: '>=12'}
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
-    dev: true
 
   /magicast@0.3.3:
     resolution: {integrity: sha512-ZbrP1Qxnpoes8sz47AM0z08U+jW6TyRgZzcWy3Ma3vDhJttwMwAFDMMQFobwdBxByBD46JYmxRzeF7w2+wJEuw==}
