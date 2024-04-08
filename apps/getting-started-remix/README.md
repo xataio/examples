@@ -76,6 +76,19 @@ Run the application as follows:
 npm run dev
 ```
 
+## Remarks
+
+In case you encounter a `"Runtime.UnhandledPromiseRejection"` when deploying a Remix app to Vercel, try passing the Remix fetch implenentation to the XataClient:
+
+```ts
+import { fetch as webFetch } from "@remix-run/web-fetch";
+import { XataClient } from "src/xata";
+
+const xata = new XataClient({
+  fetch: webFetch,
+});
+```
+
 ## Learn More
 
 To learn more about Xata and Remix, take a look at the following resources:
