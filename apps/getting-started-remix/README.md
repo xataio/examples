@@ -84,7 +84,7 @@ In case you encounter a `"Runtime.UnhandledPromiseRejection"` when deploying a R
 import { fetch as webFetch } from "@remix-run/web-fetch";
 import { XataClient } from "src/xata";
 
-export const xata = new XataClient({
+const xata = new XataClient({
   fetch: webFetch,
 });
 ```
