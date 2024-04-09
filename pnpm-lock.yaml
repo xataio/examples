@@ -269,8 +269,8 @@ importers:
         specifier: ^2.0.1
         version: 2.0.1
       '@xata.io/client':
-        specifier: 0.29.3
-        version: 0.29.3(typescript@5.4.4)
+        specifier: 0.29.4
+        version: 0.29.4(typescript@5.4.4)
       next:
         specifier: 13.4.19
         version: 13.4.19(react-dom@18.2.0)(react@18.2.0)
@@ -390,8 +390,8 @@ importers:
   apps/sample-nextjs-basic-auth:
     dependencies:
       '@xata.io/client':
-        specifier: 0.29.3
-        version: 0.29.3(typescript@5.4.4)
+        specifier: 0.29.4
+        version: 0.29.4(typescript@5.4.4)
       bcrypt:
         specifier: ^5.1.0
         version: 5.1.1
