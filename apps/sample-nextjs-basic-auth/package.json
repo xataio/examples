@@ -19,8 +19,8 @@
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
     "@types/node": "20.12.7",
-    "@types/react": "18.2.75",
-    "@types/react-dom": "18.2.24",
+    "@types/react": "18.2.76",
+    "@types/react-dom": "18.2.25",
     "eslint": "8.57.0",
     "eslint-config-next": "13.5.6",
     "typescript": "5.4.5"
