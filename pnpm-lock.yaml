@@ -282,7 +282,7 @@ importers:
         version: 18.2.0(react@18.2.0)
       zod:
         specifier: ^3.20.2
-        version: 3.22.4
+        version: 3.22.5
     devDependencies:
       '@types/node':
         specifier: 20.12.7
@@ -8901,6 +8901,9 @@ packages:
   zod@3.22.4:
     resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
 
+  zod@3.22.5:
+    resolution: {integrity: sha512-HqnGsCdVZ2xc0qWPLdO25WnseXThh0kEYKIdV5F/hTHO75hNZFp8thxSeHhiPrHZKrFTo1SOgkAj9po5bexZlw==}
+
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
@@ -16224,7 +16227,7 @@ snapshots:
       workerd: 1.20240405.0
       ws: 8.16.0
       youch: 3.3.3
-      zod: 3.22.4
+      zod: 3.22.5
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -19696,5 +19699,7 @@ snapshots:
   zod@3.21.4: {}
 
   zod@3.22.4: {}
+
+  zod@3.22.5: {}
 
   zwitch@2.0.4: {}
