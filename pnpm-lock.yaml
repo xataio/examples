@@ -282,7 +282,7 @@ importers:
         version: 18.3.1(react@18.3.1)
       zod:
         specifier: ^3.20.2
-        version: 3.23.5
+        version: 3.23.6
     devDependencies:
       '@types/node':
         specifier: 20.12.8
@@ -8843,9 +8843,6 @@ packages:
 
   zod@3.21.4:
     resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
-
-  zod@3.23.5:
-    resolution: {integrity: sha512-fkwiq0VIQTksNNA131rDOsVJcns0pfVUjHzLrNBiF/O/Xxb5lQyEXkhZWcJ7npWsYlvs+h0jFWXXy4X46Em1JA==}
 
   zod@3.23.6:
     resolution: {integrity: sha512-RTHJlZhsRbuA8Hmp/iNL7jnfc4nZishjsanDAfEY1QpDQZCahUp3xDzl+zfweE9BklxMUcgBgS1b7Lvie/ZVwA==}
@@ -19519,8 +19516,6 @@ snapshots:
       zod: 3.23.6
 
   zod@3.21.4: {}
-
-  zod@3.23.5: {}
 
   zod@3.23.6: {}
 
