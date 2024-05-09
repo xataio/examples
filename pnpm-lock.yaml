@@ -28,7 +28,7 @@ importers:
     dependencies:
       '@astrojs/tailwind':
         specifier: ^5.1.0
-        version: 5.1.0(astro@4.8.1(@types/node@20.12.11)(terser@5.30.3)(typescript@5.4.5))(tailwindcss@3.4.3)
+        version: 5.1.0(astro@4.8.2(@types/node@20.12.11)(terser@5.30.3)(typescript@5.4.5))(tailwindcss@3.4.3)
       '@types/canvas-confetti':
         specifier: ^1.6.4
         version: 1.6.4
@@ -37,7 +37,7 @@ importers:
         version: 0.29.4(typescript@5.4.5)
       astro:
         specifier: ^4.1.0
-        version: 4.8.1(@types/node@20.12.11)(terser@5.30.3)(typescript@5.4.5)
+        version: 4.8.2(@types/node@20.12.11)(terser@5.30.3)(typescript@5.4.5)
       autoprefixer:
         specifier: ^10.4.16
         version: 10.4.19(postcss@8.4.38)
@@ -3538,8 +3538,8 @@ packages:
     resolution: {integrity: sha512-ISvCdHdlTDlH5IpxQJIex7BWBywFWgjJSVdwst+/iQCoEYnyOaQ95+X1JGshuBjGp6nxKUy1jMgE3zPqN7fQdg==}
     hasBin: true
 
-  astro@4.8.1:
-    resolution: {integrity: sha512-m11p7QkROpKbercBSqv99Q+ueN0azsw/SwG67qjxmUXS9jHghc9IYSsZLbwEuR6wH5qHkaeKx8y2rV64mYKOFw==}
+  astro@4.8.2:
+    resolution: {integrity: sha512-WBrnNePQ03cF5c+9sjD3TeyJodWMuPCwygDOUo7r+7LbKDN9TJK+KxIxo01AOX4HcexhxcLiTVVCBLSsi+OX9A==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -6835,6 +6835,9 @@ packages:
   pkg-types@1.1.0:
     resolution: {integrity: sha512-/RpmvKdxKf8uILTtoOhAgf30wYbP2Qw+L9p3Rvshx1JZVX+XQNZQFjlbmGHEGIm4CkVPlSn+NXmIM8+9oWQaSA==}
 
+  pkg-types@1.1.1:
+    resolution: {integrity: sha512-ko14TjmDuQJ14zsotODv7dBlwxKhUKQEhuhmbqo1uCi9BB0Z2alo/wAXg6q1dTR5TyuqYyWhjtfe/Tsh+X28jQ==}
+
   polka@1.0.0-next.22:
     resolution: {integrity: sha512-a7tsZy5gFbJr0aUltZS97xCkbPglXuD67AMvTyZX7BTDBH384FWf0ZQF6rPvdutSxnO1vUlXM2zSLf5tCKk5RA==}
     engines: {node: '>=8'}
@@ -9060,9 +9063,9 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.1.0(astro@4.8.1(@types/node@20.12.11)(terser@5.30.3)(typescript@5.4.5))(tailwindcss@3.4.3)':
+  '@astrojs/tailwind@5.1.0(astro@4.8.2(@types/node@20.12.11)(terser@5.30.3)(typescript@5.4.5))(tailwindcss@3.4.3)':
     dependencies:
-      astro: 4.8.1(@types/node@20.12.11)(terser@5.30.3)(typescript@5.4.5)
+      astro: 4.8.2(@types/node@20.12.11)(terser@5.30.3)(typescript@5.4.5)
       autoprefixer: 10.4.19(postcss@8.4.38)
       postcss: 8.4.38
       postcss-load-config: 4.0.2(postcss@8.4.38)
@@ -12795,7 +12798,7 @@ snapshots:
 
   astring@1.8.6: {}
 
-  astro@4.8.1(@types/node@20.12.11)(terser@5.30.3)(typescript@5.4.5):
+  astro@4.8.2(@types/node@20.12.11)(terser@5.30.3)(typescript@5.4.5):
     dependencies:
       '@astrojs/compiler': 2.8.0
       '@astrojs/internal-helpers': 0.4.0
@@ -16459,7 +16462,7 @@ snapshots:
     dependencies:
       acorn: 8.11.3
       pathe: 1.1.2
-      pkg-types: 1.1.0
+      pkg-types: 1.1.1
       ufo: 1.5.3
 
   modern-ahocorasick@1.0.1: {}
@@ -17298,6 +17301,12 @@ snapshots:
     dependencies:
       confbox: 0.1.7
       mlly: 1.6.1
+      pathe: 1.1.2
+
+  pkg-types@1.1.1:
+    dependencies:
+      confbox: 0.1.7
+      mlly: 1.7.0
       pathe: 1.1.2
 
   polka@1.0.0-next.22:
