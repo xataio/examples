@@ -65,7 +65,7 @@ importers:
         version: 5.4.5
       wrangler:
         specifier: ^3.0.0
-        version: 3.53.1(@cloudflare/workers-types@4.20240502.0)
+        version: 3.55.0(@cloudflare/workers-types@4.20240502.0)
 
   apps/getting-started-nextjs:
     dependencies:
@@ -163,7 +163,7 @@ importers:
     devDependencies:
       '@remix-run/dev':
         specifier: ^2.4.1
-        version: 2.9.1(@remix-run/react@2.9.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.4.5))(@remix-run/serve@2.9.1(typescript@5.4.5))(@types/node@20.12.11)(terser@5.30.3)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.11)(terser@5.30.3))(wrangler@3.53.1)
+        version: 2.9.1(@remix-run/react@2.9.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.4.5))(@remix-run/serve@2.9.1(typescript@5.4.5))(@types/node@20.12.11)(terser@5.30.3)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.11)(terser@5.30.3))(wrangler@3.55.0)
       '@remix-run/eslint-config':
         specifier: ^2.4.1
         version: 2.9.1(eslint@8.57.0)(react@18.3.1)(typescript@5.4.5)
@@ -6177,8 +6177,8 @@ packages:
     resolution: {integrity: sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==}
     engines: {node: '>=4'}
 
-  miniflare@3.20240419.0:
-    resolution: {integrity: sha512-fIev1PP4H+fQp5FtvzHqRY2v5s+jxh/a0xAhvM5fBNXvxWX7Zod1OatXfXwYbse3hqO3KeVMhb0osVtrW0NwJg==}
+  miniflare@3.20240419.1:
+    resolution: {integrity: sha512-Q9n0W07uUD/u0c/b03E4iogeXOAMjZnE3P7B5Yi8sPaZAx6TYWwjurGBja+Pg2yILN2iMaliEobfVyAKss33cA==}
     engines: {node: '>=16.13'}
     hasBin: true
 
@@ -8870,8 +8870,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  wrangler@3.53.1:
-    resolution: {integrity: sha512-bdMRQdHYdvowIwOhEMFkARIZUh56aDw7HLUZ/2JreBjj760osXE4Fc4L1TCkfRRBWgB6/LKF5LA4OcvORMYmHg==}
+  wrangler@3.55.0:
+    resolution: {integrity: sha512-VhtCioKxOdVqkHa8jQ6C6bX3by2Ko0uM0DKzrA+6lBZvfDUlGDWSOPiG+1fOHBHj2JTVBntxWCztXP6L+Udr8w==}
     engines: {node: '>=16.17.0'}
     hasBin: true
     peerDependencies:
@@ -11361,7 +11361,7 @@ snapshots:
 
   '@remix-run/css-bundle@2.9.1': {}
 
-  '@remix-run/dev@2.9.1(@remix-run/react@2.9.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.4.5))(@remix-run/serve@2.9.1(typescript@5.4.5))(@types/node@20.12.11)(terser@5.30.3)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.11)(terser@5.30.3))(wrangler@3.53.1)':
+  '@remix-run/dev@2.9.1(@remix-run/react@2.9.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.4.5))(@remix-run/serve@2.9.1(typescript@5.4.5))(@types/node@20.12.11)(terser@5.30.3)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.11)(terser@5.30.3))(wrangler@3.55.0)':
     dependencies:
       '@babel/core': 7.24.4
       '@babel/generator': 7.24.4
@@ -11421,7 +11421,7 @@ snapshots:
       '@remix-run/serve': 2.9.1(typescript@5.4.5)
       typescript: 5.4.5
       vite: 5.2.11(@types/node@20.12.11)(terser@5.30.3)
-      wrangler: 3.53.1(@cloudflare/workers-types@4.20240502.0)
+      wrangler: 3.55.0(@cloudflare/workers-types@4.20240502.0)
     transitivePeerDependencies:
       - '@types/node'
       - bluebird
@@ -16348,7 +16348,7 @@ snapshots:
 
   min-indent@1.0.1: {}
 
-  miniflare@3.20240419.0:
+  miniflare@3.20240419.1:
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       acorn: 8.11.3
@@ -19662,7 +19662,7 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20240419.0
       '@cloudflare/workerd-windows-64': 1.20240419.0
 
-  wrangler@3.53.1(@cloudflare/workers-types@4.20240502.0):
+  wrangler@3.55.0(@cloudflare/workers-types@4.20240502.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.2
       '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
@@ -19670,7 +19670,7 @@ snapshots:
       blake3-wasm: 2.1.5
       chokidar: 3.6.0
       esbuild: 0.17.19
-      miniflare: 3.20240419.0
+      miniflare: 3.20240419.1
       nanoid: 3.3.7
       path-to-regexp: 6.2.2
       resolve: 1.22.8
