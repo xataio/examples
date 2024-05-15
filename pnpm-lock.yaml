@@ -187,7 +187,7 @@ importers:
     dependencies:
       '@solidjs/meta':
         specifier: ^0.29.3
-        version: 0.29.3(solid-js@1.8.17)
+        version: 0.29.4(solid-js@1.8.17)
       '@solidjs/router':
         specifier: ^0.13.0
         version: 0.13.3(solid-js@1.8.17)
@@ -199,7 +199,7 @@ importers:
         version: 1.8.17
       solid-start:
         specifier: ^0.3.10
-        version: 0.3.11(@solidjs/meta@0.29.3(solid-js@1.8.17))(@solidjs/router@0.13.3(solid-js@1.8.17))(solid-js@1.8.17)(solid-start-node@0.3.11)(vite@5.2.11(@types/node@20.12.12)(terser@5.30.3))
+        version: 0.3.11(@solidjs/meta@0.29.4(solid-js@1.8.17))(@solidjs/router@0.13.3(solid-js@1.8.17))(solid-js@1.8.17)(solid-start-node@0.3.11)(vite@5.2.11(@types/node@20.12.12)(terser@5.30.3))
     devDependencies:
       autoprefixer:
         specifier: ^10.4.16
@@ -1877,8 +1877,8 @@ packages:
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
 
-  '@floating-ui/core@1.6.1':
-    resolution: {integrity: sha512-42UH54oPZHPdRHdw6BgoBD6cg/eVTmVrFcgeRDM3jbO7uxSoipVcmcIGFcA5jmOHO5apcyvBhkSKES3fQJnu7A==}
+  '@floating-ui/core@1.6.2':
+    resolution: {integrity: sha512-+2XpQV9LLZeanU4ZevzRnGFg2neDeKHgFLjP6YLW+tly0IvrhqT4u8enLGjLH3qeh85g19xY5rsAusfwTdn5lg==}
 
   '@floating-ui/dom@1.1.1':
     resolution: {integrity: sha512-TpIO93+DIujg3g7SykEAGZMDtbJRrmnYRCNYSjJlvIbGhBjRSNTLVbNeDQBrzy9qDgUbiWdc7KA0uZHZ2tJmiw==}
@@ -2786,8 +2786,8 @@ packages:
     resolution: {integrity: sha512-LtoMMhxAlorcGhmFYI+LhPgbPZCkgP6ra1YL604EeF6U98pLlQ3iWIGMdWSC+vWmPBWBNgmDBAhnAobLROJmwg==}
     engines: {node: '>=18'}
 
-  '@solidjs/meta@0.29.3':
-    resolution: {integrity: sha512-R2uirgjgyh3FPFh+rb840plF701N6GvM5w81/QeI61QwjXb4QzLkyI/uzXfC5UW8favpUn9KK9ILQeoTl6pX0A==}
+  '@solidjs/meta@0.29.4':
+    resolution: {integrity: sha512-zdIWBGpR9zGx1p1bzIPqF5Gs+Ks/BH8R6fWhmUa/dcK1L2rUC8BAcZJzNRYBQv74kScf1TSOs0EY//Vd/I0V8g==}
     peerDependencies:
       solid-js: '>=1.8.4'
 
@@ -10526,13 +10526,13 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
-  '@floating-ui/core@1.6.1':
+  '@floating-ui/core@1.6.2':
     dependencies:
       '@floating-ui/utils': 0.2.2
 
   '@floating-ui/dom@1.1.1':
     dependencies:
-      '@floating-ui/core': 1.6.1
+      '@floating-ui/core': 1.6.2
 
   '@floating-ui/utils@0.2.2': {}
 
@@ -11646,7 +11646,7 @@ snapshots:
 
   '@sindresorhus/merge-streams@2.3.0': {}
 
-  '@solidjs/meta@0.29.3(solid-js@1.8.17)':
+  '@solidjs/meta@0.29.4(solid-js@1.8.17)':
     dependencies:
       solid-js: 1.8.17
 
@@ -18295,13 +18295,13 @@ snapshots:
       polka: 1.0.0-next.22
       rollup: 3.29.4
       sirv: 2.0.4
-      solid-start: 0.3.11(@solidjs/meta@0.29.3(solid-js@1.8.17))(@solidjs/router@0.13.3(solid-js@1.8.17))(solid-js@1.8.17)(solid-start-node@0.3.11)(vite@5.2.11(@types/node@20.12.12)(terser@5.30.3))
+      solid-start: 0.3.11(@solidjs/meta@0.29.4(solid-js@1.8.17))(@solidjs/router@0.13.3(solid-js@1.8.17))(solid-js@1.8.17)(solid-start-node@0.3.11)(vite@5.2.11(@types/node@20.12.12)(terser@5.30.3))
       terser: 5.29.2
       vite: 5.2.11(@types/node@20.12.12)(terser@5.30.3)
     transitivePeerDependencies:
       - supports-color
 
-  solid-start@0.3.11(@solidjs/meta@0.29.3(solid-js@1.8.17))(@solidjs/router@0.13.3(solid-js@1.8.17))(solid-js@1.8.17)(solid-start-node@0.3.11)(vite@5.2.11(@types/node@20.12.12)(terser@5.30.3)):
+  solid-start@0.3.11(@solidjs/meta@0.29.4(solid-js@1.8.17))(@solidjs/router@0.13.3(solid-js@1.8.17))(solid-js@1.8.17)(solid-start-node@0.3.11)(vite@5.2.11(@types/node@20.12.12)(terser@5.30.3)):
     dependencies:
       '@babel/core': 7.24.3
       '@babel/generator': 7.24.1
@@ -18309,7 +18309,7 @@ snapshots:
       '@babel/preset-env': 7.24.3(@babel/core@7.24.3)
       '@babel/preset-typescript': 7.24.1(@babel/core@7.24.3)
       '@babel/template': 7.24.0
-      '@solidjs/meta': 0.29.3(solid-js@1.8.17)
+      '@solidjs/meta': 0.29.4(solid-js@1.8.17)
       '@solidjs/router': 0.13.3(solid-js@1.8.17)
       '@types/cookie': 0.5.4
       '@types/debug': 4.1.12
