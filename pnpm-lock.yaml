@@ -28,7 +28,7 @@ importers:
     dependencies:
       '@astrojs/tailwind':
         specifier: ^5.1.0
-        version: 5.1.0(astro@4.9.0(@types/node@20.12.12)(terser@5.30.3)(typescript@5.4.5))(tailwindcss@3.4.3)
+        version: 5.1.0(astro@4.9.1(@types/node@20.12.12)(terser@5.30.3)(typescript@5.4.5))(tailwindcss@3.4.3)
       '@types/canvas-confetti':
         specifier: ^1.6.4
         version: 1.6.4
@@ -37,7 +37,7 @@ importers:
         version: 0.29.4(typescript@5.4.5)
       astro:
         specifier: ^4.1.0
-        version: 4.9.0(@types/node@20.12.12)(terser@5.30.3)(typescript@5.4.5)
+        version: 4.9.1(@types/node@20.12.12)(terser@5.30.3)(typescript@5.4.5)
       autoprefixer:
         specifier: ^10.4.16
         version: 10.4.19(postcss@8.4.38)
@@ -3622,8 +3622,8 @@ packages:
     resolution: {integrity: sha512-ISvCdHdlTDlH5IpxQJIex7BWBywFWgjJSVdwst+/iQCoEYnyOaQ95+X1JGshuBjGp6nxKUy1jMgE3zPqN7fQdg==}
     hasBin: true
 
-  astro@4.9.0:
-    resolution: {integrity: sha512-beb3go5Oh5QDjns7YVxG1r40Flt/cuXB+YFTnVRqbh2NuMpYRoXZqIT+ZNaorleEfrLjLFXfsn1AAKVP+XZ2KA==}
+  astro@4.9.1:
+    resolution: {integrity: sha512-9TsoAu0WBPiqyAIj9H0JW7R+tIjPjFsPKo70Nja6WL3imTTuUJQmnCre4ZVmoNV3oicTTlb+N4zjRYANW0Ty9A==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -9176,9 +9176,9 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.1.0(astro@4.9.0(@types/node@20.12.12)(terser@5.30.3)(typescript@5.4.5))(tailwindcss@3.4.3)':
+  '@astrojs/tailwind@5.1.0(astro@4.9.1(@types/node@20.12.12)(terser@5.30.3)(typescript@5.4.5))(tailwindcss@3.4.3)':
     dependencies:
-      astro: 4.9.0(@types/node@20.12.12)(terser@5.30.3)(typescript@5.4.5)
+      astro: 4.9.1(@types/node@20.12.12)(terser@5.30.3)(typescript@5.4.5)
       autoprefixer: 10.4.19(postcss@8.4.38)
       postcss: 8.4.38
       postcss-load-config: 4.0.2(postcss@8.4.38)
@@ -12879,7 +12879,7 @@ snapshots:
 
   astring@1.8.6: {}
 
-  astro@4.9.0(@types/node@20.12.12)(terser@5.30.3)(typescript@5.4.5):
+  astro@4.9.1(@types/node@20.12.12)(terser@5.30.3)(typescript@5.4.5):
     dependencies:
       '@astrojs/compiler': 2.8.0
       '@astrojs/internal-helpers': 0.4.0
