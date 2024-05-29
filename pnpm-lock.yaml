@@ -269,8 +269,8 @@ importers:
         specifier: ^2.0.1
         version: 2.0.1
       '@xata.io/client':
-        specifier: 0.29.4
-        version: 0.29.4(typescript@5.4.5)
+        specifier: 0.29.5
+        version: 0.29.5(typescript@5.4.5)
       next:
         specifier: 13.4.19
         version: 13.4.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -307,7 +307,7 @@ importers:
     dependencies:
       '@next-auth/xata-adapter':
         specifier: latest
-        version: 0.2.2(@xata.io/client@0.29.4(typescript@5.4.5))(next-auth@4.24.7(next@13.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+        version: 0.2.2(@xata.io/client@0.29.5(typescript@5.4.5))(next-auth@4.24.7(next@13.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@next/font':
         specifier: 13.5.6
         version: 13.5.6
@@ -322,7 +322,7 @@ importers:
         version: 18.3.0
       '@xata.io/client':
         specifier: latest
-        version: 0.29.4(typescript@5.4.5)
+        version: 0.29.5(typescript@5.4.5)
       eslint:
         specifier: 8.57.0
         version: 8.57.0
@@ -349,7 +349,7 @@ importers:
     dependencies:
       '@next-auth/xata-adapter':
         specifier: latest
-        version: 0.2.2(@xata.io/client@0.29.4(typescript@5.4.5))(next-auth@4.24.7(next@13.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+        version: 0.2.2(@xata.io/client@0.29.5(typescript@5.4.5))(next-auth@4.24.7(next@13.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@next/font':
         specifier: 13.5.6
         version: 13.5.6
@@ -364,7 +364,7 @@ importers:
         version: 18.3.0
       '@xata.io/client':
         specifier: latest
-        version: 0.29.4(typescript@5.4.5)
+        version: 0.29.5(typescript@5.4.5)
       eslint:
         specifier: 8.57.0
         version: 8.57.0
@@ -390,8 +390,8 @@ importers:
   apps/sample-nextjs-basic-auth:
     dependencies:
       '@xata.io/client':
-        specifier: 0.29.4
-        version: 0.29.4(typescript@5.4.5)
+        specifier: 0.29.5
+        version: 0.29.5(typescript@5.4.5)
       bcrypt:
         specifier: ^5.1.0
         version: 5.1.1(encoding@0.1.13)
@@ -3568,6 +3568,11 @@ packages:
 
   '@xata.io/client@0.29.4':
     resolution: {integrity: sha512-dRff4E/wINr0SYIlOHwApo0h8jzpAHVf2RcbGMkK9Xrddbe90KmCEx/gue9hLhBOoCCp6qUht2h9BsuVPruymw==}
+    peerDependencies:
+      typescript: '>=4.5'
+
+  '@xata.io/client@0.29.5':
+    resolution: {integrity: sha512-b55dmPVNVFOE5nj2F2G6t9l/d5yYBhIu5X5w3rznhhsriGHkrzn93tqJexIZPS77E7f/yDXcFz06KbvR3bHK5w==}
     peerDependencies:
       typescript: '>=4.5'
 
@@ -11290,9 +11295,9 @@ snapshots:
       '@netlify/node-cookies': 0.1.0
       urlpattern-polyfill: 8.0.2
 
-  '@next-auth/xata-adapter@0.2.2(@xata.io/client@0.29.4(typescript@5.4.5))(next-auth@4.24.7(next@13.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
+  '@next-auth/xata-adapter@0.2.2(@xata.io/client@0.29.5(typescript@5.4.5))(next-auth@4.24.7(next@13.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
-      '@xata.io/client': 0.29.4(typescript@5.4.5)
+      '@xata.io/client': 0.29.5(typescript@5.4.5)
       next-auth: 4.24.7(next@13.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
   '@next/env@13.4.19': {}
@@ -12766,7 +12771,7 @@ snapshots:
       '@babel/plugin-syntax-typescript': 7.24.1(@babel/core@7.24.5)
       '@vanilla-extract/babel-plugin-debug-ids': 1.0.5
       '@vanilla-extract/css': 1.15.1
-      esbuild: 0.17.6
+      esbuild: 0.17.19
       eval: 0.1.8
       find-up: 5.0.0
       javascript-stringify: 2.1.0
@@ -13074,6 +13079,10 @@ snapshots:
   '@web3-storage/multipart-parser@1.0.0': {}
 
   '@xata.io/client@0.29.4(typescript@5.4.5)':
+    dependencies:
+      typescript: 5.4.5
+
+  '@xata.io/client@0.29.5(typescript@5.4.5)':
     dependencies:
       typescript: 5.4.5
 
