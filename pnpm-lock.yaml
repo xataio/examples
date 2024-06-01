@@ -187,7 +187,7 @@ importers:
     dependencies:
       '@solidjs/meta':
         specifier: ^0.29.3
-        version: 0.29.3(solid-js@1.8.10)
+        version: 0.29.4(solid-js@1.8.10)
       '@solidjs/router':
         specifier: ^0.13.0
         version: 0.13.4(solid-js@1.8.10)
@@ -199,7 +199,7 @@ importers:
         version: 1.8.10
       solid-start:
         specifier: ^0.3.10
-        version: 0.3.10(@solidjs/meta@0.29.3)(@solidjs/router@0.13.4)(solid-js@1.8.10)(solid-start-node@0.3.11)(vite@5.0.13)
+        version: 0.3.10(@solidjs/meta@0.29.4)(@solidjs/router@0.13.4)(solid-js@1.8.10)(solid-start-node@0.3.11)(vite@5.0.13)
     devDependencies:
       autoprefixer:
         specifier: ^10.4.16
@@ -5979,8 +5979,8 @@ packages:
     engines: {node: '>=18'}
     dev: true
 
-  /@solidjs/meta@0.29.3(solid-js@1.8.10):
-    resolution: {integrity: sha512-R2uirgjgyh3FPFh+rb840plF701N6GvM5w81/QeI61QwjXb4QzLkyI/uzXfC5UW8favpUn9KK9ILQeoTl6pX0A==}
+  /@solidjs/meta@0.29.4(solid-js@1.8.10):
+    resolution: {integrity: sha512-zdIWBGpR9zGx1p1bzIPqF5Gs+Ks/BH8R6fWhmUa/dcK1L2rUC8BAcZJzNRYBQv74kScf1TSOs0EY//Vd/I0V8g==}
     peerDependencies:
       solid-js: '>=1.8.4'
     dependencies:
@@ -16810,13 +16810,13 @@ packages:
       polka: 1.0.0-next.22
       rollup: 3.29.4
       sirv: 2.0.4
-      solid-start: 0.3.10(@solidjs/meta@0.29.3)(@solidjs/router@0.13.4)(solid-js@1.8.10)(solid-start-node@0.3.11)(vite@5.0.13)
+      solid-start: 0.3.10(@solidjs/meta@0.29.4)(@solidjs/router@0.13.4)(solid-js@1.8.10)(solid-start-node@0.3.11)(vite@5.0.13)
       terser: 5.31.0
       vite: 5.0.13(@types/node@20.12.14)
     transitivePeerDependencies:
       - supports-color
 
-  /solid-start@0.3.10(@solidjs/meta@0.29.3)(@solidjs/router@0.13.4)(solid-js@1.8.10)(solid-start-node@0.3.11)(vite@5.0.13):
+  /solid-start@0.3.10(@solidjs/meta@0.29.4)(@solidjs/router@0.13.4)(solid-js@1.8.10)(solid-start-node@0.3.11)(vite@5.0.13):
     resolution: {integrity: sha512-4z+BybZMOyw6Px6FgPvjzW6/UOLCyDNxoKRg19kGGWmcgyWf8YZv+/eIhXdt+09H/LQapZr4ZRY2iFpe7+7PbA==}
     hasBin: true
     peerDependencies:
@@ -16856,7 +16856,7 @@ packages:
       '@babel/preset-env': 7.23.8(@babel/core@7.23.7)
       '@babel/preset-typescript': 7.23.3(@babel/core@7.23.7)
       '@babel/template': 7.22.15
-      '@solidjs/meta': 0.29.3(solid-js@1.8.10)
+      '@solidjs/meta': 0.29.4(solid-js@1.8.10)
       '@solidjs/router': 0.13.4(solid-js@1.8.10)
       '@types/cookie': 0.5.4
       '@types/debug': 4.1.12
