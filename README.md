@@ -14,10 +14,10 @@ This repository houses various examples linked to from our [documentation](https
 
 ## Sample Apps
 
-- [Upload with Next.Js](https://github.com/xataio/examples/tree/main/apps/sample-upload-next)
+- [Upload with Next.js](https://github.com/xataio/examples/tree/main/apps/sample-nextjs-upload-file)
 - [ChatGPT](https://github.com/xataio/examples/tree/main/apps/sample-chatgpt)
 - [Next.js and Auth.js: App routing](https://github.com/xataio/examples/tree/main/apps/sample-next-auth-app)
 - [Next.js and Auth.js: Pages routing](https://github.com/xataio/examples/tree/main/apps/sample-next-auth-pages)
 - [Next.js and basic auth](https://github.com/xataio/examples/tree/main/apps/sample-nextjs-basic-auth)
 
-If you have questions, feel free to reach out on our [Discord channel](xata.io/discord).
+If you have questions, feel free to reach out on our [Discord channel](https://xata.io/discord).
