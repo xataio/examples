@@ -190,7 +190,7 @@ importers:
         version: 0.29.4(solid-js@1.8.18)
       '@solidjs/router':
         specifier: ^0.14.0
-        version: 0.14.0(solid-js@1.8.18)
+        version: 0.14.1(solid-js@1.8.18)
       '@xata.io/client':
         specifier: ^0.29.0
         version: 0.29.5(typescript@5.5.3)
@@ -199,7 +199,7 @@ importers:
         version: 1.8.18
       solid-start:
         specifier: ^0.3.10
-        version: 0.3.11(@solidjs/meta@0.29.4(solid-js@1.8.18))(@solidjs/router@0.14.0(solid-js@1.8.18))(solid-js@1.8.18)(solid-start-node@0.3.11)(vite@5.3.3(@types/node@20.14.10)(terser@5.31.1))
+        version: 0.3.11(@solidjs/meta@0.29.4(solid-js@1.8.18))(@solidjs/router@0.14.1(solid-js@1.8.18))(solid-js@1.8.18)(solid-start-node@0.3.11)(vite@5.3.3(@types/node@20.14.10)(terser@5.31.1))
     devDependencies:
       autoprefixer:
         specifier: ^10.4.16
@@ -3031,8 +3031,8 @@ packages:
     peerDependencies:
       solid-js: '>=1.8.4'
 
-  '@solidjs/router@0.14.0':
-    resolution: {integrity: sha512-bzhZTHyKGIGHj0OfXJHwTbxH+W/RebP16tzPpq1+dJ/zHL/C7XwFNjEDeMuDcTq4BVLpWq/77vdUddhCZD+sQw==}
+  '@solidjs/router@0.14.1':
+    resolution: {integrity: sha512-GumQ4jbt5xDngLypAndC4EjapY/3DP0G8Az4YWEVQHdCtjHwB8IOm32eEBxE9lKpOffbtXV0r/0X0mofHJ1m5w==}
     peerDependencies:
       solid-js: ^1.8.6
 
@@ -11689,7 +11689,7 @@ snapshots:
     dependencies:
       solid-js: 1.8.18
 
-  '@solidjs/router@0.14.0(solid-js@1.8.18)':
+  '@solidjs/router@0.14.1(solid-js@1.8.18)':
     dependencies:
       solid-js: 1.8.18
 
@@ -12096,7 +12096,7 @@ snapshots:
       '@babel/plugin-syntax-typescript': 7.24.7(@babel/core@7.24.7)
       '@vanilla-extract/babel-plugin-debug-ids': 1.0.6
       '@vanilla-extract/css': 1.15.3
-      esbuild: 0.17.19
+      esbuild: 0.17.6
       eval: 0.1.8
       find-up: 5.0.0
       javascript-stringify: 2.1.0
@@ -17861,13 +17861,13 @@ snapshots:
       polka: 1.0.0-next.22
       rollup: 3.29.4
       sirv: 2.0.4
-      solid-start: 0.3.11(@solidjs/meta@0.29.4(solid-js@1.8.18))(@solidjs/router@0.14.0(solid-js@1.8.18))(solid-js@1.8.18)(solid-start-node@0.3.11)(vite@5.3.3(@types/node@20.14.10)(terser@5.31.1))
+      solid-start: 0.3.11(@solidjs/meta@0.29.4(solid-js@1.8.18))(@solidjs/router@0.14.1(solid-js@1.8.18))(solid-js@1.8.18)(solid-start-node@0.3.11)(vite@5.3.3(@types/node@20.14.10)(terser@5.31.1))
       terser: 5.31.0
       vite: 5.3.3(@types/node@20.14.10)(terser@5.31.1)
     transitivePeerDependencies:
       - supports-color
 
-  solid-start@0.3.11(@solidjs/meta@0.29.4(solid-js@1.8.18))(@solidjs/router@0.14.0(solid-js@1.8.18))(solid-js@1.8.18)(solid-start-node@0.3.11)(vite@5.3.3(@types/node@20.14.10)(terser@5.31.1)):
+  solid-start@0.3.11(@solidjs/meta@0.29.4(solid-js@1.8.18))(@solidjs/router@0.14.1(solid-js@1.8.18))(solid-js@1.8.18)(solid-start-node@0.3.11)(vite@5.3.3(@types/node@20.14.10)(terser@5.31.1)):
     dependencies:
       '@babel/core': 7.24.6
       '@babel/generator': 7.24.6
@@ -17876,7 +17876,7 @@ snapshots:
       '@babel/preset-typescript': 7.24.6(@babel/core@7.24.6)
       '@babel/template': 7.24.6
       '@solidjs/meta': 0.29.4(solid-js@1.8.18)
-      '@solidjs/router': 0.14.0(solid-js@1.8.18)
+      '@solidjs/router': 0.14.1(solid-js@1.8.18)
       '@types/cookie': 0.5.4
       '@types/debug': 4.1.12
       chokidar: 3.6.0
