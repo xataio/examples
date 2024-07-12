@@ -59,13 +59,13 @@ importers:
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20231121.0
-        version: 4.20240701.0
+        version: 4.20240712.0
       typescript:
         specifier: ^5.0.4
         version: 5.5.3
       wrangler:
         specifier: ^3.0.0
-        version: 3.64.0(@cloudflare/workers-types@4.20240701.0)
+        version: 3.64.0(@cloudflare/workers-types@4.20240712.0)
 
   apps/getting-started-nextjs:
     dependencies:
@@ -1352,8 +1352,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@cloudflare/workers-types@4.20240701.0':
-    resolution: {integrity: sha512-6Cu6NIAicmb8H6CkzFdQG5Ib+TDs9HU8AKQEGlxnbvEBDmhUNpmL30ETXpLS0asdeyc+rTb2xag0hSv0Z1BflQ==}
+  '@cloudflare/workers-types@4.20240712.0':
+    resolution: {integrity: sha512-C+C0ZnkRrxR2tPkZKAXwBsWEse7bWaA7iMbaG6IKaxaPTo/5ilx7Ei3BkI2izxmOJMsC05VS1eFUf95urXzhmw==}
 
   '@cspotcode/source-map-support@0.8.1':
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
@@ -10083,7 +10083,7 @@ snapshots:
   '@cloudflare/workerd-windows-64@1.20240701.0':
     optional: true
 
-  '@cloudflare/workers-types@4.20240701.0': {}
+  '@cloudflare/workers-types@4.20240712.0': {}
 
   '@cspotcode/source-map-support@0.8.1':
     dependencies:
@@ -11383,7 +11383,7 @@ snapshots:
       '@remix-run/serve': 2.10.2(typescript@5.5.3)
       typescript: 5.5.3
       vite: 5.3.3(@types/node@20.14.10)(terser@5.31.1)
-      wrangler: 3.64.0(@cloudflare/workers-types@4.20240701.0)
+      wrangler: 3.64.0(@cloudflare/workers-types@4.20240712.0)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
@@ -19064,7 +19064,7 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20240701.0
       '@cloudflare/workerd-windows-64': 1.20240701.0
 
-  wrangler@3.64.0(@cloudflare/workers-types@4.20240701.0):
+  wrangler@3.64.0(@cloudflare/workers-types@4.20240712.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.4
       '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
@@ -19083,7 +19083,7 @@ snapshots:
       unenv: unenv-nightly@1.10.0-1717606461.a117952
       xxhash-wasm: 1.0.2
     optionalDependencies:
-      '@cloudflare/workers-types': 4.20240701.0
+      '@cloudflare/workers-types': 4.20240712.0
       fsevents: 2.3.3
     transitivePeerDependencies:
       - bufferutil
