@@ -17,6 +17,6 @@
     "tailwindcss": "^3.3.3"
   },
   "dependencies": {
-    "@xata.io/client": "^0.29.0"
+    "@xata.io/client": "^0.30.0"
   }
 }
