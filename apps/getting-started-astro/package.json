@@ -12,7 +12,7 @@
   "dependencies": {
     "@astrojs/tailwind": "^5.1.0",
     "@types/canvas-confetti": "^1.6.4",
-    "@xata.io/client": "^0.29.5",
+    "@xata.io/client": "^0.30.0",
     "astro": "^4.9.2",
     "autoprefixer": "^10.4.19",
     "canvas-confetti": "^1.9.3",

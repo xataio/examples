@@ -25,6 +25,6 @@
   },
   "type": "module",
   "dependencies": {
-    "@xata.io/client": "^0.29.0"
+    "@xata.io/client": "^0.30.0"
   }
 }
