@@ -28,7 +28,7 @@ importers:
     dependencies:
       '@astrojs/tailwind':
         specifier: ^5.1.0
-        version: 5.1.0(astro@4.14.0(@types/node@22.2.0)(rollup@4.20.0)(terser@5.31.3)(typescript@5.5.4))(tailwindcss@3.4.10)
+        version: 5.1.0(astro@4.14.1(@types/node@22.2.0)(rollup@4.20.0)(terser@5.31.3)(typescript@5.5.4))(tailwindcss@3.4.10)
       '@types/canvas-confetti':
         specifier: ^1.6.4
         version: 1.6.4
@@ -37,7 +37,7 @@ importers:
         version: 0.30.0(typescript@5.5.4)
       astro:
         specifier: ^4.9.2
-        version: 4.14.0(@types/node@22.2.0)(rollup@4.20.0)(terser@5.31.3)(typescript@5.5.4)
+        version: 4.14.1(@types/node@22.2.0)(rollup@4.20.0)(terser@5.31.3)(typescript@5.5.4)
       autoprefixer:
         specifier: ^10.4.19
         version: 10.4.20(postcss@8.4.41)
@@ -163,7 +163,7 @@ importers:
     devDependencies:
       '@remix-run/dev':
         specifier: ^2.4.1
-        version: 2.11.1(@remix-run/react@2.11.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4))(@remix-run/serve@2.11.1(typescript@5.5.4))(@types/node@22.2.0)(terser@5.31.3)(typescript@5.5.4)(vite@5.4.0(@types/node@22.2.0)(terser@5.31.3))(wrangler@3.71.0(@cloudflare/workers-types@4.20240806.0))
+        version: 2.11.1(@remix-run/react@2.11.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4))(@remix-run/serve@2.11.1(typescript@5.5.4))(@types/node@22.2.0)(terser@5.31.3)(typescript@5.5.4)(vite@5.4.1(@types/node@22.2.0)(terser@5.31.3))(wrangler@3.71.0(@cloudflare/workers-types@4.20240806.0))
       '@remix-run/eslint-config':
         specifier: ^2.4.1
         version: 2.11.1(eslint@8.57.0)(react@18.3.1)(typescript@5.5.4)
@@ -3411,8 +3411,8 @@ packages:
     resolution: {integrity: sha512-ISvCdHdlTDlH5IpxQJIex7BWBywFWgjJSVdwst+/iQCoEYnyOaQ95+X1JGshuBjGp6nxKUy1jMgE3zPqN7fQdg==}
     hasBin: true
 
-  astro@4.14.0:
-    resolution: {integrity: sha512-UWUOy0aX+x3oDlItcrc4lgLqUXm63w6iChWnWiFijnfpUSJvogtKmJzb79ZmNj56i0ZVGhNVRsbtVhofJPdIXg==}
+  astro@4.14.1:
+    resolution: {integrity: sha512-tLhGE+vHl+n66KgzyV7ek6ro2dqKenHqdxPb/R6x9ci+fKG5lSSOeb/dP/XVhpKUMcuV98IGWTxL5VPzqPFUJQ==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -8281,6 +8281,37 @@ packages:
       terser:
         optional: true
 
+  vite@5.4.1:
+    resolution: {integrity: sha512-1oE6yuNXssjrZdblI9AfBbHCC41nnyoVoEZxQnID6yvQZAFBzxxkqoFLtHUMkYunL8hwOLEjgTuxpkRxvba3kA==}
+    engines: {node: ^18.0.0 || >=20.0.0}
+    hasBin: true
+    peerDependencies:
+      '@types/node': ^18.0.0 || >=20.0.0
+      less: '*'
+      lightningcss: ^1.21.0
+      sass: '*'
+      sass-embedded: '*'
+      stylus: '*'
+      sugarss: '*'
+      terser: ^5.4.0
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      less:
+        optional: true
+      lightningcss:
+        optional: true
+      sass:
+        optional: true
+      sass-embedded:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+
   vitefu@0.2.5:
     resolution: {integrity: sha512-SgHtMLoqaeeGnd2evZ849ZbACbnwQCIwRH57t18FxcXoZop0uQu0uzlIhJBlF/eWVzuce0sHeqPcDo+evVcg8Q==}
     peerDependencies:
@@ -8584,9 +8615,9 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.1.0(astro@4.14.0(@types/node@22.2.0)(rollup@4.20.0)(terser@5.31.3)(typescript@5.5.4))(tailwindcss@3.4.10)':
+  '@astrojs/tailwind@5.1.0(astro@4.14.1(@types/node@22.2.0)(rollup@4.20.0)(terser@5.31.3)(typescript@5.5.4))(tailwindcss@3.4.10)':
     dependencies:
-      astro: 4.14.0(@types/node@22.2.0)(rollup@4.20.0)(terser@5.31.3)(typescript@5.5.4)
+      astro: 4.14.1(@types/node@22.2.0)(rollup@4.20.0)(terser@5.31.3)(typescript@5.5.4)
       autoprefixer: 10.4.20(postcss@8.4.41)
       postcss: 8.4.41
       postcss-load-config: 4.0.2(postcss@8.4.41)
@@ -10890,7 +10921,7 @@ snapshots:
 
   '@remix-run/css-bundle@2.11.1': {}
 
-  '@remix-run/dev@2.11.1(@remix-run/react@2.11.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4))(@remix-run/serve@2.11.1(typescript@5.5.4))(@types/node@22.2.0)(terser@5.31.3)(typescript@5.5.4)(vite@5.4.0(@types/node@22.2.0)(terser@5.31.3))(wrangler@3.71.0(@cloudflare/workers-types@4.20240806.0))':
+  '@remix-run/dev@2.11.1(@remix-run/react@2.11.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4))(@remix-run/serve@2.11.1(typescript@5.5.4))(@types/node@22.2.0)(terser@5.31.3)(typescript@5.5.4)(vite@5.4.1(@types/node@22.2.0)(terser@5.31.3))(wrangler@3.71.0(@cloudflare/workers-types@4.20240806.0))':
     dependencies:
       '@babel/core': 7.25.2
       '@babel/generator': 7.25.0
@@ -10949,7 +10980,7 @@ snapshots:
     optionalDependencies:
       '@remix-run/serve': 2.11.1(typescript@5.5.4)
       typescript: 5.5.4
-      vite: 5.4.0(@types/node@22.2.0)(terser@5.31.3)
+      vite: 5.4.1(@types/node@22.2.0)(terser@5.31.3)
       wrangler: 3.71.0(@cloudflare/workers-types@4.20240806.0)
     transitivePeerDependencies:
       - '@types/node'
@@ -12084,7 +12115,7 @@ snapshots:
 
   astring@1.8.6: {}
 
-  astro@4.14.0(@types/node@22.2.0)(rollup@4.20.0)(terser@5.31.3)(typescript@5.5.4):
+  astro@4.14.1(@types/node@22.2.0)(rollup@4.20.0)(terser@5.31.3)(typescript@5.5.4):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
@@ -12145,8 +12176,8 @@ snapshots:
       tsconfck: 3.1.1(typescript@5.5.4)
       unist-util-visit: 5.0.0
       vfile: 6.0.2
-      vite: 5.4.0(@types/node@22.2.0)(terser@5.31.3)
-      vitefu: 0.2.5(vite@5.4.0(@types/node@22.2.0)(terser@5.31.3))
+      vite: 5.4.1(@types/node@22.2.0)(terser@5.31.3)
+      vitefu: 0.2.5(vite@5.4.1(@types/node@22.2.0)(terser@5.31.3))
       which-pm: 3.0.0
       xxhash-wasm: 1.0.2
       zod: 3.23.8
@@ -18427,9 +18458,23 @@ snapshots:
       fsevents: 2.3.3
       terser: 5.31.3
 
+  vite@5.4.1(@types/node@22.2.0)(terser@5.31.3):
+    dependencies:
+      esbuild: 0.21.5
+      postcss: 8.4.41
+      rollup: 4.20.0
+    optionalDependencies:
+      '@types/node': 22.2.0
+      fsevents: 2.3.3
+      terser: 5.31.3
+
   vitefu@0.2.5(vite@5.4.0(@types/node@22.2.0)(terser@5.31.3)):
     optionalDependencies:
       vite: 5.4.0(@types/node@22.2.0)(terser@5.31.3)
+
+  vitefu@0.2.5(vite@5.4.1(@types/node@22.2.0)(terser@5.31.3)):
+    optionalDependencies:
+      vite: 5.4.1(@types/node@22.2.0)(terser@5.31.3)
 
   vscode-jsonrpc@6.0.0: {}
 
