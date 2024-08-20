@@ -65,7 +65,7 @@ importers:
         version: 5.5.4
       wrangler:
         specifier: ^3.0.0
-        version: 3.72.0(@cloudflare/workers-types@4.20240815.0)
+        version: 3.72.1(@cloudflare/workers-types@4.20240815.0)
 
   apps/getting-started-nextjs:
     dependencies:
@@ -163,7 +163,7 @@ importers:
     devDependencies:
       '@remix-run/dev':
         specifier: ^2.4.1
-        version: 2.11.2(@remix-run/react@2.11.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4))(@remix-run/serve@2.11.2(typescript@5.5.4))(@types/node@22.4.1)(terser@5.31.6)(typescript@5.5.4)(vite@5.4.2(@types/node@22.4.1)(terser@5.31.6))(wrangler@3.72.0(@cloudflare/workers-types@4.20240815.0))
+        version: 2.11.2(@remix-run/react@2.11.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4))(@remix-run/serve@2.11.2(typescript@5.5.4))(@types/node@22.4.1)(terser@5.31.6)(typescript@5.5.4)(vite@5.4.2(@types/node@22.4.1)(terser@5.31.6))(wrangler@3.72.1(@cloudflare/workers-types@4.20240815.0))
       '@remix-run/eslint-config':
         specifier: ^2.4.1
         version: 2.11.2(eslint@8.57.0)(react@18.3.1)(typescript@5.5.4)
@@ -7786,6 +7786,9 @@ packages:
   undici-types@6.19.6:
     resolution: {integrity: sha512-e/vggGopEfTKSvj4ihnOLTsqhrKRN3LeO6qSN/GxohhuRv8qH9bNQ4B8W7e/vFL+0XTnmHPB4/kegunZGA4Org==}
 
+  undici-types@6.19.8:
+    resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
+
   undici@5.28.4:
     resolution: {integrity: sha512-72RFADWFqKmUb2hmmvNODKL3p9hcB6Gt2DOQMis1SEBaV6a4MH8soBvzg+95CYhCKPFedut2JY9bMfrDl9D23g==}
     engines: {node: '>=14.0'}
@@ -8298,8 +8301,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  wrangler@3.72.0:
-    resolution: {integrity: sha512-9sryHTCtCj48vUC5y/M3Dsx02U1bT6mK9E41TXBCpSJgWh8UvWG/xgmu2dY93Mqj9aJIvK/kwwIBRlNFRwF7Hw==}
+  wrangler@3.72.1:
+    resolution: {integrity: sha512-0UrkDpBJb1KHP6msGF+k14+2CFoF9jFKMKGEPfr6yflCduKVas9qA2ExKiRF5un9PKDY79cszuwvVUtir2NfLg==}
     engines: {node: '>=16.17.0'}
     hasBin: true
     peerDependencies:
@@ -10509,7 +10512,7 @@ snapshots:
 
   '@remix-run/css-bundle@2.11.2': {}
 
-  '@remix-run/dev@2.11.2(@remix-run/react@2.11.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4))(@remix-run/serve@2.11.2(typescript@5.5.4))(@types/node@22.4.1)(terser@5.31.6)(typescript@5.5.4)(vite@5.4.2(@types/node@22.4.1)(terser@5.31.6))(wrangler@3.72.0(@cloudflare/workers-types@4.20240815.0))':
+  '@remix-run/dev@2.11.2(@remix-run/react@2.11.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4))(@remix-run/serve@2.11.2(typescript@5.5.4))(@types/node@22.4.1)(terser@5.31.6)(typescript@5.5.4)(vite@5.4.2(@types/node@22.4.1)(terser@5.31.6))(wrangler@3.72.1(@cloudflare/workers-types@4.20240815.0))':
     dependencies:
       '@babel/core': 7.25.2
       '@babel/generator': 7.25.0
@@ -10569,7 +10572,7 @@ snapshots:
       '@remix-run/serve': 2.11.2(typescript@5.5.4)
       typescript: 5.5.4
       vite: 5.4.2(@types/node@22.4.1)(terser@5.31.6)
-      wrangler: 3.72.0(@cloudflare/workers-types@4.20240815.0)
+      wrangler: 3.72.1(@cloudflare/workers-types@4.20240815.0)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
@@ -11039,7 +11042,7 @@ snapshots:
 
   '@types/node@22.4.1':
     dependencies:
-      undici-types: 6.19.6
+      undici-types: 6.19.8
 
   '@types/prop-types@15.7.12': {}
 
@@ -17495,6 +17498,8 @@ snapshots:
 
   undici-types@6.19.6: {}
 
+  undici-types@6.19.8: {}
+
   undici@5.28.4:
     dependencies:
       '@fastify/busboy': 2.1.1
@@ -18143,7 +18148,7 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20240806.0
       '@cloudflare/workerd-windows-64': 1.20240806.0
 
-  wrangler@3.72.0(@cloudflare/workers-types@4.20240815.0):
+  wrangler@3.72.1(@cloudflare/workers-types@4.20240815.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.4
       '@cloudflare/workers-shared': 0.2.0
