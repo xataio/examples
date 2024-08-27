@@ -65,7 +65,7 @@ importers:
         version: 5.5.4
       wrangler:
         specifier: ^3.0.0
-        version: 3.72.2(@cloudflare/workers-types@4.20240821.1)
+        version: 3.72.3(@cloudflare/workers-types@4.20240821.1)
 
   apps/getting-started-nextjs:
     dependencies:
@@ -163,7 +163,7 @@ importers:
     devDependencies:
       '@remix-run/dev':
         specifier: ^2.4.1
-        version: 2.11.2(@remix-run/react@2.11.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4))(@remix-run/serve@2.11.2(typescript@5.5.4))(@types/node@22.5.0)(terser@5.31.6)(typescript@5.5.4)(vite@5.4.2(@types/node@22.5.0)(terser@5.31.6))(wrangler@3.72.2(@cloudflare/workers-types@4.20240821.1))
+        version: 2.11.2(@remix-run/react@2.11.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4))(@remix-run/serve@2.11.2(typescript@5.5.4))(@types/node@22.5.0)(terser@5.31.6)(typescript@5.5.4)(vite@5.4.2(@types/node@22.5.0)(terser@5.31.6))(wrangler@3.72.3(@cloudflare/workers-types@4.20240821.1))
       '@remix-run/eslint-config':
         specifier: ^2.4.1
         version: 2.11.2(eslint@8.57.0)(react@18.3.1)(typescript@5.5.4)
@@ -1264,8 +1264,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@cloudflare/workers-shared@0.3.0':
-    resolution: {integrity: sha512-cqtLW1QiBC/ABaZIhAdyGCsnHHY6pAb6hsVUZg82Co2gQtf/faxRYV1FgpCwUYroTdk6A66xUMSTmFqreKCJow==}
+  '@cloudflare/workers-shared@0.4.0':
+    resolution: {integrity: sha512-XAFOldVQsbxQ7mjbqX2q1dNIgcLbKSytk41pwuZTn9e0p7OeTpFTosJef8uwosL6CcOAHqcW1f1HJxyjwmtGxw==}
     engines: {node: '>=16.7.0'}
 
   '@cloudflare/workers-types@4.20240821.1':
@@ -8349,8 +8349,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  wrangler@3.72.2:
-    resolution: {integrity: sha512-7nxkJ4md+KtESNJ/0DwTM7bHZP+uNRpJT5gMDT9WllP9UVzYdtXCTF+p4CHtxIReUpe6pOi7tb05hK9/Q6WaiA==}
+  wrangler@3.72.3:
+    resolution: {integrity: sha512-EBlJGOcwanbzFkiJkRB47WKhvevh1AZK0ty0MyD0gptsgWnAxBfmFGiBuzOuRXbvH45ZrFrTqgi8c67EwcV1nA==}
     engines: {node: '>=16.17.0'}
     hasBin: true
     peerDependencies:
@@ -9598,7 +9598,7 @@ snapshots:
   '@cloudflare/workerd-windows-64@1.20240821.1':
     optional: true
 
-  '@cloudflare/workers-shared@0.3.0': {}
+  '@cloudflare/workers-shared@0.4.0': {}
 
   '@cloudflare/workers-types@4.20240821.1': {}
 
@@ -10591,7 +10591,7 @@ snapshots:
 
   '@remix-run/css-bundle@2.11.2': {}
 
-  '@remix-run/dev@2.11.2(@remix-run/react@2.11.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4))(@remix-run/serve@2.11.2(typescript@5.5.4))(@types/node@22.5.0)(terser@5.31.6)(typescript@5.5.4)(vite@5.4.2(@types/node@22.5.0)(terser@5.31.6))(wrangler@3.72.2(@cloudflare/workers-types@4.20240821.1))':
+  '@remix-run/dev@2.11.2(@remix-run/react@2.11.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4))(@remix-run/serve@2.11.2(typescript@5.5.4))(@types/node@22.5.0)(terser@5.31.6)(typescript@5.5.4)(vite@5.4.2(@types/node@22.5.0)(terser@5.31.6))(wrangler@3.72.3(@cloudflare/workers-types@4.20240821.1))':
     dependencies:
       '@babel/core': 7.25.2
       '@babel/generator': 7.25.0
@@ -10651,7 +10651,7 @@ snapshots:
       '@remix-run/serve': 2.11.2(typescript@5.5.4)
       typescript: 5.5.4
       vite: 5.4.2(@types/node@22.5.0)(terser@5.31.6)
-      wrangler: 3.72.2(@cloudflare/workers-types@4.20240821.1)
+      wrangler: 3.72.3(@cloudflare/workers-types@4.20240821.1)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
@@ -11369,7 +11369,7 @@ snapshots:
       '@babel/plugin-syntax-typescript': 7.24.7(@babel/core@7.25.2)
       '@vanilla-extract/babel-plugin-debug-ids': 1.0.6
       '@vanilla-extract/css': 1.15.3
-      esbuild: 0.17.19
+      esbuild: 0.17.6
       eval: 0.1.8
       find-up: 5.0.0
       javascript-stringify: 2.1.0
@@ -18257,10 +18257,10 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20240821.1
       '@cloudflare/workerd-windows-64': 1.20240821.1
 
-  wrangler@3.72.2(@cloudflare/workers-types@4.20240821.1):
+  wrangler@3.72.3(@cloudflare/workers-types@4.20240821.1):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.4
-      '@cloudflare/workers-shared': 0.3.0
+      '@cloudflare/workers-shared': 0.4.0
       '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
       '@esbuild-plugins/node-modules-polyfill': 0.2.2(esbuild@0.17.19)
       blake3-wasm: 2.1.5
