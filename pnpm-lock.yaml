@@ -12,8 +12,8 @@ importers:
         specifier: 2.27.7
         version: 2.27.7
       '@types/node':
-        specifier: 20.16.2
-        version: 20.16.2
+        specifier: 20.16.3
+        version: 20.16.3
       prettier:
         specifier: 2.8.8
         version: 2.8.8
@@ -70,8 +70,8 @@ importers:
   apps/getting-started-nextjs:
     dependencies:
       '@types/node':
-        specifier: 20.16.2
-        version: 20.16.2
+        specifier: 20.16.3
+        version: 20.16.3
       '@types/react':
         specifier: 18.3.5
         version: 18.3.5
@@ -285,8 +285,8 @@ importers:
         version: 3.23.8
     devDependencies:
       '@types/node':
-        specifier: 20.16.2
-        version: 20.16.2
+        specifier: 20.16.3
+        version: 20.16.3
       '@types/react':
         specifier: 18.3.5
         version: 18.3.5
@@ -312,8 +312,8 @@ importers:
         specifier: 13.5.6
         version: 13.5.6
       '@types/node':
-        specifier: 20.16.2
-        version: 20.16.2
+        specifier: 20.16.3
+        version: 20.16.3
       '@types/react':
         specifier: 18.3.5
         version: 18.3.5
@@ -354,8 +354,8 @@ importers:
         specifier: 13.5.6
         version: 13.5.6
       '@types/node':
-        specifier: 20.16.2
-        version: 20.16.2
+        specifier: 20.16.3
+        version: 20.16.3
       '@types/react':
         specifier: 18.3.5
         version: 18.3.5
@@ -409,8 +409,8 @@ importers:
         specifier: ^5.0.0
         version: 5.0.2
       '@types/node':
-        specifier: 20.16.2
-        version: 20.16.2
+        specifier: 20.16.3
+        version: 20.16.3
       '@types/react':
         specifier: 18.3.5
         version: 18.3.5
@@ -2901,6 +2901,9 @@ packages:
 
   '@types/node@20.16.2':
     resolution: {integrity: sha512-91s/n4qUPV/wg8eE9KHYW1kouTfDk2FPGjXbBMfRWP/2vg1rCXNQL1OCabwGs0XSdukuK+MwCDXE30QpSeMUhQ==}
+
+  '@types/node@20.16.3':
+    resolution: {integrity: sha512-/wdGiWRkMOm53gAsSyFMXFZHbVg7C6CbkrzHNpaHoYfsUWPg7m6ZRKtvQjgvQ9i8WT540a3ydRlRQbxjY30XxQ==}
 
   '@types/node@22.5.1':
     resolution: {integrity: sha512-KkHsxej0j9IW1KKOOAA/XBA0z08UFSrRQHErzEfA3Vgq57eXIMYboIlHJuYIfd+lwCQjtKqUu3UnmKbtUc9yRw==}
@@ -11080,7 +11083,7 @@ snapshots:
 
   '@types/bcrypt@5.0.2':
     dependencies:
-      '@types/node': 20.16.2
+      '@types/node': 20.16.3
 
   '@types/canvas-confetti@1.6.4': {}
 
@@ -11108,7 +11111,7 @@ snapshots:
 
   '@types/http-proxy@1.17.15':
     dependencies:
-      '@types/node': 20.16.2
+      '@types/node': 20.16.3
 
   '@types/json-schema@7.0.15': {}
 
@@ -11132,7 +11135,7 @@ snapshots:
 
   '@types/node-forge@1.3.11':
     dependencies:
-      '@types/node': 22.5.1
+      '@types/node': 20.16.3
 
   '@types/node@12.20.55': {}
 
@@ -11140,9 +11143,14 @@ snapshots:
     dependencies:
       undici-types: 6.19.8
 
+  '@types/node@20.16.3':
+    dependencies:
+      undici-types: 6.19.8
+
   '@types/node@22.5.1':
     dependencies:
       undici-types: 6.19.8
+    optional: true
 
   '@types/prop-types@15.7.12': {}
 
@@ -13389,7 +13397,7 @@ snapshots:
 
   eval@0.1.8:
     dependencies:
-      '@types/node': 22.5.1
+      '@types/node': 20.16.3
       require-like: 0.1.2
 
   event-target-shim@5.0.1: {}
