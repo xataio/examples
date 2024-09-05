@@ -1,26 +1,15 @@
 ---
-import MainLayout from '../../layouts/main.astro'
+import MainLayout from "../../layouts/main.astro";
 
-import { XataClient } from '../../xata';
+import { XataClient } from "../../xata";
 
-export async function getStaticPaths() {
-  const xata = new XataClient({ 
-	  apiKey: import.meta.env.XATA_API_KEY,
-	  branch: import.meta.env.XATA_BRANCH
-  });
-  const posts = await xata.db.Posts.getAll();
+const { slug } = Astro.params;
 
-  const routes = posts.map(({ slug, title, description, pubDate }) => {
-    return {
-      params: { slug },
-      props: { title, description, pubDate },
-    };
-  });
-
-  return routes;
-}
-
-const post = Astro.props;
+const xata = new XataClient({
+  apiKey: import.meta.env.XATA_API_KEY,
+  branch: import.meta.env.XATA_BRANCH,
+});
+const post = await xata.db.Posts.filter({ slug: slug }).getFirstOrThrow();
 ---
 
 <MainLayout title={post.title}>
