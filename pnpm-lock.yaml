@@ -228,7 +228,7 @@ importers:
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: ^3.1.0
-        version: 3.2.4(@sveltejs/kit@2.5.27(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.6(@types/node@22.5.5)(terser@5.32.0)))(svelte@4.2.19)(vite@5.4.6(@types/node@22.5.5)(terser@5.32.0)))
+        version: 3.2.5(@sveltejs/kit@2.5.27(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.6(@types/node@22.5.5)(terser@5.32.0)))(svelte@4.2.19)(vite@5.4.6(@types/node@22.5.5)(terser@5.32.0)))
       '@sveltejs/kit':
         specifier: ^2.1.2
         version: 2.5.27(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.6(@types/node@22.5.5)(terser@5.32.0)))(svelte@4.2.19)(vite@5.4.6(@types/node@22.5.5)(terser@5.32.0))
@@ -2803,8 +2803,8 @@ packages:
     peerDependencies:
       solid-js: ^1.8.6
 
-  '@sveltejs/adapter-auto@3.2.4':
-    resolution: {integrity: sha512-a64AKYbfTUrVwU0xslzv1Jf3M8bj0IwhptaXmhgIkjXspBXhD0od9JiItQHchijpLMGdEDcYBlvqySkEawv6mQ==}
+  '@sveltejs/adapter-auto@3.2.5':
+    resolution: {integrity: sha512-27LR+uKccZ62lgq4N/hvyU2G+hTP9fxWEAfnZcl70HnyfAjMSsGk1z/SjAPXNCD1mVJIE7IFu3TQ8cQ/UH3c0A==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
 
@@ -11260,7 +11260,7 @@ snapshots:
     dependencies:
       solid-js: 1.8.22
 
-  '@sveltejs/adapter-auto@3.2.4(@sveltejs/kit@2.5.27(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.6(@types/node@22.5.5)(terser@5.32.0)))(svelte@4.2.19)(vite@5.4.6(@types/node@22.5.5)(terser@5.32.0)))':
+  '@sveltejs/adapter-auto@3.2.5(@sveltejs/kit@2.5.27(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.6(@types/node@22.5.5)(terser@5.32.0)))(svelte@4.2.19)(vite@5.4.6(@types/node@22.5.5)(terser@5.32.0)))':
     dependencies:
       '@sveltejs/kit': 2.5.27(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.6(@types/node@22.5.5)(terser@5.32.0)))(svelte@4.2.19)(vite@5.4.6(@types/node@22.5.5)(terser@5.32.0))
       import-meta-resolve: 4.1.0
@@ -11690,7 +11690,7 @@ snapshots:
       '@babel/plugin-syntax-typescript': 7.25.4(@babel/core@7.25.2)
       '@vanilla-extract/babel-plugin-debug-ids': 1.0.6
       '@vanilla-extract/css': 1.15.5
-      esbuild: 0.17.19
+      esbuild: 0.17.6
       eval: 0.1.8
       find-up: 5.0.0
       javascript-stringify: 2.1.0
