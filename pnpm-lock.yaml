@@ -190,7 +190,7 @@ importers:
         version: 0.29.4(solid-js@1.9.2)
       '@solidjs/router':
         specifier: ^0.14.0
-        version: 0.14.9(solid-js@1.9.2)
+        version: 0.14.10(solid-js@1.9.2)
       '@xata.io/client':
         specifier: ^0.30.0
         version: 0.30.1(typescript@5.6.3)
@@ -199,7 +199,7 @@ importers:
         version: 1.9.2
       solid-start:
         specifier: ^0.3.10
-        version: 0.3.11(@solidjs/meta@0.29.4(solid-js@1.9.2))(@solidjs/router@0.14.9(solid-js@1.9.2))(solid-js@1.9.2)(solid-start-node@0.3.11)(vite@5.4.9(@types/node@22.7.6)(terser@5.36.0))
+        version: 0.3.11(@solidjs/meta@0.29.4(solid-js@1.9.2))(@solidjs/router@0.14.10(solid-js@1.9.2))(solid-js@1.9.2)(solid-start-node@0.3.11)(vite@5.4.9(@types/node@22.7.6)(terser@5.36.0))
     devDependencies:
       autoprefixer:
         specifier: ^10.4.16
@@ -2693,8 +2693,8 @@ packages:
     peerDependencies:
       solid-js: '>=1.8.4'
 
-  '@solidjs/router@0.14.9':
-    resolution: {integrity: sha512-CnCi+oSGhTMAhk3Dtg6E29uRf9FoMIu9/awvrx6czbHcyXvGLxkyHsKm6CWErKUmKJBRSwdn8siRuV3qDrZOEg==}
+  '@solidjs/router@0.14.10':
+    resolution: {integrity: sha512-5B8LVgvvXijfXyXWPVLUm7RQ05BhjIpAyRkYVDZtrR3OaSvftXobWc6qSEwk4ICLoGi/IE9CUp2LUdCBIs9AXg==}
     peerDependencies:
       solid-js: ^1.8.6
 
@@ -10857,7 +10857,7 @@ snapshots:
     dependencies:
       solid-js: 1.9.2
 
-  '@solidjs/router@0.14.9(solid-js@1.9.2)':
+  '@solidjs/router@0.14.10(solid-js@1.9.2)':
     dependencies:
       solid-js: 1.9.2
 
@@ -12953,7 +12953,7 @@ snapshots:
       debug: 4.3.7
       enhanced-resolve: 5.17.1
       eslint: 8.57.1
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1)
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1)
       fast-glob: 3.3.2
       get-tsconfig: 4.8.1
       is-bun-module: 1.2.1
@@ -13007,7 +13007,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.12.0(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1):
+  eslint-module-utils@2.12.0(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -13075,7 +13075,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1)
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1)
       hasown: 2.0.2
       is-core-module: 2.15.1
       is-glob: 4.0.3
@@ -16987,13 +16987,13 @@ snapshots:
       polka: 1.0.0-next.22
       rollup: 3.29.5
       sirv: 2.0.4
-      solid-start: 0.3.11(@solidjs/meta@0.29.4(solid-js@1.9.2))(@solidjs/router@0.14.9(solid-js@1.9.2))(solid-js@1.9.2)(solid-start-node@0.3.11)(vite@5.4.9(@types/node@22.7.6)(terser@5.36.0))
+      solid-start: 0.3.11(@solidjs/meta@0.29.4(solid-js@1.9.2))(@solidjs/router@0.14.10(solid-js@1.9.2))(solid-js@1.9.2)(solid-start-node@0.3.11)(vite@5.4.9(@types/node@22.7.6)(terser@5.36.0))
       terser: 5.36.0
       vite: 5.4.9(@types/node@22.7.6)(terser@5.36.0)
     transitivePeerDependencies:
       - supports-color
 
-  solid-start@0.3.11(@solidjs/meta@0.29.4(solid-js@1.9.2))(@solidjs/router@0.14.9(solid-js@1.9.2))(solid-js@1.9.2)(solid-start-node@0.3.11)(vite@5.4.9(@types/node@22.7.6)(terser@5.36.0)):
+  solid-start@0.3.11(@solidjs/meta@0.29.4(solid-js@1.9.2))(@solidjs/router@0.14.10(solid-js@1.9.2))(solid-js@1.9.2)(solid-start-node@0.3.11)(vite@5.4.9(@types/node@22.7.6)(terser@5.36.0)):
     dependencies:
       '@babel/core': 7.25.8
       '@babel/generator': 7.25.7
@@ -17002,7 +17002,7 @@ snapshots:
       '@babel/preset-typescript': 7.25.7(@babel/core@7.25.8)
       '@babel/template': 7.25.7
       '@solidjs/meta': 0.29.4(solid-js@1.9.2)
-      '@solidjs/router': 0.14.9(solid-js@1.9.2)
+      '@solidjs/router': 0.14.10(solid-js@1.9.2)
       '@types/cookie': 0.5.4
       '@types/debug': 4.1.12
       chokidar: 3.6.0
