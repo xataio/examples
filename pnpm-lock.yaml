@@ -12,8 +12,8 @@ importers:
         specifier: 2.27.9
         version: 2.27.9
       '@types/node':
-        specifier: 20.16.12
-        version: 20.16.12
+        specifier: 20.16.13
+        version: 20.16.13
       prettier:
         specifier: 2.8.8
         version: 2.8.8
@@ -70,8 +70,8 @@ importers:
   apps/getting-started-nextjs:
     dependencies:
       '@types/node':
-        specifier: 20.16.12
-        version: 20.16.12
+        specifier: 20.16.13
+        version: 20.16.13
       '@types/react':
         specifier: 18.3.11
         version: 18.3.11
@@ -285,8 +285,8 @@ importers:
         version: 3.23.8
     devDependencies:
       '@types/node':
-        specifier: 20.16.12
-        version: 20.16.12
+        specifier: 20.16.13
+        version: 20.16.13
       '@types/react':
         specifier: 18.3.11
         version: 18.3.11
@@ -312,8 +312,8 @@ importers:
         specifier: 13.5.7
         version: 13.5.7
       '@types/node':
-        specifier: 20.16.12
-        version: 20.16.12
+        specifier: 20.16.13
+        version: 20.16.13
       '@types/react':
         specifier: 18.3.11
         version: 18.3.11
@@ -354,8 +354,8 @@ importers:
         specifier: 13.5.7
         version: 13.5.7
       '@types/node':
-        specifier: 20.16.12
-        version: 20.16.12
+        specifier: 20.16.13
+        version: 20.16.13
       '@types/react':
         specifier: 18.3.11
         version: 18.3.11
@@ -409,8 +409,8 @@ importers:
         specifier: ^5.0.0
         version: 5.0.2
       '@types/node':
-        specifier: 20.16.12
-        version: 20.16.12
+        specifier: 20.16.13
+        version: 20.16.13
       '@types/react':
         specifier: 18.3.11
         version: 18.3.11
@@ -2821,6 +2821,9 @@ packages:
 
   '@types/node@20.16.12':
     resolution: {integrity: sha512-LfPFB0zOeCeCNQV3i+67rcoVvoN5n0NVuR2vLG0O5ySQMgchuZlC4lgz546ZOJyDtj5KIgOxy+lacOimfqZAIA==}
+
+  '@types/node@20.16.13':
+    resolution: {integrity: sha512-GjQ7im10B0labo8ZGXDGROUl9k0BNyDgzfGpb4g/cl+4yYDWVKcozANF4FGr4/p0O/rAkQClM6Wiwkije++1Tg==}
 
   '@types/node@22.7.6':
     resolution: {integrity: sha512-/d7Rnj0/ExXDMcioS78/kf1lMzYk4BZV8MZGTBKzTGZ6/406ukkbYlIsZmMPhcR5KlkunDHQLrtAVmSq7r+mSw==}
@@ -10960,7 +10963,7 @@ snapshots:
 
   '@types/bcrypt@5.0.2':
     dependencies:
-      '@types/node': 20.16.12
+      '@types/node': 20.16.13
 
   '@types/canvas-confetti@1.6.4': {}
 
@@ -10988,7 +10991,7 @@ snapshots:
 
   '@types/http-proxy@1.17.15':
     dependencies:
-      '@types/node': 20.16.12
+      '@types/node': 20.16.13
 
   '@types/json-schema@7.0.15': {}
 
@@ -11012,7 +11015,7 @@ snapshots:
 
   '@types/node-forge@1.3.11':
     dependencies:
-      '@types/node': 22.7.6
+      '@types/node': 20.16.13
 
   '@types/node@12.20.55': {}
 
@@ -11020,9 +11023,14 @@ snapshots:
     dependencies:
       undici-types: 6.19.8
 
+  '@types/node@20.16.13':
+    dependencies:
+      undici-types: 6.19.8
+
   '@types/node@22.7.6':
     dependencies:
       undici-types: 6.19.8
+    optional: true
 
   '@types/prop-types@15.7.13': {}
 
@@ -11309,7 +11317,7 @@ snapshots:
       '@babel/plugin-syntax-typescript': 7.25.7(@babel/core@7.25.8)
       '@vanilla-extract/babel-plugin-debug-ids': 1.1.0
       '@vanilla-extract/css': 1.16.0
-      esbuild: 0.17.6
+      esbuild: 0.17.19
       eval: 0.1.8
       find-up: 5.0.0
       javascript-stringify: 2.1.0
@@ -13335,7 +13343,7 @@ snapshots:
 
   eval@0.1.8:
     dependencies:
-      '@types/node': 20.16.12
+      '@types/node': 20.16.13
       require-like: 0.1.2
 
   event-target-shim@5.0.1: {}
