@@ -28,7 +28,7 @@ importers:
     dependencies:
       '@astrojs/tailwind':
         specifier: ^5.1.0
-        version: 5.1.2(astro@4.16.8(@types/node@22.8.7)(rollup@4.24.0)(terser@5.36.0)(typescript@5.6.3))(tailwindcss@3.4.14)
+        version: 5.1.2(astro@4.16.9(@types/node@22.8.7)(rollup@4.24.0)(terser@5.36.0)(typescript@5.6.3))(tailwindcss@3.4.14)
       '@types/canvas-confetti':
         specifier: ^1.6.4
         version: 1.6.4
@@ -37,7 +37,7 @@ importers:
         version: 0.30.1(typescript@5.6.3)
       astro:
         specifier: ^4.9.2
-        version: 4.16.8(@types/node@22.8.7)(rollup@4.24.0)(terser@5.36.0)(typescript@5.6.3)
+        version: 4.16.9(@types/node@22.8.7)(rollup@4.24.0)(terser@5.36.0)(typescript@5.6.3)
       autoprefixer:
         specifier: ^10.4.19
         version: 10.4.20(postcss@8.4.47)
@@ -3379,8 +3379,8 @@ packages:
     resolution: {integrity: sha512-LElXdjswlqjWrPpJFg1Fx4wpkOCxj1TDHlSV4PlaRxHGWko024xICaa97ZkMfs6DRKlCguiAI+rbXv5GWwXIkg==}
     hasBin: true
 
-  astro@4.16.8:
-    resolution: {integrity: sha512-BRWFP0UQ8gkOr90KQW7oooedtgCk/j91pyv1WQUmgZwMUZk/v0HJRiddAZgvGCECOnmZFc9ZqRZnBsAMUgApNQ==}
+  astro@4.16.9:
+    resolution: {integrity: sha512-DFYzPZooVArKSGu969BBByUV44tJMVDPGKxgqWNFBaIrkvGljdVUqQSVwD+/iPYACoSkI8BRYvDMEBDkathIUQ==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -3596,8 +3596,8 @@ packages:
   caniuse-lite@1.0.30001669:
     resolution: {integrity: sha512-DlWzFDJqstqtIVx1zeSpIMLjunf5SmwOw0N2Ck/QSQdS8PLS4+9HrLaYei4w8BIAL7IB/UEDu889d8vhCTPA0w==}
 
-  caniuse-lite@1.0.30001676:
-    resolution: {integrity: sha512-Qz6zwGCiPghQXGJvgQAem79esjitvJ+CxSbSQkW9H/UX5hg8XM88d4lp2W+MEQ81j+Hip58Il+jGVdazk1z9cw==}
+  caniuse-lite@1.0.30001677:
+    resolution: {integrity: sha512-fmfjsOlJUpMWu+mAAtZZZHz7UEwsUxIIvu1TJfO1HqFQvB/B+ii0xr9B5HpbZY/mC4XZ8SvjHJqtAY6pDPQEog==}
 
   canvas-confetti@1.9.3:
     resolution: {integrity: sha512-rFfTURMvmVEX1gyXFgn5QMn81bYk70qa0HLzcIOSVEyl57n6o9ItHeBtUSWdvKAPY0xlvBHno4/v3QPrT83q9g==}
@@ -4166,8 +4166,8 @@ packages:
   electron-to-chromium@1.5.40:
     resolution: {integrity: sha512-LYm78o6if4zTasnYclgQzxEcgMoIcybWOhkATWepN95uwVVWV0/IW10v+2sIeHE+bIYWipLneTftVyQm45UY7g==}
 
-  electron-to-chromium@1.5.49:
-    resolution: {integrity: sha512-ZXfs1Of8fDb6z7WEYZjXpgIRF6MEu8JdeGA0A40aZq6OQbS+eJpnnV49epZRna2DU/YsEjSQuGtQPPtvt6J65A==}
+  electron-to-chromium@1.5.50:
+    resolution: {integrity: sha512-eMVObiUQ2LdgeO1F/ySTXsvqvxb6ZH2zPGaMYsWzRDdOddUa77tdmI0ltg+L16UpbWdhPmuF3wIQYyQq65WfZw==}
 
   emoji-regex@10.4.0:
     resolution: {integrity: sha512-EC+0oUMY1Rqm4O6LLrgjtYDvcVYTy7chDnM4Q7030tP4Kwj3u/pR6gP9ygnp2CJMK5Gq+9Q2oqmrFJAz01DXjw==}
@@ -5669,8 +5669,8 @@ packages:
   mdast-util-to-markdown@1.5.0:
     resolution: {integrity: sha512-bbv7TPv/WC49thZPg3jXuqzuvI45IL2EVAr/KxF0BSdHsU0ceFHOmwQn6evxAh1GaoK/6GQ1wp4R4oW2+LFL/A==}
 
-  mdast-util-to-markdown@2.1.1:
-    resolution: {integrity: sha512-OrkcCoqAkEg9b1ykXBrA0ehRc8H4fGU/03cACmW2xXzau1+dIdS+qJugh1Cqex3hMumSBgSE/5pc7uqP12nLAw==}
+  mdast-util-to-markdown@2.1.2:
+    resolution: {integrity: sha512-xj68wMTvGXVOKonmog6LwyJKrYXZPvlwabaryTjLh9LuvovB/KAH+kvi8Gjj+7rJjsFi23nkUxRQv1KqSroMqA==}
 
   mdast-util-to-string@3.2.0:
     resolution: {integrity: sha512-V4Zn/ncyN1QNSqSBxTrMOLpjr+IKdHl2v3KVLoWmDPscP4r9GcCi71gjgvUV1SFSKh92AjAG4peFuBl2/YgCJg==}
@@ -6332,8 +6332,8 @@ packages:
     resolution: {integrity: sha512-5b6Y85tPxZZ7QytO+BQzysW31HJku27cRIlkbAXaNx+BdcVi+LlRFmVXzeF6a7JCwJpyw5c4b+YSVImQIrBpuQ==}
     engines: {node: '>=10'}
 
-  ora@8.1.0:
-    resolution: {integrity: sha512-GQEkNkH/GHOhPFXcqZs3IDahXEQcQxsSjEkK4KvEEST4t7eNzoMjxTzef+EZ+JluDEV+Raoi3WQ2CflnRdSVnQ==}
+  ora@8.1.1:
+    resolution: {integrity: sha512-YWielGi1XzG1UTvOaCFaNgEnuhZVMSHYkW/FQ7UX8O26PtlpdM84c0f7wLPlkvx2RfiQmnzd61d/MGxmpQeJPw==}
     engines: {node: '>=18'}
 
   os-tmpdir@1.0.2:
@@ -6997,8 +6997,8 @@ packages:
   regenerator-transform@0.15.2:
     resolution: {integrity: sha512-hfMp2BoF0qOk3uc5V20ALGDS2ddjQaLrdl7xrGXvAIow7qeWRM2VA2HuCHkUKk9slq3VwEwLNK3DFBqDfPGYtg==}
 
-  regex@4.3.3:
-    resolution: {integrity: sha512-r/AadFO7owAq1QJVeZ/nq9jNS1vyZt+6t1p/E59B56Rn2GCya+gr1KSyOzNL/er+r+B7phv5jG2xU2Nz1YkmJg==}
+  regex@4.4.0:
+    resolution: {integrity: sha512-uCUSuobNVeqUupowbdZub6ggI5/JZkYyJdDogddJr60L764oxC2pMZov1fQ3wM9bdyzUILDG+Sqx6NAKAz9rKQ==}
 
   regexp.prototype.flags@1.5.3:
     resolution: {integrity: sha512-vqlC04+RQoFalODCbCumG2xIOvapzVMHwsyIGM/SIE8fRhFFsXeH8/QQ+s0T0kDAhKc4k30s73/0ydkHQz6HlQ==}
@@ -8603,9 +8603,9 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.1.2(astro@4.16.8(@types/node@22.8.7)(rollup@4.24.0)(terser@5.36.0)(typescript@5.6.3))(tailwindcss@3.4.14)':
+  '@astrojs/tailwind@5.1.2(astro@4.16.9(@types/node@22.8.7)(rollup@4.24.0)(terser@5.36.0)(typescript@5.6.3))(tailwindcss@3.4.14)':
     dependencies:
-      astro: 4.16.8(@types/node@22.8.7)(rollup@4.24.0)(terser@5.36.0)(typescript@5.6.3)
+      astro: 4.16.9(@types/node@22.8.7)(rollup@4.24.0)(terser@5.36.0)(typescript@5.6.3)
       autoprefixer: 10.4.20(postcss@8.4.47)
       postcss: 8.4.47
       postcss-load-config: 4.0.2(postcss@8.4.47)
@@ -11970,7 +11970,7 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro@4.16.8(@types/node@22.8.7)(rollup@4.24.0)(terser@5.36.0)(typescript@5.6.3):
+  astro@4.16.9(@types/node@22.8.7)(rollup@4.24.0)(terser@5.36.0)(typescript@5.6.3):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
@@ -12014,7 +12014,7 @@ snapshots:
       micromatch: 4.0.8
       mrmime: 2.0.0
       neotraverse: 0.6.18
-      ora: 8.1.0
+      ora: 8.1.1
       p-limit: 6.1.0
       p-queue: 8.0.1
       preferred-pm: 4.0.0
@@ -12224,8 +12224,8 @@ snapshots:
 
   browserslist@4.24.2:
     dependencies:
-      caniuse-lite: 1.0.30001676
-      electron-to-chromium: 1.5.49
+      caniuse-lite: 1.0.30001677
+      electron-to-chromium: 1.5.50
       node-releases: 2.0.18
       update-browserslist-db: 1.1.1(browserslist@4.24.2)
 
@@ -12310,13 +12310,13 @@ snapshots:
   caniuse-api@3.0.0:
     dependencies:
       browserslist: 4.24.2
-      caniuse-lite: 1.0.30001676
+      caniuse-lite: 1.0.30001677
       lodash.memoize: 4.1.2
       lodash.uniq: 4.5.0
 
   caniuse-lite@1.0.30001669: {}
 
-  caniuse-lite@1.0.30001676: {}
+  caniuse-lite@1.0.30001677: {}
 
   canvas-confetti@1.9.3: {}
 
@@ -12849,7 +12849,7 @@ snapshots:
 
   electron-to-chromium@1.5.40: {}
 
-  electron-to-chromium@1.5.49: {}
+  electron-to-chromium@1.5.50: {}
 
   emoji-regex@10.4.0: {}
 
@@ -14877,7 +14877,7 @@ snapshots:
       '@types/mdast': 4.0.4
       devlop: 1.1.0
       mdast-util-from-markdown: 2.0.2
-      mdast-util-to-markdown: 2.1.1
+      mdast-util-to-markdown: 2.1.2
       micromark-util-normalize-identifier: 2.0.0
     transitivePeerDependencies:
       - supports-color
@@ -14886,7 +14886,7 @@ snapshots:
     dependencies:
       '@types/mdast': 4.0.4
       mdast-util-from-markdown: 2.0.2
-      mdast-util-to-markdown: 2.1.1
+      mdast-util-to-markdown: 2.1.2
     transitivePeerDependencies:
       - supports-color
 
@@ -14896,7 +14896,7 @@ snapshots:
       devlop: 1.1.0
       markdown-table: 3.0.4
       mdast-util-from-markdown: 2.0.2
-      mdast-util-to-markdown: 2.1.1
+      mdast-util-to-markdown: 2.1.2
     transitivePeerDependencies:
       - supports-color
 
@@ -14905,7 +14905,7 @@ snapshots:
       '@types/mdast': 4.0.4
       devlop: 1.1.0
       mdast-util-from-markdown: 2.0.2
-      mdast-util-to-markdown: 2.1.1
+      mdast-util-to-markdown: 2.1.2
     transitivePeerDependencies:
       - supports-color
 
@@ -14917,7 +14917,7 @@ snapshots:
       mdast-util-gfm-strikethrough: 2.0.0
       mdast-util-gfm-table: 2.0.0
       mdast-util-gfm-task-list-item: 2.0.0
-      mdast-util-to-markdown: 2.1.1
+      mdast-util-to-markdown: 2.1.2
     transitivePeerDependencies:
       - supports-color
 
@@ -15012,7 +15012,7 @@ snapshots:
       unist-util-visit: 4.1.2
       zwitch: 2.0.4
 
-  mdast-util-to-markdown@2.1.1:
+  mdast-util-to-markdown@2.1.2:
     dependencies:
       '@types/mdast': 4.0.4
       '@types/unist': 3.0.3
@@ -16050,7 +16050,7 @@ snapshots:
 
   oniguruma-to-js@0.4.3:
     dependencies:
-      regex: 4.3.3
+      regex: 4.4.0
 
   open@10.1.0:
     dependencies:
@@ -16109,7 +16109,7 @@ snapshots:
       strip-ansi: 6.0.1
       wcwidth: 1.0.1
 
-  ora@8.1.0:
+  ora@8.1.1:
     dependencies:
       chalk: 5.3.0
       cli-cursor: 5.0.0
@@ -16749,7 +16749,7 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.25.9
 
-  regex@4.3.3: {}
+  regex@4.4.0: {}
 
   regexp.prototype.flags@1.5.3:
     dependencies:
@@ -16876,7 +16876,7 @@ snapshots:
   remark-stringify@11.0.0:
     dependencies:
       '@types/mdast': 4.0.4
-      mdast-util-to-markdown: 2.1.1
+      mdast-util-to-markdown: 2.1.2
       unified: 11.0.5
 
   require-directory@2.1.1: {}
