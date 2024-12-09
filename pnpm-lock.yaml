@@ -76,8 +76,8 @@ importers:
         specifier: 18.3.14
         version: 18.3.14
       '@types/react-dom':
-        specifier: 18.3.2
-        version: 18.3.2
+        specifier: 18.3.3
+        version: 18.3.3(@types/react@18.3.14)
       '@xata.io/client':
         specifier: ^0.30.0
         version: 0.30.1(typescript@5.7.2)
@@ -172,7 +172,7 @@ importers:
         version: 18.3.14
       '@types/react-dom':
         specifier: ^18.2.18
-        version: 18.3.2
+        version: 18.3.3(@types/react@18.3.14)
       eslint:
         specifier: ^8.56.0
         version: 8.57.1
@@ -291,8 +291,8 @@ importers:
         specifier: 18.3.14
         version: 18.3.14
       '@types/react-dom':
-        specifier: 18.3.2
-        version: 18.3.2
+        specifier: 18.3.3
+        version: 18.3.3(@types/react@18.3.14)
       eslint:
         specifier: 8.57.1
         version: 8.57.1
@@ -318,8 +318,8 @@ importers:
         specifier: 18.3.14
         version: 18.3.14
       '@types/react-dom':
-        specifier: 18.3.2
-        version: 18.3.2
+        specifier: 18.3.3
+        version: 18.3.3(@types/react@18.3.14)
       '@xata.io/client':
         specifier: latest
         version: 0.30.1(typescript@5.7.2)
@@ -360,8 +360,8 @@ importers:
         specifier: 18.3.14
         version: 18.3.14
       '@types/react-dom':
-        specifier: 18.3.2
-        version: 18.3.2
+        specifier: 18.3.3
+        version: 18.3.3(@types/react@18.3.14)
       '@xata.io/client':
         specifier: latest
         version: 0.30.1(typescript@5.7.2)
@@ -415,8 +415,8 @@ importers:
         specifier: 18.3.14
         version: 18.3.14
       '@types/react-dom':
-        specifier: 18.3.2
-        version: 18.3.2
+        specifier: 18.3.3
+        version: 18.3.3(@types/react@18.3.14)
       eslint:
         specifier: 8.57.1
         version: 8.57.1
@@ -450,7 +450,7 @@ importers:
         version: 18.3.14
       '@types/react-dom':
         specifier: ^18
-        version: 18.3.2
+        version: 18.3.3(@types/react@18.3.14)
       eslint:
         specifier: ^8
         version: 8.57.1
@@ -2909,8 +2909,10 @@ packages:
   '@types/pug@2.0.10':
     resolution: {integrity: sha512-Sk/uYFOBAB7mb74XcpizmH0KOR2Pv3D2Hmrh1Dmy5BmK3MpdSa5kqZcg6EKBdklU0bFXX9gCfzvpnyUehrPIuA==}
 
-  '@types/react-dom@18.3.2':
-    resolution: {integrity: sha512-Fqp+rcvem9wEnGr3RY8dYNvSQ8PoLqjZ9HLgaPUOjJJD120uDyOxOjc/39M4Kddp9JQCxpGQbnhVQF0C0ncYVg==}
+  '@types/react-dom@18.3.3':
+    resolution: {integrity: sha512-uTYkxTLkYp41nq/ULXyXMtkNT1vu5fXJoqad6uTNCOGat5t9cLgF4vMNLBXsTOXpdOI44XzKPY1M5RRm0bQHuw==}
+    peerDependencies:
+      '@types/react': ^18.0.0
 
   '@types/react@18.3.14':
     resolution: {integrity: sha512-NzahNKvjNhVjuPBQ+2G7WlxstQ+47kXZNHlUvFakDViuIEfGY926GqhMueQFZ7woG+sPiQKlF36XfrIUVSUfFg==}
@@ -11534,7 +11536,7 @@ snapshots:
 
   '@types/pug@2.0.10': {}
 
-  '@types/react-dom@18.3.2':
+  '@types/react-dom@18.3.3(@types/react@18.3.14)':
     dependencies:
       '@types/react': 18.3.14
 
