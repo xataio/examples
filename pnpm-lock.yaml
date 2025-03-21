@@ -12,8 +12,8 @@ importers:
         specifier: 2.28.1
         version: 2.28.1
       '@types/node':
-        specifier: 20.17.11
-        version: 20.17.11
+        specifier: 20.17.25
+        version: 20.17.25
       prettier:
         specifier: 2.8.8
         version: 2.8.8
@@ -70,8 +70,8 @@ importers:
   apps/getting-started-nextjs:
     dependencies:
       '@types/node':
-        specifier: 20.17.11
-        version: 20.17.11
+        specifier: 20.17.25
+        version: 20.17.25
       '@types/react':
         specifier: 18.3.19
         version: 18.3.19
@@ -285,8 +285,8 @@ importers:
         version: 3.24.2
     devDependencies:
       '@types/node':
-        specifier: 20.17.11
-        version: 20.17.11
+        specifier: 20.17.25
+        version: 20.17.25
       '@types/react':
         specifier: 18.3.19
         version: 18.3.19
@@ -312,8 +312,8 @@ importers:
         specifier: 13.5.8
         version: 13.5.8
       '@types/node':
-        specifier: 20.17.11
-        version: 20.17.11
+        specifier: 20.17.25
+        version: 20.17.25
       '@types/react':
         specifier: 18.3.19
         version: 18.3.19
@@ -354,8 +354,8 @@ importers:
         specifier: 13.5.8
         version: 13.5.8
       '@types/node':
-        specifier: 20.17.11
-        version: 20.17.11
+        specifier: 20.17.25
+        version: 20.17.25
       '@types/react':
         specifier: 18.3.19
         version: 18.3.19
@@ -409,8 +409,8 @@ importers:
         specifier: ^5.0.0
         version: 5.0.2
       '@types/node':
-        specifier: 20.17.11
-        version: 20.17.11
+        specifier: 20.17.25
+        version: 20.17.25
       '@types/react':
         specifier: 18.3.19
         version: 18.3.19
@@ -3012,9 +3012,6 @@ packages:
 
   '@types/node@12.20.55':
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
-
-  '@types/node@20.17.11':
-    resolution: {integrity: sha512-Ept5glCK35R8yeyIeYlRIZtX6SLRyqMhOFTgj5SOkMpLTdw3SEHI9fHx60xaUZ+V1aJxQJODE+7/j5ocZydYTg==}
 
   '@types/node@20.17.25':
     resolution: {integrity: sha512-bT+r2haIlplJUYtlZrEanFHdPIZTeiMeh/fSOEbOOfWf9uTn+lg8g0KU6Q3iMgjd9FLuuMAgfCNSkjUbxL6E3Q==}
@@ -12027,7 +12024,7 @@ snapshots:
 
   '@types/bcrypt@5.0.2':
     dependencies:
-      '@types/node': 20.17.11
+      '@types/node': 20.17.25
 
   '@types/canvas-confetti@1.9.0': {}
 
@@ -12074,10 +12071,6 @@ snapshots:
       '@types/unist': 3.0.3
 
   '@types/node@12.20.55': {}
-
-  '@types/node@20.17.11':
-    dependencies:
-      undici-types: 6.19.8
 
   '@types/node@20.17.25':
     dependencies:
@@ -14518,7 +14511,7 @@ snapshots:
 
   eval@0.1.8:
     dependencies:
-      '@types/node': 20.17.11
+      '@types/node': 20.17.25
       require-like: 0.1.2
 
   event-target-shim@5.0.1: {}
