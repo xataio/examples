@@ -227,8 +227,8 @@ importers:
         version: 0.30.1(typescript@5.8.2)
     devDependencies:
       '@sveltejs/adapter-auto':
-        specifier: ^3.1.0
-        version: 3.3.1(@sveltejs/kit@2.20.2(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.14(@types/node@22.13.11)(terser@5.39.0)))(svelte@4.2.19)(vite@5.4.14(@types/node@22.13.11)(terser@5.39.0)))
+        specifier: ^5.0.0
+        version: 5.0.0(@sveltejs/kit@2.20.2(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.14(@types/node@22.13.11)(terser@5.39.0)))(svelte@4.2.19)(vite@5.4.14(@types/node@22.13.11)(terser@5.39.0)))
       '@sveltejs/kit':
         specifier: ^2.1.2
         version: 2.20.2(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.14(@types/node@22.13.11)(terser@5.39.0)))(svelte@4.2.19)(vite@5.4.14(@types/node@22.13.11)(terser@5.39.0))
@@ -2893,8 +2893,8 @@ packages:
   '@speed-highlight/core@1.2.7':
     resolution: {integrity: sha512-0dxmVj4gxg3Jg879kvFS/msl4s9F3T9UXC1InxgOf7t5NvcPD97u/WTA5vL/IxWHMn7qSxBozqrnnE2wvl1m8g==}
 
-  '@sveltejs/adapter-auto@3.3.1':
-    resolution: {integrity: sha512-5Sc7WAxYdL6q9j/+D0jJKjGREGlfIevDyHSQ2eNETHcB1TKlQWHcAo8AS8H1QdjNvSXpvOwNjykDUHPEAyGgdQ==}
+  '@sveltejs/adapter-auto@5.0.0':
+    resolution: {integrity: sha512-r645Oerr5E9pVX8Xk8ZkObRq/915y5HfZQjFFv4opbstvqQqHfgMhm46tR0iDDKqydZOgJCPa6RdQXh6i7G/2g==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
 
@@ -12023,7 +12023,7 @@ snapshots:
 
   '@speed-highlight/core@1.2.7': {}
 
-  '@sveltejs/adapter-auto@3.3.1(@sveltejs/kit@2.20.2(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.14(@types/node@22.13.11)(terser@5.39.0)))(svelte@4.2.19)(vite@5.4.14(@types/node@22.13.11)(terser@5.39.0)))':
+  '@sveltejs/adapter-auto@5.0.0(@sveltejs/kit@2.20.2(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.14(@types/node@22.13.11)(terser@5.39.0)))(svelte@4.2.19)(vite@5.4.14(@types/node@22.13.11)(terser@5.39.0)))':
     dependencies:
       '@sveltejs/kit': 2.20.2(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.14(@types/node@22.13.11)(terser@5.39.0)))(svelte@4.2.19)(vite@5.4.14(@types/node@22.13.11)(terser@5.39.0))
       import-meta-resolve: 4.1.0
@@ -12480,7 +12480,7 @@ snapshots:
       '@babel/plugin-syntax-typescript': 7.25.9(@babel/core@7.26.10)
       '@vanilla-extract/babel-plugin-debug-ids': 1.2.0
       '@vanilla-extract/css': 1.17.1
-      esbuild: 0.17.6
+      esbuild: 0.17.19
       eval: 0.1.8
       find-up: 5.0.0
       javascript-stringify: 2.1.0
