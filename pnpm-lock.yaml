@@ -83,7 +83,7 @@ importers:
         version: 0.30.1(typescript@5.8.3)
       autoprefixer:
         specifier: 10.4.21
-        version: 10.4.21(postcss@8.5.3)
+        version: 10.4.21(postcss@8.5.6)
       eslint:
         specifier: 8.57.1
         version: 8.57.1
@@ -94,8 +94,8 @@ importers:
         specifier: 14.2.30
         version: 14.2.30(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       postcss:
-        specifier: 8.5.3
-        version: 8.5.3
+        specifier: 8.5.6
+        version: 8.5.6
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -7729,10 +7729,6 @@ packages:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postcss@8.5.3:
-    resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
-    engines: {node: ^10 || ^12 || >=14}
-
   postcss@8.5.6:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
@@ -13245,7 +13241,7 @@ snapshots:
       '@babel/plugin-syntax-typescript': 7.25.9(@babel/core@7.26.10)
       '@vanilla-extract/babel-plugin-debug-ids': 1.2.0
       '@vanilla-extract/css': 1.17.1
-      esbuild: 0.17.6
+      esbuild: 0.19.11
       eval: 0.1.8
       find-up: 5.0.0
       javascript-stringify: 2.1.0
@@ -13775,16 +13771,6 @@ snapshots:
   async-sema@3.1.1: {}
 
   async@3.2.6: {}
-
-  autoprefixer@10.4.21(postcss@8.5.3):
-    dependencies:
-      browserslist: 4.24.4
-      caniuse-lite: 1.0.30001706
-      fraction.js: 4.3.7
-      normalize-range: 0.1.2
-      picocolors: 1.1.1
-      postcss: 8.5.3
-      postcss-value-parser: 4.2.0
 
   autoprefixer@10.4.21(postcss@8.5.6):
     dependencies:
@@ -18700,12 +18686,6 @@ snapshots:
       quote-unquote: 1.0.0
 
   postcss@8.4.31:
-    dependencies:
-      nanoid: 3.3.11
-      picocolors: 1.1.1
-      source-map-js: 1.2.1
-
-  postcss@8.5.3:
     dependencies:
       nanoid: 3.3.11
       picocolors: 1.1.1
