@@ -10,10 +10,10 @@ importers:
     devDependencies:
       '@changesets/cli':
         specifier: 2.29.6
-        version: 2.29.6(@types/node@20.17.30)
+        version: 2.29.6(@types/node@20.19.11)
       '@types/node':
-        specifier: 20.17.30
-        version: 20.17.30
+        specifier: 20.19.11
+        version: 20.19.11
       prettier:
         specifier: 2.8.8
         version: 2.8.8
@@ -70,8 +70,8 @@ importers:
   apps/getting-started-nextjs:
     dependencies:
       '@types/node':
-        specifier: 20.17.30
-        version: 20.17.30
+        specifier: 20.19.11
+        version: 20.19.11
       '@types/react':
         specifier: 18.3.20
         version: 18.3.20
@@ -285,8 +285,8 @@ importers:
         version: 3.24.3
     devDependencies:
       '@types/node':
-        specifier: 20.17.30
-        version: 20.17.30
+        specifier: 20.19.11
+        version: 20.19.11
       '@types/react':
         specifier: 18.3.20
         version: 18.3.20
@@ -312,8 +312,8 @@ importers:
         specifier: 13.5.11
         version: 13.5.11
       '@types/node':
-        specifier: 20.17.30
-        version: 20.17.30
+        specifier: 20.19.11
+        version: 20.19.11
       '@types/react':
         specifier: 18.3.20
         version: 18.3.20
@@ -354,8 +354,8 @@ importers:
         specifier: 13.5.11
         version: 13.5.11
       '@types/node':
-        specifier: 20.17.30
-        version: 20.17.30
+        specifier: 20.19.11
+        version: 20.19.11
       '@types/react':
         specifier: 18.3.20
         version: 18.3.20
@@ -409,8 +409,8 @@ importers:
         specifier: ^5.0.0
         version: 5.0.2
       '@types/node':
-        specifier: 20.17.30
-        version: 20.17.30
+        specifier: 20.19.11
+        version: 20.19.11
       '@types/react':
         specifier: 18.3.20
         version: 18.3.20
@@ -3319,6 +3319,9 @@ packages:
 
   '@types/node@20.17.30':
     resolution: {integrity: sha512-7zf4YyHA+jvBNfVrk2Gtvs6x7E8V+YDW05bNfG2XkWDJfYRXrTiP/DsB2zSYTaHX0bGIujTBQdMVAhb+j7mwpg==}
+
+  '@types/node@20.19.11':
+    resolution: {integrity: sha512-uug3FEEGv0r+jrecvUUpbY8lLisvIjg6AAic6a2bSP5OEOLeJsDSnvhCDov7ipFFMXS3orMpzlmi0ZcuGkBbow==}
 
   '@types/node@22.14.1':
     resolution: {integrity: sha512-u0HuPQwe/dHrItgHHpmw3N2fYCR6x4ivMNbPHRkBVP4CvN+kiRrKHWk3i8tXiO/joPwXLMYvF9TTF0eqgHIuOw==}
@@ -10914,7 +10917,7 @@ snapshots:
     dependencies:
       '@changesets/types': 6.1.0
 
-  '@changesets/cli@2.29.6(@types/node@20.17.30)':
+  '@changesets/cli@2.29.6(@types/node@20.19.11)':
     dependencies:
       '@changesets/apply-release-plan': 7.0.12
       '@changesets/assemble-release-plan': 6.0.9
@@ -10930,7 +10933,7 @@ snapshots:
       '@changesets/should-skip-package': 0.1.2
       '@changesets/types': 6.1.0
       '@changesets/write': 0.4.0
-      '@inquirer/external-editor': 1.0.1(@types/node@20.17.30)
+      '@inquirer/external-editor': 1.0.1(@types/node@20.19.11)
       '@manypkg/get-packages': 1.1.3
       ansi-colors: 4.1.3
       ci-info: 3.9.0
@@ -11655,12 +11658,12 @@ snapshots:
   '@img/sharp-win32-x64@0.33.5':
     optional: true
 
-  '@inquirer/external-editor@1.0.1(@types/node@20.17.30)':
+  '@inquirer/external-editor@1.0.1(@types/node@20.19.11)':
     dependencies:
       chardet: 2.1.0
       iconv-lite: 0.6.3
     optionalDependencies:
-      '@types/node': 20.17.30
+      '@types/node': 20.19.11
 
   '@ioredis/commands@1.2.0': {}
 
@@ -12870,7 +12873,7 @@ snapshots:
 
   '@types/bcrypt@5.0.2':
     dependencies:
-      '@types/node': 20.17.30
+      '@types/node': 20.19.11
 
   '@types/canvas-confetti@1.9.0': {}
 
@@ -12922,6 +12925,10 @@ snapshots:
     dependencies:
       undici-types: 6.19.8
 
+  '@types/node@20.19.11':
+    dependencies:
+      undici-types: 6.21.0
+
   '@types/node@22.14.1':
     dependencies:
       undici-types: 6.21.0
@@ -12956,7 +12963,7 @@ snapshots:
 
   '@types/yauzl@2.10.3':
     dependencies:
-      '@types/node': 20.17.30
+      '@types/node': 20.19.11
     optional: true
 
   '@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.8.3))(eslint@8.57.1)(typescript@5.8.3)':
@@ -15498,7 +15505,7 @@ snapshots:
 
   eval@0.1.8:
     dependencies:
-      '@types/node': 20.17.30
+      '@types/node': 20.19.11
       require-like: 0.1.2
 
   event-target-shim@5.0.1: {}
@@ -20204,8 +20211,7 @@ snapshots:
 
   undici-types@6.19.8: {}
 
-  undici-types@6.21.0:
-    optional: true
+  undici-types@6.21.0: {}
 
   undici@5.28.4:
     dependencies:
