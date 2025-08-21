@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@types/node": "20.19.11",
-    "@types/react": "18.3.20",
-    "@types/react-dom": "18.3.6",
+    "@types/react": "18.3.23",
+    "@types/react-dom": "18.3.7",
     "@xata.io/client": "^0.30.0",
     "autoprefixer": "10.4.21",
     "eslint": "8.57.1",
