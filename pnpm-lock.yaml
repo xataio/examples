@@ -227,8 +227,8 @@ importers:
         version: 0.30.1(typescript@5.9.2)
     devDependencies:
       '@sveltejs/adapter-auto':
-        specifier: ^3.1.0
-        version: 3.3.1(@sveltejs/kit@2.36.1(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.20)(vite@5.4.19(@types/node@24.3.0)(terser@5.43.1)))(svelte@4.2.20)(vite@5.4.19(@types/node@24.3.0)(terser@5.43.1)))
+        specifier: ^6.0.0
+        version: 6.1.0(@sveltejs/kit@2.36.1(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.20)(vite@5.4.19(@types/node@24.3.0)(terser@5.43.1)))(svelte@4.2.20)(vite@5.4.19(@types/node@24.3.0)(terser@5.43.1)))
       '@sveltejs/kit':
         specifier: ^2.1.2
         version: 2.36.1(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.20)(vite@5.4.19(@types/node@24.3.0)(terser@5.43.1)))(svelte@4.2.20)(vite@5.4.19(@types/node@24.3.0)(terser@5.43.1))
@@ -3314,8 +3314,8 @@ packages:
     peerDependencies:
       acorn: ^8.9.0
 
-  '@sveltejs/adapter-auto@3.3.1':
-    resolution: {integrity: sha512-5Sc7WAxYdL6q9j/+D0jJKjGREGlfIevDyHSQ2eNETHcB1TKlQWHcAo8AS8H1QdjNvSXpvOwNjykDUHPEAyGgdQ==}
+  '@sveltejs/adapter-auto@6.1.0':
+    resolution: {integrity: sha512-shOuLI5D2s+0zTv2ab5M5PqfknXqWbKi+0UwB9yLTRIdzsK1R93JOO8jNhIYSHdW+IYXIYnLniu+JZqXs7h9Wg==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
 
@@ -13089,10 +13089,9 @@ snapshots:
     dependencies:
       acorn: 8.15.0
 
-  '@sveltejs/adapter-auto@3.3.1(@sveltejs/kit@2.36.1(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.20)(vite@5.4.19(@types/node@24.3.0)(terser@5.43.1)))(svelte@4.2.20)(vite@5.4.19(@types/node@24.3.0)(terser@5.43.1)))':
+  '@sveltejs/adapter-auto@6.1.0(@sveltejs/kit@2.36.1(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.20)(vite@5.4.19(@types/node@24.3.0)(terser@5.43.1)))(svelte@4.2.20)(vite@5.4.19(@types/node@24.3.0)(terser@5.43.1)))':
     dependencies:
       '@sveltejs/kit': 2.36.1(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.20)(vite@5.4.19(@types/node@24.3.0)(terser@5.43.1)))(svelte@4.2.20)(vite@5.4.19(@types/node@24.3.0)(terser@5.43.1))
-      import-meta-resolve: 4.1.0
 
   '@sveltejs/kit@2.36.1(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.20)(vite@5.4.19(@types/node@24.3.0)(terser@5.43.1)))(svelte@4.2.20)(vite@5.4.19(@types/node@24.3.0)(terser@5.43.1))':
     dependencies:
