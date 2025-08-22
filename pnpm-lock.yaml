@@ -59,13 +59,13 @@ importers:
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20231121.0
-        version: 4.20250821.0
+        version: 4.20250822.0
       typescript:
         specifier: ^5.0.4
         version: 5.9.2
       wrangler:
         specifier: ^3.0.0
-        version: 3.114.14(@cloudflare/workers-types@4.20250821.0)
+        version: 3.114.14(@cloudflare/workers-types@4.20250822.0)
 
   apps/getting-started-nextjs:
     dependencies:
@@ -163,7 +163,7 @@ importers:
     devDependencies:
       '@remix-run/dev':
         specifier: ^2.4.1
-        version: 2.16.5(@remix-run/react@2.16.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.2))(@remix-run/serve@2.16.5(typescript@5.9.2))(@types/node@24.3.0)(jiti@2.5.1)(terser@5.43.1)(typescript@5.9.2)(vite@6.3.5(@types/node@24.3.0)(jiti@2.5.1)(terser@5.43.1)(yaml@2.8.1))(wrangler@3.114.14(@cloudflare/workers-types@4.20250821.0))(yaml@2.8.1)
+        version: 2.16.5(@remix-run/react@2.16.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.2))(@remix-run/serve@2.16.5(typescript@5.9.2))(@types/node@24.3.0)(jiti@2.5.1)(terser@5.43.1)(typescript@5.9.2)(vite@6.3.5(@types/node@24.3.0)(jiti@2.5.1)(terser@5.43.1)(yaml@2.8.1))(wrangler@3.114.14(@cloudflare/workers-types@4.20250822.0))(yaml@2.8.1)
       '@remix-run/eslint-config':
         specifier: ^2.4.1
         version: 2.16.5(eslint@8.57.1)(react@18.3.1)(typescript@5.9.2)
@@ -1368,8 +1368,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@cloudflare/workers-types@4.20250821.0':
-    resolution: {integrity: sha512-dbmorEqYnTMhSWh3lW3uBiufbzjvhrHsBD4SVNvhdhE1EdkkvAqhBzOyKRJxnQX04Afxm/txhdFe66eZrPPPkQ==}
+  '@cloudflare/workers-types@4.20250822.0':
+    resolution: {integrity: sha512-SR5nxiclSEXS/lVwcfFCS/h7L99VWg0wa2B2CavdTAOwGznwTNcd3vmrrer3LwkqhAUQnDc2aZg3HbRvoh4LYw==}
 
   '@colors/colors@1.6.0':
     resolution: {integrity: sha512-Ir+AOibqzrIsL6ajt3Rz3LskB7OiMVHqltZmspbW/TJuTVuyOMirVqAkjfY6JISiLHgyNqicAC8AyHHGzNd/dA==}
@@ -11538,7 +11538,7 @@ snapshots:
   '@cloudflare/workerd-windows-64@1.20250718.0':
     optional: true
 
-  '@cloudflare/workers-types@4.20250821.0': {}
+  '@cloudflare/workers-types@4.20250822.0': {}
 
   '@colors/colors@1.6.0': {}
 
@@ -12928,7 +12928,7 @@ snapshots:
 
   '@remix-run/css-bundle@2.16.5': {}
 
-  '@remix-run/dev@2.16.5(@remix-run/react@2.16.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.2))(@remix-run/serve@2.16.5(typescript@5.9.2))(@types/node@24.3.0)(jiti@2.5.1)(terser@5.43.1)(typescript@5.9.2)(vite@6.3.5(@types/node@24.3.0)(jiti@2.5.1)(terser@5.43.1)(yaml@2.8.1))(wrangler@3.114.14(@cloudflare/workers-types@4.20250821.0))(yaml@2.8.1)':
+  '@remix-run/dev@2.16.5(@remix-run/react@2.16.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.2))(@remix-run/serve@2.16.5(typescript@5.9.2))(@types/node@24.3.0)(jiti@2.5.1)(terser@5.43.1)(typescript@5.9.2)(vite@6.3.5(@types/node@24.3.0)(jiti@2.5.1)(terser@5.43.1)(yaml@2.8.1))(wrangler@3.114.14(@cloudflare/workers-types@4.20250822.0))(yaml@2.8.1)':
     dependencies:
       '@babel/core': 7.26.10
       '@babel/generator': 7.26.10
@@ -12991,7 +12991,7 @@ snapshots:
       '@remix-run/serve': 2.16.5(typescript@5.9.2)
       typescript: 5.9.2
       vite: 6.3.5(@types/node@24.3.0)(jiti@2.5.1)(terser@5.43.1)(yaml@2.8.1)
-      wrangler: 3.114.14(@cloudflare/workers-types@4.20250821.0)
+      wrangler: 3.114.14(@cloudflare/workers-types@4.20250822.0)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
@@ -21658,7 +21658,7 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20250718.0
       '@cloudflare/workerd-windows-64': 1.20250718.0
 
-  wrangler@3.114.14(@cloudflare/workers-types@4.20250821.0):
+  wrangler@3.114.14(@cloudflare/workers-types@4.20250822.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.4
       '@cloudflare/unenv-preset': 2.0.2(unenv@2.0.0-rc.14)(workerd@1.20250718.0)
@@ -21671,7 +21671,7 @@ snapshots:
       unenv: 2.0.0-rc.14
       workerd: 1.20250718.0
     optionalDependencies:
-      '@cloudflare/workers-types': 4.20250821.0
+      '@cloudflare/workers-types': 4.20250822.0
       fsevents: 2.3.3
       sharp: 0.33.5
     transitivePeerDependencies:
