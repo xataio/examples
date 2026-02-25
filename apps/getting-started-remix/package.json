@@ -15,14 +15,14 @@
     "@remix-run/serve": "^2.4.1",
     "@xata.io/client": "^0.30.0",
     "isbot": "^5.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.4.1",
     "@remix-run/eslint-config": "^2.4.1",
-    "@types/react": "^18.2.47",
-    "@types/react-dom": "^18.2.18",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
     "eslint": "^8.56.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
