@@ -82,8 +82,8 @@ importers:
         specifier: ^0.30.0
         version: 0.30.1(typescript@5.9.2)
       autoprefixer:
-        specifier: 10.4.21
-        version: 10.4.21(postcss@8.5.6)
+        specifier: 10.4.27
+        version: 10.4.27(postcss@8.5.6)
       eslint:
         specifier: 8.57.1
         version: 8.57.1
@@ -4733,6 +4733,13 @@ packages:
     peerDependencies:
       postcss: ^8.1.0
 
+  autoprefixer@10.4.27:
+    resolution: {integrity: sha512-NP9APE+tO+LuJGn7/9+cohklunJsXWiaWEfV3si4Gi/XHDwVNgkwr1J3RQYFIvPy76GmJ9/bW8vyoU1LcxwKHA==}
+    engines: {node: ^10 || ^12 || >=14}
+    hasBin: true
+    peerDependencies:
+      postcss: ^8.1.0
+
   available-typed-arrays@1.0.7:
     resolution: {integrity: sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ==}
     engines: {node: '>= 0.4'}
@@ -4913,11 +4920,6 @@ packages:
 
   browserslist@4.24.4:
     resolution: {integrity: sha512-KDi1Ny1gSePi1vm0q4oxSF8b4DR44GF4BbmS2YdhPLOEqd8pDviZOGH/GsmRwoWJ2+5Lr085X7naowMwKHDG1A==}
-    engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
-    hasBin: true
-
-  browserslist@4.25.3:
-    resolution: {integrity: sha512-cDGv1kkDI4/0e5yON9yM5G/0A5u8sf5TnmdX5C9qHzI9PPu++sQ9zjm1k9NiOrf3riY4OkK0zSGqfvJyJsgCBQ==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
 
@@ -5681,9 +5683,6 @@ packages:
   electron-to-chromium@1.5.122:
     resolution: {integrity: sha512-EML1wnwkY5MFh/xUnCvY8FrhUuKzdYhowuZExZOfwJo+Zu9OsNCI23Cgl5y7awy7HrUHSwB1Z8pZX5TI34lsUg==}
 
-  electron-to-chromium@1.5.207:
-    resolution: {integrity: sha512-mryFrrL/GXDTmAtIVMVf+eIXM09BBPlO5IQ7lUyKmK8d+A4VpRGG+M3ofoVef6qyF8s60rJei8ymlJxjUA8Faw==}
-
   electron-to-chromium@1.5.328:
     resolution: {integrity: sha512-QNQ5l45DzYytThO21403XN3FvK0hOkWDG8viNf6jqS42msJ8I4tGDSpBCgvDRRPnkffafiwAym2X2eHeGD2V0w==}
 
@@ -6331,6 +6330,9 @@ packages:
 
   fraction.js@4.3.7:
     resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
+
+  fraction.js@5.3.4:
+    resolution: {integrity: sha512-1X1NTtiJphryn/uLQz3whtY6jK3fTqoE3ohKs0tT+Ujr1W59oopxmoEh7Lu5p6vBaPbgoM0bzveAW4Qi5RyWDQ==}
 
   fresh@0.5.2:
     resolution: {integrity: sha512-zJ2mQYM18rEFOudeV4GShTGIQ7RbzA7ozbU9I/XBpm7kqgMywgmylMwXHxZJmkVoYkna9d2pVXVXPdYTP9ej8Q==}
@@ -11140,7 +11142,7 @@ snapshots:
     dependencies:
       '@babel/compat-data': 7.25.8
       '@babel/helper-validator-option': 7.27.1
-      browserslist: 4.24.4
+      browserslist: 4.28.1
       lru-cache: 5.1.1
       semver: 6.3.1
 
@@ -11148,7 +11150,7 @@ snapshots:
     dependencies:
       '@babel/compat-data': 7.28.0
       '@babel/helper-validator-option': 7.27.1
-      browserslist: 4.25.3
+      browserslist: 4.28.1
       lru-cache: 5.1.1
       semver: 6.3.1
 
@@ -13384,7 +13386,7 @@ snapshots:
       '@rollup/plugin-replace': 6.0.2(rollup@4.50.2)
       '@vitejs/plugin-vue': 6.0.1(vite@7.1.5(@types/node@20.19.37)(jiti@2.5.1)(terser@5.44.0)(yaml@2.8.3))(vue@3.5.21(typescript@5.9.2))
       '@vitejs/plugin-vue-jsx': 5.1.1(vite@7.1.5(@types/node@20.19.37)(jiti@2.5.1)(terser@5.44.0)(yaml@2.8.3))(vue@3.5.21(typescript@5.9.2))
-      autoprefixer: 10.4.21(postcss@8.5.8)
+      autoprefixer: 10.4.27(postcss@8.5.8)
       consola: 3.4.2
       cssnano: 7.1.1(postcss@8.5.8)
       defu: 6.1.4
@@ -14926,7 +14928,7 @@ snapshots:
       '@babel/plugin-syntax-typescript': 7.28.6(@babel/core@7.29.0)
       '@vanilla-extract/babel-plugin-debug-ids': 1.2.2
       '@vanilla-extract/css': 1.20.0
-      esbuild: 0.17.6
+      esbuild: 0.17.19
       eval: 0.1.8
       find-up: 5.0.0
       javascript-stringify: 2.1.0
@@ -15698,22 +15700,30 @@ snapshots:
 
   async@3.2.6: {}
 
-  autoprefixer@10.4.21(postcss@8.5.6):
-    dependencies:
-      browserslist: 4.24.4
-      caniuse-lite: 1.0.30001706
-      fraction.js: 4.3.7
-      normalize-range: 0.1.2
-      picocolors: 1.1.1
-      postcss: 8.5.6
-      postcss-value-parser: 4.2.0
-
   autoprefixer@10.4.21(postcss@8.5.8):
     dependencies:
       browserslist: 4.24.4
       caniuse-lite: 1.0.30001706
       fraction.js: 4.3.7
       normalize-range: 0.1.2
+      picocolors: 1.1.1
+      postcss: 8.5.8
+      postcss-value-parser: 4.2.0
+
+  autoprefixer@10.4.27(postcss@8.5.6):
+    dependencies:
+      browserslist: 4.28.1
+      caniuse-lite: 1.0.30001781
+      fraction.js: 5.3.4
+      picocolors: 1.1.1
+      postcss: 8.5.6
+      postcss-value-parser: 4.2.0
+
+  autoprefixer@10.4.27(postcss@8.5.8):
+    dependencies:
+      browserslist: 4.28.1
+      caniuse-lite: 1.0.30001781
+      fraction.js: 5.3.4
       picocolors: 1.1.1
       postcss: 8.5.8
       postcss-value-parser: 4.2.0
@@ -15918,17 +15928,10 @@ snapshots:
 
   browserslist@4.24.4:
     dependencies:
-      caniuse-lite: 1.0.30001706
+      caniuse-lite: 1.0.30001781
       electron-to-chromium: 1.5.122
       node-releases: 2.0.19
       update-browserslist-db: 1.1.3(browserslist@4.24.4)
-
-  browserslist@4.25.3:
-    dependencies:
-      caniuse-lite: 1.0.30001760
-      electron-to-chromium: 1.5.207
-      node-releases: 2.0.19
-      update-browserslist-db: 1.1.3(browserslist@4.25.3)
 
   browserslist@4.28.1:
     dependencies:
@@ -16307,7 +16310,7 @@ snapshots:
 
   core-js-compat@3.38.1:
     dependencies:
-      browserslist: 4.24.4
+      browserslist: 4.28.1
 
   core-util-is@1.0.3: {}
 
@@ -16676,8 +16679,6 @@ snapshots:
   ee-first@1.1.1: {}
 
   electron-to-chromium@1.5.122: {}
-
-  electron-to-chromium@1.5.207: {}
 
   electron-to-chromium@1.5.328: {}
 
@@ -17075,7 +17076,6 @@ snapshots:
       '@esbuild/win32-arm64': 0.25.12
       '@esbuild/win32-ia32': 0.25.12
       '@esbuild/win32-x64': 0.25.12
-    optional: true
 
   esbuild@0.27.4:
     optionalDependencies:
@@ -17888,6 +17888,8 @@ snapshots:
   forwarded@0.2.0: {}
 
   fraction.js@4.3.7: {}
+
+  fraction.js@5.3.4: {}
 
   fresh@0.5.2: {}
 
@@ -22913,12 +22915,6 @@ snapshots:
       escalade: 3.2.0
       picocolors: 1.1.1
 
-  update-browserslist-db@1.1.3(browserslist@4.25.3):
-    dependencies:
-      browserslist: 4.25.3
-      escalade: 3.2.0
-      picocolors: 1.1.1
-
   update-browserslist-db@1.2.3(browserslist@4.28.1):
     dependencies:
       browserslist: 4.28.1
@@ -23198,7 +23194,7 @@ snapshots:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.4)
       picomatch: 4.0.4
-      postcss: 8.5.8
+      postcss: 8.5.6
       rollup: 4.60.0
       tinyglobby: 0.2.15
     optionalDependencies:
@@ -23211,7 +23207,7 @@ snapshots:
 
   vite@7.1.5(@types/node@20.19.37)(jiti@2.5.1)(terser@5.44.0)(yaml@2.8.3):
     dependencies:
-      esbuild: 0.25.10
+      esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.4)
       picomatch: 4.0.4
       postcss: 8.5.8
