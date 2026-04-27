@@ -10,10 +10,10 @@ importers:
     devDependencies:
       '@changesets/cli':
         specifier: 2.30.0
-        version: 2.30.0(@types/node@20.19.39)
+        version: 2.30.0(@types/node@20.19.37)
       '@types/node':
         specifier: 20.19.37
-        version: 20.19.39
+        version: 20.19.37
       prettier:
         specifier: 2.8.8
         version: 2.8.8
@@ -28,7 +28,7 @@ importers:
     dependencies:
       '@astrojs/tailwind':
         specifier: ^5.1.0
-        version: 5.1.5(astro@4.16.19(@types/node@25.6.0)(rollup@4.60.0)(terser@5.46.1)(typescript@5.9.3))(tailwindcss@3.4.19(yaml@2.8.3))
+        version: 5.1.5(astro@4.16.19(@types/node@25.6.0)(rollup@4.60.2)(terser@5.46.1)(typescript@5.9.3))(tailwindcss@3.4.19(yaml@2.8.3))
       '@types/canvas-confetti':
         specifier: ^1.6.4
         version: 1.9.0
@@ -37,7 +37,7 @@ importers:
         version: 0.30.1(typescript@5.9.3)
       astro:
         specifier: ^4.9.2
-        version: 4.16.19(@types/node@25.6.0)(rollup@4.60.0)(terser@5.46.1)(typescript@5.9.3)
+        version: 4.16.19(@types/node@25.6.0)(rollup@4.60.2)(terser@5.46.1)(typescript@5.9.3)
       autoprefixer:
         specifier: ^10.4.19
         version: 10.4.21(postcss@8.5.8)
@@ -71,7 +71,7 @@ importers:
     dependencies:
       '@types/node':
         specifier: 20.19.37
-        version: 20.19.39
+        version: 20.19.37
       '@types/react':
         specifier: 18.3.28
         version: 18.3.28
@@ -153,7 +153,7 @@ importers:
         version: 0.30.1(typescript@5.9.3)
       isbot:
         specifier: ^5.0.0
-        version: 5.1.36
+        version: 5.1.39
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -286,7 +286,7 @@ importers:
     devDependencies:
       '@types/node':
         specifier: 20.19.37
-        version: 20.19.39
+        version: 20.19.37
       '@types/react':
         specifier: 18.3.28
         version: 18.3.28
@@ -313,7 +313,7 @@ importers:
         version: 13.5.11
       '@types/node':
         specifier: 20.19.37
-        version: 20.19.39
+        version: 20.19.37
       '@types/react':
         specifier: 18.3.28
         version: 18.3.28
@@ -355,7 +355,7 @@ importers:
         version: 13.5.11
       '@types/node':
         specifier: 20.19.37
-        version: 20.19.39
+        version: 20.19.37
       '@types/react':
         specifier: 18.3.28
         version: 18.3.28
@@ -410,7 +410,7 @@ importers:
         version: 5.0.2
       '@types/node':
         specifier: 20.19.37
-        version: 20.19.39
+        version: 20.19.37
       '@types/react':
         specifier: 18.3.28
         version: 18.3.28
@@ -4224,6 +4224,9 @@ packages:
   '@types/node@12.20.55':
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
 
+  '@types/node@20.19.37':
+    resolution: {integrity: sha512-8kzdPJ3FsNsVIurqBs7oodNnCEVbni9yUEkaHbgptDACOPW04jimGagZ51E6+lXUwJjgnBw+hyko/lkFWCldqw==}
+
   '@types/node@20.19.39':
     resolution: {integrity: sha512-orrrD74MBUyK8jOAD/r0+lfa1I2MO6I+vAkmAWzMYbCcgrN4lCrmK52gRFQq/JRxfYPfonkr4b0jcY7Olqdqbw==}
 
@@ -7271,8 +7274,8 @@ packages:
   isarray@2.0.5:
     resolution: {integrity: sha512-xHjhDr3cNBK0BzdUJSPXZntQUx/mwMS5Rw4A7lPJ90XGAO6ISP/ePDNuo0vhqOZU+UD5JoodwCAAoZQd3FeAKw==}
 
-  isbot@5.1.36:
-    resolution: {integrity: sha512-C/ZtXyJqDPZ7G7JPr06ApWyYoHjYexQbS6hPYD4WYCzpv2Qes6Z+CCEfTX4Owzf+1EJ933PoI2p+B9v7wpGZBQ==}
+  isbot@5.1.39:
+    resolution: {integrity: sha512-obH0yYahGXdzNxo+djmHhBYThUKDkz565cxkIlt2L9hXfv1NlaLKoDBHo6KxXsYrIXx2RK3x5vY36CfZcobxEw==}
     engines: {node: '>=18'}
 
   isexe@2.0.0:
@@ -11105,9 +11108,9 @@ snapshots:
     dependencies:
       prismjs: 1.30.0
 
-  '@astrojs/tailwind@5.1.5(astro@4.16.19(@types/node@25.6.0)(rollup@4.60.0)(terser@5.46.1)(typescript@5.9.3))(tailwindcss@3.4.19(yaml@2.8.3))':
+  '@astrojs/tailwind@5.1.5(astro@4.16.19(@types/node@25.6.0)(rollup@4.60.2)(terser@5.46.1)(typescript@5.9.3))(tailwindcss@3.4.19(yaml@2.8.3))':
     dependencies:
-      astro: 4.16.19(@types/node@25.6.0)(rollup@4.60.0)(terser@5.46.1)(typescript@5.9.3)
+      astro: 4.16.19(@types/node@25.6.0)(rollup@4.60.2)(terser@5.46.1)(typescript@5.9.3)
       autoprefixer: 10.4.21(postcss@8.5.8)
       postcss: 8.5.8
       postcss-load-config: 4.0.2(postcss@8.5.8)
@@ -12152,7 +12155,7 @@ snapshots:
     dependencies:
       '@changesets/types': 6.1.0
 
-  '@changesets/cli@2.30.0(@types/node@20.19.39)':
+  '@changesets/cli@2.30.0(@types/node@20.19.37)':
     dependencies:
       '@changesets/apply-release-plan': 7.1.0
       '@changesets/assemble-release-plan': 6.0.9
@@ -12168,7 +12171,7 @@ snapshots:
       '@changesets/should-skip-package': 0.1.2
       '@changesets/types': 6.1.0
       '@changesets/write': 0.4.0
-      '@inquirer/external-editor': 1.0.3(@types/node@20.19.39)
+      '@inquirer/external-editor': 1.0.3(@types/node@20.19.37)
       '@manypkg/get-packages': 1.1.3
       ansi-colors: 4.1.3
       enquirer: 2.4.1
@@ -12946,12 +12949,12 @@ snapshots:
   '@img/sharp-win32-x64@0.33.5':
     optional: true
 
-  '@inquirer/external-editor@1.0.3(@types/node@20.19.39)':
+  '@inquirer/external-editor@1.0.3(@types/node@20.19.37)':
     dependencies:
       chardet: 2.1.1
       iconv-lite: 0.7.2
     optionalDependencies:
-      '@types/node': 20.19.39
+      '@types/node': 20.19.37
 
   '@ioredis/commands@1.5.1': {}
 
@@ -14326,6 +14329,14 @@ snapshots:
     optionalDependencies:
       rollup: 4.60.0
 
+  '@rollup/pluginutils@5.2.0(rollup@4.60.2)':
+    dependencies:
+      '@types/estree': 1.0.8
+      estree-walker: 2.0.2
+      picomatch: 4.0.4
+    optionalDependencies:
+      rollup: 4.60.2
+
   '@rollup/pluginutils@5.3.0(rollup@4.60.0)':
     dependencies:
       '@types/estree': 1.0.8
@@ -14715,7 +14726,7 @@ snapshots:
 
   '@types/bcrypt@5.0.2':
     dependencies:
-      '@types/node': 20.19.39
+      '@types/node': 20.19.37
 
   '@types/canvas-confetti@1.9.0': {}
 
@@ -14768,6 +14779,10 @@ snapshots:
       '@types/unist': 3.0.3
 
   '@types/node@12.20.55': {}
+
+  '@types/node@20.19.37':
+    dependencies:
+      undici-types: 6.21.0
 
   '@types/node@20.19.39':
     dependencies:
@@ -15796,7 +15811,7 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro@4.16.19(@types/node@25.6.0)(rollup@4.60.0)(terser@5.46.1)(typescript@5.9.3):
+  astro@4.16.19(@types/node@25.6.0)(rollup@4.60.2)(terser@5.46.1)(typescript@5.9.3):
     dependencies:
       '@astrojs/compiler': 2.12.2
       '@astrojs/internal-helpers': 0.4.1
@@ -15806,7 +15821,7 @@ snapshots:
       '@babel/plugin-transform-react-jsx': 7.27.1(@babel/core@7.28.3)
       '@babel/types': 7.28.2
       '@oslojs/encoding': 1.1.0
-      '@rollup/pluginutils': 5.2.0(rollup@4.60.0)
+      '@rollup/pluginutils': 5.2.0(rollup@4.60.2)
       '@types/babel__core': 7.20.5
       '@types/cookie': 0.6.0
       acorn: 8.15.0
@@ -18726,7 +18741,7 @@ snapshots:
 
   isarray@2.0.5: {}
 
-  isbot@5.1.36: {}
+  isbot@5.1.39: {}
 
   isexe@2.0.0: {}
 
