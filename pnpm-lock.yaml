@@ -82,8 +82,8 @@ importers:
         specifier: ^0.30.0
         version: 0.30.1(typescript@5.9.3)
       autoprefixer:
-        specifier: 10.5.4
-        version: 10.5.4(postcss@8.5.31)
+        specifier: 10.6.1
+        version: 10.6.1(postcss@8.5.31)
       eslint:
         specifier: 8.57.1
         version: 8.57.1(supports-color@10.2.2)
@@ -4845,8 +4845,8 @@ packages:
     peerDependencies:
       postcss: ^8.1.0
 
-  autoprefixer@10.5.4:
-    resolution: {integrity: sha512-MaU0U/za7N3r6brxD4YB/l4NSrFzLPlANv6wEuQVaIPlD3L4W9rFcQPbL/EilY9BHhHvhfcz3gInDLrEtWT4EA==}
+  autoprefixer@10.6.1:
+    resolution: {integrity: sha512-cL1Qz6ADZhcEbny/8HPfe99J6HhNoYtpX2LFLIbhgGE7Q1hlQVkYFdetDN7Id3KiQxhDrHwzlHr/YQCnZ8+xSA==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
@@ -15636,7 +15636,7 @@ snapshots:
       postcss: 8.5.8
       postcss-value-parser: 4.2.0
 
-  autoprefixer@10.5.4(postcss@8.5.31):
+  autoprefixer@10.6.1(postcss@8.5.31):
     dependencies:
       browserslist: 4.28.9
       caniuse-lite: 1.0.30001810
