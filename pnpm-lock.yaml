@@ -59,13 +59,13 @@ importers:
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20231121.0
-        version: 4.20260317.1
+        version: 4.20260702.1
       typescript:
         specifier: ^5.0.4
         version: 5.9.3
       wrangler:
         specifier: ^3.0.0
-        version: 3.114.17(@cloudflare/workers-types@4.20260317.1)
+        version: 3.114.17(@cloudflare/workers-types@4.20260702.1)
 
   apps/getting-started-nextjs:
     dependencies:
@@ -163,7 +163,7 @@ importers:
     devDependencies:
       '@remix-run/dev':
         specifier: ^2.4.1
-        version: 2.17.5(@remix-run/react@2.17.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3))(@remix-run/serve@2.17.5(supports-color@10.2.2)(typescript@5.9.3))(@types/node@20.19.43)(supports-color@10.2.2)(terser@5.46.1)(typescript@5.9.3)(vite@5.4.21(@types/node@20.19.43)(terser@5.46.1))(wrangler@3.114.17(@cloudflare/workers-types@4.20260317.1))
+        version: 2.17.5(@remix-run/react@2.17.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3))(@remix-run/serve@2.17.5(supports-color@10.2.2)(typescript@5.9.3))(@types/node@20.19.43)(supports-color@10.2.2)(terser@5.46.1)(typescript@5.9.3)(vite@5.4.21(@types/node@20.19.43)(terser@5.46.1))(wrangler@3.114.17(@cloudflare/workers-types@4.20260702.1))
       '@remix-run/eslint-config':
         specifier: ^2.4.1
         version: 2.17.5(eslint@8.57.1(supports-color@10.2.2))(react@18.3.1)(supports-color@10.2.2)(typescript@5.9.3)
@@ -1345,8 +1345,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@cloudflare/workers-types@4.20260317.1':
-    resolution: {integrity: sha512-+G4eVwyCpm8Au1ex8vQBCuA9wnwqetz4tPNRoB/53qvktERWBRMQnrtvC1k584yRE3emMThtuY0gWshvSJ++PQ==}
+  '@cloudflare/workers-types@4.20260702.1':
+    resolution: {integrity: sha512-mOhf5TUEB1m2vPrxtqoIGfz0fUC9xyxRDx5gWHy5s+OCo6dcV+g7wI1R7gYCMFohhqF/2y2xeKVwMwCJjfn/WA==}
 
   '@cspotcode/source-map-support@0.8.1':
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
@@ -12197,7 +12197,7 @@ snapshots:
   '@cloudflare/workerd-windows-64@1.20250718.0':
     optional: true
 
-  '@cloudflare/workers-types@4.20260317.1': {}
+  '@cloudflare/workers-types@4.20260702.1': {}
 
   '@cspotcode/source-map-support@0.8.1':
     dependencies:
@@ -13853,7 +13853,7 @@ snapshots:
 
   '@remix-run/css-bundle@2.17.5': {}
 
-  '@remix-run/dev@2.17.5(@remix-run/react@2.17.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3))(@remix-run/serve@2.17.5(supports-color@10.2.2)(typescript@5.9.3))(@types/node@20.19.43)(supports-color@10.2.2)(terser@5.46.1)(typescript@5.9.3)(vite@5.4.21(@types/node@20.19.43)(terser@5.46.1))(wrangler@3.114.17(@cloudflare/workers-types@4.20260317.1))':
+  '@remix-run/dev@2.17.5(@remix-run/react@2.17.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3))(@remix-run/serve@2.17.5(supports-color@10.2.2)(typescript@5.9.3))(@types/node@20.19.43)(supports-color@10.2.2)(terser@5.46.1)(typescript@5.9.3)(vite@5.4.21(@types/node@20.19.43)(terser@5.46.1))(wrangler@3.114.17(@cloudflare/workers-types@4.20260702.1))':
     dependencies:
       '@babel/core': 7.29.0(supports-color@10.2.2)
       '@babel/generator': 7.29.1
@@ -13916,7 +13916,7 @@ snapshots:
       '@remix-run/serve': 2.17.5(supports-color@10.2.2)(typescript@5.9.3)
       typescript: 5.9.3
       vite: 5.4.21(@types/node@20.19.43)(terser@5.46.1)
-      wrangler: 3.114.17(@cloudflare/workers-types@4.20260317.1)
+      wrangler: 3.114.17(@cloudflare/workers-types@4.20260702.1)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
@@ -18810,7 +18810,7 @@ snapshots:
     dependencies:
       '@babel/parser': 7.29.8
       '@babel/types': 7.29.8
-      source-map-js: 1.2.1
+      source-map-js: 1.2.2
 
   make-dir@3.1.0:
     dependencies:
@@ -22908,7 +22908,7 @@ snapshots:
       exsolve: 1.1.1
       magic-string: 1.4.3
       pathe: 2.0.3
-      source-map-js: 1.2.1
+      source-map-js: 1.2.2
       vite: 7.3.1(@types/node@20.19.43)(jiti@2.6.1)(terser@5.46.1)(yaml@2.8.3)
       vue: 3.5.31(typescript@5.9.3)
 
@@ -23098,7 +23098,7 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20250718.0
       '@cloudflare/workerd-windows-64': 1.20250718.0
 
-  wrangler@3.114.17(@cloudflare/workers-types@4.20260317.1):
+  wrangler@3.114.17(@cloudflare/workers-types@4.20260702.1):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.4
       '@cloudflare/unenv-preset': 2.0.2(unenv@2.0.0-rc.14)(workerd@1.20250718.0)
@@ -23111,7 +23111,7 @@ snapshots:
       unenv: 2.0.0-rc.14
       workerd: 1.20250718.0
     optionalDependencies:
-      '@cloudflare/workers-types': 4.20260317.1
+      '@cloudflare/workers-types': 4.20260702.1
       fsevents: 2.3.3
       sharp: 0.33.5
     transitivePeerDependencies:
