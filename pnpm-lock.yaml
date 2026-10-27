@@ -73,11 +73,11 @@ importers:
         specifier: 20.19.43
         version: 20.19.43
       '@types/react':
-        specifier: 18.3.28
-        version: 18.3.28
+        specifier: 18.3.31
+        version: 18.3.31
       '@types/react-dom':
         specifier: 18.3.7
-        version: 18.3.7(@types/react@18.3.28)
+        version: 18.3.7(@types/react@18.3.31)
       '@xata.io/client':
         specifier: ^0.30.0
         version: 0.30.1(typescript@5.9.3)
@@ -169,10 +169,10 @@ importers:
         version: 2.17.5(eslint@8.57.1(supports-color@10.2.2))(react@18.3.1)(supports-color@10.2.2)(typescript@5.9.3)
       '@types/react':
         specifier: ^18.2.47
-        version: 18.3.28
+        version: 18.3.31
       '@types/react-dom':
         specifier: ^18.2.18
-        version: 18.3.7(@types/react@18.3.28)
+        version: 18.3.7(@types/react@18.3.31)
       eslint:
         specifier: ^8.56.0
         version: 8.57.1(supports-color@10.2.2)
@@ -288,11 +288,11 @@ importers:
         specifier: 20.19.43
         version: 20.19.43
       '@types/react':
-        specifier: 18.3.28
-        version: 18.3.28
+        specifier: 18.3.31
+        version: 18.3.31
       '@types/react-dom':
         specifier: 18.3.7
-        version: 18.3.7(@types/react@18.3.28)
+        version: 18.3.7(@types/react@18.3.31)
       eslint:
         specifier: 8.57.1
         version: 8.57.1(supports-color@10.2.2)
@@ -315,11 +315,11 @@ importers:
         specifier: 20.19.43
         version: 20.19.43
       '@types/react':
-        specifier: 18.3.28
-        version: 18.3.28
+        specifier: 18.3.31
+        version: 18.3.31
       '@types/react-dom':
         specifier: 18.3.7
-        version: 18.3.7(@types/react@18.3.28)
+        version: 18.3.7(@types/react@18.3.31)
       '@xata.io/client':
         specifier: latest
         version: 0.30.1(typescript@5.9.3)
@@ -357,11 +357,11 @@ importers:
         specifier: 20.19.43
         version: 20.19.43
       '@types/react':
-        specifier: 18.3.28
-        version: 18.3.28
+        specifier: 18.3.31
+        version: 18.3.31
       '@types/react-dom':
         specifier: 18.3.7
-        version: 18.3.7(@types/react@18.3.28)
+        version: 18.3.7(@types/react@18.3.31)
       '@xata.io/client':
         specifier: latest
         version: 0.30.1(typescript@5.9.3)
@@ -412,11 +412,11 @@ importers:
         specifier: 20.19.43
         version: 20.19.43
       '@types/react':
-        specifier: 18.3.28
-        version: 18.3.28
+        specifier: 18.3.31
+        version: 18.3.31
       '@types/react-dom':
         specifier: 18.3.7
-        version: 18.3.7(@types/react@18.3.28)
+        version: 18.3.7(@types/react@18.3.31)
       eslint:
         specifier: 8.57.1
         version: 8.57.1(supports-color@10.2.2)
@@ -447,10 +447,10 @@ importers:
         version: 20.19.43
       '@types/react':
         specifier: ^18
-        version: 18.3.28
+        version: 18.3.31
       '@types/react-dom':
         specifier: ^18
-        version: 18.3.7(@types/react@18.3.28)
+        version: 18.3.7(@types/react@18.3.31)
       eslint:
         specifier: ^8
         version: 8.57.1(supports-color@10.2.2)
@@ -4084,8 +4084,8 @@ packages:
     peerDependencies:
       '@types/react': ^18.0.0
 
-  '@types/react@18.3.28':
-    resolution: {integrity: sha512-z9VXpC7MWrhfWipitjNdgCauoMLRdIILQsAEV+ZesIzBq/oUlxk0m3ApZuMFCXdnS4U7KrI+l3WRUEGQ8K1QKw==}
+  '@types/react@18.3.31':
+    resolution: {integrity: sha512-vfEqpXTvwT91yhmwdfouStN2hSKwTvyRs8qpLfADyrq/kxDw0hZM7Wk9Ug1FELj8hIby+S/+kQCSRFF32nv2Qw==}
 
   '@types/resolve@1.20.2':
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
@@ -14609,11 +14609,11 @@ snapshots:
 
   '@types/pug@2.0.10': {}
 
-  '@types/react-dom@18.3.7(@types/react@18.3.28)':
+  '@types/react-dom@18.3.7(@types/react@18.3.31)':
     dependencies:
-      '@types/react': 18.3.28
+      '@types/react': 18.3.31
 
-  '@types/react@18.3.28':
+  '@types/react@18.3.31':
     dependencies:
       '@types/prop-types': 15.7.15
       csstype: 3.2.3
