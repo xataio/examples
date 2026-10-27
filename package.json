@@ -17,7 +17,7 @@
     "@changesets/cli": "2.31.1",
     "@types/node": "20.19.43",
     "prettier": "2.8.8",
-    "turbo": "1.13.4",
+    "turbo": "2.9.14",
     "typescript": "5.9.3"
   },
   "volta": {
